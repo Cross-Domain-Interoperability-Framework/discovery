@@ -1,0 +1,36 @@
+
+
+--schema:distribution:
+	--schema:WebApi:
+		--schema: serviceType .  identifier for service type (and version?)
+		version.  should this be separate or part of serviceType identifier
+		--schema:termsOfservice
+		--schema:documentation -- link to OpenAPI doc
+		--spdx:license license ID from spdx vocab. for compatibility with OAS
+		--schema:Action = oas:Operation . 0:many. If service is too complex to describe with CDIF schema:WebAPI, leave the actions out, and schema:documentation MUST provide URL to machine actionable service description (OpenAPI, OGC capabilities...)
+			--schema:name -- identifier for operation-- more detail than schema:Action; ?use schema:DefinedTerm?
+			--oas:description (oas or schema)
+			--schema:target = oas.path (schema:Entry point) oas uses relative path as key in JSON
+				--schema:urlTemplate. this should be full url
+				--schema:httpMethod.  default is GET; might allow POST
+				--oas:parameters = schema:query-input. array
+					--oas:in (mandatory) {path, query} (oas also has querystring, header, cookie)
+					--oas:name (mandatory)
+					--oas:description; describe parameter serialization, semantics
+					--oas:required default-false
+					--oas:schema {integer, decimal, string} default is string. in the URL must be a string; assume client expects some datatype? so is this necessary?. Is it sufficient to proved regex to validate the parameter?
+				--oas:requestBody (for POST)
+					--oas (or schema):description
+					--oas:content: (allow multiple content type/schema?)
+						--schema:encodingFormat (oas uses type as a JSON key)(favor over schema:contentType which has expected value: text. Encoding format takes text or URL
+						-- oas:schema
+							--oas:type {number, string, boolean, array, object}
+				--oas:response -- ?schema:result +/- schema:object type.  
+					--code (e.g. 200, 404, 303...) optional, default 200 [define property for CDIF...]
+					--schema:description
+					--oas:content:
+						--schema:encodingFormat (mime type)(oas uses types as keys in content element)
+						--oas:schema (applicable JSON or XMLschema). This is where CDI-DDI type data structure description would go, referencing InstanceVariable defined in the variableMeasured section.
+							oas:type {number, string, boolean, array, object}
+								different types have possible values; don't see good way to describe csv, hdf, parquet, etc.
+	
