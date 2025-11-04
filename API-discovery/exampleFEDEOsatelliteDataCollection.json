@@ -1,0 +1,84 @@
+{
+    "@context": [
+        "https://schema.org",
+        {
+            "dct": "http://purl.org/dc/terms/",
+            "spdx": "http://spdx.org/rdf/terms#"
+        }
+    ],
+    "@id": "metadata:ark:/99152/URIforTheMetadataRecord",
+    "@type": "DigitalDocument",
+    "dateModified": "2014-02-23",
+    "encoding": {
+        "@type": "MediaObject",
+        "contentSize": 687,
+        "dcterms:conformsTo": "https://example.org/cdif-metadataSpec"
+    },
+    "about": {
+        "@id": "ark:/99152/URIforTheDataset",
+        "@type": "Collection",
+        "name": "MERIS - Water Parameters - North Sea, 10-Day",
+        "description": "The Medium Resolution Imaging Spectrometer (MERIS) on Board ESA’s ENVISAT provides spectral high resolution image data in the visible-near infrared spectral region (412-900 nm) at a spatial resolution of 300 m. For more details on ENVISAT and MERIS see http://envisat.esa.int/ This product developed in the frame of the MAPP project (MERIS Application and Regional Products Projects) represents the chlorophyll concentration of the North Sea derived from MERIS data... ",
+        "distribution": {
+            "@type": [
+                "DataDownload",
+                "WebAPI"
+            ],
+            "name": "urn:eop:DLR:EOWEB:Water_Parameter_North_Sea_MERIS_10-days_maps",
+            "serviceType": "OpenSearch",
+            "termsOfService": "Nutzungseinschränkungen: DLR not liable for damage resulting from use",
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://fedeo.ceos.org/collections/series/items/urn:eop:DLR:EOWEB:Water_Parameter_North_Sea_MERIS_10-days_maps/api",
+                        "description": "OpenSearch Description; fedeo Earth Observation Catalogue",
+                        "httpMethod": ["GET"]
+                    },
+                    "result": {
+                        "@type": "Document",
+                        "encodingFormat": "application/xml"
+                    }
+                },
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://fedeo.ceos.org/collections/datasets/items?httpAccept={format}&amp;parentIdentifier=urn:eop:DLR:EOWEB:Water_Parameter_North_Sea_MERIS_10-days_maps&amp;startRecord={startIndex?}&amp;startPage={startPage?}&amp;limit={count?}&amp;datetime={time:start}/{time:end}&amp;geometry={geo:geometry?}&amp;bbox={geo:box?}",
+                        "description": "Simple search template for for MERIS 10day water parameter maps; for complete list of parameters get the OpenSearch document",
+                        "httpMethod": ["GET"]
+                    },
+                    "query-input": [
+                        {
+                            "@type": "PropertyValueSpecification",
+                            "valueName": "format",
+                            "description": "identifier for format string",
+                            "valueRequired": true,
+                            "rangeIncludes":[
+                                "application/opensearchdescription+xml", "application/geo+json",    
+                                "application/geo+json;profile=&quot;http://www.opengis.net/spec/ogcapi-features-1/1.0&quot;",
+                                "application/geo+json;profile=&quot;http://www.opengis.net/spec/os-geojson/1.0&quot;","text/turtle",
+                                "application/atom+xml", "... many others"
+                            ]
+                        },
+                        {
+                            "@type": "PropertyValueSpecification",
+                            "valueName": "limit",
+                             "valuePattern":"[0-9]+"
+                            },
+                        {
+                            "@type": "PropertyValueSpecification",
+                            "valueName": "startIndex",
+                            .....
+                    ],
+                    "result": {
+                        "@type": "Dataset",
+                        "description":"metadata for specific granule, with link to access data",
+                        "encodingFormat": "application/json"
+                    }
+                }
+            ]
+        }
+    }
+}
