@@ -1,0 +1,227 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "psdiDcat": "http://metadata.psdi.ac.uk/psdi-dcat/",
+        "psdiDcatExt": "http://metadata.psdi.ac.uk/psdi-dcat-ext#",
+        "adms": "http://www.w3.org/ns/adms#",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "odrl": "http://www.w3.org/ns/odrl/2/",
+        "prov": "http://www.w3.org/ns/prov#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@language": "en",
+        "dcterms:title": {
+            "@id": "dcterms:title",
+            "@type": "xsd:string"
+        },
+        "rdfs:label": {
+            "@id": "rdfs:label",
+            "@type": "xsd:string"
+        },
+        "dcterms:identifier": {
+            "@id": "dcterms:identifier",
+            "@type": "xsd:string"
+        },
+        "skos:prefLabel": {
+            "@id": "skos:prefLabel",
+            "@type": "xsd:string"
+        },
+        "dcterms:description": {
+            "@id": "dcterms:description",
+            "@type": "xsd:string"
+        },
+        "dcat:keyword": {
+            "@id": "dcat:keyword",
+            "@type": "xsd:string",
+            "@container": "@set"
+        },
+        "foaf:name": {
+            "@id": "foaf:name",
+            "@type": "xsd:string"
+        },
+        "dcat:contactPoint": {
+            "@id": "dcat:contactPoint",
+            "@type": "@id"
+        },
+        "vcard:hasEmail": {
+            "@id": "vcard:hasEmail",
+            "@type": "xsd:string"
+        },
+        "vcard:hasURL": {
+            "@id": "vcard:hasURL",
+            "@type": "@id"
+        },
+        "dcat:version": {
+            "@id": "dcat:version",
+            "@type": "xsd:string"
+        },
+        "adms:versionNotes": {
+            "@id": "adms:versionNotes",
+            "@type": "xsd:string"
+        },
+        "dcterms:bibliographicCitation": {
+            "@id": "dcterms:bibliographicCitation",
+            "@type": "xsd:string"
+        },
+        "psdiDcatExt:displayPriority": {
+            "@id": "psdiDcatExt:displayPriority",
+            "@type": "xsd:double"
+        },
+        "psdiDcatExt:installCommand": {
+            "@id": "psdiDcatExt:installCommand",
+            "@type": "xsd:string"
+        },
+        "psdiDcatExt:programmingLanguage": {
+            "@id": "psdiDcatExt:programmingLanguage",
+            "@type": "xsd:string",
+            "@container": "@set"
+        },
+        "psdiDcatExt:developmentStatus": {
+            "@id": "psdiDcatExt:developmentStatus",
+            "@type": "xsd:string"
+        },
+        "psdiDcatExt:byteSize": {
+            "@id": "psdiDcatExt:byteSize",
+            "@type": "xsd:nonNegativeInteger"
+        },
+        "dcat:byteSize": {
+            "@id": "dcat:byteSize",
+            "@type": "xsd:nonNegativeInteger"
+        }
+    },
+    "@id": "psdiDcat:data/7e871747-1bd3-4abf-8fe3-dc4ec55b3771",
+    "dcterms:identifier": "psdiDcat:data/7e871747-1bd3-4abf-8fe3-dc4ec55b3771",
+    "@type": "dcat:Dataset",
+    "dcterms:title": "Collaborative Computational Project for NMR Crystallography (CCP-NC) Magres Database",
+    "rdfs:label": "CCP-NC Magres database",
+    "dcterms:type": {
+        "skos:prefLabel": "Dataset",
+        "@type": "skos:Concept",
+        "@id": "http://purl.org/dc/dcmitype/Dataset"
+    },
+    "dcterms:description": "The Collaborative Computational Project for NMR Crystallography (CCP-NC) database of calculated solid-state NMR data from DFT codes in MAGRES format.",
+    "dcat:keyword": [
+        "SSNMR",
+        "NMR",
+        "EFG",
+        "Magnetic Shielding",
+        "Magres",
+        "DFT",
+        "CASTEP",
+        "Quantum Espresso"
+    ],
+    "dcat:theme": [
+        {
+            "skos:prefLabel": "quantum chemistry",
+            "@type": "skos:Concept",
+            "@id": "http://data.europa.eu/8mn/euroscivoc/7aca9814-d7a5-43b2-8521-0fa53e8bd36a"
+        },
+        {
+            "skos:prefLabel": "condensed matter physics",
+            "@type": "skos:Concept",
+            "@id": "http://data.europa.eu/8mn/euroscivoc/c61cf6c6-8b52-4fbb-9b30-b09659e476cf"
+        }
+    ],
+    "dcterms:publisher": {
+        "foaf:name": "PSDI",
+        "@type": "foaf:Agent",
+        "@id": "http://www.psdi.ac.uk"
+    },
+    "dcterms:creator": [
+        {
+            "foaf:name": "Sathya Sai Seetharaman",
+            "@type": "foaf:Agent",
+            "@id": "https://orcid.org/0009-0006-9138-9585"
+        },
+        {
+            "foaf:name": "John Kane Shenton",
+            "@type": "foaf:Agent",
+            "@id": "https://orcid.org/0000-0003-4485-3446"
+        }
+    ],
+    "dcat:landingPage": {
+        "rdfs:label": "CCP-NC Database",
+        "@type": "foaf:Document",
+        "@id": "http://www.ccpnc.ac.uk/database/"
+    },
+    "dcat:contactPoint": {
+        "@type": "vcard:Kind",
+        "vcard:hasURL": "http://www.ccpnc.ac.uk/contact/",
+        "@id": "http://www.ccpnc.ac.uk/contact"
+    },
+    "dcterms:conformsTo": {
+        "rdfs:label": "magres",
+        "@type": "dcterms:Standard",
+        "@id": "http://www.ccpnc.ac.uk/docs/magres/magres-format.pdf"
+    },
+    "dcterms:language": {
+        "rdfs:label": "en",
+        "@type": "dcterms:LinguisticSystem",
+        "@id": "http://id.loc.gov/vocabulary/iso639-1/en"
+    },
+    "adms:status": {
+        "@type": "rdfs:Resource",
+        "@id": "http://purl.org/adms/status/UnderDevelopment"
+    },
+    "dcterms:issued": {
+        "@value": "2018-03-19T10:46:52Z",
+        "@type": "xsd:dateTime"
+    },
+    "dcterms:license": [
+        {
+            "rdfs:label": "PDDL-1.0",
+            "@type": "dcterms:LicenseDocument",
+            "@id": "https://spdx.org/licenses/PDDL-1.0.html"
+        },
+        {
+            "rdfs:label": "ODC-By-1.0",
+            "@type": "dcterms:LicenseDocument",
+            "@id": "https://spdx.org/licenses/ODC-By-1.0.html"
+        },
+        {
+            "rdfs:label": "CC-BY-4.0",
+            "@type": "dcterms:LicenseDocument",
+            "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
+        }
+    ],
+    "dcterms:accessRights": {
+        "rdfs:label": "open access",
+        "@type": "dcterms:RightsStatement",
+        "@id": "http://purl.org/coar/access_right/c_abf2"
+    },
+    "psdiDcatExt:furtherInformation": {
+        "rdfs:label": "CCP-NC database - Frequently Asked Questions",
+        "@type": "rdfs:Resource",
+        "@id": "http://www.ccpnc.ac.uk/database/faqs.html"
+    },
+    "psdiDcatExt:logoURL": {
+        "rdfs:label": "CCP-NC logo",
+        "@type": "rdfs:Resource",
+        "@id": "https://raw.githubusercontent.com/PSDI-UK/psdi-common-style/refs/heads/main/store/resource-catalogue-logos/ccpnc-r.svg"
+    },
+    "dcterms:bibliographicCitation": "Please cite: \"Collaborative Computational Project for NMR Crystallography (CCP-NC) MAGRES Database\", https://www.ccpnc.ac.uk/database/, PSDI, accessed on CURRENT_DATE. Please also follow the citation guidelines associated with the assigned licensing of each record, including its MRD number, the creator(s) of the record and any associated publication.",
+    "psdiDcatExt:displayPriority": 2,
+    "dcat:inCatalog": {"@id": "psdiDcat:resource-theme/6e9f15c1-d2b3-444e-9de8-b6a8f530ab0e"},
+    "dcterms:accrualPeriodicity": {
+        "@type": "dcterms:Frequency",
+        "@id": "http://purl.org/cld/freq/irregular"
+    },
+    "dcat:Distribution": {
+        "@id": "psdiDcat:distribution/550b01c7-8a32-4ea9-b7fc-34fae7b887d7",
+        "@type": "dcat:Distribution",
+        "dcterms:title": "Collaborative Computational Project for NMR Crystallography (CCP-NC) Magres Database",
+        "dcat:accessURL": {
+            "rdfs:label": "CCP-NC Database",
+            "@type": "rdfs:Resource",
+            "@id": "http://www.ccpnc.ac.uk/database/"
+        },
+        "dcat:accessService": {"@id": "psdiDcat:service/17bd0bec-94e3-41f2-bae4-bcb8ccc0f7a3"}
+    }
+}

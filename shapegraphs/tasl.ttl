@@ -1,0 +1,110 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://www.earthcube.org/schema#> .
+@prefix family: <http://example.org/family#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+
+
+ex:FAIRF1Group
+    a sh:PropertyGroup ;
+    rdfs:label "F1" ;
+    schema:url
+        "https://www.go-fair.org/fair-principles/fair-data-principles-explained/f1-meta-data-assigned-globally-unique-persistent-identifiers/" ;
+    rdfs:isDefinedBy <https://w3id.org/fair/principles/terms/F1> .
+
+ex:FAIRA1Group
+    a sh:PropertyGroup ;
+    rdfs:label "A1" ;
+    schema:url "https://www.go-fair.org/fair-principles/542-2/" ;
+    rdfs:isDefinedBy <https://w3id.org/fair/principles/terms/A1> .
+
+ex:FAIRA1_1Group
+    a sh:PropertyGroup ;
+    rdfs:label "A1.1" ;
+    schema:url "https://www.go-fair.org/fair-principles/" ;
+    rdfs:isDefinedBy <https://w3id.org/fair/principles/terms/A.11> .
+
+
+# ------------------------------------------
+
+ex:URLShape
+    a sh:NodeShape ;
+    sh:property
+        [
+            sh:name "FAIR F1: URL check" ;
+            sh:group ex:FAIRF1Group ;
+            sh:path schema:url ;
+            sh:maxCount 3 ;
+            sh:minCount 2 ;
+            sh:nodeKind sh:IRIOrLiteral ;
+            sh:severity sh:Violation
+        ] ;
+    sh:message "This needs to be a schema:URL"@en ;
+    sh:targetClass schema:Dataset .
+
+ex:DescriptionShape
+    a sh:NodeShape ;
+    sh:property
+        [
+            sh:name "FAIR A1: Description present and detailed" ;
+            sh:group ex:FAIRA1Group ;
+            sh:path schema:description ;
+            sh:nodeKind sh:Literal ;
+            sh:description "this is a thing";
+            sh:minCount 1 ;
+            sh:minLength 250 ;
+            sh:severity sh:Info
+
+        ] ;
+    sh:message "Needs to be longer than 250 characters"@en ;
+    sh:targetClass schema:Dataset .
+
+ex:NameShape
+    a sh:NodeShape ;
+    sh:property
+        [
+            sh:name "FAIR A1_1: Name present and text" ;
+            sh:group ex:FAIRA1_1Group ;
+            sh:path schema:name ;
+            sh:nodeKind sh:Literal ;
+            sh:minCount 1 ;
+            sh:minLength 50 ;
+            sh:severity sh:Info
+        ] ;
+    sh:message "Needs to be Text"@en ;
+    sh:targetClass schema:Dataset .
+
+ex:NameShapeWarning
+    a sh:NodeShape ;
+    sh:property
+        [
+            sh:name "FAIR A1_1: Name present and text" ;
+            sh:group ex:FAIRA1_1Group ;
+            sh:path schema:name ;
+            sh:nodeKind sh:Literal ;
+            sh:minCount 1 ;
+            sh:minLength 20 ;
+            sh:severity sh:Warning
+        ] ;
+    sh:message "Needs to be Text"@en ;
+    sh:targetClass schema:Dataset .
+
+
+ex:NameShapeViolation
+    a sh:NodeShape ;
+    sh:property
+        [
+            sh:name "FAIR A1_1: Name present and text" ;
+            sh:group ex:FAIRA1_1Group ;
+            sh:path schema:name ;
+            sh:nodeKind sh:Literal ;
+            sh:minCount 1 ;
+            sh:minLength 20 ;
+            sh:severity sh:Violation
+        ] ;
+    sh:message "Needs to be Text"@en ;
+    sh:targetClass schema:Dataset .

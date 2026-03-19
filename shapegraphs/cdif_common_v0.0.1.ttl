@@ -1,0 +1,503 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix soso: <http://science-on-schema.org/1.2.3/validation/shacl#> .
+@prefix cdifd: <http://cdif.org/0.1/validation/shacl#>.
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# SHACL rules for CDIF discovery, based on ESIPFed Science on schema.org
+# SMR 2024-10-14  start modifying SOSO shacl rules
+
+cdifd:DatasetNS1Shape
+    a sh:NodeShape ;
+    sh:targetClass <http://schema.orgDataset> ;
+# check for missing backslash on namespace URI
+    sh:message "Expecting schema.org namespace of <http://schema.org/> not <http://schema.org>"@en ;
+	sh:description "https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/GETTING-STARTED.md#specifying-the-context" ;
+    sh:not [
+        sh:path rdf:type ;
+        sh:minCount 1;
+    ].
+
+cdifd:DatasetNS2Shape
+    a sh:NodeShape ;
+# check for wrong http protocol (https)
+    sh:targetClass <http://schema.org/Dataset> ;
+    sh:message "Expecting schema.org namespace of <http://schema.org/> not <https://schema.org/>"@en ;
+	sh:description "see https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/GETTING-STARTED.md#specifying-the-context" ;
+    sh:not [
+        sh:path rdf:type ;
+        sh:minCount 1;
+    ].
+
+
+
+cdifd:GeoCODESPersonShape
+    a sh:NodeShape ;
+    sh:targetClass schema:Person ;
+	sh:property cdifd:affiliationProperty;
+    sh:property cdifd:nameProperty ;
+	sh:message "A person must a name provided; affiliation to an organization and identifier are strongly recommended."
+	.
+
+cdifd:GeoCODESOrganizationShape
+    a sh:NodeShape ;
+    sh:targetClass schema:Organization ;
+    sh:property cdifd:nameProperty;
+    sh:message "Organization must have a name at least 15 characters long; Make it useful for users!!"
+.
+
+cdifd:affiliationProperty
+# affiliation is always with an organization
+    a sh:PropertyShape ;
+    sh:path schema:affiliation ;
+    sh:class  schema:Organization  ;
+	sh:severity sh:Warning ;
+    sh:message "Optional: an affiliation must have object schema:Organization"
+    .
+
+cdifd:nameProperty
+# names must be a literal, at least 15 char long.
+    a sh:PropertyShape ;
+    sh:path schema:name;
+    sh:nodeKind sh:Literal ;
+	sh:minLength 10 ;
+	sh:severity sh:Warning ;
+    sh:message "a name must be provided, at least 10 char long."
+    .
+
+schema:Thing
+    a rdfs:Class ;
+    a sh:NodeShape ;
+    rdfs:comment "The most generic type of item."^^rdf:HTML ;
+    rdfs:label "Thing" ;
+    rdfs:subClassOf owl:Thing ;
+.
+
+schema:CreativeWork
+    a rdfs:Class ;
+    a sh:NodeShape ;
+    rdfs:subClassOf schema:Thing ;
+.
+
+schema:Dataset
+    a rdfs:Class ;
+    a sh:NodeShape ;
+    #sh:targetClass schema:Dataset ; #Implied, https://www.w3.org/TR/shacl/#implicit-targetClass
+    rdfs:comment "A body of structured information describing some topic(s) of interest."^^rdf:HTML ;
+    rdfs:label "Dataset" ;
+    rdfs:subClassOf schema:CreativeWork ;
+    owl:equivalentClass <http://purl.org/dc/dcmitype/Dataset> ;
+    owl:equivalentClass <http://rdfs.org/ns/void#Dataset> ;
+    owl:equivalentClass <http://www.w3.org/ns/dcat#Dataset> ;
+    sh:message "Dataset validation"@en ;
+    sh:description "https://github.com/ESIPFed/science-on-schema.org/blob/1.2.0/guides/Dataset.md#common-properties" ;
+    sh:property
+#required
+        cdifd:Dataset-identifier ,
+        cdifd:Dataset-title,
+		cdifd:Dataset-license,
+		cdifd:accessLinkProperty,
+		cdifd:DataDownloadNode,
+
+
+#recommended
+		cdifd:Dataset-description,
+        cdifd:Dataset-keywords ,
+		cdifd:Dataset-variableMeasured,
+		cdifd:metadataProperties ;
+
+.
+
+
+# A globally unique, resolvable identifier for the resource described by the metadata record.
+cdifd:IDShape
+    a sh:NodeShape ;
+    sh:targetClass schema:Dataset ;
+    sh:message "Metadata record must have an ID. use the @id property, value is a string that should identifies a the graph node; have to be clear about whether this is the JSON object, or the resource that the JSON object content describes."@en ;
+    sh:description "https://github.com/ESIPFed/science-on-schema.org/blob/1.2.0/guides/Dataset.md#common-properties" ;
+    sh:nodeKind sh:IRI ;
+    .
+
+cdifd:Dataset-identifier
+    a sh:PropertyShape ;
+    sh:path schema:identifier;
+    sh:minCount 1 ;
+    sh:or (
+        [
+            sh:nodeKind sh:Literal ;
+        ]
+        [
+            sh:class schema:URL ;
+        ]
+        [
+            sh:class schema:PropertyValue ;
+        ]
+    );
+    sh:message "A globally unique, resolvable identifier for the resource described by the metadata record is required and must be a URL, Text or schema:PropertyValue"@en ;
+    sh:description "see https://github.com/ESIPFed/science-on-schema.org/blob/1.2.0/guides/Dataset.md#identifier, https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/contentmodel.html#required" ;
+.
+
+# Title (1 entry): Succinct (preferably <250 characters) name of the resource; should be sufficient to uniquely identify the resource for a human user.
+cdifd:Dataset-title
+    a sh:PropertyShape ;
+    sh:path schema:name ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+    sh:message "A title is required for the resource. Succinct (preferably <250 characters) name of the resource; should be sufficient to uniquely identify the resource for a human user."@en ;
+    sh:description "https://github.com/ESIPFed/science-on-schema.org/blob/1.2.0/guides/Dataset.md#common-properties" ;
+.
+
+# Rights (1 to many entry): Information about required access permissions, licences, contractual requirements, use constraints, and security constraints. Might be described in text or through links to external documents.
+cdifd:Dataset-license
+ a sh:PropertyShape ;
+    sh:path ( [ sh:alternativePath ( schema:license schema:conditionsOfAccess ) ] ) ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:message "license items must be a string or URL "@en ;
+.
+
+# Distribution: URL, Distribution object, or Access Instructions (1 entry): If the resource is a digital object accessible online, provide a URL that will retrieve the resource. If the resource has multiple representations, provide a Distribution Object documenting the various options with a URL and representation profile for each. Metadata for distributions through an API that allows query, filter, or processing as part of a data access request are described in the Queryable Distribution Interfaces (API) section, below. If the resource is not accessible online, provide a URL to a landing page used to access the resource, or minimally, provide a text description explaining how to access the resource in the metadata (Access Instructions).
+
+cdifd:accessLinkProperty
+    a sh:PropertyShape ;
+    sh:path [sh:alternativePath ( schema:url
+            (schema:distribution [sh:oneOrMorePath schema:contentUrl] )
+			(schema:distribution [sh:oneOrMorePath schema:text] )			) ] ;
+	sh:minCount 1 ;
+	sh:or (
+		[sh:nodeKind sh:Literal ;]
+		[sh:class schema:URL ;]
+		) ;
+	sh:message "Some web location to access the resource or a representation of the resource must be provided. Alternatively a text element in distribution can provide access instructions. This can be a schema.org url element on the dataset, a distribution/DataDownload/contentUrl or text access information. Use schema.org url in lieu of distribution/../accessURL"@en ;
+    sh:description "https://github.com/earthcube/GeoCODES-Metadata/blob/main/docs/GeoCODES%20Dataset%20Metadata.pdf" ;
+    .
+
+cdifd:DataDownloadNode
+    a sh:NodeShape ;
+	sh:targetClass schema:DataDownload ;
+	sh:property [
+		sh:path [sh:alternativePath ( schema:url  schema:contentUrl schema:text) ] ;
+		sh:minCount 1 ;
+		sh:or (
+			[sh:nodeKind sh:Literal ;]
+			[sh:class schema:URL ; ]
+			) ;
+		sh:message "a distribution MUST provide either a contentUrl for direct data download, a url to access a landing page or order form, or a text description of some other access procedure."@en ;
+		] ;
+    sh:description "https://github.com/earthcube/GeoCODES-Metadata/blob/main/docs/GeoCODES%20Dataset%20Metadata.pdf" ;
+    .
+
+# Resource type (1 to many): A scoped name (label with classification scheme) that specifies the kind of resource described by the metadata. The resource type might be used to determine validation requirements specific to descriptions for that kind of resource.
+
+
+
+#Required, nilable
+
+ # Inform the reader about the resource’s content, context, provenance, and any other information deemed useful for future cross-domain usage.
+cdifd:Dataset-description
+    a sh:PropertyShape ;
+    sh:path schema:description;
+    sh:or (
+       [
+           sh:nodeKind sh:Literal ;
+       ]
+       [
+           sh:class schema:Text ;
+       ]
+    );
+    sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:severity sh:Warning ;
+    sh:message "It is strongly recommended that the metadata include a description property; free text"@en ;
+    sh:description "https://github.com/ESIPFed/science-on-schema.org/blob/1.2.0/guides/Dataset.md#common-properties" ;
+.
+
+# Date (not temporal extent) when the most recent changes to the resource were completed. Use a “year” or ISO 8601 date and time format. Alternative date formatting must be machine-readable and consistent across all datasets.
+cdifd:dateModifiedProperty
+    a sh:PropertyShape ;
+    sh:path schema:dateModified;
+    sh:nodeKind sh:Literal ;
+	sh:severity sh:Info ;
+    sh:message "Please provide date of most recent update to the resource."
+    .
+
+# Distribution Agent
+
+cdifd:responsiblePartyProperty
+    a sh:PropertyShape ;
+    sh:path [sh:alternativePath ( schema:creator schema:editor schema:contributor  schema:publisher ) ]  ;
+    sh:or (  [  sh:class  schema:Person ]
+             [   sh:class  schema:Organization ] )  ;
+	sh:minCount 1;
+   	sh:message "Optional: Recommended practice is to identify at least one responsible party as the source authority for the dataset. Options include  creator, editor, contributor, or publisher. Each is either a schema:Person or schema:Organization and MUST have at least a name." ;
+    sh:description "https://github.com/earthcube/GeoCODES-Metadata/blob/main/docs/GeoCODES%20Dataset%20Metadata.pdf" ;
+    sh:severity sh:Info
+    .
+
+# Statistical Variable
+
+cdifd:variableMeasuredProperty
+    a sh:PropertyShape ;
+    sh:path schema:variableMeasured;
+    sh:class schema:PropertyValue ;
+		sh:property
+		[sh:path schema:name ;
+		sh:datatype xsd:string ;
+		sh:minCount 1;
+		sh:message "the name of the variable as it is labeled in the dataset must be specified"
+		];
+	sh:property
+		[sh:path schema:description ;
+		sh:datatype xsd:string ;
+		sh:minCount 1;
+		sh:severity sh:Info;
+		sh:message "including a description of the variable is strongly recommended"
+		];
+	sh:minCount 0;
+    sh:message "if variable measured is specified, at least one PropertyValue description must be included"
+    .
+
+cdifd:PropertyValue
+    a rdfs:Class ;
+    a sh:NodeShape ;
+    #sh:targetClass schema:PropertyValue
+    rdfs:comment "documentation of a property associated with an entity"^^rdf:HTML ;
+    rdfs:label "PropertyValue" ;
+	sh:property
+        cdifd:PropertyValue-nameOrPropertyID ;
+	.
+
+cdifd:PropertyValue-nameOrPropertyID
+    a sh:PropertyShape ;
+    sh:path  [ sh:alternativePath ( schema:name  schema:propertyID ) ];
+    sh:minCount 1 ;
+	sh:nodeKind sh:Literal ;
+    sh:message "Each property must have a name that matches the label for the property in the dataset, or a propertyID that specifies the semantics (preferably both!)"@en ;
+    sh:description "https://github.com/ESIPFed/science-on-schema.org/blob/1.2.0/guides/Dataset.md#variables"
+.
+
+# Temporal Coverage
+
+cdifd:temporalExtentProperty
+	a sh:PropertyShape ;
+	sh:path schema:temporalCoverage ;
+	sh:or (
+		[sh:class time:ProperInterval ; ]
+		[sh:nodeKind sh:IRIOrLiteral ;]
+          );
+	sh:message "temporalCoverage problem; need either an ISO 8601 dateTime or a time:ProperInterval" ;
+	.
+
+
+cdifd:timeIntervalNode
+	a sh:NodeShape ;
+    sh:targetClass time:ProperInterval ;
+	sh:property
+		[ sh:path time:hasBeginning ;
+		sh:class time:Instant ;
+		sh:minCount 1;
+		sh:message "A time interval must have a beginning "
+		] ;
+	sh:property
+		[ sh:path time:hasEnd ;
+		sh:class time:Instant ;
+		sh:minCount 1;
+		sh:message "A time interval must have an end "
+		]
+	.
+
+cdifd:timeInstantNode
+	a sh:NodeShape;
+	sh:targetClass time:Instant ;
+	sh:property
+		[sh:path [sh:alternativePath ( time:inXSDDateTimeStamp time:inTimePosition) ] ;
+		sh:nodeKind sh:BlankNodeOrLiteral;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+        sh:message "a time instant must be specified by only one of xsd DateTime or a TimePosition"
+		] ;
+	sh:property
+		[sh:path time:inXSDDateTimeStamp ;
+          sh:nodeKind  sh:Literal   ] ;
+	sh:property
+		[sh:path time:inTimePosition ;
+           sh:class time:TimePosition ;
+        	sh:message "inTimePosition must have a TimePosition object as a value"]
+	.
+
+cdifd:timePositionNode
+	a sh:NodeShape;
+	sh:targetClass time:TimePosition ;
+	sh:property
+		[
+		sh:path time:hasTRS ;
+		sh:nodeKind sh:IRIOrLiteral;
+		sh:message "include identifier for the temporal reference system as a string or @id with a URI value"
+		];
+	sh:property
+		[
+		sh:path time:numericPosition;
+		sh:or ( [sh:datatype xsd:integer]
+               [sh:datatype xsd:double] ) ;
+		sh:message "time position MUST have a numeric value"
+		]
+	.
+
+# Geographic Extent
+
+cdifd:spatialExtentProperty
+    a sh:PropertyShape ;
+    sh:path schema:spatialCoverage;
+    sh:minCount 1 ;
+    sh:class schema:Place ;
+      sh:or (  [sh:path schema:geo ;
+                  sh:or (  [  sh:class  schema:GeoCoordinates ]
+                           [  sh:class  schema:GeoShape ] )  ;
+	              sh:minCount 1 ;
+	              sh:message "spatial location MUST be specified eitehr with GeoCoordinates lat/long pairs (for point location), or with GeoShape  Line, Box or Polygon." ;]
+               [sh:path schema:name;
+                  sh:nodeKind sh:Literal;
+                  sh:minCount 1 ]
+      );
+    sh:severity sh:Info ;
+    sh:message "Recommended: provide a spatial coverage description if applicable using schema:Place, either a place name,  point location(s) (GeoCoordinates), or GeoShape (bounding box, line profile location, or polygon)." ;
+    .
+
+ cdifd:geoCoordinatesNode
+	a sh:NodeShape ;
+    sh:targetClass schema:GeoCoordinates ;
+	sh:property [ sh:path schema:latitude ;
+	#pyshacl seems to assume that decimal numbers are xsd:doubles...
+	# pyshacl doesn't seem to pay attention to min and max values
+			sh:or ( [sh:datatype xsd:double ]
+					[sh:datatype xsd:integer ] );
+			sh:minValue -90.0;
+			sh:maxValue 90.0;
+			sh:minCount 1 ] ;
+	sh:property [sh:path schema:longitude ;
+			sh:or ( [sh:datatype xsd:double ]
+					[sh:datatype xsd:integer ] );
+			sh:minValue -180.0;
+			sh:maxValue 180.0;
+			sh:minCount 1 ] ;
+	   sh:message "GeoCoodinates must include latitude between -90 and 90, and longitude between -180 and 180." ;
+	.
+
+  cdifd:geoShapeNode
+	a sh:NodeShape ;
+    sh:targetClass schema:GeoShape ;
+	sh:property
+		[sh:path [sh:alternativePath ( schema:line schema:polygon schema:box) ];
+			sh:datatype xsd:string;
+			sh:minCount 1 ;
+            sh:message "geoshape must include a line, polygon or box geometry as a string of latitude longitude pairs"
+		]
+.
+
+
+# Recommended ****************************************
+
+# Checksum
+
+# Funding
+
+cdifd:responsiblePartyProperty
+    a sh:PropertyShape ;
+    sh:path [sh:alternativePath ( schema:creator schema:editor schema:contributor  schema:publisher ) ]  ;
+    sh:or (  [  sh:class  schema:Person ]
+             [   sh:class  schema:Organization ] )  ;
+	sh:minCount 1;
+   	sh:message "Optional: Recommended practice is to identify at least one responsible party as the source authority for the dataset. Options include  creator, editor, contributor, or publisher. Each is either a schema:Person or schema:Organization and MUST have at least a name." ;
+    sh:description "https://github.com/earthcube/GeoCODES-Metadata/blob/main/docs/GeoCODES%20Dataset%20Metadata.pdf" ;
+    sh:severity sh:Info
+    .
+
+
+# Keywords
+cdifd:Dataset-keywords
+    a sh:PropertyShape ;
+    sh:path schema:keywords ;
+    sh:minCount 1 ;
+    sh:or (
+        [
+            sh:nodeKind sh:Literal ;
+        ]
+        [
+            sh:class schema:DefinedTerm ;
+        ]
+    ) ;
+    sh:severity sh:Info ;
+    sh:message "A Dataset should include descriptive keywords as literal (comma delimited string), an array of literals (strings), a DefinedTerm, or array of DefinedTerm"@en ;
+    sh:description "https://github.com/ESIPFed/science-on-schema.org/blob/1.2.0/guides/Dataset.md#common-properties" ;
+.
+
+cdifd:keywordsNoCommaProperty
+#should throw warning if there is a comma character in a keyword string. Not working... ?WHY?
+    a sh:PropertyShape ;
+    sh:path schema:keywords ;
+	#regex for a string without a comma
+	sh:pattern "^(?!.+,).+" ;
+#	sh:maxCount 0;
+    sh:severity sh:Warning ;
+    sh:message "If there are multiple keywords, they should be in an array; an individual keyword MUST not contain a comma character" ;
+    sh:description "https://github.com/earthcube/GeoCODES-Metadata/blob/main/docs/GeoCODES%20Dataset%20Metadata.pdf" ;
+    .
+
+# Policies
+
+# Publication Date
+cdifd:datePublishedProperty
+    a sh:PropertyShape ;
+    sh:path schema:datePublished;
+    sh:nodeKind sh:Literal ;
+	sh:severity sh:Info ;
+    sh:message "Please provide a publication or release date for the resource."
+    .
+
+# Other related agents
+
+cdifd:responsiblePartyProperty
+    a sh:PropertyShape ;
+    sh:path [sh:alternativePath ( schema:creator schema:editor schema:contributor  schema:publisher ) ]  ;
+    sh:or (  [  sh:class  schema:Person ]
+             [   sh:class  schema:Organization ] )  ;
+	sh:minCount 1;
+   	sh:message "Optional: Recommended practice is to identify at least one responsible party as the source authority for the dataset. Options include  creator, editor, contributor, or publisher. Each is either a schema:Person or schema:Organization and MUST have at least a name." ;
+    sh:description "https://github.com/earthcube/GeoCODES-Metadata/blob/main/docs/GeoCODES%20Dataset%20Metadata.pdf" ;
+    sh:severity sh:Info
+    .
+
+# Related resources
+
+# Version
+
+# Metadata properties  ***************************************
+
+# These elements provide essential information for the operation of a distributed catalogue system with harvesting of metadata between catalogue servers. Values should be populated automatically by metadata creation tools, requiring no user input. Nil values are allowed.
+
+cdifd:metadataProperties
+    a sh:PropertyShape ;
+    sh:path schema:subjectOf ;
+    sh:class schema:DigitalDocument ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:path dcterms:conformsTo ;
+        sh:nodeKind sh:Literal ;
+        sh:hasValue "ex:cdif_SDO_profile_uri" ;
+    ] ;
+    sh:property [
+        sh:path schema:dateModified ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Info ;
+        sh:message "Please provide date of most recent update to the metadata record." ;
+    ] ;
+    sh:severity sh:Info ;
+    sh:message "SubjectOf property with target DigitalDocument has information about the metadata record itself" ;
+    sh:description "https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/contentmodel.html#required-for-metadata-management" ;
+.
