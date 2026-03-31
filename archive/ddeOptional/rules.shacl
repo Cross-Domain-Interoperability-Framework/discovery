@@ -1,0 +1,44 @@
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:          <http://www.w3.org/ns/shacl#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:      <http://schema.org/>.
+@prefix cdifd: <https://cdif.org/validation/0.1/shacl#> .
+@base <https://www.ogc.org/rules/template/> .
+
+# DDE optional properties have no required constraints;
+# informational checks only
+
+cdifd:DDEOptionalDatasetShape a sh:NodeShape ;
+    sh:target [
+      a sh:SPARQLTarget ;
+      sh:prefixes (
+         [ sh:prefix "schema" ; sh:namespace "http://schema.org/" ]
+       );
+    sh:select """
+       PREFIX schema: <http://schema.org/>
+            SELECT ?this
+            WHERE {
+              ?this a schema:Dataset .
+              MINUS {
+                ?parent a schema:Dataset .
+                ?parent ?p ?this .
+                FILTER (?parent != ?this)
+                FILTER (?p != schema:about)
+              }
+            }
+          """ ;
+    ] ;
+    sh:property [
+        sh:path schema:alternateName ;
+        sh:datatype xsd:string ;
+        sh:severity sh:Info ;
+        sh:message "alternate names should be plain text strings" ;
+    ] ;
+    sh:property [
+        sh:path schema:measurementTechnique ;
+        sh:minCount 0 ;
+        sh:severity sh:Info ;
+        sh:message "if possible, provide measurement techniques using DefinedTerms from controlled vocabularies" ;
+    ] ;
+    .

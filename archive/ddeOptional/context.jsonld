@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dde": "https://www.ddeworld.org/resource/"
+  }
+}

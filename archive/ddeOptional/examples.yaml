@@ -1,0 +1,9 @@
+- title: Example DDE optional metadata properties.
+  content: |-
+    Shows optional DDE properties including alternate names, measurement techniques, free-text keywords, and additional type classifications.
+  prefixes:
+    schema: http://schema.org/
+    dde: https://www.ddeworld.org/resource/
+  snippets:
+    - language: json
+      ref: exampleDdeOptional.json

@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "ex": "https://example.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "ex:PersonExample_zZc",
+  "@type": "schema:Person",
+  "schema:alternateName": "Test, Joe",
+  "schema:affiliation": "some organization, schema TBD",
+  "schema:description": "Metadata specialist, based in Portland, Maine",
+  "schema:identifier": {
+    "@type": "schema:PropertyValue",
+    "schema:propertyID": "https://doi.org",
+    "schema:value": "iY",
+    "schema:url": "https://doi.org/iY"
+  },
+  "schema:sameAs": [
+    "https://ark.org/46737",
+    "uri:test:43737"
+  ]
+}

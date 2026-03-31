@@ -1,0 +1,151 @@
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:          <http://www.w3.org/ns/shacl#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:      <http://schema.org/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix cdifd: <https://cdif.org/validation/0.1/shacl#> .
+@base <https://www.ogc.org/rules/template/> .
+
+# Recommended (optional) properties for CDIF discovery metadata.
+# These are warnings, not violations --datasets should have these but are
+# valid without them per cdifCore.
+cdifd:CDIFDatasetOptionalShape
+    a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ;
+        sh:select """
+            PREFIX schema: <http://schema.org/>
+            SELECT ?this
+            WHERE {
+              ?this a schema:Dataset .
+              MINUS {
+                ?parent a schema:Dataset .
+                ?parent ?p ?this .
+                FILTER (?parent != ?this)
+                FILTER (?p != schema:about)
+              }
+            }
+        """ ;
+    ] ;
+    sh:property [
+        sh:path schema:description ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 10 ;
+        sh:severity sh:Warning ;
+        sh:message "A dataset should have a description (schema:description) of at least 10 characters." ;
+    ] ;
+    sh:property [
+        sh:path schema:creator ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "A dataset should identify its creator(s) (schema:creator)." ;
+    ] ;
+    sh:property [
+        sh:path schema:keywords ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "A dataset should have keywords (schema:keywords) for discoverability." ;
+    ] ;
+    sh:message "CDIF optional properties: datasets should have a description, creator, and keywords." ;
+    .
+
+cdifd:keywordsNoCommaTest
+# Keywords can be comma-free strings, DefinedTerms, or IRIs.
+# Warn if a string keyword contains a comma (should be separate array items).
+	a sh:PropertyShape ;
+	sh:path schema:keywords ;
+	sh:or (
+		[sh:datatype xsd:string ; sh:pattern "^[^,]*$" ]
+		[sh:class schema:DefinedTerm ]
+		[sh:nodeKind sh:IRI ]
+	) ;
+	sh:severity sh:Warning ;
+	sh:message "Keywords must be comma-free strings, DefinedTerms, or IRIs; if there are multiple keywords, put them in an array" ;
+	sh:description "https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/schemaorgimplementation.html" ;
+	.
+
+cdifd:relatedResourceProperty
+	a sh:PropertyShape ;
+	sh:path schema:relatedLink;
+	sh:class schema:LinkRole;
+		sh:property [
+			sh:path schema:linkRelationship;
+			sh:or (
+				[sh:nodeKind sh:IRI ]
+				[sh:datatype xsd:string ]
+				[sh:class schema:DefinedTerm ]
+				);
+			sh:minCount 1;
+			sh:message "a link to a related resource must specify the relationship to that resource, with a string label, IRI, or DefinedTerm";
+			];
+		sh:property [
+			sh:path schema:target;
+				sh:class schema:EntryPoint;
+				sh:property [
+					sh:path schema:encodingFormat;
+					sh:datatype xsd:string
+					];
+				sh:property [
+					sh:path schema:name;
+					sh:datatype xsd:string
+					];
+				sh:property [
+					sh:path schema:url;
+					sh:datatype xsd:string;
+					sh:minCount 1;
+					sh:message "a URL must be provided for a link to a related resource";
+					]
+			];
+	sh:minCount 0;
+	sh:severity sh:Info;
+	sh:message "links to related resource use schema:LinkRole, with a linkRelationship (string, IRI, or DefinedTerm), and at least a target schema:url";
+	.
+
+cdifd:creatorListValidation a sh:NodeShape ;
+# validate that creator list entries are Person or Organization.
+# schema:creator uses @list for ordering; the rdf:List wrapper prevents
+# sh:class checks from seeing the Person/Organization types directly,
+# so we use SPARQL to walk the rdf:first/rdf:rest chain.
+	sh:targetClass schema:Dataset ;
+	sh:sparql [
+		a sh:SPARQLConstraint ;
+		sh:severity sh:Info ;
+		sh:message "All creators in the list must be a schema:Person or schema:Organization." ;
+		sh:prefixes (
+			[ sh:prefix "schema" ; sh:namespace "http://schema.org/" ]
+			[ sh:prefix "rdf" ; sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ]
+		) ;
+		sh:select """
+			PREFIX schema: <http://schema.org/>
+			PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+			SELECT $this WHERE {
+				$this schema:creator ?list .
+				?list rdf:rest*/rdf:first ?item .
+				FILTER NOT EXISTS {
+					?item a ?type .
+					FILTER(?type IN (schema:Person, schema:Organization))
+				}
+			}
+		""" ;
+	] .
+
+cdifd:CDIFDiscoveryConformsToShape a sh:NodeShape ;
+    sh:target [
+      a sh:SPARQLTarget ;
+        sh:select  """
+            PREFIX schema: <http://schema.org/>
+            SELECT ?this
+            WHERE {
+            ?this a schema:Dataset ;
+             schema:about ?parent.
+            }
+        """;
+    ] ;
+    sh:property [
+        a sh:PropertyShape ;
+        sh:path dcterms:conformsTo ;
+        sh:hasValue <https://w3id.org/cdif/discovery/1.0/> ;
+        sh:message "Metadata record must declare conformance to the CDIF discovery profile (https://w3id.org/cdif/discovery/1.0/)" ;
+    ] .

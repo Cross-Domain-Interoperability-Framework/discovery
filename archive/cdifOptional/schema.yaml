@@ -1,0 +1,86 @@
+---
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+title: 'Optional properties for CDIF discovery metadata schema, with schema: prefixes'
+description: Building block specifies additional optional properties for CDIF discovery
+  profile beyond the core properties. Includes measurement technique, variables,
+  spatial/temporal coverage, and quality measurements.
+properties:
+  '@context':
+    type: object
+    description: Additional JSON-LD namespace prefixes used by optional CDIF discovery properties.
+    properties:
+      geosparql:
+        const: "http://www.opengis.net/ont/geosparql#"
+      dqv:
+        const: "http://www.w3.org/ns/dqv#"
+      cdi:
+        const: "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/"
+  'schema:measurementTechnique':
+    description: The technique, technology, or methodology used for measurement or determination
+      of the dataset values. Can be a string, a URI reference, a DefinedTerm, or an array
+      combining these.
+    anyOf:
+    - type: string
+    - $ref: '#/$defs/DefinedTerm'
+    - type: array
+      items:
+        anyOf:
+        - type: string
+        - $ref: '#/$defs/DefinedTerm'
+  'schema:variableMeasured':
+    description: What does the dataset measure? (e.g., temperature, pressure)
+    type: array
+    items:
+      anyOf:
+      - $ref: '#/$defs/VariableMeasured'
+      - $ref: '#/$defs/StatisticalVariable'
+  'schema:spatialCoverage':
+    description: To specify location that is the subject of resource content; use schema.org place names,
+      bounding box, point or optional OGC WKT gemetry.
+    type: array
+    items:
+      $ref: '#/$defs/SpatialExtent'
+  'schema:temporalCoverage':
+    description: The time interval during which data was collected or observations were made; or a time
+      period that an activity or collection is linked to intellectually or thematically (for example,
+      1997 to 1998; the 18th century) (see https://documentation.ardc.edu.au/display/DOC/Temporal+coverage).
+      For documentation of Earth Science, Paleobiology or Paleontology datasets, we are interested in
+      the second case-- the time period that data are linked to thematically.
+    type: array
+    items:
+      $ref: '#/$defs/TemporalExtent'
+  'dqv:hasQualityMeasurement':
+    description: Brief information quality measurements reported to assess the resource
+    type: array
+    items:
+      $ref: '#/$defs/QualityMeasure'
+  'schema:subjectOf':
+    properties:
+      'dcterms:conformsTo':
+        type: array
+        items:
+          type: object
+          properties:
+            '@id':
+              type: string
+              description: uri for specifications that this metadata record conforms to
+        minItems: 1
+        contains:
+          type: object
+          properties:
+            '@id':
+              const: 'https://w3id.org/cdif/discovery/1.0/'
+$defs:
+  DefinedTerm:
+    $ref: ../../schemaorgProperties/definedTerm/schema.yaml
+  VariableMeasured:
+    $ref: ../../schemaorgProperties/variableMeasured/schema.yaml
+  StatisticalVariable:
+    $ref: ../../schemaorgProperties/statisticalVariable/schema.yaml
+  SpatialExtent:
+    $ref: ../../schemaorgProperties/spatialExtent/schema.yaml
+  TemporalExtent:
+    $ref: ../../schemaorgProperties/temporalExtent/schema.yaml
+  QualityMeasure:
+    $ref: ../../qualityProperties/qualityMeasure/schema.yaml

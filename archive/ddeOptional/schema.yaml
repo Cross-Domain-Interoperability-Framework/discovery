@@ -1,0 +1,18 @@
+---
+$schema: https://json-schema.org/draft/2020-12/schema
+title: DDE Optional metadata properties
+description: Optional DDE-specific properties that extend CDIF core metadata.
+allOf:
+- $ref: '#/$defs/CdifCore'
+- type: object
+  properties:
+    'schema:alternateName':
+      description: Alternative names or aliases for the resource.
+      anyOf:
+      - type: string
+      - type: array
+        items:
+          type: string
+$defs:
+  CdifCore:
+    $ref: https://cross-domain-interoperability-framework.github.io/metadataBuildingBlocks/_sources/cdifProperties/cdifCore/schema.yaml

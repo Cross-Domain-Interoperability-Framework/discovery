@@ -1,0 +1,33 @@
+{
+    "schema:alternateName": [
+        "OJP Cenozoic Geology",
+        "Greater Ontong Java Plateau Geological Survey"
+    ],
+    "schema:measurementTechnique": [
+        "Field mapping with GPS waypoint collection",
+        {
+            "@type": "schema:DefinedTerm",
+            "schema:name": "Thin Section Petrography",
+            "schema:termCode": "thinSectionPetrography",
+            "schema:inDefinedTermSet": "https://example.org/methods/geology"
+        }
+    ],
+    "schema:keywords": [
+        "Pacific Ocean",
+        {
+            "@type": "schema:DefinedTerm",
+            "schema:name": "Basalt",
+            "schema:identifier": "https://example.org/lithology/basalt",
+            "schema:inDefinedTermSet": "https://example.org/lithology"
+        }
+    ],
+    "schema:additionalType": [
+        "schema:CreativeWork",
+        {
+            "@type": "schema:DefinedTerm",
+            "schema:name": "geological map",
+            "schema:identifier": "http://www.wikidata.org/entity/Q4884234",
+            "schema:inDefinedTermSet": "https://www.wikidata.org"
+        }
+    ]
+}

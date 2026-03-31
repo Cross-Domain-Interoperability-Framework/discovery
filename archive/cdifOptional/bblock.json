@@ -1,0 +1,26 @@
+{
+  "$schema": "metaschema.yaml",
+  "name": "CDIF discovery metadata, Optional elements",
+  "abstract": "Definition of optional metadata elements for CDIF discovery profile. Defines properties: schema:description, schema:additionalType, schema:sameAs, schema:version, schema:inLanguage, schema:datePublished, schema:relatedLink, schema:publishingPrinciples, schema:keywords, schema:creator, schema:contributor, schema:publisher, schema:provider, schema:funding, schema:variableMeasured, schema:spatialCoverage, schema:temporalCoverage, prov:wasGeneratedBy, prov:wasDerivedFrom, dqv:hasQualityMeasurement, schema:distribution. At this level prov:wasGeneratedBy uses the simple generatedBy pattern (string or @id references only); the extended cdifProvActivity pattern (instruments, agents, temporal bounds) is introduced at the CDIFcomplete profile level or by domain-specific building blocks. Uses building blocks: labeledLink (schemaorgProperties), identifier (schemaorgProperties), definedTerm (schemaorgProperties), person (schemaorgProperties), organization (schemaorgProperties), agentInRole (schemaorgProperties), funder (schemaorgProperties), variableMeasured (schemaorgProperties), spatialExtent (schemaorgProperties), temporalExtent (schemaorgProperties), generatedBy (provProperties), derivedFrom (provProperties), qualityMeasure (qualityProperties), dataDownload (schemaorgProperties), webAPI (schemaorgProperties).",
+  "status": "under-development",
+  "dateTimeAddition": "2025-10-23T00:00:00Z",
+  "itemClass": "schema",
+  "register": "cdif-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2026-03-03",
+  "sources": [
+    {
+      "title": "schema.org",
+      "link": "https://schema.org/Dataset"
+    },
+    {
+      "title": "Cross Domain Interoperability Framework Discovery Profile",
+      "link": "https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/discovery.html"
+    }
+  ],
+  "maturity": "draft",
+  "scope": "unstable",
+  "tags": [
+    "templates"
+  ]
+}

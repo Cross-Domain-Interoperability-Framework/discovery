@@ -1,0 +1,132 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "ex": "https://example.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "ex:cdifOptional_23578",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Bathymetry Bay of Biscay",
+  "schema:identifier": "https://doi.org/23566/aslry",
+  "schema:additionalType": [
+    ""
+  ],
+  "schema:description": "description of resource",
+  "schema:version": "1.0",
+  "schema:url": "https://example.org/landingPage254266",
+  "schema:inLanguage": "en",
+  "schema:dateModified": "2022-12-12",
+  "schema:datePublished": "2021-11-14",
+  "schema:license": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "schema:conditionsOfAccess": [
+    {
+      "@id": "ex:LabeledLinkExample_qZc",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "conditions of access statement",
+      "schema:description": "URL to get the document",
+      "schema:url": "https://example.org/conditions/2342747"
+    }
+  ],
+  "schema:relatedLink": [
+    {
+      "@type": [
+        "schema:LinkRole"
+      ],
+      "schema:linkRelationship": "related data",
+      "target": {
+        "@type": [
+          "schema:EntryPoint"
+        ],
+        "schema:encodingFormat": "image/jpg",
+        "schema:name": "Image of seafloor geology map, bay of Biscay",
+        "schema:url": "https://example.org/geology/baybiscay"
+      }
+    },
+    {
+      "@type": [
+        "schema:LinkRole"
+      ],
+      "schema:linkRelationship": {
+        "@type": [
+          "schema:DefinedTerm"
+        ],
+        "schema:name": "related dataset",
+        "schema:inDefinedTermSet": "https://www.iana.org/assignments/link-relations/",
+        "schema:termCode": "related"
+      },
+      "target": {
+        "@type": [
+          "schema:EntryPoint"
+        ],
+        "schema:name": "Bay of Biscay current velocity dataset",
+        "schema:url": "https://example.org/currents/baybiscay"
+      }
+    }
+  ],
+  "schema:publishingPrinciples": [
+    "https://example.org/principles/3478"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Example, Author",
+        "schema:identifier": "https://orcid.org/0000-0001-2345-6789",
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:email": "author@example.org"
+        }
+      }
+    ]
+  },
+  "schema:contributor": [
+    {
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:roleName": "editor",
+      "schema:contributor": {
+        "@id": "ex:PersonExample_zZc",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Joe B. Test",
+        "schema:identifier": {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "https://orcid.org",
+          "schema:value": "0000-0002-9876-5432",
+          "schema:url": "https://orcid.org/0000-0002-9876-5432"
+        },
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:email": "joe@example.org"
+        }
+      }
+    }
+  ],
+  "schema:keywords": [
+    "bathymetry",
+    "ocean floor"
+  ],
+  "schema:subjectOf": {
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "metaschema.yaml",
+  "name": "Optional Fields for DDE Geoscience Metadata",
+  "abstract": "DDE profile optional properties beyond CDIF optional: alternate names, measurement techniques, and additional unconstrained keywords and types. Defines properties: schema:alternateName, schema:measurementTechnique, schema:keywords, schema:additionalType. Uses building blocks: definedTerm (schemaorgProperties).",
+  "status": "under-development",
+  "dateTimeAddition": "2026-02-28T00:00:00Z",
+  "itemClass": "schema",
+  "register": "cdif-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2026-02-28",
+  "link": "https://github.com/opengeospatial/bblock-template",
+  "sources": [
+    {
+      "title": "DDE Metadata Standard",
+      "link": "https://www.ddeworld.org"
+    }
+  ],
+  "maturity": "draft",
+  "scope": "unstable",
+  "tags": [
+    "templates"
+  ]
+}
