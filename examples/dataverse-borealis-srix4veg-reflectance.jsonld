@@ -1,0 +1,388 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://doi.org/10.5683/SP3/WXLSK3",
+  "schema:identifier": "https://doi.org/10.5683/SP3/WXLSK3",
+  "schema:name": "SRIX4VEG: Surface Reflectance Intercomparison Exercise for Vegetation - NRC, ARSL, NEO",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "J. Pablo",
+        "schema:familyName": "Arroyo-Mora",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "National Research Council Canada"
+        },
+        "schema:sameAs": [
+          "https://orcid.org/0000-0003-0287-8960"
+        ],
+        "@id": "https://orcid.org/0000-0003-0287-8960",
+        "schema:identifier": "https://orcid.org/0000-0003-0287-8960",
+        "schema:name": "Arroyo-Mora, J. Pablo"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Margaret",
+        "schema:familyName": "Kalacska",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "McGill University"
+        },
+        "schema:sameAs": [
+          "https://orcid.org/0000-0002-1676-481X"
+        ],
+        "@id": "https://orcid.org/0000-0002-1676-481X",
+        "schema:identifier": "https://orcid.org/0000-0002-1676-481X",
+        "schema:name": "Kalacska, Margaret"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Raymond",
+        "schema:familyName": "Soffer",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "National Research Council Canada"
+        },
+        "schema:sameAs": [
+          "https://orcid.org/0000-0001-6279-5871"
+        ],
+        "@id": "https://orcid.org/0000-0001-6279-5871",
+        "schema:identifier": "https://orcid.org/0000-0001-6279-5871",
+        "schema:name": "Soffer, Raymond"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Oliver",
+        "schema:familyName": "Lucanus",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "McGill University"
+        },
+        "schema:sameAs": [
+          "https://orcid.org/0000-0002-2534-2977"
+        ],
+        "@id": "https://orcid.org/0000-0002-2534-2977",
+        "schema:identifier": "https://orcid.org/0000-0002-2534-2977",
+        "schema:name": "Lucanus, Oliver"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Trond",
+        "schema:familyName": "Løke",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "Norsk Elektro Optikk · HySpex"
+        },
+        "schema:sameAs": [
+          "https://www.scopus.com/authid/detail.uri?authorId=13105303000"
+        ],
+        "@id": "https://www.scopus.com/authid/detail.uri?authorId=13105303000",
+        "schema:identifier": "https://www.scopus.com/authid/detail.uri?authorId=13105303000",
+        "schema:name": "Løke, Trond"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Julio",
+        "schema:familyName": "Hernandez",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "Norsk Elektro Optikk · HySpex"
+        },
+        "schema:sameAs": [
+          "https://www.scopus.com/authid/detail.uri?authorId=57193745302"
+        ],
+        "@id": "https://www.scopus.com/authid/detail.uri?authorId=57193745302",
+        "schema:identifier": "https://www.scopus.com/authid/detail.uri?authorId=57193745302",
+        "schema:name": "Hernandez, Julio"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Dennis",
+        "schema:familyName": "Adamek",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "Norsk Elektro Optikk · HySpex"
+        },
+        "schema:name": "Adamek, Dennis"
+      }
+    ]
+  },
+  "schema:author": [
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "J. Pablo",
+      "schema:familyName": "Arroyo-Mora",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "National Research Council Canada"
+      },
+      "schema:sameAs": [
+        "https://orcid.org/0000-0003-0287-8960"
+      ],
+      "@id": "https://orcid.org/0000-0003-0287-8960",
+      "schema:identifier": "https://orcid.org/0000-0003-0287-8960",
+      "schema:name": "Arroyo-Mora, J. Pablo"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Margaret",
+      "schema:familyName": "Kalacska",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "McGill University"
+      },
+      "schema:sameAs": [
+        "https://orcid.org/0000-0002-1676-481X"
+      ],
+      "@id": "https://orcid.org/0000-0002-1676-481X",
+      "schema:identifier": "https://orcid.org/0000-0002-1676-481X",
+      "schema:name": "Kalacska, Margaret"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Raymond",
+      "schema:familyName": "Soffer",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "National Research Council Canada"
+      },
+      "schema:sameAs": [
+        "https://orcid.org/0000-0001-6279-5871"
+      ],
+      "@id": "https://orcid.org/0000-0001-6279-5871",
+      "schema:identifier": "https://orcid.org/0000-0001-6279-5871",
+      "schema:name": "Soffer, Raymond"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Oliver",
+      "schema:familyName": "Lucanus",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "McGill University"
+      },
+      "schema:sameAs": [
+        "https://orcid.org/0000-0002-2534-2977"
+      ],
+      "@id": "https://orcid.org/0000-0002-2534-2977",
+      "schema:identifier": "https://orcid.org/0000-0002-2534-2977",
+      "schema:name": "Lucanus, Oliver"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Trond",
+      "schema:familyName": "Løke",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Norsk Elektro Optikk · HySpex"
+      },
+      "schema:sameAs": [
+        "https://www.scopus.com/authid/detail.uri?authorId=13105303000"
+      ],
+      "@id": "https://www.scopus.com/authid/detail.uri?authorId=13105303000",
+      "schema:identifier": "https://www.scopus.com/authid/detail.uri?authorId=13105303000",
+      "schema:name": "Løke, Trond"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Julio",
+      "schema:familyName": "Hernandez",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Norsk Elektro Optikk · HySpex"
+      },
+      "schema:sameAs": [
+        "https://www.scopus.com/authid/detail.uri?authorId=57193745302"
+      ],
+      "@id": "https://www.scopus.com/authid/detail.uri?authorId=57193745302",
+      "schema:identifier": "https://www.scopus.com/authid/detail.uri?authorId=57193745302",
+      "schema:name": "Hernandez, Julio"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Dennis",
+      "schema:familyName": "Adamek",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Norsk Elektro Optikk · HySpex"
+      },
+      "schema:name": "Adamek, Dennis"
+    }
+  ],
+  "schema:datePublished": "2023-11-10",
+  "schema:dateModified": "2023-11-10",
+  "schema:version": "1",
+  "schema:description": "Over the last ten years, the Applied Remote Sensing Laboratory (ARSL, McGill University) in collaboration with the National Research Council of Canada's Flight Research Laboratory (FRL), has been implementing cutting-edge unmanned aerial vehicle (UAV) hyperspectral systems for diverse applications (e.g., biodiversity, subaquatic vegetation, wildfires), with a significant focus on satellite product validation methodologies for northern ecosystems – e.g. peatlands. SRIX4Veg is endorsed by CEOS (Committee on Earth Observation Satellites) and is funded by the European Space Agency (ESA). The ARSL, FRL and Norsk Elektro Optikk HySpex teamed up to participate in the SRIX4VEG: Surface Reflectance Intercomparison Exercise for Vegetation experiment, at the Las Tiesas Experimental Station, Barrax, Spain. This intercomparison experiment included teams from Europe, US and Canada, aiming to develop a protocol for best practices for UAV hyperspectral image acquisition for satellite land product validation within ESA’s Fiducial Reference Measurements for Vegetation (FRM4VEG) project. Here we summarize the imagery acquired by our team during the field campaign at the July 18-22, 2022 field campaign. Meta data includes a description of the imagery acquired under the user-defined methodology. A future update will include metadata for the imagery acquired under the common experiment parameters defined by the organizers.",
+  "schema:keywords": [
+    "Earth and Environmental Sciences",
+    "hyperspectral",
+    "remotely piloted aircraft system",
+    "drone",
+    "SRIX4Veg",
+    "QA4EO",
+    "satellite validation",
+    "IDEAS-QA4EO"
+  ],
+  "schema:temporalCoverage": [
+    "2022-07-18/2022-07-21"
+  ],
+  "schema:license": [
+    "http://creativecommons.org/licenses/by/4.0"
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "Borealis",
+    "schema:url": "https://borealisdata.ca"
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Borealis"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Borealis"
+    }
+  ],
+  "schema:funder": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "European Space Agency"
+    },
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "European Space Agency"
+    },
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Natural Sciences and Engineering Research Council Canada"
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Barrax, Albacete, Spain, Las Tiesas Experimental Farm"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "README_user_defined_experiment.txt",
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:contentSize": 1165,
+      "schema:description": "Attribution, contact information and metadata",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/665216"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.5683/SP3/WXLSK3#metadata",
+    "schema:name": "GeoCodes metadata record for: SRIX4VEG: Surface Reflectance Intercomparison Exercise for Vegetation - NRC, ARSL, NEO",
+    "schema:about": {
+      "@id": "https://doi.org/10.5683/SP3/WXLSK3"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+  }
+}

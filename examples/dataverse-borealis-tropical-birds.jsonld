@@ -1,0 +1,279 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://doi.org/10.5683/SP2/SX9D6Y",
+  "schema:identifier": "https://doi.org/10.5683/SP2/SX9D6Y",
+  "schema:name": "Data from: Basal metabolism in tropical birds: latitude, altitude, and the “pace of life”",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Gustavo A.",
+        "schema:familyName": "Londoño",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "University of California System"
+        },
+        "schema:name": "Londoño, Gustavo A."
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Mark A.",
+        "schema:familyName": "Chappell",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "Harvard University"
+        },
+        "schema:name": "Chappell, Mark A."
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "María del Rosario",
+        "schema:familyName": "Castañeda",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "Harvard University"
+        },
+        "schema:name": "Castañeda, María del Rosario"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Jill E.",
+        "schema:familyName": "Jankowski",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "University of British Columbia"
+        },
+        "schema:name": "Jankowski, Jill E."
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Scott K.",
+        "schema:familyName": "Robinson",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "University of Florida"
+        },
+        "schema:name": "Robinson, Scott K."
+      }
+    ]
+  },
+  "schema:author": [
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Gustavo A.",
+      "schema:familyName": "Londoño",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "University of California System"
+      },
+      "schema:name": "Londoño, Gustavo A."
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Mark A.",
+      "schema:familyName": "Chappell",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Harvard University"
+      },
+      "schema:name": "Chappell, Mark A."
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "María del Rosario",
+      "schema:familyName": "Castañeda",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Harvard University"
+      },
+      "schema:name": "Castañeda, María del Rosario"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Jill E.",
+      "schema:familyName": "Jankowski",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "University of British Columbia"
+      },
+      "schema:name": "Jankowski, Jill E."
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Scott K.",
+      "schema:familyName": "Robinson",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "University of Florida"
+      },
+      "schema:name": "Robinson, Scott K."
+    }
+  ],
+  "schema:datePublished": "2021-05-19",
+  "schema:dateModified": "2021-05-19",
+  "schema:version": "1",
+  "schema:description": "Abstract1. Life history varies across latitudes, with the ‘pace of life’ being ‘slower’ in tropical regions. Because life history is coupled to energy metabolism via allocation tradeoffs and links between performance capacity and energy use, low metabolic intensity is expected in tropical animals. Low metabolism has been reported for lowland tropical birds, but it is unclear if this is due to ‘slow’ life history or to a warm, stable environment. 2. We measured Basal Metabolic Rates (BMR) of 253 bird species across a 2.6 km altitude gradient in Peru. We predicted higher BMR at high altitude due to lower temperatures leading to elevated thermoregulatory costs. We also tested for BMR differences between widely separated tropical regions (Peru and Panama), and between tropical- and temperate-breeding birds. 3. We found no effect of altitude on BMR in Peruvian species and no difference in BMR between Peruvian and Panamanian birds, suggesting that BMR in Neotropical birds is consistent and independent of environmental temperature. In a dataset encompassing more than 500 species, tropical birds had significantly lower BMR than temperate-breeding birds. 4. In contrast to several recent analyses, we found higher BMR in passerine birds than in non-passerines, independent of breeding latitude. 5. Breeding latitude affects BMR, but diversity in avian life history within and between temperate and tropical regions may explain some of the residual variation in BMR after accounting for body mass and breeding latitude. Future studies of links between life history, metabolism, and environmental factors might benefit from examining these variables within individual species as well as across broad geographic contrasts.\nUsage notesMCC_base on_5000_treesThis tree is the summary of 5000 trees downloaded from http://birdtree.org. The birdtree.org website accompanies the following study: Jetz W, Thomas GH, Joy JB, Hartmann K, Mooers AO (2012) The global diversity of birds in space and time. Nature 491: 444-448. http://dx.doi.org/10.1038/nature11631, and the Jetz et al. article in Nature should be cited in the primary reference list of any publication that uses data culled from birdtree.orgSuplementary Material_Tables",
+  "schema:keywords": [
+    "Other",
+    "life-history",
+    "energy metabolism"
+  ],
+  "schema:citation": [
+    {
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Article",
+      "@id": "https://doi.org/10.1111/1365-2435.12348",
+      "schema:identifier": "https://doi.org/10.1111/1365-2435.12348",
+      "schema:url": "https://doi.org/10.1111/1365-2435.12348"
+    }
+  ],
+  "schema:license": [
+    "http://creativecommons.org/publicdomain/zero/1.0"
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "Borealis",
+    "schema:url": "https://borealisdata.ca"
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Borealis"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Borealis"
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Andes mountains"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "dryad_vg313.json",
+      "schema:encodingFormat": [
+        "text/plain;charset=UTF-8"
+      ],
+      "schema:contentSize": 4595,
+      "schema:description": "Original JSON from Dryad",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/151379"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "MCC_base on_5000_trees_Londono et al. .tre",
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:contentSize": 320719,
+      "schema:description": "This tree is the summary of 5000 trees downloaded from http://birdtree.org. The birdtree.org website accompanies the following study: Jetz W, Thomas GH, Joy JB, Hartmann K, Mooers AO (2012) The global diversity of birds in space and time. Nature 491: 444-448. http://dx.doi.org/10.1038/nature11631, and the Jetz et al. article in Nature should be cited in the primary reference list of any publication that uses data culled from birdtree.org",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/151377"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Suplementary Material_Tables .docx",
+      "schema:encodingFormat": [
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ],
+      "schema:contentSize": 293588,
+      "schema:description": "",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/151378"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.5683/SP2/SX9D6Y#metadata",
+    "schema:name": "GeoCodes metadata record for: Data from: Basal metabolism in tropical birds: latitude, altitude, and the “pace of life”",
+    "schema:about": {
+      "@id": "https://doi.org/10.5683/SP2/SX9D6Y"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+  }
+}

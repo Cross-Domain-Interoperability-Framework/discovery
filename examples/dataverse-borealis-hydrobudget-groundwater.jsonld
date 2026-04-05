@@ -1,0 +1,461 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://doi.org/10.5683/SP3/EUDV3H",
+  "schema:identifier": "https://doi.org/10.5683/SP3/EUDV3H",
+  "schema:name": "HydroBudget – Groundwater recharge model in R",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Emmanuel",
+        "schema:familyName": "Dubois",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "UQAM | Université du Québec à Montréal"
+        },
+        "schema:sameAs": [
+          "https://orcid.org/0000-0003-4896-6368"
+        ],
+        "@id": "https://orcid.org/0000-0003-4896-6368",
+        "schema:identifier": "https://orcid.org/0000-0003-4896-6368",
+        "schema:name": "Dubois, Emmanuel"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Marie",
+        "schema:familyName": "Larocque",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "UQAM | Université du Québec à Montréal"
+        },
+        "schema:sameAs": [
+          "https://orcid.org/0000-0001-9906-3535"
+        ],
+        "@id": "https://orcid.org/0000-0001-9906-3535",
+        "schema:identifier": "https://orcid.org/0000-0001-9906-3535",
+        "schema:name": "Larocque, Marie"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Sylvain",
+        "schema:familyName": "Gagne",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "UQAM | Université du Québec à Montréal"
+        },
+        "schema:name": "Gagne, Sylvain"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Guillaume",
+        "schema:familyName": "Meyzonnat",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "UQAM | Université du Québec à Montréal"
+        },
+        "schema:name": "Meyzonnat, Guillaume"
+      }
+    ]
+  },
+  "schema:author": [
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Emmanuel",
+      "schema:familyName": "Dubois",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "UQAM | Université du Québec à Montréal"
+      },
+      "schema:sameAs": [
+        "https://orcid.org/0000-0003-4896-6368"
+      ],
+      "@id": "https://orcid.org/0000-0003-4896-6368",
+      "schema:identifier": "https://orcid.org/0000-0003-4896-6368",
+      "schema:name": "Dubois, Emmanuel"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Marie",
+      "schema:familyName": "Larocque",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "UQAM | Université du Québec à Montréal"
+      },
+      "schema:sameAs": [
+        "https://orcid.org/0000-0001-9906-3535"
+      ],
+      "@id": "https://orcid.org/0000-0001-9906-3535",
+      "schema:identifier": "https://orcid.org/0000-0001-9906-3535",
+      "schema:name": "Larocque, Marie"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Sylvain",
+      "schema:familyName": "Gagne",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "UQAM | Université du Québec à Montréal"
+      },
+      "schema:name": "Gagne, Sylvain"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Guillaume",
+      "schema:familyName": "Meyzonnat",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "UQAM | Université du Québec à Montréal"
+      },
+      "schema:name": "Meyzonnat, Guillaume"
+    }
+  ],
+  "schema:datePublished": "2021-11-10",
+  "schema:dateModified": "2023-07-26",
+  "schema:version": "5",
+  "schema:description": "HydroBudget (HB) is a spatially distributed groundwater recharge (GWR) model that computes a superficial water budget on grid cells with outputs aggregated into monthly time steps. It was developed as an accessible and computationally affordable model to simulate GWR over large areas (thousands of km2, regional-scale watersheds) and for long time periods (decades), in cold and humid climates. The model is coded in R and was developed at UQAM by the team of Pr Marie Larocque’s research Chair (Water and land conservation) as part of a project funded by the Quebec Ministry of the Environment (Ministère de l’Environnement et de la Lutte contre les changements climatiques - MELCC). Results of GWR simulation over southern Quebec (Canada) with HB are presented in Dubois et al. (2021). Le model script is provided with an application example for the Petite du Chene River in southern Quebec and a User-guide. As of July 2023, the further development of the HydroBudget model will be included in the rechaRge package. More information can be found here: https://www.epfl.ch/labs/lch/research/water-and-groundwater-management/recharge-an-r-package-for-integrated-groundwater-recharge-modelling-in-r/ Additionally, the development of the code can now be followed here: https://github.com/gwrecharge",
+  "schema:keywords": [
+    "Earth and Environmental Sciences",
+    "Groundwater. Hydrogeology",
+    "Hydrogeology",
+    "Groundwater recharge",
+    "HydroBudget model",
+    "R",
+    "Hydrogéologie",
+    "Eau souterraine--Alimentation",
+    "R (Langage de programmation)",
+    "Recharge nappe",
+    "Recharge des aquifères souterrains"
+  ],
+  "schema:citation": [
+    {
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Dubois, E., Larocque, M., Gagné, S. et Meyzonnat, G. (2021). Simulation of long-term spatiotemporal variations in regional-scale groundwater recharge: contributions of a water budget approach in cold and humid climates. Hydrology and Earth System Sciences, 25(12), 6567‑6589.",
+      "@id": "https://hess.copernicus.org/articles/25/6567/2021/",
+      "schema:identifier": "https://hess.copernicus.org/articles/25/6567/2021/",
+      "schema:url": "https://hess.copernicus.org/articles/25/6567/2021/"
+    },
+    {
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Dubois, E., Larocque, M., Gagné, S. et Meyzonnat, G. (2021). HydroBudget User Guide: Version 1.2. Université du Québec à Montréal. Département des sciences de la Terre et de l’atmosphère.",
+      "@id": "https://archipel.uqam.ca/14075/",
+      "schema:identifier": "https://archipel.uqam.ca/14075/",
+      "schema:url": "https://archipel.uqam.ca/14075/"
+    }
+  ],
+  "schema:license": [
+    "http://creativecommons.org/licenses/by/4.0"
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "Borealis",
+    "schema:url": "https://borealisdata.ca"
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Borealis"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Borealis"
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Québec, Canada, Petite du Chene River watershed"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "HB_user_guide_1.2.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 1320057,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/273962"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "READ_ME.txt",
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:contentSize": 14581,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/631171"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "00-demonstration_HB.Rproj",
+      "schema:encodingFormat": [
+        "application/octet-stream"
+      ],
+      "schema:contentSize": 218,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234918"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "01-hydrobudget.R",
+      "schema:encodingFormat": [
+        "type/x-r-syntax"
+      ],
+      "schema:contentSize": 4803,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234914"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "alpha_lyne_hollick.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 48,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234922"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "input_climate.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 7777704,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234926"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "input_rcn.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 53739,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234930"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "input_rcn_gauging.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 38304,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234939"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "observed_flow.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 495862,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234928"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "01-river_flow_data_processing.R",
+      "schema:encodingFormat": [
+        "type/x-r-syntax"
+      ],
+      "schema:contentSize": 2633,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234911"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "02-HB_function.R",
+      "schema:encodingFormat": [
+        "type/x-r-syntax"
+      ],
+      "schema:contentSize": 25202,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/285685"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "L_watercourse_NRCAN_petite_riv_du_chene_NAD83.zip",
+      "schema:encodingFormat": [
+        "application/zipped-shapefile"
+      ],
+      "schema:contentSize": 11297,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234931"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "P_gauging_stations_petite_riv_du_chene_NAD83.zip",
+      "schema:encodingFormat": [
+        "application/zipped-shapefile"
+      ],
+      "schema:contentSize": 1582,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234904"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "R_RCN_NAD83.tif",
+      "schema:encodingFormat": [
+        "image/tiff"
+      ],
+      "schema:contentSize": 13657,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234927"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "S_climate_grid_petite_riv_du_chene_NAD83.zip",
+      "schema:encodingFormat": [
+        "application/zipped-shapefile"
+      ],
+      "schema:contentSize": 2180,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234916"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "S_gauging_station_watersheds_NAD83.zip",
+      "schema:encodingFormat": [
+        "application/zipped-shapefile"
+      ],
+      "schema:contentSize": 11185,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234938"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "S_grid_gauging_petite_riv_du_chene_NAD83.zip",
+      "schema:encodingFormat": [
+        "application/zipped-shapefile"
+      ],
+      "schema:contentSize": 97158,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234912"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "S_grid_petite_riv_du_chene_NAD83.zip",
+      "schema:encodingFormat": [
+        "application/zipped-shapefile"
+      ],
+      "schema:contentSize": 66520,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234915"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "S_watershed_petite_riv_du_chene_simul_NAD83.zip",
+      "schema:encodingFormat": [
+        "application/zipped-shapefile"
+      ],
+      "schema:contentSize": 26733,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234924"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.5683/SP3/EUDV3H#metadata",
+    "schema:name": "GeoCodes metadata record for: HydroBudget – Groundwater recharge model in R",
+    "schema:about": {
+      "@id": "https://doi.org/10.5683/SP3/EUDV3H"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+  }
+}

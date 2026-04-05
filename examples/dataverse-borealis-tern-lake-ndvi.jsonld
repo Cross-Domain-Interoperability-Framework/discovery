@@ -1,0 +1,196 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://doi.org/10.5683/SP3/K1JWSO",
+  "schema:identifier": "https://doi.org/10.5683/SP3/K1JWSO",
+  "schema:name": "Tern Lake thermal area Landsat NDVI data",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Robert",
+        "schema:familyName": "Bogue",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "McGill University"
+        },
+        "schema:sameAs": [
+          "https://orcid.org/0000-0001-5921-0561"
+        ],
+        "@id": "https://orcid.org/0000-0001-5921-0561",
+        "schema:identifier": "https://orcid.org/0000-0001-5921-0561",
+        "schema:name": "Bogue, Robert"
+      }
+    ]
+  },
+  "schema:author": [
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Robert",
+      "schema:familyName": "Bogue",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "McGill University"
+      },
+      "schema:sameAs": [
+        "https://orcid.org/0000-0001-5921-0561"
+      ],
+      "@id": "https://orcid.org/0000-0001-5921-0561",
+      "schema:identifier": "https://orcid.org/0000-0001-5921-0561",
+      "schema:name": "Bogue, Robert"
+    }
+  ],
+  "schema:datePublished": "2023-08-16",
+  "schema:dateModified": "2023-08-16",
+  "schema:version": "1",
+  "schema:description": "This dataset is a series of .csv files with the zonal statistics for the various areas described in Bogue et al., 2023. Full citation will be added upon publication. All information about how these statistics were calculated and where the various areas are can be found in the manuscript.",
+  "schema:keywords": [
+    "Earth and Environmental Sciences"
+  ],
+  "schema:citation": [
+    {
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Citation to be added upon publication."
+    }
+  ],
+  "schema:license": [
+    "http://creativecommons.org/licenses/by/4.0"
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "Borealis",
+    "schema:url": "https://borealisdata.ca"
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Borealis"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Borealis"
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Wyoming, United States, Yellowstone National Park"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Background1_statistics.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 18131,
+      "schema:description": "NDVI statistics for the first background area",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/640774"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Background2_statistics.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 17384,
+      "schema:description": "NDVI statistics for the second background area",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/640773"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Background3_statistics.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 17128,
+      "schema:description": "NDVI statistics for the third background area",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/640777"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "TLTA_all_date_list.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 2192,
+      "schema:description": "List of the dates of every image used in the study",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/640775"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "TLTA_statistics.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 18150,
+      "schema:description": "NDVI statistics for the Tern Lake thermal area",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/640776"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.5683/SP3/K1JWSO#metadata",
+    "schema:name": "GeoCodes metadata record for: Tern Lake thermal area Landsat NDVI data",
+    "schema:about": {
+      "@id": "https://doi.org/10.5683/SP3/K1JWSO"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+  }
+}

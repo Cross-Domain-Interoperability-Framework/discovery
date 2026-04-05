@@ -1,0 +1,276 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://doi.org/10.5683/SP/TPB5ID",
+  "schema:identifier": "https://doi.org/10.5683/SP/TPB5ID",
+  "schema:name": "Gold Standard Snapshot Serengeti Bounding Box Coordinates",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Stefan",
+        "schema:familyName": "Schneider",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "School of Computer Science. College of Engineering and Physical Sciences. University of Guelph."
+        },
+        "schema:name": "Schneider, Stefan"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Stefan",
+        "schema:familyName": "Kremer",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "School of Computer Science. College of Engineering and Physical Sciences. University of Guelph."
+        },
+        "schema:name": "Kremer, Stefan"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Graham",
+        "schema:familyName": "Taylor",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "School of Engineering. College of Engineering and Physical Sciences. University of Guelph."
+        },
+        "schema:sameAs": [
+          "https://orcid.org/0000-0001-5867-3652"
+        ],
+        "@id": "https://orcid.org/0000-0001-5867-3652",
+        "schema:identifier": "https://orcid.org/0000-0001-5867-3652",
+        "schema:name": "Taylor, Graham"
+      }
+    ]
+  },
+  "schema:author": [
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Stefan",
+      "schema:familyName": "Schneider",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "School of Computer Science. College of Engineering and Physical Sciences. University of Guelph."
+      },
+      "schema:name": "Schneider, Stefan"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Stefan",
+      "schema:familyName": "Kremer",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "School of Computer Science. College of Engineering and Physical Sciences. University of Guelph."
+      },
+      "schema:name": "Kremer, Stefan"
+    },
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Graham",
+      "schema:familyName": "Taylor",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "School of Engineering. College of Engineering and Physical Sciences. University of Guelph."
+      },
+      "schema:sameAs": [
+        "https://orcid.org/0000-0001-5867-3652"
+      ],
+      "@id": "https://orcid.org/0000-0001-5867-3652",
+      "schema:identifier": "https://orcid.org/0000-0001-5867-3652",
+      "schema:name": "Taylor, Graham"
+    }
+  ],
+  "schema:datePublished": "2018-03-22",
+  "schema:dateModified": "2025-01-07",
+  "schema:version": "2",
+  "schema:description": "To contribute to the terrific work done by the Snapshot Serengeti community to provide bounding box coordinates for the Gold Standard Snapshot Serengeti dataset for the purpose of training deep learning object detectors to detect, localize, and classify species from camera trap images.",
+  "schema:keywords": [
+    "Computer and Information Science",
+    "Engineering",
+    "Machine learning",
+    "Object detection",
+    "Image and video acquisition",
+    "Biogeography",
+    "Species diversity",
+    "camera traps",
+    "object detection",
+    "bounding boxes",
+    "Snapshot Serengeti",
+    "ecology",
+    "deep learning"
+  ],
+  "schema:citation": [
+    {
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Schneider, S., Kremer, S, C., Taylor, W., G. (2018). Deep Learning Object Detection Methods for Ecological Camera Trap Data. Conference on Computer and Robot Vision. https://arxiv.org/abs/1803.10842.",
+      "@id": "https://arxiv.org/abs/1803.10842",
+      "schema:identifier": "https://arxiv.org/abs/1803.10842",
+      "schema:url": "https://arxiv.org/abs/1803.10842"
+    }
+  ],
+  "schema:temporalCoverage": [
+    "2010/2016"
+  ],
+  "schema:license": [
+    "http://creativecommons.org/licenses/by/4.0"
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "Borealis",
+    "schema:url": "https://borealisdata.ca"
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Borealis"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Borealis"
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Africa"
+    },
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Tanzania, United Republic of, Serengeti"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "GoldStandardBoundBoxCoord.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 1080510,
+      "schema:description": "Bounding box cooridinates for the Gold Standard Snapshot Serengeti dataset.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/63072"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "GoldStandardSnapshotSerengeti_Images_Pt1.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 1528546954,
+      "schema:description": "Images from SnapshotSafari.org, accessed under a CC0 Creative Commons licence.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/71294"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "GoldStandardSnapshotSerengeti_Images_Pt2.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 1391329468,
+      "schema:description": "Images from SnapshotSafari.org, accessed under a CC0 Creative Commons licence.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/71295"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "GoldStandardSnapshotSerengeti_Info.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 2027093,
+      "schema:description": "Snapshot Serengeti labels for all, test and train sets.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/71293"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "ReconyxCameraTrapData.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 401949260,
+      "schema:description": "Reconyx Camera Trap data set. The source of this data set is Yu et al. (2013).",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/71292"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.5683/SP/TPB5ID#metadata",
+    "schema:name": "GeoCodes metadata record for: Gold Standard Snapshot Serengeti Bounding Box Coordinates",
+    "schema:about": {
+      "@id": "https://doi.org/10.5683/SP/TPB5ID"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+  }
+}

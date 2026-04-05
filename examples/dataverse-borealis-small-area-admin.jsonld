@@ -1,0 +1,1990 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://doi.org/10.5683/SP3/VPLJTK",
+  "schema:identifier": "https://doi.org/10.5683/SP3/VPLJTK",
+  "schema:name": "Small Area and Administrative Data, 1989-2011 [Canada] [Excel]",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Statistics Canada"
+      }
+    ]
+  },
+  "schema:author": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Statistics Canada"
+    }
+  ],
+  "schema:datePublished": "2017-01-16",
+  "schema:dateModified": "2023-09-28",
+  "schema:version": "2",
+  "schema:description": "Small Area and Administrative Data are derived from the annual tax file provided by Canada Revenue Agency. From the income tax forms submitted each year by Canadians, a wealth of economic and demographic information is available. Files include data on Families, Labour Income, Economic Dependency, Seniors, RRSP Contributions and Neighbourhood Income and Demographics. Geographic coverage is by Nation, Province/Territory, Postal Area and by Census Metropolitan Area (CMA).",
+  "schema:keywords": [
+    "Social Sciences",
+    "Business and Financial",
+    "Age",
+    "Contributions",
+    "Dependency",
+    "Family type",
+    "Gender",
+    "Income",
+    "Investment",
+    "Marital status",
+    "Room",
+    "Seniors",
+    "Tax",
+    "Transfers"
+  ],
+  "schema:temporalCoverage": [
+    "1989/2011"
+  ],
+  "schema:license": [
+    "https://borealisdata.ca/api/datasets/:persistentId/versions/2.0/customlicense?persistentId=doi:10.5683/SP3/VPLJTK"
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "Borealis",
+    "schema:url": "https://borealisdata.ca"
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Borealis"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Borealis"
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Canada"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2008cfaguide_e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 208141,
+      "schema:description": "User Guide 2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17230"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2008famguide_e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 249149,
+      "schema:description": "User Guide 2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17122"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2008senguide_e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 288478,
+      "schema:description": "User Guide 2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17111"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2008_edp_lfi_nid_guide_e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 319207,
+      "schema:description": "User Guide 2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17087"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "donguide2003_e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 855924,
+      "schema:description": "User Guide 2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17106"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "donguide2005_e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 115753,
+      "schema:description": "User Guide 2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17110"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "lipguide_e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 355524,
+      "schema:description": "User Guide 2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17091"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad1999megid.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 44425,
+      "schema:description": "User Guide 2011",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17212"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad_edpgid.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 356290,
+      "schema:description": "User Guide 2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17077"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad_famgidv2.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 190050,
+      "schema:description": "User Guide 2002",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17124"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad_nidgidv4.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 169191,
+      "schema:description": "User Guide 2002",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17139"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "senguide_e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 383074,
+      "schema:description": "User Guide 2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17114"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "04-05mig_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 118784,
+      "schema:description": "1997-2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17219"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "04Invmt_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 48128,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17164"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "05Invmt_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 29696,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17166"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004donors_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 48640,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17101"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004famv2_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 398848,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17128"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004gains_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 25600,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17227"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004inv_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 48640,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17157"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004lip_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 60416,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17099"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004nid_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 435200,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17134"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004rrsp_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 49152,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17172"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004sav_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 48640,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17185"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004seniors_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 236032,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17116"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004taxf_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 34304,
+      "schema:description": "2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17191"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2005donors_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 31744,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17104"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2005inv_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 33792,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17146"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2005rrsp_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 34304,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17167"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2005sav_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 29696,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17188"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2005taxf_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 27136,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17192"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2005_gains_ef.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 23040,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17225"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2008-cfa.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 30720,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17232"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2009-cfa.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 34304,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17231"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "edp-layouts.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 108544,
+      "schema:description": "Layouts",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17079"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "layouts.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 11144,
+      "schema:description": "Layouts",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17102"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-don-dat2004-1990.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 123904,
+      "schema:description": "1990-2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17100"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-don-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 30720,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17107"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-don-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 39424,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17108"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-don-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 52736,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17103"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-don-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 42496,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17109"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-don-dat2010.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 46080,
+      "schema:description": "2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17105"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-edp-dat2002.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 52224,
+      "schema:description": "2002",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17080"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-edp-dat2004-cma.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 58368,
+      "schema:description": "2004 (CMA)",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17086"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-edp-dat2005.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 36352,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17082"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-edp-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 42496,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17081"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-edp-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 40960,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17085"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-edp-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 46080,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17084"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-edp-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 39936,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17088"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-fam-dat2000-1995.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 1959566,
+      "schema:description": "1995-2000",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17131"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-fam-dat2001.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 839168,
+      "schema:description": "2001",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17130"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-fam-dat2002v2.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 832512,
+      "schema:description": "2002",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17129"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-fam-dat2003v2.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 558448,
+      "schema:description": "2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17125"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-fam-dat2005.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 398336,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17121"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-fam-dat2006v2.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 489472,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17126"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-fam-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 418304,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17127"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-fam-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 425984,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17123"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-fam-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 500736,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17120"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-gains-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 20992,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17226"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-gains-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 29696,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17223"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-gains-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 29696,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17222"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-gains-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 32256,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17220"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-gains-dat2010.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 27136,
+      "schema:description": "2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17221"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-inv-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 38400,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17145"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-inv-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 33280,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17155"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-inv-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 43008,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17154"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-inv-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 40960,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17144"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-inv-dat2010.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 42496,
+      "schema:description": "2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17149"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-invmt-dat2001-1995.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 47750,
+      "schema:description": "1995-2001",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17158"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-invmt-dat2003-1999.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 45512,
+      "schema:description": "1999-2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17165"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-invmt-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 38400,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17159"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-invmt-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 44032,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17163"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-invmt-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 43008,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17162"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-invmt-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 45056,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17160"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-invmt-dat2010.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 42496,
+      "schema:description": "2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17161"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-inv_t01.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 52736,
+      "schema:description": "1999-2003: 1",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17148"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-inv_t02.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 58368,
+      "schema:description": "1999-2003: 2",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17150"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-inv_t03.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 54272,
+      "schema:description": "1999-2003: 3",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17152"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-inv_t04.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 55296,
+      "schema:description": "1999-2003: 4",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17156"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-lip-dat2001.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 56320,
+      "schema:description": "2001",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17090"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-lip-dat2002.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 59392,
+      "schema:description": "2002",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17094"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-lip-dat2005.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 48640,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17095"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-lip-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 48128,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17098"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-lip-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 39936,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17096"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-lip-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 44032,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17097"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-lip-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 30720,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17092"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat1997-1999.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 1007406,
+      "schema:description": "1997-1999",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17218"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2000-1999.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 90624,
+      "schema:description": "1999-2000",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17207"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2001-2000.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 90112,
+      "schema:description": "2000-2001",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17217"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2002-2001.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 279552,
+      "schema:description": "2001-2002",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17209"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2003-2002.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 233984,
+      "schema:description": "2002-2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17213"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2004-2003.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 118784,
+      "schema:description": "2003-2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17214"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2006-2005.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 121856,
+      "schema:description": "2005-2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17210"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2007-2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 163328,
+      "schema:description": "2006-2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17208"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2008-2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 175104,
+      "schema:description": "2007-2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17216"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2009-2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 148480,
+      "schema:description": "2008-2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17215"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-migr-dat2009-2010.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 143872,
+      "schema:description": "2009-2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17211"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-nid-dat2000-1995.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 750795,
+      "schema:description": "1995-2000",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17142"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-nid-dat2001.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 314368,
+      "schema:description": "2001",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17133"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-nid-dat2002.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 325632,
+      "schema:description": "2002",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17135"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-nid-dat2003.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 220695,
+      "schema:description": "2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17132"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-nid-dat2005.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 219648,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17137"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-nid-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 227328,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17136"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-nid-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 257024,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17140"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-nid-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 247296,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17138"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-nid-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 258560,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17141"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspc-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 45056,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17169"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspc-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 44544,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17176"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspc-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 52736,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17178"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspc-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 45568,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17179"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspc-dat2010.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 42496,
+      "schema:description": "2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17171"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspr-dat2003-1995.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 32587,
+      "schema:description": "1995-2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17203"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspr-dat2004to2000.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 22957,
+      "schema:description": "2000-2004",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17201"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspr-dat2005_ver2.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 31232,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17205"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspr-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 21504,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17199"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspr-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 24064,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17206"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspr-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 24576,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17204"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspr-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 43008,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17202"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspr-dat2010.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 31232,
+      "schema:description": "2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17198"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-rrspr-dat2011.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 31232,
+      "schema:description": "2011",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17200"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-sav-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 33280,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17187"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-sav-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 41984,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17184"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-sav-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 41984,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17186"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-sav-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 39936,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17183"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-sav-dat2010.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 46080,
+      "schema:description": "2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17182"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-seniors-dat2003-1995.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 792558,
+      "schema:description": "1995-2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17117"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-seniors-dat2005.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 119808,
+      "schema:description": "2005",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17115"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-seniors-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 147456,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17113"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-seniors-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 134144,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17119"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-seniors-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 140288,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17118"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-seniors-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 161792,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17112"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-taxf-dat2002-1995.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 28961,
+      "schema:description": "1995-2002",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17193"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-taxf-dat2003-1999.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 23808,
+      "schema:description": "1999-2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17194"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-taxf-dat2006.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 31744,
+      "schema:description": "2006",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17190"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-taxf-dat2007.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 34304,
+      "schema:description": "2007",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17197"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-taxf-dat2008.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 34816,
+      "schema:description": "2008",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17195"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-taxf-dat2009.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 36864,
+      "schema:description": "2009",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17196"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad-taxf-dat2010.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 37376,
+      "schema:description": "2010",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17189"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saad2002ccgrcl.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 53248,
+      "schema:description": "Layouts",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17229"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadedpdat2003.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 96768,
+      "schema:description": "2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17083"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadedpv2.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 434176,
+      "schema:description": "1989-2001",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17078"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadgains98to2002.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 103936,
+      "schema:description": "1998-2002",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17224"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadgains99to2003.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 103424,
+      "schema:description": "1999-2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17228"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadinv_t01.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 69632,
+      "schema:description": "1995-2002: 1",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17153"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadinv_t02.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 83456,
+      "schema:description": "1995-2002: 2",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17147"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadinv_t03.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 76288,
+      "schema:description": "1995-2002: 3",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17143"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadinv_t04.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 61952,
+      "schema:description": "1995-2002: 4",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17151"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadlfipv2.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 368128,
+      "schema:description": "1989-2000",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17089"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadlip.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 105984,
+      "schema:description": "2003",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17093"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadrrspc_t01.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 64000,
+      "schema:description": "1995-2002:1",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17175"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadrrspc_t02.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 82944,
+      "schema:description": "1995-2002: 2",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17168"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadrrspc_t03.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 76288,
+      "schema:description": "1995-2002: 3",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17177"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadrrspc_t04.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 61952,
+      "schema:description": "1995-2002: 4",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17173"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadrrsp_t01.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 49152,
+      "schema:description": "1999-2003: 1",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17170"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadrrsp_t02.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 59904,
+      "schema:description": "1999-2003: 2",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17181"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadrrsp_t03.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 56320,
+      "schema:description": "1999-2003: 3",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17180"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "saadrrsp_t04.xls",
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel"
+      ],
+      "schema:contentSize": 54784,
+      "schema:description": "1999-2003: 4",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17174"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.5683/SP3/VPLJTK#metadata",
+    "schema:name": "GeoCodes metadata record for: Small Area and Administrative Data, 1989-2011 [Canada] [Excel]",
+    "schema:about": {
+      "@id": "https://doi.org/10.5683/SP3/VPLJTK"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+  }
+}
