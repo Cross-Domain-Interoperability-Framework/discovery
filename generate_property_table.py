@@ -16,7 +16,7 @@ from openpyxl.styles import Font, PatternFill, Alignment
 ###############################################################################
 # Configuration
 ###############################################################################
-BB_ROOT = r'C:\Users\smrTu\OneDrive\Documents\GithubC\CDIF\metadataBuildingBlocksFork\_sources'
+BB_ROOT = r'C:\Users\smrTu\OneDrive\Documents\GithubC\CDIF\metadataBuildingBlocks\_sources'
 CROSSWALK = r'C:\Users\smrTu\OneDrive\Documents\GithubC\CDIF\Discovery\CDIF-metadata-crosswalks-merged.xlsx'
 
 crosswalk_desc = {}
