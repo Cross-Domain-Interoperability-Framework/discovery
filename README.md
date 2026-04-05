@@ -18,15 +18,24 @@ This repository contains the specification, examples, validation tools, and docu
 
 The profile builds on Dublin Core, schema.org, ISO 19115-1, DCAT, DDI-CDI, and FDO Kernel Attributes.
 
+## Examples
+
+The `examples/` directory contains 26+ validated JSON-LD dataset examples that conform to the CDIF Discovery profile. Sources include:
+
+- **GeoCodes** — 10 records harvested from EarthCube GeoCodes (BCO-DMO, PANGAEA, EarthChem, SEANOE, etc.)
+- **NCEI NOAA** — 7 records (GHCN Daily, Global Temperature, Sea Surface Temperature, etc.)
+- **Copernicus CDS** — 3 records (ERA5 reanalysis, sea level, sea ice)
+- **Dataverse** — 13 records from Harvard Dataverse and Borealis (hydrology, ecology, remote sensing, etc.)
+- **Pre-existing CDIF/ESIP/ODIS** — 6 converted reference examples
+
+All examples declare `conformsTo` for both `core/1.0` and `discovery/1.0` and pass CDIFDiscoveryProfile JSON Schema validation. See [examples/README.md](examples/README.md) for details.
+
 ## Repository structure
 
 ```
-├── examples/               CDIF Discovery profile examples (16 validated JSON-LD files)
-│                           Includes GeoCodes-harvested records and converted SOSO/ODIS examples
-├── API-discovery/          API representation guidance (potentialAction, SearchAction, EntryPoint)
-├── archive/                Archived schemas, historical crosswalks, legacy serialization examples,
-│                           and superseded SHACL shapes (now generated in the validation repo)
+├── examples/               CDIF Discovery profile examples (26+ validated JSON-LD files)
 ├── CDIFDiscoveryProfile-rules.shacl   Current SHACL shapes (synced from metadataBuildingBlocks)
+├── API-discovery/          API representation guidance (potentialAction, SearchAction, EntryPoint)
 ├── archive/                Archived schemas, crosswalks, legacy serialization and SHACL shapes
 ├── images/                 Diagrams (harvesting workflows, metadata embedding, digital object overview)
 ├── CDIF-Discovery-vs-SOSO-comparison.md   Comparison with ESIP Science-on-Schema.org
@@ -43,7 +52,13 @@ The profile builds on Dublin Core, schema.org, ISO 19115-1, DCAT, DDI-CDI, and F
 
 **`CDIFDiscoveryProfile-rules.shacl`** contains the current SHACL shapes for the CDIF Discovery profile. This file is copied from [`metadataBuildingBlocks/_sources/profiles/cdifProfiles/CDIFDiscoveryProfile/rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/profiles/cdifProfiles/CDIFDiscoveryProfile/rules.shacl) and should be updated whenever the source changes.
 
-Full validation tools (JSON Schema framing, batch validation, composite SHACL shapes) are in the [validation repository](https://github.com/Cross-Domain-Interoperability-Framework/validation). Legacy hand-written SHACL shapes (CDIF v0.0.1, SOSO, Google Dataset Search) are preserved in `archive/shapegraphs/`.
+Full validation tools (JSON Schema framing, batch validation, composite SHACL shapes) are in the [validation repository](https://github.com/Cross-Domain-Interoperability-Framework/validation):
+- `validate_conformance.py` — validates JSON-LD against claimed CDIF profiles
+- `geocodes_harvester.py` — harvests and converts metadata from GeoCodes and other repositories
+- `FrameAndValidate.py` — JSON-LD framing and JSON Schema validation
+- `batch_validate.py` — batch validation across file groups
+
+Legacy hand-written SHACL shapes (CDIF v0.0.1, SOSO, Google Dataset Search) are preserved in `archive/shapegraphs/`.
 
 ## License
 
