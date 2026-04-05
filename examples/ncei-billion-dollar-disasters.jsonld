@@ -1,0 +1,572 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:alternateName": "NCEI Accession 0209268",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Smith, Adam B.",
+        "schema:url": "https://orcid.org/0000-0003-2573-3609"
+      }
+    ]
+  },
+  "schema:dateCreated": "2020-03-17",
+  "schema:dateModified": "2025-01-21",
+  "schema:datePublished": "2020-03-17",
+  "schema:description": "The NOAA National Centers for Environmental Information ceased providing support for this product in May 2025 in response to an initiative to implement reductions within the U.S. federal government. This dataset contains U.S. disaster cost assessments of the total, direct losses ($) inflicted by: tropical cyclones, inland floods, drought & heat waves, severe local storms (i.e., tornado, hail, straight-line wind damage), wildfires, crop freeze events and winter storms. These assessments require input from a variety of public and private data sources including: the Insurance Services Office (ISO) Property Claim Services (PCS), Federal Emergency Management Agency (FEMA) National Flood Insurance Program (NFIP) and Presidential Disaster Declaration (PDD) assistance, and the United States Department of Agriculture (USDA) National Agricultural Statistics Service (NASS) & Risk Management Agency (RMA), the National Interagency Fire Center (NIFC) and state agency reporting, among others. Each of these data sources provides unique information as part of the overall disaster loss assessment.",
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "Navigate directly to the URL for data access and direct download.",
+      "disambiguatingDescription": "download (HTTPS)",
+      "schema:url": "https://www.ncei.noaa.gov/archive/accession/download/209268",
+      "schema:contentUrl": "https://www.ncei.noaa.gov/archive/accession/download/209268"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "These data are available through the File Transfer Protocol (FTP). FTP is no longer supported by most internet browsers. You may copy and paste the FTP link to the data into an FTP client (e.g., FileZilla or WinSCP).",
+      "disambiguatingDescription": "download (FTP)",
+      "schema:url": "ftp://ftp-oceans.ncei.noaa.gov/nodc/archive/arc0153/0209268/",
+      "schema:contentUrl": "ftp://ftp-oceans.ncei.noaa.gov/nodc/archive/arc0153/0209268/"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "https://doi.org/10.25921/stkw-7w73",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:name": "DOI: 10.25921/stkw-7w73",
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.25921/stkw-7w73",
+    "schema:value": "doi:10.25921/stkw-7w73"
+  },
+  "image": {
+    "@type": [
+      "schema:ImageObject"
+    ],
+    "caption": "Preview graphic",
+    "schema:contentUrl": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0209268",
+    "schema:url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0209268"
+  },
+  "schema:keywords": [
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:name": "EARTH SCIENCE > HUMAN DIMENSIONS > SOCIOECONOMICS",
+      "schema:url": "https://cmr.earthdata.nasa.gov/kms/concept/a96e6cd6-0f35-491d-8198-7551d03e1cbc"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatypes",
+      "schema:name": "SOCIOECONOMIC",
+      "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatype/details/471"
+    },
+    "Texas Hail Storms (April 2021)",
+    "Southeast, Ohio Valley and Northeast Severe Weather (February 2019)",
+    "Midwest, South and East Severe Weather (June 2009)",
+    "Hurricane Elena (September 1985)",
+    "Rockies/Central/East Severe Weather (June 2010)",
+    "Central and Eastern Severe Weather (May 2020)",
+    "Hurricane Isaac (August 2012)",
+    "Central and Northeastern Severe Weather (May 2018)",
+    "Texas, New Mexico, Arizona Wildfires (Summer-Fall 2011)",
+    "Western/Central Drought and Heatwave (Summer-Fall 2020)",
+    "Central Severe Storms (July 2021)",
+    "North Central and Ohio Valley Hail Storms and Severe Weather (April 2020)",
+    "California Wildfires (Fall 1993)",
+    "Western Wildfires (Summer 2007)",
+    "Hurricane Andrew (August 1992)",
+    "Southeast/Ohio Valley Tornadoes (March 2012)",
+    "Colorado Hail Storm and Central Severe Weather (May 2017)",
+    "Severe Storms, Hail, Tornadoes (May 2004)",
+    "Tropical Storm Lee (September 2011)",
+    "Severe Storms and Hail (June 1984)",
+    "Hurricane Ike (September 2008)",
+    "Midwest/Southeast/Northeast Winter Storm, Cold Wave (January 1982)",
+    "Southeast Winter Storm (January 2000)",
+    "North Texas Hail Storm (March 2016)",
+    "Tropical Storm Alberto (July 1994)",
+    "Rockies/Central Plains Severe Weather (June 2014)",
+    "Central and Eastern Winter storm, Cold Wave (February 2015)",
+    "Midwest/Plains/East Tornadoes (May 2013)",
+    "Southeast Tornadoes and Severe Weather (March 2021)",
+    "Western/Eastern Severe Weather and Flooding (Winter-Spring 1998)",
+    "Winter Storm, Cold Wave (December 1989)",
+    "Hurricane Frances (September 2004)",
+    "Numerous Wildfires (2006)",
+    "Mississippi and Ohio Valley Severe Weather and Flooding (March 1997)",
+    "Texas and Oklahoma Flooding and Severe Weather (May 2015)",
+    "Southern Severe Weather (April 2020)",
+    "Hurricane Lili (October 2002)",
+    "Northeast Flooding (March 2010)",
+    "East/South Flooding and Severe Weather (May 2010)",
+    "Southern Plains Tornadoes (May 2015)",
+    "Freeze, Cold Wave (December 1983)",
+    "Midwest/Plains/Northeast Tornadoes (May 2013)",
+    "Hurricane Dolly (July 2008)",
+    "U.S. Wildfires (Fall 2008)",
+    "Spring Freeze (April 2007)",
+    "Hurricane Fran (September 1996)",
+    "Missouri River flooding (May-June 2011)",
+    "Western Wildfires - California, Oregon, Washington Firestorms (Fall 2020)",
+    "U.S. Drought (Spring-Summer 1991)",
+    "Southeast Freeze (March 2017)",
+    "South/Southeast Tornadoes (April 2016)",
+    "Texas Hail Storm (March 2019)",
+    "Hurricane Juan (October 1985)",
+    "Midwest/Plains/Southeast Tornadoes (April 1982)",
+    "Southeast and Eastern Tornado Outbreak (April 2020)",
+    "Rockies/Southwest Severe Weather (June 2012)",
+    "Southeast/Ohio Valley Severe Weather (February 2009)",
+    "Severe Storms and Tornadoes (April 2002)",
+    "Severe Storms (March 1992)",
+    "Hurricane Bob (August 1991)",
+    "Northwest, Central, Eastern Winter Storm and Cold Wave (February 2021)",
+    "California Freeze (January 2007)",
+    "Southern Severe Weather (March 2000)",
+    "Central and Northeast Severe Weather (June 2015)",
+    "Central and Eastern Severe Weather (May 2018)",
+    "South/Southeast Severe Weather and Tornadoes (April 2009)",
+    "Central Severe Weather - Derecho (August 2020)",
+    "California and Alaska Wildfires (Summer-Fall 2019)",
+    "Hurricane Isabel (September 2003)",
+    "Western/Eastern Drought/Heatwave (Summer-Fall 2007)",
+    "Colorado Flooding (September 2013)",
+    "Mississippi River, Midwest and Southern Flooding (July 2019)",
+    "Southern and Eastern Tornadoes and Severe Weather (April 2018)",
+    "Midwest/Southeast Tornadoes (April 6-8, 2006)",
+    "Northeast Ice Storm (January 1998)",
+    "Southeast Severe Weather (March 2005)",
+    "Midwest/Plains Severe Weather (July 2003)",
+    "Hurricane Sandy (October 2012)",
+    "Midwest Flooding (Summer 1993)",
+    "Hurricane Delta (October 2020)",
+    "North/Central Texas Hail Storm (April 2016)",
+    "Central and Eastern Winter Storm (January 1999)",
+    "Northern Plains Flooding (Spring 1997)",
+    "U.S. Drought/Heatwave (Summer 1988)",
+    "Southern Severe Weather (March 2016)",
+    "Western Drought (2014)",
+    "South and Southeast Severe Weather (April 2015)",
+    "Southeast Drought (Summer 1983)",
+    "Southern Drought/Heat Wave (Summer 1998)",
+    "Eastern Severe Weather (March 2021)",
+    "Ohio Valley Tornadoes (November 2013)",
+    "Central Severe Weather (July 2020)",
+    "U.S. Drought (2008)",
+    "Minnesota Hail Storm and Upper Midwest Severe Weather (June 2017)",
+    "Missouri River and North Central Flooding (March 2019)",
+    "Northeast Flooding (June 2006)",
+    "Tropical Storm Imelda (September 2019)",
+    "Hurricane Allen (August 1980)",
+    "Severe Storms, Hail (June 1992)",
+    "Colorado Hail Storms (July 2019)",
+    "Rockies/Plains Severe Weather (September 2014)",
+    "Midwest/Plains Tornadoes (April 1994)",
+    "Western and Alaskan Wildfires (Summer-Fall 2015)",
+    "California Freeze (December 1990)",
+    "Louisiana Flooding (August 2016)",
+    "Southeast Severe Weather (March 2013)",
+    "East/South Severe Weather and Flooding (April 2007)",
+    "Southeast Tornadoes and Severe Weather (February 2008)",
+    "Western Drought (2015)",
+    "Midwest Tornadoes (April 2006)",
+    "Pacific Northwest Severe Flooding (February 1996)",
+    "Midwest/Ohio Valley Severe Weather (April 2015)",
+    "Hurricane Michael (October 2018)",
+    "Severe Storms/Hail (April 2003)",
+    "Tennessee Tornadoes and Southeast Severe Weather (March 2020)",
+    "Oklahoma, Kansas, and Texas Tornadoes and Severe Weather (May 2010)",
+    "Hurricane Marilyn (September 1995)",
+    "Hurricane Bonnie (August 1998)",
+    "North Central Severe Weather (August 2021)",
+    "South/Southeast Severe Weather (April 2015)",
+    "West Coast Flooding (December 1996-January 1997)",
+    "Minnesota Severe Storms/Hail (May 1998)",
+    "Southern Severe Weather (April 2008)",
+    "Western/Plains Drought/Heatwave (Spring-Fall 2013)",
+    "Midwest Tornadoes and Severe Weather (May 2008)",
+    "Southeast/Ohio Valley/Midwest Tornadoes (April 2011)",
+    "U.S. Drought (Spring-Fall 2002)",
+    "Texas Hail Storm (June 2018)",
+    "Hurricane Katrina (August 2005)",
+    "Western Fire Season (Spring-Summer 2000)",
+    "Hurricane Gloria (September 1985)",
+    "South, Central and Eastern Severe Weather (May 2020)",
+    "Tornadoes, Severe Storms, Floods (Spring 1984)",
+    "Severe Storms and Tornadoes (March 2006)",
+    "South Carolina and East Coast Flooding (October 2015)",
+    "Midwest Tornado Outbreak (March 2017)",
+    "Gulf States Storms and Flooding (December 1982-January 1983)",
+    "Southern Severe Storms and Flooding (April 1980)",
+    "California Flooding (January-March 1995)",
+    "Western, Central and Northeast Severe Weather (January 2008)",
+    "Severe Storms/Tornadoes (May 2003)",
+    "Western Wildfires (Summer-Fall 2021)",
+    "Southeast Tornadoes (March 2008)",
+    "Hurricane Sally (September 2020)",
+    "Tropical Storm Frances (September 1998)",
+    "Hurricane Laura (August 2020)",
+    "Hurricane Erin (August 1995)",
+    "Tropical Storm Eta (November 2020)",
+    "Western Wildfires, California Firestorm (Summer-Fall 2017)",
+    "Midwest/Southeast Tornadoes (March 2009)",
+    "Hurricane Florence (September 2018)",
+    "Hurricane Dennis (July 2005)",
+    "Central Severe Weather (October 2006)",
+    "Texas Tornadoes (April 2012)",
+    "Texas Tornadoes and Midwest Flooding (December 2015)",
+    "California Wildfires (Fall 2003)",
+    "Midwest/Plains/Southeast Drought (Spring-Summer 2006)",
+    "Oklahoma and Kansas Tornadoes (May 1999)",
+    "Hurricane Iniki (September 1992)",
+    "Severe Storms, Flash Floods, Hail, Tornadoes (May 1981)",
+    "West/Northeast/Southeast Drought (2016)",
+    "Hurricane Charley (August 2004)",
+    "Hurricane Matthew (October 2016)",
+    "Southern Tornado Outbreak and Western Storms (January 2017)",
+    "Midwest/Southeast Tornadoes and Severe Weather (June 2011)",
+    "Southeast Drought/Heat Wave (Summer 1993)",
+    "Southern Severe Weather (February 2013)",
+    "Northern Plains Drought (Summer-Fall 1989)",
+    "California Flooding and Severe Weather (January 2021)",
+    "South, East and Northeast Severe Weather (February 2020)",
+    "Hail, Tornadoes (April 1992)",
+    "Hurricane Opal (October 1995)",
+    "Midwest and Ohio Valley Severe Weather (March 2020)",
+    "Colorado Hail Storm (July 2009)",
+    "Colorado Hail Storm (June 2018)",
+    "East Coast Blizzard and Severe Weather (March 1993)",
+    "Hurricane Nicholas (September 2021)",
+    "Hurricane Hugo (September 1989)",
+    "Virginia, West Virginia, Pennsylvania and Maryland Flooding (November 1985)",
+    "Southeast Tornadoes and Northern Storms and Flooding (January 2020)",
+    "Hurricane Zeta (October 2020)",
+    "Arkansas River Flooding (June 2019)",
+    "Western/Central Drought/Heatwave (Spring-Fall 2003)",
+    "Southeast Severe Weather (November 1992)",
+    "Texas Flooding (October 1994)",
+    "Florida Freeze (January 1981)",
+    "Midwest/Plains Severe Weather (April 2013)",
+    "Florida Freeze (December 1989)",
+    "California Freeze (December 1998)",
+    "Hurricane Jeanne (September 2004)",
+    "Western Fire Season (Fall 2002)",
+    "Southeast Ice Storm (February 1994)",
+    "Winter Storm, Cold Wave (January 1985)",
+    "Hurricane Irene (August 2011)",
+    "Hurricane Irma (September 2017)",
+    "Severe Storms, Tornadoes (June 1998)",
+    "Texas and Oklahoma Severe Weather (April 2021)",
+    "South Plains Severe Weather (May 1995)",
+    "South Texas Hail Storms (May 2020)",
+    "Groundhog Day Blizzard (February 2011)",
+    "Midwest Tornadoes (April 2012)",
+    "Central Severe Weather (May 2019)",
+    "Western Drought and Heatwave (2021)",
+    "Tropical Storm Allison (June 2001)",
+    "Western/Central/Southeast Drought/Heatwave (Spring-Fall 2000)",
+    "West Virginia Flooding and Ohio Valley Tornadoes (June 2016)",
+    "Central Tornadoes and Severe Weather (May 2009)",
+    "Rockies and Northeast Severe Weather (July 2016)",
+    "Hurricane Isaias (August 2020)",
+    "Western Wildfires (Summer-Fall 2009)",
+    "Midwest/Southeast Severe Weather (August 2011)",
+    "Rockies/Central Tornadoes and Severe Weather (May 2016)",
+    "Plains/East/Northeast Severe Weather (June-July 2012)",
+    "Hurricane Hanna (July 2020)",
+    "Midwest/Southeast/Northeast Tornadoes and Flooding (April 2014)",
+    "Hurricane Georges (September 1998)",
+    "California Flooding (February 2017)",
+    "Rockies and Plains Hail Storms (August 2018)",
+    "Eastern Tornadoes and Severe Storms (November 2002)",
+    "Rockies, Central and Northeast Tornadoes and Severe Weather (May 2019)",
+    "Rockies and Midwest Severe Weather (July 2011)",
+    "Central and Eastern Tornadoes and Severe Weather (July 2018)",
+    "Ohio Valley/South Tornadoes (April 2011)",
+    "Hurricane Floyd (September 1999)",
+    "U.S. Drought/Heatwave (2012)",
+    "Central, Southern and Northeast Drought/Heatwave (September 1995)",
+    "Midwest Severe Weather (August 2013)",
+    "Blizzard/Floods (January 1996)",
+    "South/Southeast Severe Weather (March 2017)",
+    "Plains Tornadoes and Central Severe Weather (May 2016)",
+    "Southwest/Southern Plains Drought (Summer-Fall 2018)",
+    "Northern Plains and Ohio Valley Severe Weather (July 1993)",
+    "Florida Freeze (January 1985)",
+    "Tropical Storm Elsa (July 2021)",
+    "Midwest/Southeast/Northeast Winter Storm (January 2014)",
+    "Severe Storms (May 1989)",
+    "Tropical Storm Isidore (September 2002)",
+    "Western Wildfires (Summer-Fall 2012)",
+    "Northeast Winter Storm (February 2010)",
+    "Central and Eastern Winter Storm (January 2018)",
+    "Central/Southeast Tornado Outbreak (March 2017)",
+    "Southern Flooding (May 1990)",
+    "Hurricane Gustav (September 2008)",
+    "Midwest/Mid-Atlantic Severe Weather (June 2008)",
+    "Hurricane Ivan (September 2004)",
+    "Midwest Drought (Spring-Summer 2005)",
+    "Hurricane Harvey (August 2017)",
+    "Central and Eastern Winter Storm (Mid-January 1999)",
+    "Texas and Louisiana Flooding (March 2016)",
+    "Southeast and Eastern Tornadoes (February 2016)",
+    "Southeast/Midwest Tornadoes (April 2011)",
+    "Severe Weather (July 2003)",
+    "Tropical Storm Fred (August 2021)",
+    "Plains Severe Weather (April 2014)",
+    "Oakland Firestorm (October 1991)",
+    "Hurricane Ida (August 2021)",
+    "Northeast Winter Storm (March 2018)",
+    "Arizona Severe Weather (October 2010)",
+    "Midwest/Ohio Valley Hail and Tornadoes (April 2001)",
+    "Southern Plains Drought (Spring-Summer 1996)",
+    "Midwest/Northeast Severe Storms and Flooding (July 2010)",
+    "Western/Southeast Wildfires (Summer-Fall 2016)",
+    "Northeast Winter Storm (December 1992)",
+    "Hurricane Alicia (August 1983)",
+    "Southeast Drought/Heatwave (Summer 1986)",
+    "Missouri and Arkansas Flooding and Central Severe Weather (May 2017)",
+    "Western Wildfires, California Firestorm (Summer-Fall 2018)",
+    "Houston Flooding (April 2016)",
+    "Southern and Eastern Tornadoes and Severe Weather (April 2019)",
+    "Midwest Flooding (Summer 2008)",
+    "Southern Plains/Midwest/Northeast Severe Weather (May 2012)",
+    "Midwest/Southeast Tornadoes (April 2011)",
+    "Louisiana Flooding and Central Severe Weather (May 2021)",
+    "Texas Tornadoes and Central Severe Weather (October 2019)",
+    "Texas Flooding (October 1998)",
+    "Central Severe Weather (April 2014)",
+    "Central/Eastern Drought/Heatwave (Summer-Fall 1980)",
+    "Western Fire Season (Summer-Fall 1994)",
+    "Southern Plains/Southwest Drought and Heat Wave (Spring-Summer 2011)",
+    "Midwest/Southeast Tornadoes (May 2011)",
+    "Rockies/Midwest/Eastern Severe Weather (May 2014)",
+    "Western Drought and Heatwave (June 2021)",
+    "Midwest Severe Weather (June 2017)",
+    "Illinois Flooding and Severe Weather (April 2013)",
+    "Severe Storms, Tornadoes (March 1991)",
+    "Western Storms and Flooding (December 1982-March 1983)",
+    "Southeastern Tornadoes and Severe Weather (March 2018)",
+    "Hurricane Rita (September 2005)",
+    "South Florida Flooding (October 2000)",
+    "Hurricane Maria (September 2017)",
+    "South and Southeast Severe Weather (May 2019)",
+    "Hurricane Dorian (September 2019)",
+    "North Dakota, South Dakota and Montana Drought (Spring-Fall 2017)",
+    "Hurricane Wilma (October 2005)",
+    "Colorado Hail Storm (July 1990)",
+    "Mississippi River flooding (April-May 2011)",
+    "Central, Southern and Eastern Severe Weather (April 2020)",
+    "Winter Storm, Cold Wave (January 1994)",
+    "Michigan and Northeast Flooding (August 2014)",
+    "Midwest/Ohio Valley Severe Weather (April-May 2012)",
+    "Severe Storms (June 1982)",
+    "Western Severe Storms and Flooding (February 1986)",
+    "Eastern Drought/Heatwave (Summer 1999)",
+    "Southwest/Great Plains Drought (2009)",
+    "Severe Storm",
+    "Tropical Cyclone",
+    "Wildfire",
+    "Drought",
+    "Winter Storm",
+    "Freeze",
+    "Flooding",
+    "death",
+    "disaster",
+    "natural hazards",
+    "Consumer Price Index (CPI)",
+    "oceanography"
+  ],
+  "schema:name": "U.S. Billion-dollar Weather and Climate Disasters, 1980 - present (NCEI Accession 0209268)",
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "NOAA National Centers for Environmental Information (NCEI)"
+      },
+      "schema:name": "Adam B. Smith",
+      "schema:url": "https://orcid.org/0000-0003-2573-3609"
+    },
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "NOAA National Centers for Environmental Information (NCEI)",
+      "schema:url": "https://ror.org/04r0wrp59"
+    }
+  ],
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:address": {
+      "@type": [
+        "schema:PostalAddress"
+      ],
+      "addressCountry": "US",
+      "addressLocality": "Asheville",
+      "addressRegion": "NC",
+      "postalCode": "28801-5001",
+      "streetAddress": "Federal Building, 151 Patton Avenue"
+    },
+    "schema:contactPoint": [
+      {
+        "@type": [
+          "schema:ContactPoint"
+        ],
+        "availableLanguage": "English",
+        "schema:contactType": "customer service",
+        "schema:email": "NCEI.Info@noaa.gov",
+        "faxNumber": "+1-301-713-3300",
+        "hoursAvailable": {
+          "@type": [
+            "OpeningHoursSpecification"
+          ],
+          "dayOfWeek": [
+            "http://purl.org/goodrelations/v1/#Monday",
+            "http://purl.org/goodrelations/v1/#Tuesday",
+            "http://purl.org/goodrelations/v1/#Wednesday",
+            "http://purl.org/goodrelations/v1/#Thursday",
+            "http://purl.org/goodrelations/v1/#Friday"
+          ]
+        },
+        "schema:telephone": "+1-301-713-3277"
+      },
+      {
+        "@type": [
+          "schema:ContactPoint"
+        ],
+        "availableLanguage": "English",
+        "schema:contactType": "technical support",
+        "schema:email": "NCEI.Info@noaa.gov",
+        "faxNumber": "+1-301-713-3300",
+        "hoursAvailable": {
+          "@type": [
+            "OpeningHoursSpecification"
+          ],
+          "dayOfWeek": [
+            "http://purl.org/goodrelations/v1/#Monday",
+            "http://purl.org/goodrelations/v1/#Tuesday",
+            "http://purl.org/goodrelations/v1/#Wednesday",
+            "http://purl.org/goodrelations/v1/#Thursday",
+            "http://purl.org/goodrelations/v1/#Friday"
+          ]
+        },
+        "schema:telephone": "+1-301-713-3277"
+      }
+    ],
+    "schema:name": "NOAA National Centers for Environmental Information (NCEI)",
+    "parentOrganization": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "National Oceanic and Atmospheric Administration"
+      }
+    ],
+    "schema:url": "https://www.ncei.noaa.gov/"
+  },
+  "schema:sameAs": [
+    "https://www.ncei.noaa.gov/archive/accession/0209268"
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "5.8709 172.4436 71.3874 -66.9498"
+      },
+      "schema:name": "geographic bounding box"
+    },
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "CONTINENT > NORTH AMERICA > UNITED STATES OF AMERICA",
+      "schema:url": "CONTINENT > NORTH AMERICA > UNITED STATES OF AMERICA"
+    },
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Alaska"
+    },
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "contiguous United States"
+    },
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Hawaii"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.25921/stkw-7w73#metadata",
+    "schema:name": "GeoCodes metadata record for: U.S. Billion-dollar Weather and Climate Disasters, 1980 - present (NCEI Accession 0209268)",
+    "schema:about": {
+      "@id": "https://doi.org/10.25921/stkw-7w73"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl. Added schema:conditionsOfAccess (NOAA data is public domain; original record had no license or access statement)."
+  },
+  "schema:temporalCoverage": [
+    "1980-01-01/2024-09-30"
+  ],
+  "schema:url": "https://doi.org/10.25921/stkw-7w73",
+  "@id": "https://doi.org/10.25921/stkw-7w73",
+  "schema:conditionsOfAccess": [
+    "Data produced by the U.S. Government are not subject to copyright. Access is not restricted."
+  ]
+}

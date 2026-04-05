@@ -1,0 +1,275 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:alternateName": "NCEI Accession 0001127",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Murmansk Marine Biological Institute",
+        "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/institution/details/15"
+      }
+    ]
+  },
+  "schema:dateCreated": "2003-08-07",
+  "schema:dateModified": "2026-01-03",
+  "schema:datePublished": "2003-08-07",
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "Navigate directly to the URL for data access and direct download.",
+      "disambiguatingDescription": "download (HTTPS)",
+      "schema:url": "https://www.ncei.noaa.gov/archive/accession/download/1127",
+      "schema:contentUrl": "https://www.ncei.noaa.gov/archive/accession/download/1127"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "These data are available through the File Transfer Protocol (FTP). FTP is no longer supported by most internet browsers. You may copy and paste the FTP link to the data into an FTP client (e.g., FileZilla or WinSCP).",
+      "disambiguatingDescription": "download (FTP)",
+      "schema:url": "ftp://ftp-oceans.ncei.noaa.gov/nodc/archive/arc0010/0001127/",
+      "schema:contentUrl": "ftp://ftp-oceans.ncei.noaa.gov/nodc/archive/arc0010/0001127/"
+    }
+  ],
+  "schema:identifier": {
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "NCEI Dataset Identifier",
+    "schema:value": "gov.noaa.nodc:0001127"
+  },
+  "image": {
+    "@type": [
+      "schema:ImageObject"
+    ],
+    "caption": "Preview graphic",
+    "schema:contentUrl": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0001127",
+    "schema:url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0001127"
+  },
+  "schema:isPartOf": [
+    {
+      "@type": [
+        "schema:Dataset"
+      ],
+      "schema:alternateName": "gov.noaa.nodc:WDCO-GODAR",
+      "schema:url": "https://www.ncei.noaa.gov/archive/accession/WDCO-GODAR"
+    }
+  ],
+  "schema:keywords": [
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:name": "EARTH SCIENCE > OCEANS > SALINITY/DENSITY > SALINITY",
+      "schema:url": "https://cmr.earthdata.nasa.gov/kms/concept/7e95b5fc-1d58-431a-af36-948b29fa870d"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:name": "EARTH SCIENCE > OCEANS > OCEAN TEMPERATURE > WATER TEMPERATURE",
+      "schema:url": "https://cmr.earthdata.nasa.gov/kms/concept/46206e8c-8def-406f-9e62-da4e74633a58"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatypes",
+      "schema:name": "SALINITY",
+      "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatype/details/307"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatypes",
+      "schema:name": "WATER TEMPERATURE",
+      "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatype/details/373"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstypes",
+      "schema:name": "meteorological",
+      "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstype/details/12"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstypes",
+      "schema:name": "physical",
+      "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstype/details/14"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstypes",
+      "schema:name": "profile",
+      "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstype/details/18"
+    },
+    "oceanography"
+  ],
+  "schema:name": "Oceanographic profile temperature and salinity measurements collected using bottle from the OKEANOGRAF (run by MMBI) in the Arctic in 1961 (NCEI Accession 0001127)",
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Murmansk Marine Biological Institute (MMBI)",
+      "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/institution/details/15"
+    }
+  ],
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:address": {
+      "@type": [
+        "schema:PostalAddress"
+      ],
+      "addressCountry": "US",
+      "addressLocality": "Asheville",
+      "addressRegion": "NC",
+      "postalCode": "28801-5001",
+      "streetAddress": "Federal Building, 151 Patton Avenue"
+    },
+    "schema:contactPoint": [
+      {
+        "@type": [
+          "schema:ContactPoint"
+        ],
+        "availableLanguage": "English",
+        "schema:contactType": "customer service",
+        "schema:email": "NCEI.Info@noaa.gov",
+        "faxNumber": "+1-301-713-3300",
+        "hoursAvailable": {
+          "@type": [
+            "OpeningHoursSpecification"
+          ],
+          "dayOfWeek": [
+            "http://purl.org/goodrelations/v1/#Monday",
+            "http://purl.org/goodrelations/v1/#Tuesday",
+            "http://purl.org/goodrelations/v1/#Wednesday",
+            "http://purl.org/goodrelations/v1/#Thursday",
+            "http://purl.org/goodrelations/v1/#Friday"
+          ]
+        },
+        "schema:telephone": "+1-301-713-3277"
+      },
+      {
+        "@type": [
+          "schema:ContactPoint"
+        ],
+        "availableLanguage": "English",
+        "schema:contactType": "technical support",
+        "schema:email": "NCEI.Info@noaa.gov",
+        "faxNumber": "+1-301-713-3300",
+        "hoursAvailable": {
+          "@type": [
+            "OpeningHoursSpecification"
+          ],
+          "dayOfWeek": [
+            "http://purl.org/goodrelations/v1/#Monday",
+            "http://purl.org/goodrelations/v1/#Tuesday",
+            "http://purl.org/goodrelations/v1/#Wednesday",
+            "http://purl.org/goodrelations/v1/#Thursday",
+            "http://purl.org/goodrelations/v1/#Friday"
+          ]
+        },
+        "schema:telephone": "+1-301-713-3277"
+      }
+    ],
+    "schema:name": "NOAA National Centers for Environmental Information (NCEI)",
+    "parentOrganization": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "National Oceanic and Atmospheric Administration"
+      }
+    ],
+    "schema:url": "https://www.ncei.noaa.gov/"
+  },
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "72 27.95 72 27.95"
+      },
+      "schema:name": "geographic bounding box"
+    },
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "OCEAN > ARCTIC OCEAN > BARENTS SEA",
+      "schema:url": "OCEAN > ARCTIC OCEAN > BARENTS SEA"
+    },
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Barents Sea",
+      "schema:url": "Barents Sea"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://www.ncei.noaa.gov/archive/accession/0001127#metadata",
+    "schema:name": "GeoCodes metadata record for: Oceanographic profile temperature and salinity measurements collected using bottle from the OKEANOGRAF (run by MMBI) in ",
+    "schema:about": {
+      "@id": "https://www.ncei.noaa.gov/archive/accession/0001127"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl. Added schema:conditionsOfAccess (NOAA data is public domain; original record had no license or access statement)."
+  },
+  "schema:temporalCoverage": [
+    "1961-08-05/1961-08-13"
+  ],
+  "schema:url": "https://www.ncei.noaa.gov/archive/accession/0001127",
+  "@id": "https://www.ncei.noaa.gov/archive/accession/0001127",
+  "schema:conditionsOfAccess": [
+    "Data produced by the U.S. Government are not subject to copyright. Access is not restricted."
+  ]
+}

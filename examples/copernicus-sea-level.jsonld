@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Sea level gridded data from satellite observations for the global ocean from 1993 to present",
+  "schema:description": "This dataset provides gridded daily and monthly mean global estimates of sea level anomaly based on satellite altimetry measurements. The rise in global mean sea level in recent decades has been one of the most important and well-known consequences of climate warming, putting a large fraction of the world population and economic infrastructure at greater risk of flooding. However, changes in the global average sea level mask regional variations that can be one order of magnitude larger. Therefore, it is essential to measure changes in sea level over the world’s oceans as accurately as possible.\nSea level anomaly is defined as the height of water over the mean sea surface in a given time and region. In this dataset sea level anomalies are computed with respect to a twenty-year mean reference period (1993-2012) using up-to-date altimeter standards.\nIn the past, the altimeter sea level datasets were distributed on the CNES AVISO altimetry portal until their production was taken over by the Copernicus Marine Environment Monitoring Service (CMEMS) and the Copernicus Climate Change Service (C3S) in 2015 and 2016 respectively.\nThe sea level dataset provided here by C3S is climate-oriented, that is, dedicated to the monitoring of the long-term evolution of sea level and the analysis of the ocean/climate indicators, both requiring a homogeneous and stable sea level record. To achieve this, a steady two-satellite merged constellation is used at all time steps in the production system: one satellite serves as reference and ensures the long-term stability of the data record; the other satellite (which varies across the record) is used to improve accuracy, sample mesoscale processes and provide coverage at high latitudes. The C3S sea level dataset is used to produce Ocean Monitoring Indicators (e.g. global and regional mean sea level evolution), available in the CMEMS catalogue.\nThe CMEMS sea level dataset has a more operational focus as it is dedicated to the retrieval of mesoscale signals in the context of ocean modeling and analysis of the ocean circulation on a global or regional scale. Such applications require the most accurate sea level estimates at each time step with the best spatial sampling of the ocean with all satellites available, with less emphasis on long-term stability and homogeneity.\nThis dataset is updated three times a year with a delay of about 5 months relative to present time. This delay is mainly due to the timeliness of the input data, the centred processing temporal window and the validation process. However, these processing and validation steps are essential to enhance the stability and accuracy of the sea level products and make them suitable for climate applications.\nThis dataset includes estimates of sea level anomaly and absolute dynamic topography together with the corresponding geostrophic velocities, which provide an approximation of the ocean surface currents. More details about these variables, the sea level retrieval algorithms, additional filters, optimisation procedures, and the error estimation can be found in the documentation.",
+  "schema:url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-level-global",
+  "schema:identifier": "https://doi.org/10.24381/cds.4c328c78",
+  "schema:keywords": [],
+  "schema:license": [
+    "https://spdx.org/licenses/CC-BY-4.0"
+  ],
+  "schema:isAccessibleForFree": true,
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:url": "https://www.ecmwf.int/",
+        "schema:name": "ECMWF",
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:contactType": "User support",
+          "schema:email": "https://support.ecmwf.int",
+          "schema:url": "https://support.ecmwf.int"
+        }
+      }
+    ]
+  },
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "NetCDF-4"
+      ],
+      "schema:url": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/satellite-sea-level-global",
+      "schema:contentUrl": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/satellite-sea-level-global"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "NetCDF-4"
+      ],
+      "schema:url": "https://cds.climate.copernicus.eu/datasets/satellite-sea-level-global?tab=download",
+      "schema:contentUrl": "https://cds.climate.copernicus.eu/datasets/satellite-sea-level-global?tab=download"
+    }
+  ],
+  "schema:temporalCoverage": [
+    "1993-01-01T00:00:00+00:00Z/2023-12-31T00:00:00+00:00Z"
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "0 -89 360 89"
+      }
+    }
+  ],
+  "schema:datePublished": "2018-06-14T00:00:00Z",
+  "schema:dateModified": "2026-04-01T00:00:00Z",
+  "image": "https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-catalogue/resources/satellite-sea-level-global/overview_d2978dd5f23908030e4baf6c4427554ee3d8b3c4f4420366c915d24f767cd0eb.png",
+  "schema:conditionsOfAccess": [
+    "Free access upon acceptance of applicable licences and terms of use"
+  ],
+  "schema:isPartOf": [
+    {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:identifier": "cds",
+      "schema:name": "Climate Data Store",
+      "schema:url": "https://cds.climate.copernicus.eu/datasets"
+    }
+  ],
+  "schema:isBasedOn": [],
+  "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-level-global",
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-level-global#metadata",
+    "schema:name": "GeoCodes metadata record for: Sea level gridded data from satellite observations for the global ocean from 1993 to present",
+    "schema:about": {
+      "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-level-global"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Copernicus CDS by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl; box array->string."
+  }
+}

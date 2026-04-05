@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "ERA5 hourly data on single levels from 1940 to present",
+  "schema:description": "ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 8 decades.\nData is available from 1940 onwards.\nERA5 replaces the ERA-Interim reanalysis.\nReanalysis combines model data with observations from across the world into a globally complete and consistent dataset using the laws of physics. This principle, called data assimilation, is based on the method used by numerical weather prediction centres, where every so many hours (12 hours at ECMWF) a previous forecast is combined with newly available observations in an optimal way to produce a new best estimate of the state of the atmosphere, called analysis, from which an updated, improved forecast is issued. Reanalysis works in the same way, but at reduced resolution to allow for the provision of a dataset spanning back several decades. Reanalysis does not have the constraint of issuing timely forecasts, so there is more time to collect observations, and when going further back in time, to allow for the ingestion of improved versions of the original observations, which all benefit the quality of the reanalysis product.\nERA5 provides hourly estimates for a large number of atmospheric, ocean-wave and land-surface quantities.\nAn uncertainty estimate is sampled by an underlying 10-member ensemble\nat three-hourly intervals. Ensemble mean and spread have been pre-computed for convenience.\nSuch uncertainty estimates are closely related to the information content of the available observing system which\nhas evolved considerably over time. They also indicate flow-dependent sensitive areas.\nTo facilitate many climate applications, monthly-mean averages have been pre-calculated too,\nthough monthly means are not available for the ensemble mean and spread.\nERA5 is updated daily with a latency of about 5 days. In case that serious flaws are detected in this early release (called ERA5T), this data could be different from the final release 2 to 3 months later. In case that this occurs users are notified.\nThe data set presented here is a regridded subset of the full ERA5 data set on native resolution.\nIt is online on spinning disk, which should ensure fast and easy access.\nIt should satisfy the requirements for most common applications.\nAn overview of all ERA5 datasets can be found in this article.\nInformation on access to ERA5 data on native resolution is provided in these guidelines.\nData has been regridded to a regular lat-lon grid of 0.25 degrees for the reanalysis and 0.5 degrees for\nthe uncertainty estimate (0.5 and 1 degree respectively for ocean waves).\nThere are four main sub sets: hourly and monthly products, both on pressure levels (upper air fields) and single levels (atmospheric, ocean-wave and land surface quantities).\nThe present entry is \"ERA5 hourly data on single levels from 1940 to present\".",
+  "schema:url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels",
+  "schema:identifier": "https://doi.org/10.24381/cds.adbb2d47",
+  "schema:keywords": [],
+  "schema:license": [
+    "https://spdx.org/licenses/CC-BY-4.0"
+  ],
+  "schema:isAccessibleForFree": true,
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:url": "https://www.ecmwf.int/",
+        "schema:name": "ECMWF",
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:contactType": "User support",
+          "schema:email": "https://support.ecmwf.int",
+          "schema:url": "https://support.ecmwf.int"
+        }
+      }
+    ]
+  },
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "grib"
+      ],
+      "schema:url": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-single-levels",
+      "schema:contentUrl": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/reanalysis-era5-single-levels"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "grib"
+      ],
+      "schema:url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download",
+      "schema:contentUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download"
+    }
+  ],
+  "schema:temporalCoverage": [
+    "1940-01-01T00:00:00+00:00Z/2026-03-30T00:00:00+00:00Z"
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "0 -89 360 89"
+      }
+    }
+  ],
+  "schema:datePublished": "2018-06-14T00:00:00Z",
+  "schema:dateModified": "2026-04-05T00:00:00Z",
+  "image": "https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-catalogue/resources/reanalysis-era5-single-levels/overview_48ac7d4fc21db572d6e7b887e00421aaac8489186a1cc3f0b67e2ae33394a8a3.png",
+  "schema:conditionsOfAccess": [
+    "Free access upon acceptance of applicable licences and terms of use"
+  ],
+  "schema:isPartOf": [
+    {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:identifier": "cds",
+      "schema:name": "Climate Data Store",
+      "schema:url": "https://cds.climate.copernicus.eu/datasets"
+    }
+  ],
+  "schema:isBasedOn": [],
+  "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels",
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels#metadata",
+    "schema:name": "GeoCodes metadata record for: ERA5 hourly data on single levels from 1940 to present",
+    "schema:about": {
+      "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Copernicus CDS by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl; box array->string."
+  }
+}

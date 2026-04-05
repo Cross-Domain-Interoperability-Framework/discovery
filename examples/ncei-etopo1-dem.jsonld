@@ -1,0 +1,267 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:alternateName": "gov.noaa.ngdc.mgg.dem:316",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "NOAA National Geophysical Data Center"
+      }
+    ]
+  },
+  "schema:dateCreated": "2009-01-01",
+  "schema:datePublished": "2009-01-01",
+  "schema:description": "In August 2008, the National Geophysical Data Center (NGDC), an office of the National Oceanic and Atmospheric Administration (NOAA), developed the ETOPO1 Global Relief Model as an improvement to the ETOPO2v2 Global Relief Model. ETOPO1 is available in \"Ice Surface\" (top of Antarctic and Greenland ice sheets) and \"Bedrock\" (base of the ice sheets) versions. Both versions of ETOPO1 were generated from diverse global and regional digital data sets, which were shifted to common horizontal and vertical datums, and then evaluated and edited as needed. Bathymetric, topographic, and shoreline data used in ETOPO1 were obtained from NGDC, Antarctic Digital Database (ADD), European Ice Sheet Modeling Initiative (EISMINT), Scientific Committee on Antarctic Research (SCAR), Japan Oceanographic Data Center (JODC), Caspian Environment Programme (CEP), Mediterranean Science Commission (CIESM), National Aeronautics and Space Administration (NASA), National Snow and Ice Data Center (NSIDC), Scripps Institute of Oceanography (SIO), and Leibniz Institute for Baltic Sea Research (LIBSR). ETOPO1 is vertically referenced to sea level, and horizontally referenced to the World Geodetic System of 1984 (WGS 84). Cell size for ETOPO1 is 1 arc-minute.",
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "ETOPO1 1 Arc-Minute Global Relief Model in netCDF format",
+      "disambiguatingDescription": "download (HTTP)",
+      "schema:url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/",
+      "schema:contentUrl": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/data/"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "grid extract tool",
+      "disambiguatingDescription": "search (http)",
+      "schema:url": "http://maps.ngdc.noaa.gov/viewers/wcs-client/",
+      "schema:contentUrl": "http://maps.ngdc.noaa.gov/viewers/wcs-client/"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "poster image of ETOPO1 1 Arc-Minute Global Relief Model in pdf format",
+      "disambiguatingDescription": "search (http)",
+      "schema:url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/posters/",
+      "schema:contentUrl": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/posters/"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "poster image of ETOPO1 in png format",
+      "disambiguatingDescription": "search (http)",
+      "schema:url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/posters/",
+      "schema:contentUrl": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/posters/"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "small image of ETOPO1 in jpeg format",
+      "disambiguatingDescription": "search (http)",
+      "schema:url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/posters/",
+      "schema:contentUrl": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/posters/"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:description": "image of ETOPO1 Ice Surface in kmz format",
+      "disambiguatingDescription": "search (http)",
+      "schema:url": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/tiled/ice_surface/etopo1_ice_surface.kmz",
+      "schema:contentUrl": "https://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/tiled/ice_surface/etopo1_ice_surface.kmz"
+    }
+  ],
+  "schema:identifier": {
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "NCEI Dataset Identifier",
+    "schema:value": "gov.noaa.ngdc.mgg.dem:316"
+  },
+  "image": {
+    "@type": [
+      "schema:ImageObject"
+    ],
+    "caption": "Thumbnail of DEM",
+    "schema:contentUrl": "https://gis.ngdc.noaa.gov/arcgis/rest/directories/arcgisoutput/DEM_mosaics/DEM_global_mosaic_hillshade_ImageServer/_ags_2eaf34a5_07b9_4945_9a72_88eac3d460d2.png",
+    "schema:url": "https://gis.ngdc.noaa.gov/arcgis/rest/directories/arcgisoutput/DEM_mosaics/DEM_global_mosaic_hillshade_ImageServer/_ags_2eaf34a5_07b9_4945_9a72_88eac3d460d2.png"
+  },
+  "schema:keywords": [
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:name": "Earth Science > Oceans > Bathymetry/Seafloor Topography > Continental Margins"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:name": "Earth Science > Oceans > Coastal Processes > Coastal Elevation"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:name": "Earth Science > Oceans > Bathymetry/Seafloor Topography > Water Depth"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:name": "Earth Science > Oceans > Bathymetry/Seafloor Topography > Bathymetry"
+    },
+    "Infoterra > Subject disciplines > Geophysics > Geophysics",
+    "Infoterra > Subject disciplines > Geomorphology > Geomorphology",
+    "Gridded elevations",
+    "Integrated bathymetry and topography",
+    "Global relief"
+  ],
+  "schema:name": "ETOPO1 1 Arc-Minute Global Relief Model",
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:address": {
+      "@type": [
+        "schema:PostalAddress"
+      ],
+      "addressCountry": "US",
+      "addressLocality": "Asheville",
+      "addressRegion": "NC",
+      "postalCode": "28801-5001",
+      "streetAddress": "Federal Building, 151 Patton Avenue"
+    },
+    "schema:contactPoint": [
+      {
+        "@type": [
+          "schema:ContactPoint"
+        ],
+        "availableLanguage": "English",
+        "schema:contactType": "customer service",
+        "schema:email": "NCEI.Info@noaa.gov",
+        "faxNumber": "+1-301-713-3300",
+        "hoursAvailable": {
+          "@type": [
+            "OpeningHoursSpecification"
+          ],
+          "dayOfWeek": [
+            "http://purl.org/goodrelations/v1/#Monday",
+            "http://purl.org/goodrelations/v1/#Tuesday",
+            "http://purl.org/goodrelations/v1/#Wednesday",
+            "http://purl.org/goodrelations/v1/#Thursday",
+            "http://purl.org/goodrelations/v1/#Friday"
+          ]
+        },
+        "schema:telephone": "+1-301-713-3277"
+      },
+      {
+        "@type": [
+          "schema:ContactPoint"
+        ],
+        "availableLanguage": "English",
+        "schema:contactType": "technical support",
+        "schema:email": "NCEI.Info@noaa.gov",
+        "faxNumber": "+1-301-713-3300",
+        "hoursAvailable": {
+          "@type": [
+            "OpeningHoursSpecification"
+          ],
+          "dayOfWeek": [
+            "http://purl.org/goodrelations/v1/#Monday",
+            "http://purl.org/goodrelations/v1/#Tuesday",
+            "http://purl.org/goodrelations/v1/#Wednesday",
+            "http://purl.org/goodrelations/v1/#Thursday",
+            "http://purl.org/goodrelations/v1/#Friday"
+          ]
+        },
+        "schema:telephone": "+1-301-713-3277"
+      }
+    ],
+    "schema:name": "NOAA National Centers for Environmental Information (NCEI)",
+    "parentOrganization": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "National Oceanic and Atmospheric Administration"
+      }
+    ],
+    "schema:url": "https://www.ncei.noaa.gov/"
+  },
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "-90.00 -180.00 90.00 180.00"
+      },
+      "schema:name": "geographic bounding box"
+    },
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Geographic Region > Global Land"
+    },
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Geographic Region > Global Ocean"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.dem:316#metadata",
+    "schema:name": "GeoCodes metadata record for: ETOPO1 1 Arc-Minute Global Relief Model",
+    "schema:about": {
+      "@id": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.dem:316"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:dateModified set from schema:datePublished; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl. Added schema:conditionsOfAccess (NOAA data is public domain; original record had no license or access statement)."
+  },
+  "schema:temporalCoverage": [
+    "1940-01-01/2008-01-01"
+  ],
+  "schema:url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.dem:316",
+  "@id": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.dem:316",
+  "schema:dateModified": "2009-01-01",
+  "schema:conditionsOfAccess": [
+    "Data produced by the U.S. Government are not subject to copyright. Access is not restricted."
+  ]
+}

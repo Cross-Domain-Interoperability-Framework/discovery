@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Sea ice concentration from 1978 to present derived from satellite observations",
+  "schema:description": "This dataset provides daily gridded data of sea ice concentration for both hemispheres derived from satellite passive microwave brightness temperatures. Sea ice is an important component of our climate system and a sensitive indicator of climate change. Its presence or its retreat has a strong impact on air-sea interactions, the Earth’s energy budget as well as marine ecosystems. It is recognised by the Global Climate Observing System as an Essential Climate Variable. Sea ice concentration is defined as the fraction of a pixel or grid cell in a satellite image or other gridded product that is covered with sea ice. It is one of the parameters commonly used to characterise sea ice. Other sea ice parameters include sea ice thickness, sea ice edge, and sea ice type, also available in the Climate Data Store.\nThe dataset consists of two products:\n\nThe Global Sea Ice Concentration Climate Data Record produced by the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT) Ocean and Sea Ice Satellite Application Facility (OSI SAF). This is a coarse-resolution product based on measurements from the following sensors: Scanning Multichannel Microwave Radiometer (SMMR; 1979–1987), Special Sensor Microwave/Imager (SSM/I; 1987–2006), and Special Sensor Microwave Imager/Sounder (SSMIS; 2005 onward). This product spans the period from 1979 to 2025. In the following, it is referred to as the SSMIS product.\nThe Global Sea Ice Concentration Climate Data Record produced by the European Space Agency Climate Change Initiative Phase 2 project (ESA CCI). This is a medium-resolution product based on measurements from the Advanced Microwave Scanning Radiometer - Earth Observing System (AMSR-E) sensor (2002–2011) and its successor, AMSR2 (2012–2020). This product spans the 2002–2020 period and is not updated. In the following, it is referred to as the AMSR product.\n\nBoth products are provided on the same polar projection with a grid resolution of 25 km. However, the AMSR product has a true spatial resolution (as resolved by the sensor) of about 15–25 km versus 30–60 km for the SSMIS product. Therefore, the AMSR product provides a much more detailed view of the sea ice cover than the SSMIS product, especially along the marginal ice zone, the transitional zone between open water and the dense sea ice pack. On the other hand, the clear strength of the SSMIS product is its more than 40-year long and consistent record.\nAlthough originating from different projects, the two products share the same algorithm baseline, which is both a continuation of the EUMETSAT OSI SAF approach and a series of innovations contributed mostly by ESA CCI activities. For both products, the underlying algorithm makes use of a combination of the same three temperature channels near 19 GHz and 37 GHz. The data also share a common data format so that interested users can revert some of the filtering steps and access the raw output of the SIC algorithms. Both are level-4 products in the sense that gaps are filled by temporal and spatial interpolation. However, gap filling is not applied to fill in days when no input satellite data are available.\nFurther details about each product can be found below as well as in the Documentation section.",
+  "schema:url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-ice-concentration",
+  "schema:identifier": "https://doi.org/10.24381/cds.3cd8b812",
+  "schema:keywords": [],
+  "schema:license": [
+    "https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-catalogue/licences/eumetsat-osi-saf-sic/eumetsat-osi-saf-sic_0e80974c3f784ad05ed43eec3884bc4578d6089249218fc0d7dc970fcce88142.pdf"
+  ],
+  "schema:isAccessibleForFree": true,
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:url": "https://www.ecmwf.int/",
+        "schema:name": "ECMWF",
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:contactType": "User support",
+          "schema:email": "https://support.ecmwf.int",
+          "schema:url": "https://support.ecmwf.int"
+        }
+      }
+    ]
+  },
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "NetCDF-4"
+      ],
+      "schema:url": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/satellite-sea-ice-concentration",
+      "schema:contentUrl": "https://cds.climate.copernicus.eu/api/retrieve/v1/processes/satellite-sea-ice-concentration"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "NetCDF-4"
+      ],
+      "schema:url": "https://cds.climate.copernicus.eu/datasets/satellite-sea-ice-concentration?tab=download",
+      "schema:contentUrl": "https://cds.climate.copernicus.eu/datasets/satellite-sea-ice-concentration?tab=download"
+    }
+  ],
+  "schema:temporalCoverage": [
+    "1978-10-01T00:00:00+00:00Z/2025-09-29T00:00:00+00:00Z"
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "0 -89 360 89"
+      }
+    }
+  ],
+  "schema:datePublished": "2020-12-21T00:00:00Z",
+  "schema:dateModified": "2026-03-05T00:00:00Z",
+  "image": "https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-catalogue/resources/satellite-sea-ice-concentration/overview_6ec7fdacddea9a2e146d2aad340e99ad5cb16ac50c901abf92643b046e611e73.png",
+  "schema:conditionsOfAccess": [
+    "Free access upon acceptance of applicable licences and terms of use"
+  ],
+  "schema:isPartOf": [
+    {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:identifier": "cds",
+      "schema:name": "Climate Data Store",
+      "schema:url": "https://cds.climate.copernicus.eu/datasets"
+    }
+  ],
+  "schema:isBasedOn": [],
+  "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-ice-concentration",
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-ice-concentration#metadata",
+    "schema:name": "GeoCodes metadata record for: Sea ice concentration from 1978 to present derived from satellite observations",
+    "schema:about": {
+      "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-ice-concentration"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Copernicus CDS by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl; box array->string."
+  }
+}
