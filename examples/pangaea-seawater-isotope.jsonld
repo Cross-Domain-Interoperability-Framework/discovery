@@ -1,0 +1,615 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "unk": "https://ex.org/unknown/"
+  },
+  "@id": "https://doi.org/10.1594/PANGAEA.967156",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:identifier": "https://doi.org/10.1594/PANGAEA.967156",
+  "schema:url": "https://doi.pangaea.de/10.1594/PANGAEA.967156",
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://orcid.org/0000-0001-7701-6180",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Katrin Hättig",
+        "schema:familyName": "Hättig",
+        "schema:givenName": "Katrin",
+        "schema:identifier": "https://orcid.org/0000-0001-7701-6180",
+        "schema:email": "katrin.haettig@nioz.nl"
+      },
+      {
+        "@id": "https://orcid.org/0000-0001-9707-6690",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Devika Varma",
+        "schema:familyName": "Varma",
+        "schema:givenName": "Devika",
+        "schema:identifier": "https://orcid.org/0000-0001-9707-6690",
+        "schema:email": "devika.varma@nioz.nl"
+      },
+      {
+        "@id": "https://orcid.org/0000-0003-4814-4313",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Stephen Louwye",
+        "schema:familyName": "Louwye",
+        "schema:givenName": "Stephen",
+        "schema:identifier": "https://orcid.org/0000-0003-4814-4313",
+        "schema:email": "Stephen.Louwye@ugent.be"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Stefan Schouten",
+        "schema:familyName": "Schouten",
+        "schema:givenName": "Stefan",
+        "schema:email": "Stefan.Schouten@nioz.nl"
+      },
+      {
+        "@id": "https://orcid.org/0000-0001-6454-1752",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Marcel T J van der Meer",
+        "schema:familyName": "van der Meer",
+        "schema:givenName": "Marcel T J",
+        "schema:identifier": "https://orcid.org/0000-0001-6454-1752",
+        "schema:email": "Marcel.van.der.Meer@nioz.nl"
+      }
+    ]
+  },
+  "schema:name": "Middle Miocene seawater isotope evolution at IODP Site 307-U1318",
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "PANGAEA",
+    "schema:disambiguatingDescription": "Data Publisher for Earth & Environmental Science",
+    "schema:url": "https://www.pangaea.de/"
+  },
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "PANGAEA",
+    "schema:disambiguatingDescription": "Data Publisher for Earth & Environmental Science",
+    "schema:url": "https://www.pangaea.de/"
+  },
+  "schema:datePublished": "2024-07-09",
+  "schema:additionalType": [
+    "dataset"
+  ],
+  "schema:description": "Mid-Miocene (16.6 – 12.8 Ma) hydrogen isotopes of alkenones and sea temperatures are obtained from the sediment record of Integrated Ocean Discovery Program (IODP) Expedition 307, Site U1318 drilled in the Porcupine Basin, north east Atlantic at a water depth of ~ 400 m. Surface seawater isotopes are calculated based on the hydrogen isotopic compositions of C37 long chain alkenones (δ2HC37) with the environment calibration of Gould et al. (2019, doi:10.1016/j.gca.2018.12.004). The bottom seawater isotopes are based on oxygen isotopes of benthic foraminifera (record from Quaijtaal et al., 2018, doi:10.1017/S0016756816001278) and subsurface temperature (subT) estimates (TEX86H). We applied the calibration of Cramer et al. (2011, doi:10.1029/2011JC007255) and calculated subT with the 0-200 m equation of Kim et al. (2012, doi:10.1029/2012GL051157).",
+  "schema:abstract": "Mid-Miocene (16.6 – 12.8 Ma) hydrogen isotopes of alkenones and sea temperatures are obtained from the sediment record of Integrated Ocean Discovery Program (IODP) Expedition 307, Site U1318 drilled in the Porcupine Basin, north east Atlantic at a water depth of ~ 400 m. Surface seawater isotopes are calculated based on the hydrogen isotopic compositions of C37 long chain alkenones (δ2HC37) with the environment calibration of Gould et al. (2019, doi:10.1016/j.gca.2018.12.004). The bottom seawater isotopes are based on oxygen isotopes of benthic foraminifera (record from Quaijtaal et al., 2018, doi:10.1017/S0016756816001278) and subsurface temperature (subT) estimates (TEX86H). We applied the calibration of Cramer et al. (2011, doi:10.1029/2011JC007255) and calculated subT with the 0-200 m equation of Kim et al. (2012, doi:10.1029/2012GL051157).",
+  "@reverse": {
+    "schema:isBasedOn": {
+      "@id": "https://doi.org/10.1029/2024PA004852",
+      "@type": [
+        "schema:CreativeWork",
+        "unk:ScholarlyArticle"
+      ],
+      "schema:identifier": "https://doi.org/10.1029/2024PA004852",
+      "schema:url": "https://doi.org/10.1029/2024PA004852",
+      "schema:creator": [
+        {
+          "@id": "https://orcid.org/0000-0001-7701-6180",
+          "@type": [
+            "schema:Person"
+          ],
+          "schema:name": "Katrin Hättig",
+          "schema:familyName": "Hättig",
+          "schema:givenName": "Katrin",
+          "schema:identifier": "https://orcid.org/0000-0001-7701-6180",
+          "schema:email": "katrin.haettig@nioz.nl"
+        },
+        {
+          "@type": [
+            "schema:Person"
+          ],
+          "schema:name": "Stefan Schouten",
+          "schema:familyName": "Schouten",
+          "schema:givenName": "Stefan",
+          "schema:email": "Stefan.Schouten@nioz.nl"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-4814-4313",
+          "@type": [
+            "schema:Person"
+          ],
+          "schema:name": "Stephen Louwye",
+          "schema:familyName": "Louwye",
+          "schema:givenName": "Stephen",
+          "schema:identifier": "https://orcid.org/0000-0003-4814-4313",
+          "schema:email": "Stephen.Louwye@ugent.be"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6454-1752",
+          "@type": [
+            "schema:Person"
+          ],
+          "schema:name": "Marcel T J van der Meer",
+          "schema:familyName": "van der Meer",
+          "schema:givenName": "Marcel T J",
+          "schema:identifier": "https://orcid.org/0000-0001-6454-1752",
+          "schema:email": "Marcel.van.der.Meer@nioz.nl"
+        }
+      ],
+      "schema:name": "Stable Middle Miocene Seawater Isotopes in the Eastern North Atlantic Ocean",
+      "schema:datePublished": "2024",
+      "unk:pagination": "e2024PA004852",
+      "schema:isPartOf": {
+        "@type": [
+          "unk:Periodical",
+          "unk:PublicationVolume"
+        ],
+        "unk:volumeNumber": "39(10)",
+        "schema:name": "Paleoceanography and Paleoclimatology"
+      },
+      "schema:additionalType": "journal article"
+    }
+  },
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "51.4358 -11.550666666666984 51.435833333333 -11.550316666667015"
+      }
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "https://doi.org/10.3030/847504",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:identifier": {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:value": "847504"
+      },
+      "schema:name": "Local training network: Netherlands Earth System Science Centre: “NESSC”",
+      "schema:url": "https://doi.org/10.3030/847504",
+      "schema:funder": {
+        "@id": "doi:10.13039/501100000780",
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:identifier": "doi:10.13039/501100000780",
+        "schema:name": "European Commission",
+        "schema:alternateName": "EC",
+        "schema:url": "https://commission.europa.eu/index_en"
+      }
+    }
+  ],
+  "schema:size": {
+    "@type": [
+      "schema:QuantitativeValue"
+    ],
+    "schema:value": 1310.0,
+    "schema:unitText": "data points"
+  },
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Event label"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Sample code/label"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "DEPTH, sediment/rock",
+      "schema:unitText": "m",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": [
+          {
+            "@id": "urn:obo:pato:term:0001595",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "urn:obo:pato:term:0001595",
+            "schema:name": "depth",
+            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+          },
+          {
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:name": "sediment",
+            "schema:url": "http://purl.obolibrary.org/obo/ENVO_00002007"
+          },
+          {
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:name": "rock"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#Length",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
+            "schema:name": "Length",
+            "schema:alternateName": "L",
+            "schema:url": "http://dbpedia.org/resource/Length"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Depth, composite",
+      "schema:unitText": "mcd",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": [
+          {
+            "@id": "urn:obo:pato:term:0001595",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "urn:obo:pato:term:0001595",
+            "schema:name": "depth",
+            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+            "schema:name": "Luminous Intensity",
+            "schema:alternateName": "J",
+            "schema:url": "http://dbpedia.org/resource/Luminous_intensity"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Age",
+      "schema:unitText": "Ma",
+      "schema:measurementTechnique": "According to Sangiorgi (2021)",
+      "schema:description": "doi:10.1594/PANGAEA.926325",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": {
+          "@id": "urn:obo:pato:term:0000011",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0000011",
+          "schema:name": "age",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0000011"
+        }
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Alkenone C37:2, δD",
+      "schema:unitText": "‰ SMOW",
+      "schema:measurementTechnique": "Isotope Ratio Mass Spectrometer (IRMS), Thermo Fisher Scientific, Delta V"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Alkenone C37:2, δD, standard deviation",
+      "schema:unitText": "±",
+      "schema:measurementTechnique": "Isotope Ratio Mass Spectrometer (IRMS), Thermo Fisher Scientific, Delta V",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "standard deviation",
+          "schema:alternateName": "std dev",
+          "schema:url": "https://en.wikipedia.org/wiki/Standard_deviation"
+        }
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Replicates",
+      "schema:unitText": "#",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "Abundance or Count"
+        }
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "δ Deuterium, water",
+      "schema:unitText": "‰ SMOW",
+      "schema:url": "https://en.wikipedia.org/wiki/Deuterium",
+      "schema:measurementTechnique": "Calculated according to Gould et al. (2019)",
+      "schema:description": "VSOMW",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "schema:name": "water",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
+        }
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Depth, composite",
+      "schema:unitText": "mcd",
+      "schema:measurementTechnique": "According to Sangiorgi (2021)",
+      "schema:description": "Depth of neighbour sample for TEX86H subT (doi:10.1594/PANGAEA.926325)",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": [
+          {
+            "@id": "urn:obo:pato:term:0001595",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "urn:obo:pato:term:0001595",
+            "schema:name": "depth",
+            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+            "schema:name": "Luminous Intensity",
+            "schema:alternateName": "J",
+            "schema:url": "http://dbpedia.org/resource/Luminous_intensity"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Sea surface temperature",
+      "schema:unitText": "°C",
+      "schema:measurementTechnique": "Calculated from TEX86L (Kim et al., 2012)",
+      "schema:description": "0-200 m calibration",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": {
+          "@id": "http://qudt.org/1.1/vocab/quantity#ThermodynamicTemperature",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#ThermodynamicTemperature",
+          "schema:name": "Temperature",
+          "schema:alternateName": "Θ",
+          "schema:url": "http://dbpedia.org/resource/Temperature"
+        }
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Depth, composite",
+      "schema:unitText": "mcd",
+      "schema:measurementTechnique": "Calculated according to Willemijn et al. (2018)",
+      "schema:description": "Depth of δ18O benthic",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": [
+          {
+            "@id": "urn:obo:pato:term:0001595",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "urn:obo:pato:term:0001595",
+            "schema:name": "depth",
+            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+          },
+          {
+            "@id": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+            "schema:name": "Luminous Intensity",
+            "schema:alternateName": "J",
+            "schema:url": "http://dbpedia.org/resource/Luminous_intensity"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Foraminifera, benthic δ18O",
+      "schema:unitText": "‰ PDB",
+      "schema:measurementTechnique": "Calculated according to Willemijn et al. (2018)",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": [
+          {
+            "@id": "urn:lsid:marinespecies.org:taxname:1410",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "urn:lsid:marinespecies.org:taxname:1410",
+            "schema:name": "Foraminifera",
+            "schema:url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=1410"
+          },
+          {
+            "@id": "urn:lsid:marinespecies.org:taxname:22528",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "urn:lsid:marinespecies.org:taxname:22528",
+            "schema:name": "Foraminiferida",
+            "schema:url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=22528"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "δ18O, water",
+      "schema:unitText": "‰ SMOW",
+      "schema:measurementTechnique": "Calculated according to Cramer et al. (2011)",
+      "schema:description": "BSW",
+      "schema:subjectOf": {
+        "@type": [
+          "schema:DefinedTermSet"
+        ],
+        "unk:hasDefinedTerm": [
+          {
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:name": "δ18O",
+            "schema:url": "http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes"
+          },
+          {
+            "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
+            "@type": [
+              "schema:DefinedTerm"
+            ],
+            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
+            "schema:name": "water",
+            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
+          }
+        ]
+      }
+    }
+  ],
+  "schema:keywords": [
+    "Hydrogen isotopes; Oxygen isotopes; Temperature"
+  ],
+  "schema:license": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "schema:conditionsOfAccess": [
+    "unrestricted"
+  ],
+  "schema:isAccessibleForFree": true,
+  "schema:inLanguage": "en",
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "https://doi.pangaea.de/10.1594/PANGAEA.967156?format=textfile",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ]
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "https://doi.pangaea.de/10.1594/PANGAEA.967156?format=html",
+      "schema:encodingFormat": [
+        "text/html"
+      ]
+    }
+  ],
+  "schema:dateModified": "2024-07-09",
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.1594/PANGAEA.967156#metadata",
+    "schema:name": "Metadata record for: Middle Miocene seawater isotope evolution at IODP Site 307-U1318",
+    "schema:about": {
+      "@id": "https://doi.org/10.1594/PANGAEA.967156"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "PANGAEA",
+      "schema:url": "https://doi.pangaea.de/10.1594/PANGAEA.967156"
+    },
+    "schema:description": "Metadata harvested from PANGAEA by Claude Code. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; Unprefixed properties with no matching schema.org name assigned to unk: namespace (https://ex.org/unknown/): hasDefinedTerm, pagination, volumeNumber; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:dateModified set from schema:datePublished; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+  }
+}
