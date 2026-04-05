@@ -76,7 +76,7 @@
   ],
   "schema:datePublished": "2018-06-14T00:00:00Z",
   "schema:dateModified": "2026-04-05T00:00:00Z",
-  "image": "https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-catalogue/resources/reanalysis-era5-single-levels/overview_48ac7d4fc21db572d6e7b887e00421aaac8489186a1cc3f0b67e2ae33394a8a3.png",
+  "schema:image": "https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-catalogue/resources/reanalysis-era5-single-levels/overview_48ac7d4fc21db572d6e7b887e00421aaac8489186a1cc3f0b67e2ae33394a8a3.png",
   "schema:conditionsOfAccess": [
     "Free access upon acceptance of applicable licences and terms of use"
   ],
@@ -119,6 +119,6 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from Copernicus CDS by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl; box array->string."
+    "schema:description": "Metadata harvested from Copernicus CDS by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Distribution schema:url mapped to schema:contentUrl; GeoShape box array converted to string."
   }
 }

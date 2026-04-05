@@ -3,7 +3,8 @@
     "schema": "http://schema.org/",
     "dcterms": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "prov": "http://www.w3.org/ns/prov#"
+    "prov": "http://www.w3.org/ns/prov#",
+    "unk": "https://ex.org/unknown/"
   },
   "@type": [
     "schema:Dataset"
@@ -52,7 +53,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "Direct download for the dataset.",
-      "disambiguatingDescription": "download (HTTPS)",
+      "schema:disambiguatingDescription": "download (HTTPS)",
       "schema:url": "https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/",
       "schema:contentUrl": "https://www.ncei.noaa.gov/data/noaa-global-surface-temperature/v5/access/"
     },
@@ -61,7 +62,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "THREDDS Data Server (TDS) for the dataset.",
-      "disambiguatingDescription": "download (HTTPS)",
+      "schema:disambiguatingDescription": "download (HTTPS)",
       "schema:url": "https://www.ncei.noaa.gov/thredds/catalog/noaa-global-temp-v5/catalog.html",
       "schema:contentUrl": "https://www.ncei.noaa.gov/thredds/catalog/noaa-global-temp-v5/catalog.html"
     }
@@ -76,11 +77,11 @@
     "schema:url": "https://doi.org/10.25921/9qth-2p70",
     "schema:value": "doi:10.25921/9qth-2p70"
   },
-  "image": {
+  "schema:image": {
     "@type": [
       "schema:ImageObject"
     ],
-    "caption": "Increase in observations from v4 to v5.",
+    "schema:caption": "Increase in observations from v4 to v5.",
     "schema:contentUrl": "https://www.ncei.noaa.gov/pub/data/metadata/images/C01585.jpg",
     "schema:url": "https://www.ncei.noaa.gov/pub/data/metadata/images/C01585.jpg"
   },
@@ -89,35 +90,35 @@
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "Earth Science > Climate Indicators > Atmospheric/Ocean Indicators > Sea Surface Temperature Indices"
     },
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "Earth Science > Land Surface > Surface Thermal Properties > Land Surface Temperature"
     },
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "Earth Science > Oceans > Ocean Temperature > Sea Surface Temperature"
     },
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://gcos.wmo.int/site/global-climate-observing-system-gcos/essential-climate-variables",
+      "schema:inDefinedTermSet": "https://gcos.wmo.int/site/global-climate-observing-system-gcos/essential-climate-variables",
       "schema:name": "Oceanic - Surface - Sea-surface Temperature"
     },
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://gcos.wmo.int/site/global-climate-observing-system-gcos/essential-climate-variables",
+      "schema:inDefinedTermSet": "https://gcos.wmo.int/site/global-climate-observing-system-gcos/essential-climate-variables",
       "schema:name": "Atmospheric - Surface - Air Temperature"
     }
   ],
@@ -144,26 +145,26 @@
       "@type": [
         "schema:PostalAddress"
       ],
-      "addressCountry": "US",
-      "addressLocality": "Asheville",
-      "addressRegion": "NC",
-      "postalCode": "28801-5001",
-      "streetAddress": "Federal Building, 151 Patton Avenue"
+      "schema:addressCountry": "US",
+      "schema:addressLocality": "Asheville",
+      "schema:addressRegion": "NC",
+      "schema:postalCode": "28801-5001",
+      "schema:streetAddress": "Federal Building, 151 Patton Avenue"
     },
     "schema:contactPoint": [
       {
         "@type": [
           "schema:ContactPoint"
         ],
-        "availableLanguage": "English",
+        "schema:availableLanguage": "English",
         "schema:contactType": "customer service",
         "schema:email": "NCEI.Info@noaa.gov",
-        "faxNumber": "+1-301-713-3300",
-        "hoursAvailable": {
+        "schema:faxNumber": "+1-301-713-3300",
+        "schema:hoursAvailable": {
           "@type": [
-            "OpeningHoursSpecification"
+            "schema:OpeningHoursSpecification"
           ],
-          "dayOfWeek": [
+          "schema:dayOfWeek": [
             "http://purl.org/goodrelations/v1/#Monday",
             "http://purl.org/goodrelations/v1/#Tuesday",
             "http://purl.org/goodrelations/v1/#Wednesday",
@@ -177,15 +178,15 @@
         "@type": [
           "schema:ContactPoint"
         ],
-        "availableLanguage": "English",
+        "schema:availableLanguage": "English",
         "schema:contactType": "technical support",
         "schema:email": "NCEI.Info@noaa.gov",
-        "faxNumber": "+1-301-713-3300",
-        "hoursAvailable": {
+        "schema:faxNumber": "+1-301-713-3300",
+        "schema:hoursAvailable": {
           "@type": [
-            "OpeningHoursSpecification"
+            "schema:OpeningHoursSpecification"
           ],
-          "dayOfWeek": [
+          "schema:dayOfWeek": [
             "http://purl.org/goodrelations/v1/#Monday",
             "http://purl.org/goodrelations/v1/#Tuesday",
             "http://purl.org/goodrelations/v1/#Wednesday",
@@ -197,7 +198,7 @@
       }
     ],
     "schema:name": "NOAA National Centers for Environmental Information (NCEI)",
-    "parentOrganization": [
+    "schema:parentOrganization": [
       {
         "@type": [
           "schema:Organization"
@@ -263,7 +264,7 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:dateModified set from schema:datePublished; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl. Added schema:conditionsOfAccess (NOAA data is public domain; original record had no license or access statement)."
+    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; Unprefixed properties assigned to unk: namespace (contentURL); @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:dateModified set from schema:datePublished; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
   },
   "schema:temporalCoverage": [
     "1880-01/2022-12-01"

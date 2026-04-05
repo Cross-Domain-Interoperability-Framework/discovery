@@ -3,7 +3,8 @@
     "schema": "http://schema.org/",
     "dcterms": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "prov": "http://www.w3.org/ns/prov#"
+    "prov": "http://www.w3.org/ns/prov#",
+    "unk": "https://ex.org/unknown/"
   },
   "@type": [
     "schema:Dataset"
@@ -29,7 +30,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "Navigate directly to the URL for data access and direct download.",
-      "disambiguatingDescription": "download (HTTPS)",
+      "schema:disambiguatingDescription": "download (HTTPS)",
       "schema:url": "https://www.ncei.noaa.gov/archive/accession/download/1127",
       "schema:contentUrl": "https://www.ncei.noaa.gov/archive/accession/download/1127"
     },
@@ -38,7 +39,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "These data are available through the File Transfer Protocol (FTP). FTP is no longer supported by most internet browsers. You may copy and paste the FTP link to the data into an FTP client (e.g., FileZilla or WinSCP).",
-      "disambiguatingDescription": "download (FTP)",
+      "schema:disambiguatingDescription": "download (FTP)",
       "schema:url": "ftp://ftp-oceans.ncei.noaa.gov/nodc/archive/arc0010/0001127/",
       "schema:contentUrl": "ftp://ftp-oceans.ncei.noaa.gov/nodc/archive/arc0010/0001127/"
     }
@@ -50,11 +51,11 @@
     "schema:propertyID": "NCEI Dataset Identifier",
     "schema:value": "gov.noaa.nodc:0001127"
   },
-  "image": {
+  "schema:image": {
     "@type": [
       "schema:ImageObject"
     ],
-    "caption": "Preview graphic",
+    "schema:caption": "Preview graphic",
     "schema:contentUrl": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0001127",
     "schema:url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0001127"
   },
@@ -72,7 +73,7 @@
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "EARTH SCIENCE > OCEANS > SALINITY/DENSITY > SALINITY",
       "schema:url": "https://cmr.earthdata.nasa.gov/kms/concept/7e95b5fc-1d58-431a-af36-948b29fa870d"
     },
@@ -80,7 +81,7 @@
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "EARTH SCIENCE > OCEANS > OCEAN TEMPERATURE > WATER TEMPERATURE",
       "schema:url": "https://cmr.earthdata.nasa.gov/kms/concept/46206e8c-8def-406f-9e62-da4e74633a58"
     },
@@ -88,7 +89,7 @@
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatypes",
+      "schema:inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatypes",
       "schema:name": "SALINITY",
       "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatype/details/307"
     },
@@ -96,7 +97,7 @@
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatypes",
+      "schema:inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatypes",
       "schema:name": "WATER TEMPERATURE",
       "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/datatype/details/373"
     },
@@ -104,7 +105,7 @@
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstypes",
+      "schema:inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstypes",
       "schema:name": "meteorological",
       "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstype/details/12"
     },
@@ -112,7 +113,7 @@
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstypes",
+      "schema:inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstypes",
       "schema:name": "physical",
       "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstype/details/14"
     },
@@ -120,7 +121,7 @@
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstypes",
+      "schema:inDefinedTermSet": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstypes",
       "schema:name": "profile",
       "schema:url": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/obstype/details/18"
     },
@@ -144,26 +145,26 @@
       "@type": [
         "schema:PostalAddress"
       ],
-      "addressCountry": "US",
-      "addressLocality": "Asheville",
-      "addressRegion": "NC",
-      "postalCode": "28801-5001",
-      "streetAddress": "Federal Building, 151 Patton Avenue"
+      "schema:addressCountry": "US",
+      "schema:addressLocality": "Asheville",
+      "schema:addressRegion": "NC",
+      "schema:postalCode": "28801-5001",
+      "schema:streetAddress": "Federal Building, 151 Patton Avenue"
     },
     "schema:contactPoint": [
       {
         "@type": [
           "schema:ContactPoint"
         ],
-        "availableLanguage": "English",
+        "schema:availableLanguage": "English",
         "schema:contactType": "customer service",
         "schema:email": "NCEI.Info@noaa.gov",
-        "faxNumber": "+1-301-713-3300",
-        "hoursAvailable": {
+        "schema:faxNumber": "+1-301-713-3300",
+        "schema:hoursAvailable": {
           "@type": [
-            "OpeningHoursSpecification"
+            "schema:OpeningHoursSpecification"
           ],
-          "dayOfWeek": [
+          "schema:dayOfWeek": [
             "http://purl.org/goodrelations/v1/#Monday",
             "http://purl.org/goodrelations/v1/#Tuesday",
             "http://purl.org/goodrelations/v1/#Wednesday",
@@ -177,15 +178,15 @@
         "@type": [
           "schema:ContactPoint"
         ],
-        "availableLanguage": "English",
+        "schema:availableLanguage": "English",
         "schema:contactType": "technical support",
         "schema:email": "NCEI.Info@noaa.gov",
-        "faxNumber": "+1-301-713-3300",
-        "hoursAvailable": {
+        "schema:faxNumber": "+1-301-713-3300",
+        "schema:hoursAvailable": {
           "@type": [
-            "OpeningHoursSpecification"
+            "schema:OpeningHoursSpecification"
           ],
-          "dayOfWeek": [
+          "schema:dayOfWeek": [
             "http://purl.org/goodrelations/v1/#Monday",
             "http://purl.org/goodrelations/v1/#Tuesday",
             "http://purl.org/goodrelations/v1/#Wednesday",
@@ -197,7 +198,7 @@
       }
     ],
     "schema:name": "NOAA National Centers for Environmental Information (NCEI)",
-    "parentOrganization": [
+    "schema:parentOrganization": [
       {
         "@type": [
           "schema:Organization"
@@ -262,7 +263,7 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl. Added schema:conditionsOfAccess (NOAA data is public domain; original record had no license or access statement)."
+    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; Unprefixed properties assigned to unk: namespace (contentURL); @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
   },
   "schema:temporalCoverage": [
     "1961-08-05/1961-08-13"

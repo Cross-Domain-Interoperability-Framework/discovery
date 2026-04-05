@@ -3,7 +3,8 @@
     "schema": "http://schema.org/",
     "dcterms": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "prov": "http://www.w3.org/ns/prov#"
+    "prov": "http://www.w3.org/ns/prov#",
+    "unk": "https://ex.org/unknown/"
   },
   "@type": [
     "schema:Dataset"
@@ -88,7 +89,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "Direct download for dataset files.",
-      "disambiguatingDescription": "download (HTTPS)",
+      "schema:disambiguatingDescription": "download (HTTPS)",
       "schema:url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/",
       "schema:contentUrl": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/"
     },
@@ -97,7 +98,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "Access to the data via direct download.",
-      "disambiguatingDescription": "download (HTTP)",
+      "schema:disambiguatingDescription": "download (HTTP)",
       "schema:url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/",
       "schema:contentUrl": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/"
     },
@@ -106,7 +107,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "Search for data via the interface.",
-      "disambiguatingDescription": "search (HTTPS)",
+      "schema:disambiguatingDescription": "search (HTTPS)",
       "schema:url": "https://www.ncei.noaa.gov/access/search/dataset-search?text=ghcnd",
       "schema:contentUrl": "https://www.ncei.noaa.gov/access/search/dataset-search?text=ghcnd"
     },
@@ -115,7 +116,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "Dynamic GIS mapping application to locate stations and data for selected layers.",
-      "disambiguatingDescription": "search (HTTPS)",
+      "schema:disambiguatingDescription": "search (HTTPS)",
       "schema:url": "https://www.ncei.noaa.gov/maps/daily/",
       "schema:contentUrl": "https://www.ncei.noaa.gov/maps/daily/"
     },
@@ -124,7 +125,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "ArcGIS Server REST API for the dataset.",
-      "disambiguatingDescription": "search (HTTPS)",
+      "schema:disambiguatingDescription": "search (HTTPS)",
       "schema:url": "https://gis.ncdc.noaa.gov/arcgis/rest/services/cdo/ghcnd/MapServer",
       "schema:contentUrl": "https://gis.ncdc.noaa.gov/arcgis/rest/services/cdo/ghcnd/MapServer"
     },
@@ -133,7 +134,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "Direct download link for KMZ file.",
-      "disambiguatingDescription": "download (HTTPS)",
+      "schema:disambiguatingDescription": "download (HTTPS)",
       "schema:url": "https://gis.ncdc.noaa.gov/kml/ghcnd.kmz",
       "schema:contentUrl": "https://gis.ncdc.noaa.gov/kml/ghcnd.kmz"
     },
@@ -142,7 +143,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "This sample data file shows how the data are formatted in PDF and is for example purposes only.",
-      "disambiguatingDescription": "download (HTTPS)",
+      "schema:disambiguatingDescription": "download (HTTPS)",
       "schema:url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/doc/GHCND_sample.pdf",
       "schema:contentUrl": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/doc/GHCND_sample.pdf"
     },
@@ -151,7 +152,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "This sample data file shows how the data are formatted in CSV and is for example purposes only.",
-      "disambiguatingDescription": "download (HTTPS)",
+      "schema:disambiguatingDescription": "download (HTTPS)",
       "schema:url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/doc/GHCND_sample.csv",
       "schema:contentUrl": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/doc/GHCND_sample.csv"
     },
@@ -160,7 +161,7 @@
         "schema:DataDownload"
       ],
       "schema:description": "Browse view to explore the S3 bucket.",
-      "disambiguatingDescription": "download (HTTPS)",
+      "schema:disambiguatingDescription": "download (HTTPS)",
       "schema:url": "https://noaa-ghcn-pds.s3.amazonaws.com/index.html",
       "schema:contentUrl": "https://noaa-ghcn-pds.s3.amazonaws.com/index.html"
     }
@@ -175,11 +176,11 @@
     "schema:url": "https://doi.org/10.7289/v5d21vhz",
     "schema:value": "doi:10.7289/v5d21vhz"
   },
-  "image": {
+  "schema:image": {
     "@type": [
       "schema:ImageObject"
     ],
-    "caption": "Map of GHCNd stations",
+    "schema:caption": "Map of GHCNd stations",
     "schema:contentUrl": "https://www.ncei.noaa.gov/pub/data/metadata/images/C00861_GHCN-D_stations.png",
     "schema:url": "https://www.ncei.noaa.gov/pub/data/metadata/images/C00861_GHCN-D_stations.png"
   },
@@ -188,35 +189,35 @@
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "Earth Science > Atmosphere > Atmospheric Temperature > Surface Temperature > Air Temperature"
     },
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "Earth Science > Atmosphere > Atmospheric Temperature > Surface Temperature > Maximum/Minimum Temperature"
     },
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "Earth Science > Terrestrial Hydrosphere > Snow/Ice > Snow Depth"
     },
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "Earth Science > Atmosphere > Precipitation > Solid Precipitation > Snow"
     },
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:inDefinedTermSet": "https://cmr.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
       "schema:name": "Earth Science > Atmosphere > Precipitation > Precipitation Amount"
     }
   ],
@@ -229,26 +230,26 @@
       "@type": [
         "schema:PostalAddress"
       ],
-      "addressCountry": "US",
-      "addressLocality": "Asheville",
-      "addressRegion": "NC",
-      "postalCode": "28801-5001",
-      "streetAddress": "Federal Building, 151 Patton Avenue"
+      "schema:addressCountry": "US",
+      "schema:addressLocality": "Asheville",
+      "schema:addressRegion": "NC",
+      "schema:postalCode": "28801-5001",
+      "schema:streetAddress": "Federal Building, 151 Patton Avenue"
     },
     "schema:contactPoint": [
       {
         "@type": [
           "schema:ContactPoint"
         ],
-        "availableLanguage": "English",
+        "schema:availableLanguage": "English",
         "schema:contactType": "customer service",
         "schema:email": "NCEI.Info@noaa.gov",
-        "faxNumber": "+1-301-713-3300",
-        "hoursAvailable": {
+        "schema:faxNumber": "+1-301-713-3300",
+        "schema:hoursAvailable": {
           "@type": [
-            "OpeningHoursSpecification"
+            "schema:OpeningHoursSpecification"
           ],
-          "dayOfWeek": [
+          "schema:dayOfWeek": [
             "http://purl.org/goodrelations/v1/#Monday",
             "http://purl.org/goodrelations/v1/#Tuesday",
             "http://purl.org/goodrelations/v1/#Wednesday",
@@ -262,15 +263,15 @@
         "@type": [
           "schema:ContactPoint"
         ],
-        "availableLanguage": "English",
+        "schema:availableLanguage": "English",
         "schema:contactType": "technical support",
         "schema:email": "NCEI.Info@noaa.gov",
-        "faxNumber": "+1-301-713-3300",
-        "hoursAvailable": {
+        "schema:faxNumber": "+1-301-713-3300",
+        "schema:hoursAvailable": {
           "@type": [
-            "OpeningHoursSpecification"
+            "schema:OpeningHoursSpecification"
           ],
-          "dayOfWeek": [
+          "schema:dayOfWeek": [
             "http://purl.org/goodrelations/v1/#Monday",
             "http://purl.org/goodrelations/v1/#Tuesday",
             "http://purl.org/goodrelations/v1/#Wednesday",
@@ -282,7 +283,7 @@
       }
     ],
     "schema:name": "NOAA National Centers for Environmental Information (NCEI)",
-    "parentOrganization": [
+    "schema:parentOrganization": [
       {
         "@type": [
           "schema:Organization"
@@ -342,7 +343,7 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:dateModified set from schema:datePublished; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Post-conversion fixes: dist url->contentUrl. Added schema:conditionsOfAccess (NOAA data is public domain; original record had no license or access statement)."
+    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; Unprefixed properties assigned to unk: namespace (contentURL); @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:dateModified set from schema:datePublished; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
   },
   "schema:temporalCoverage": [
     "1880-01-01/.."
