@@ -40,12 +40,7 @@ All examples declare `conformsTo` for both `core/1.0` and `discovery/1.0` and pa
 ├── images/                 Diagrams (harvesting workflows, metadata embedding, digital object overview)
 ├── CDIF-Discovery-vs-SOSO-comparison.md   Comparison with ESIP Science-on-Schema.org
 ├── CDIF-metadata-crosswalks-merged.xlsx   Crosswalk mappings to DCAT, ISO 19115, DataCite, EML, etc.
-├── CDIFCoreClasses.docx                   Core metadata classes documentation
-├── CDIFDiscoveryClasses.docx              Discovery metadata classes documentation
-├── CDIFDataDescriptionClasses.docx        Data description classes documentation
-├── gen_datadesc_doc.py                    Generates CDIFDataDescriptionClasses.docx from CDIFDiscoveryClasses.docx
-├── generate_property_table.py             Extracts property tables from YAML schema building blocks
-└── merge_crosswalks.py                    Consolidates crosswalk Excel files into the merged spreadsheet
+└── CDIF-metadata-crosswalks-merged.xlsx   Crosswalk mappings to DCAT, ISO 19115, DataCite, EML, etc.
 ```
 
 ## Validation

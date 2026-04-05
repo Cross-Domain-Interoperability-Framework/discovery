@@ -1,0 +1,95 @@
+{
+    "@context": {
+        "schema": "http://schema.org/",
+        "ex": "https://example.org/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "prov": "http://www.w3.org/ns/prov#"
+    },
+    "@id": "ark:/99152/URIforTheDataset",
+    "@type": ["schema:Dataset"],
+    "schema:identifier": "urn:eop:DLR:EOWEB:Water_Parameter_North_Sea",
+    "schema:dateModified": "2026-04-05",
+    "schema:name": "MERIS - Water Parameters - North Sea, 10-Day",
+    "schema:description": "The Medium Resolution Imaging Spectrometer (MERIS) on Board ESA’s ENVISAT provides spectral high resolution image data in the visible-near infrared spectral region (412-900 nm) at a spatial resolution of 300 m. For more details on ENVISAT and MERIS see http://envisat.esa.int/ This product developed in the frame of the MAPP project (MERIS Application and Regional Products Projects) represents the chlorophyll concentration of the North Sea derived from MERIS data... ",
+    "schema:license": ["missing"],
+    "schema:distribution": [
+        {
+            "@type": [
+                "schema:WebAPI"
+            ],
+            "schema:name": "urn:eop:DLR:EOWEB:Water_Parameter_North_Sea_MERIS_10-days_maps",
+            "schema:serviceType": "OpenSearch",
+            "schema:termsOfService": "Nutzungseinschränkungen: DLR not liable for damage resulting from use",
+            "schema:potentialAction": [
+                {
+                    "@type": ["schema:Action"],
+                    "schema:name": "search archive",
+                    "schema:target": {
+                        "@type": ["schema:EntryPoint"],
+                        "schema:urlTemplate": "https://fedeo.ceos.org/collections/series/items/urn:eop:DLR:EOWEB:Water_Parameter_North_Sea_MERIS_10-days_maps/api",
+                        "schema:description": "OpenSearch Description; fedeo Earth Observation Catalogue",
+                        "schema:httpMethod": ["GET"]
+                    },
+                    "schema:result": {
+                        "@type": ["schema:DataDownload", "schema:CreativeWork"],
+                        "schema:encodingFormat": ["application/xml"]
+                    }
+                },
+                {
+                    "@type": ["schema:SearchAction"],
+                    "schema:name": "search MERIS water parameter granules",
+                    "schema:target": {
+                        "@type": ["schema:EntryPoint"],
+                        "schema:urlTemplate": "https://fedeo.ceos.org/collections/datasets/items?httpAccept={format}&amp;parentIdentifier=urn:eop:DLR:EOWEB:Water_Parameter_North_Sea_MERIS_10-days_maps&amp;startRecord={startIndex?}&amp;startPage={startPage?}&amp;limit={count?}&amp;datetime={time:start}/{time:end}&amp;geometry={geo:geometry?}&amp;bbox={geo:box?}",
+                        "schema:description": "Simple search template for for MERIS 10day water parameter maps; for complete list of parameters get the OpenSearch document",
+                        "schema:httpMethod": ["GET"]
+                    },
+                    "schema:query-input": [
+                        {
+                            "@type": ["schema:PropertyValueSpecification"],
+                            "schema:valueName": "format",
+                            "schema:description": "identifier for format string",
+                            "schema:valueRequired": true,
+                            "schema:rangeIncludes": [
+                                "application/opensearchdescription+xml",
+                                "application/geo+json",
+                                "application/geo+json;profile=&quot;http://www.opengis.net/spec/ogcapi-features-1/1.0&quot;",
+                                "application/geo+json;profile=&quot;http://www.opengis.net/spec/os-geojson/1.0&quot;",
+                                "text/turtle",
+                                "application/atom+xml",
+                                "... many others"
+                            ]
+                        },
+                        {
+                            "@type": ["schema:PropertyValueSpecification"],
+                            "schema:valueName": "limit",
+                            "schema:description": "maximum number of results to return",
+                            "schema:valuePattern": "[0-9]+"
+                        },
+                        {
+                            "@type": ["schema:PropertyValueSpecification"],
+                            "schema:valueName": "startIndex",
+                            "schema:description": "index of first result to return (for paging)"
+                        }
+                    ],
+                    "schema:result": {
+                        "@type": ["schema:DataDownload", "schema:Dataset"],
+                        "schema:description": "metadata for specific granule, with link to access data",
+                        "schema:encodingFormat": ["application/json"]
+                    }
+                }
+            ]
+        }
+    ],
+    "schema:subjectOf": {
+        "@id": "metadata:ark:/99152/URIforTheMetadataRecord",
+        "@type": ["schema:Dataset"],
+        "schema:additionalType": ["dcat:CatalogRecord"],
+        "schema:dateModified": "2014-02-23",
+        "schema:about": {"@id": "ark:/99152/URIforTheDataset"},
+        "dcterms:conformsTo": [
+            {"@id": "https://w3id.org/cdif/core/1.0"}
+        ]
+    }
+}
