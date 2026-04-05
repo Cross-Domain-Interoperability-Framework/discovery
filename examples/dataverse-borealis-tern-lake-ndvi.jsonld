@@ -34,27 +34,6 @@
       }
     ]
   },
-  "schema:author": [
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Robert",
-      "schema:familyName": "Bogue",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "McGill University"
-      },
-      "schema:sameAs": [
-        "https://orcid.org/0000-0001-5921-0561"
-      ],
-      "@id": "https://orcid.org/0000-0001-5921-0561",
-      "schema:identifier": "https://orcid.org/0000-0001-5921-0561",
-      "schema:name": "Bogue, Robert"
-    }
-  ],
   "schema:datePublished": "2023-08-16",
   "schema:dateModified": "2023-08-16",
   "schema:version": "1",
@@ -191,6 +170,6 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Removed redundant schema:author (identical to schema:creator); CDIF recommends schema:creator."
   }
 }

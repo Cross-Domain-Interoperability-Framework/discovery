@@ -21,14 +21,6 @@
       }
     ]
   },
-  "schema:author": [
-    {
-      "@type": [
-        "schema:Organization"
-      ],
-      "schema:name": "Statistics Canada"
-    }
-  ],
   "schema:datePublished": "2017-01-16",
   "schema:dateModified": "2023-09-28",
   "schema:version": "2",
@@ -1985,6 +1977,6 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Removed redundant schema:author (identical to schema:creator); CDIF recommends schema:creator."
   }
 }

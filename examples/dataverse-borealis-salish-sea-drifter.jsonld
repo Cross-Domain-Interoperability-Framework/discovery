@@ -34,27 +34,6 @@
       }
     ]
   },
-  "schema:author": [
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Rich",
-      "schema:familyName": "Pawlowicz",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "University of British Columbia"
-      },
-      "schema:sameAs": [
-        "https://orcid.org/0000-0002-2439-963X"
-      ],
-      "@id": "https://orcid.org/0000-0002-2439-963X",
-      "schema:identifier": "https://orcid.org/0000-0002-2439-963X",
-      "schema:name": "Pawlowicz, Rich"
-    }
-  ],
   "schema:datePublished": "2020-10-13",
   "schema:dateModified": "2022-05-31",
   "schema:version": "1",
@@ -184,6 +163,6 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Removed redundant schema:author (identical to schema:creator); CDIF recommends schema:creator."
   }
 }

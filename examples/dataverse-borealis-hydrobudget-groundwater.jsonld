@@ -81,74 +81,6 @@
       }
     ]
   },
-  "schema:author": [
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Emmanuel",
-      "schema:familyName": "Dubois",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "UQAM | Université du Québec à Montréal"
-      },
-      "schema:sameAs": [
-        "https://orcid.org/0000-0003-4896-6368"
-      ],
-      "@id": "https://orcid.org/0000-0003-4896-6368",
-      "schema:identifier": "https://orcid.org/0000-0003-4896-6368",
-      "schema:name": "Dubois, Emmanuel"
-    },
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Marie",
-      "schema:familyName": "Larocque",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "UQAM | Université du Québec à Montréal"
-      },
-      "schema:sameAs": [
-        "https://orcid.org/0000-0001-9906-3535"
-      ],
-      "@id": "https://orcid.org/0000-0001-9906-3535",
-      "schema:identifier": "https://orcid.org/0000-0001-9906-3535",
-      "schema:name": "Larocque, Marie"
-    },
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Sylvain",
-      "schema:familyName": "Gagne",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "UQAM | Université du Québec à Montréal"
-      },
-      "schema:name": "Gagne, Sylvain"
-    },
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Guillaume",
-      "schema:familyName": "Meyzonnat",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "UQAM | Université du Québec à Montréal"
-      },
-      "schema:name": "Meyzonnat, Guillaume"
-    }
-  ],
   "schema:datePublished": "2021-11-10",
   "schema:dateModified": "2023-07-26",
   "schema:version": "5",
@@ -456,6 +388,6 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Removed redundant schema:author (identical to schema:creator); CDIF recommends schema:creator."
   }
 }

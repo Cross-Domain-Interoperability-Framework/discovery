@@ -72,65 +72,6 @@
       }
     ]
   },
-  "schema:author": [
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Kristine M.",
-      "schema:familyName": "Haynes",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "Wilfrid Laurier University"
-      },
-      "schema:sameAs": [
-        "https://orcid.org/0000-0002-9529-4640"
-      ],
-      "@id": "https://orcid.org/0000-0002-9529-4640",
-      "schema:identifier": "https://orcid.org/0000-0002-9529-4640",
-      "schema:name": "Haynes, Kristine M."
-    },
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Ryan F.",
-      "schema:familyName": "Connon",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "Wilfrid Laurier University"
-      },
-      "schema:sameAs": [
-        "https://orcid.org/0000-0002-2420-3609"
-      ],
-      "@id": "https://orcid.org/0000-0002-2420-3609",
-      "schema:identifier": "https://orcid.org/0000-0002-2420-3609",
-      "schema:name": "Connon, Ryan F."
-    },
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "William L.",
-      "schema:familyName": "Quinton",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "Wilfrid Laurier University"
-      },
-      "schema:sameAs": [
-        "https://orcid.org/0000-0001-5707-4519"
-      ],
-      "@id": "https://orcid.org/0000-0001-5707-4519",
-      "schema:identifier": "https://orcid.org/0000-0001-5707-4519",
-      "schema:name": "Quinton, William L."
-    }
-  ],
   "schema:datePublished": "2018-05-22",
   "schema:dateModified": "2023-10-13",
   "schema:version": "1",
@@ -271,6 +212,6 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Removed redundant schema:author (identical to schema:creator); CDIF recommends schema:creator."
   }
 }

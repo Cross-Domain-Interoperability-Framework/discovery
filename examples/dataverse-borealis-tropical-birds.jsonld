@@ -85,78 +85,6 @@
       }
     ]
   },
-  "schema:author": [
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Gustavo A.",
-      "schema:familyName": "Londoño",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "University of California System"
-      },
-      "schema:name": "Londoño, Gustavo A."
-    },
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Mark A.",
-      "schema:familyName": "Chappell",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "Harvard University"
-      },
-      "schema:name": "Chappell, Mark A."
-    },
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "María del Rosario",
-      "schema:familyName": "Castañeda",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "Harvard University"
-      },
-      "schema:name": "Castañeda, María del Rosario"
-    },
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Jill E.",
-      "schema:familyName": "Jankowski",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "University of British Columbia"
-      },
-      "schema:name": "Jankowski, Jill E."
-    },
-    {
-      "@type": [
-        "schema:Person"
-      ],
-      "schema:givenName": "Scott K.",
-      "schema:familyName": "Robinson",
-      "schema:affiliation": {
-        "@type": [
-          "schema:Organization"
-        ],
-        "schema:name": "University of Florida"
-      },
-      "schema:name": "Robinson, Scott K."
-    }
-  ],
   "schema:datePublished": "2021-05-19",
   "schema:dateModified": "2021-05-19",
   "schema:version": "1",
@@ -274,6 +202,6 @@
       "schema:name": "GeoCodes - EarthCube Discovery",
       "schema:url": "https://geocodes.earthcube.org/"
     },
-    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+    "schema:description": "Metadata harvested from Borealis by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). Removed redundant schema:author (identical to schema:creator); CDIF recommends schema:creator."
   }
 }
