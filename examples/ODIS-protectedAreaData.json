@@ -1,0 +1,284 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://urlToThisJsonLD.org/",
+  "schema:name": "Florida Quays National Marine Sanctuary data bundle",
+  "schema:description": "This dataset contains geospatial data delimiting the Florida Quays National Marine Sanctuary as well as information on their management, governing policies, human activities, and other relevant features.",
+  "schema:url": "https://mpa.protectedseas.net/index.php?z=7&lat=24.976890639378173&lng=-81.60833353550001&q=NMS4&pin",
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "https://protectedseas.net/download/fq2007.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ]
+    }
+  ],
+  "schema:sameAs": [
+    "https://URLforAnyEquivalentPages.org/"
+  ],
+  "schema:license": [
+    "This work is licensed under a  Creative Commons Attribution (CC-BY) 4.0 License"
+  ],
+  "schema:citation": "Any citations of other CreativeWorks that are relevant to or qualify this one",
+  "schema:version": "2021-04-24T06:34:56.000Z",
+  "schema:keywords": [
+    "marine protected area",
+    "sanctuary",
+    "Florida",
+    "ocean use regulations",
+    "fishing restrictions"
+  ],
+  "schema:measurementTechnique": [
+    "The URL to or text about the methods, technique or technology used in a Dataset"
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Level of fishing protection",
+      "schema:propertyID": [
+        "PID/URI to a controlled vocabulary term or similar describing this variable"
+      ],
+      "schema:description": "This variable uses a 1 through 5 categorial/ordinal scale to express the level of restriction (5 being the most restricted) on fishing activity in the protected area",
+      "schema:measurementTechnique": "URLtoMethodology or text describing method of determination"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Bottom trawling status",
+      "schema:propertyID": [
+        "PID/URI to a controlled vocabulary term or similar describing this variable"
+      ],
+      "schema:description": "The levels of this categorical variable indicate whether bottom trawling is allowed (0), restricted(1), prohibited (2), or if the status is unknown or does not apply (3)"
+    }
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:url": "https://protectedseas.net/odisCatalog"
+  },
+  "schema:temporalCoverage": [
+    "2007/2007"
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Pyramid Point State Marine Conservation Area",
+      "schema:url": "https://urlToTheMPA.gov/",
+      "schema:identifier": {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:propertyID": "Management Authority area ID",
+        "schema:value": "CA302"
+      },
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:polygon": "142.014 10.161667,142.014 18.033833,147.997833 18.033833,147.997833 10.161667,142.014 10.161667",
+        "schema:box": "10.161667 142.014 18.033833 147.997833"
+      },
+      "schema:additionalProperty": [
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+          "schema:value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Area type",
+          "schema:value": "Marine Protected Area"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Area Management Authority",
+          "schema:value": "National Oceanographic and Atmospheric Administration"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Area Management Authority Type",
+          "schema:value": "Federal"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Area Subnational Unit",
+          "schema:value": "Florida"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Area Designation",
+          "schema:value": "National Marine Sanctuary"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Year of Establishment",
+          "schema:value": "1975"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Coastal",
+          "schema:value": "Yes"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Terrestrial component",
+          "schema:value": "Yes"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Spatial area",
+          "schema:value": "500000",
+          "schema:unitCode": "http://qudt.org/vocab/unit/M2"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "IUCN Classification",
+          "schema:value": "II"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "No-take area",
+          "schema:value": "No"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Restricted-take area",
+          "schema:value": "Yes"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Regulation citations",
+          "schema:value": "https://urlToManagementPlan.gov/"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Stage of establishment",
+          "schema:value": "Actively managed"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "Counted for 30 x 30",
+          "schema:value": "Yes",
+          "schema:url": "https://urlToFurther30x30Information.org/"
+        }
+      ],
+      "publicAccess": "True"
+    }
+  ],
+  "schema:provider": [
+    {
+      "schema:identifier": "https://oceanexpert.org/institution/CodeForProtectedSeas",
+      "@type": [
+        "schema:Organization"
+      ],
+      "legalName": "ProtectedSeas",
+      "schema:name": "ProtectedSeas",
+      "schema:url": "https://protectedseas.net/"
+    }
+  ],
+  "schema:about": [
+    {
+      "@type": [
+        "Event"
+      ],
+      "schema:description": "Assessment of the protection status of the Florida Quays MPA",
+      "schema:name": "Florida Quays MPA Assessment",
+      "schema:potentialAction": [
+        {
+          "@type": [
+            "schema:Action"
+          ],
+          "schema:name": "Assessment of the level of fishing protection in the Florida Quays in 2007 trawling restrictions in the Florida Quays"
+        },
+        {
+          "@type": [
+            "schema:Action"
+          ],
+          "schema:name": "Assessment of the bottom trawling restrictions in the Florida Quays in 2007"
+        }
+      ]
+    }
+  ],
+  "publishingPrinciples": [
+    {
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:url": "http://example.org/id/doc/ID",
+      "schema:name": "Recommendations for assessing protected area status in US national waters",
+      "schema:description": "This dataset was generated following the recommendations of ..."
+    }
+  ],
+  "schema:identifier": "https://urlToThisJsonLD.org/",
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://urlToThisJsonLD.org/#metadata",
+    "schema:name": "Metadata record for: Florida Quays National Marine Sanctuary data bundle",
+    "schema:about": {
+      "@id": "https://urlToThisJsonLD.org/"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:description": "Converted to CDIF Discovery profile from pre-existing example: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations; @type values normalized to arrays with schema: prefix; schema:identifier added from @id; schema:license wrapped in array; Distributions normalized. Additional fixes: schema:dateModified set from datePublished or placeholder; schema:measurementTechnique wrapped in array; spatialCoverage identifier unwrapped from array; GeoShape polygon supplemented with bounding box."
+  },
+  "schema:dateModified": "2020-01-01"
+}

@@ -1,0 +1,1118 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:additionalType": [
+    "geolink:Dataset",
+    "vivo:Dataset"
+  ],
+  "schema:alternateName": "CA10_DIABLO",
+  "schema:citation": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast. Distributed by OpenTopography. https://doi.org/10.5069/G9P26W19 . Accessed: 2022-04-28",
+  "schema:contributor": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Watershed Sciences, Inc",
+      "schema:url": "http://www.watershedsciences.com/"
+    }
+  ],
+  "schema:dateCreated": "2013-02-25 16:17:46",
+  "schema:description": "The Diablo Canyon Power Plant (DCPP) Lidar and Imagery datasets are comprised of three separate Lidar surveys: Diablo Canyon (2010), Los Osos (2011), and San Simeon (2013).    The Diablo Canyon project study is located in San Luis Obispo County, California, and encompasses approximately 10,634 acres (43.03 square kilometers). Watershed Sciences, Inc. (WSI) collected Light Detection and Ranging (Lidar) data on both the inland and intertidal land within the Diablo Canyon study area on 28 January 2010. For optimal capture of the intertidal zone, WSI acquired Lidar data of the coastline during seasonal low tides (between 0.0 ft and peak low of ~ -1.5 ft) and in conjunction with a PDOP value of less than 3.0.    This Lidar survey utilized a Leica ALS50 Phase II laser system. The sensor scan angle was ±13° from nadir with a pulse rate designed to yield an average native density of ≥8 pulses per square meter over terrestrial surfaces. The area of interest was surveyed with an opposing flight line side-lap of ≥50% (≥100% overlap) to reduce laser shadowing and increase surface laser painting.   This survey was flown as part of the DCPP Long-Term Seismic Program (LTSP). In addition to aerial Lidar data, DEM and orthophotography raster data are available for this area: Diablo Canyon DEMs and Orthophotos.",
+  "schema:encodingFormat": "application/octet-stream;type=ASPRS-LAS",
+  "schema:fileFormat": "Point Cloud Data",
+  "schema:funder": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Pacific Gas & Electric Company",
+    "schema:url": "http://www.pge.com/dcpp-ltsp"
+  },
+  "schema:identifier": {
+    "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2",
+    "@type": [
+      "schema:Dataset",
+      "schema:PropertyValue"
+    ],
+    "schema:additionalType": [
+      "geolink:Dataset",
+      "vivo:Dataset"
+    ],
+    "schema:alternateName": "CA10_DIABLO",
+    "schema:citation": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast. Distributed by OpenTopography. https://doi.org/10.5069/G9P26W19 . Accessed: 2022-04-28",
+    "schema:contributor": {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Watershed Sciences, Inc",
+      "schema:url": "http://www.watershedsciences.com/"
+    },
+    "schema:dateCreated": "2013-02-25 16:17:46",
+    "schema:description": "The Diablo Canyon Power Plant (DCPP) Lidar and Imagery datasets are comprised of three separate Lidar surveys: Diablo Canyon (2010), Los Osos (2011), and San Simeon (2013).    The Diablo Canyon project study is located in San Luis Obispo County, California, and encompasses approximately 10,634 acres (43.03 square kilometers). Watershed Sciences, Inc. (WSI) collected Light Detection and Ranging (Lidar) data on both the inland and intertidal land within the Diablo Canyon study area on 28 January 2010. For optimal capture of the intertidal zone, WSI acquired Lidar data of the coastline during seasonal low tides (between 0.0 ft and peak low of ~ -1.5 ft) and in conjunction with a PDOP value of less than 3.0.    This Lidar survey utilized a Leica ALS50 Phase II laser system. The sensor scan angle was ±13° from nadir with a pulse rate designed to yield an average native density of ≥8 pulses per square meter over terrestrial surfaces. The area of interest was surveyed with an opposing flight line side-lap of ≥50% (≥100% overlap) to reduce laser shadowing and increase surface laser painting.   This survey was flown as part of the DCPP Long-Term Seismic Program (LTSP). In addition to aerial Lidar data, DEM and orthophotography raster data are available for this area: Diablo Canyon DEMs and Orthophotos.",
+    "schema:encodingFormat": "application/octet-stream;type=ASPRS-LAS",
+    "schema:fileFormat": "Point Cloud Data",
+    "schema:funder": {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Pacific Gas & Electric Company",
+      "schema:url": "http://www.pge.com/dcpp-ltsp"
+    },
+    "schema:identifier": {
+      "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2",
+      "@type": [
+        "schema:Dataset",
+        "schema:PropertyValue"
+      ],
+      "schema:additionalType": [
+        "geolink:Dataset",
+        "vivo:Dataset"
+      ],
+      "schema:alternateName": "CA10_DIABLO",
+      "schema:citation": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast. Distributed by OpenTopography. https://doi.org/10.5069/G9P26W19 . Accessed: 2022-04-28",
+      "schema:contributor": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Watershed Sciences, Inc",
+        "schema:url": "http://www.watershedsciences.com/"
+      },
+      "schema:dateCreated": "2013-02-25 16:17:46",
+      "schema:description": "The Diablo Canyon Power Plant (DCPP) Lidar and Imagery datasets are comprised of three separate Lidar surveys: Diablo Canyon (2010), Los Osos (2011), and San Simeon (2013).    The Diablo Canyon project study is located in San Luis Obispo County, California, and encompasses approximately 10,634 acres (43.03 square kilometers). Watershed Sciences, Inc. (WSI) collected Light Detection and Ranging (Lidar) data on both the inland and intertidal land within the Diablo Canyon study area on 28 January 2010. For optimal capture of the intertidal zone, WSI acquired Lidar data of the coastline during seasonal low tides (between 0.0 ft and peak low of ~ -1.5 ft) and in conjunction with a PDOP value of less than 3.0.    This Lidar survey utilized a Leica ALS50 Phase II laser system. The sensor scan angle was ±13° from nadir with a pulse rate designed to yield an average native density of ≥8 pulses per square meter over terrestrial surfaces. The area of interest was surveyed with an opposing flight line side-lap of ≥50% (≥100% overlap) to reduce laser shadowing and increase surface laser painting.   This survey was flown as part of the DCPP Long-Term Seismic Program (LTSP). In addition to aerial Lidar data, DEM and orthophotography raster data are available for this area: Diablo Canyon DEMs and Orthophotos.",
+      "schema:encodingFormat": "application/octet-stream;type=ASPRS-LAS",
+      "schema:fileFormat": "Point Cloud Data",
+      "schema:funder": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Pacific Gas & Electric Company",
+        "schema:url": "http://www.pge.com/dcpp-ltsp"
+      },
+      "schema:identifier": {
+        "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2",
+        "@type": [
+          "schema:Dataset",
+          "schema:PropertyValue"
+        ],
+        "schema:additionalType": [
+          "geolink:Dataset",
+          "vivo:Dataset"
+        ],
+        "schema:alternateName": "CA10_DIABLO",
+        "schema:citation": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast. Distributed by OpenTopography. https://doi.org/10.5069/G9P26W19 . Accessed: 2022-04-28",
+        "schema:contributor": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "Watershed Sciences, Inc",
+          "schema:url": "http://www.watershedsciences.com/"
+        },
+        "schema:dateCreated": "2013-02-25 16:17:46",
+        "schema:description": "The Diablo Canyon Power Plant (DCPP) Lidar and Imagery datasets are comprised of three separate Lidar surveys: Diablo Canyon (2010), Los Osos (2011), and San Simeon (2013).    The Diablo Canyon project study is located in San Luis Obispo County, California, and encompasses approximately 10,634 acres (43.03 square kilometers). Watershed Sciences, Inc. (WSI) collected Light Detection and Ranging (Lidar) data on both the inland and intertidal land within the Diablo Canyon study area on 28 January 2010. For optimal capture of the intertidal zone, WSI acquired Lidar data of the coastline during seasonal low tides (between 0.0 ft and peak low of ~ -1.5 ft) and in conjunction with a PDOP value of less than 3.0.    This Lidar survey utilized a Leica ALS50 Phase II laser system. The sensor scan angle was ±13° from nadir with a pulse rate designed to yield an average native density of ≥8 pulses per square meter over terrestrial surfaces. The area of interest was surveyed with an opposing flight line side-lap of ≥50% (≥100% overlap) to reduce laser shadowing and increase surface laser painting.   This survey was flown as part of the DCPP Long-Term Seismic Program (LTSP). In addition to aerial Lidar data, DEM and orthophotography raster data are available for this area: Diablo Canyon DEMs and Orthophotos.",
+        "schema:encodingFormat": "application/octet-stream;type=ASPRS-LAS",
+        "schema:fileFormat": "Point Cloud Data",
+        "schema:funder": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "Pacific Gas & Electric Company",
+          "schema:url": "http://www.pge.com/dcpp-ltsp"
+        },
+        "schema:identifier": {
+          "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2",
+          "@type": [
+            "schema:Dataset",
+            "schema:PropertyValue"
+          ],
+          "schema:additionalType": [
+            "geolink:Dataset",
+            "vivo:Dataset"
+          ],
+          "schema:alternateName": "CA10_DIABLO",
+          "schema:citation": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast. Distributed by OpenTopography. https://doi.org/10.5069/G9P26W19 . Accessed: 2022-04-28",
+          "schema:contributor": {
+            "@type": [
+              "schema:Organization"
+            ],
+            "schema:name": "Watershed Sciences, Inc",
+            "schema:url": "http://www.watershedsciences.com/"
+          },
+          "schema:dateCreated": "2013-02-25 16:17:46",
+          "schema:description": "The Diablo Canyon Power Plant (DCPP) Lidar and Imagery datasets are comprised of three separate Lidar surveys: Diablo Canyon (2010), Los Osos (2011), and San Simeon (2013).    The Diablo Canyon project study is located in San Luis Obispo County, California, and encompasses approximately 10,634 acres (43.03 square kilometers). Watershed Sciences, Inc. (WSI) collected Light Detection and Ranging (Lidar) data on both the inland and intertidal land within the Diablo Canyon study area on 28 January 2010. For optimal capture of the intertidal zone, WSI acquired Lidar data of the coastline during seasonal low tides (between 0.0 ft and peak low of ~ -1.5 ft) and in conjunction with a PDOP value of less than 3.0.    This Lidar survey utilized a Leica ALS50 Phase II laser system. The sensor scan angle was ±13° from nadir with a pulse rate designed to yield an average native density of ≥8 pulses per square meter over terrestrial surfaces. The area of interest was surveyed with an opposing flight line side-lap of ≥50% (≥100% overlap) to reduce laser shadowing and increase surface laser painting.   This survey was flown as part of the DCPP Long-Term Seismic Program (LTSP). In addition to aerial Lidar data, DEM and orthophotography raster data are available for this area: Diablo Canyon DEMs and Orthophotos.",
+          "schema:encodingFormat": "application/octet-stream;type=ASPRS-LAS",
+          "schema:fileFormat": "Point Cloud Data",
+          "schema:funder": {
+            "@type": [
+              "schema:Organization"
+            ],
+            "schema:name": "Pacific Gas & Electric Company",
+            "schema:url": "http://www.pge.com/dcpp-ltsp"
+          },
+          "schema:identifier": {
+            "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2",
+            "@type": [
+              "schema:Dataset",
+              "schema:PropertyValue"
+            ],
+            "schema:additionalType": [
+              "geolink:Dataset",
+              "vivo:Dataset"
+            ],
+            "schema:alternateName": "CA10_DIABLO",
+            "schema:citation": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast. Distributed by OpenTopography. https://doi.org/10.5069/G9P26W19 . Accessed: 2022-04-28",
+            "schema:contributor": {
+              "@type": [
+                "schema:Organization"
+              ],
+              "schema:name": "Watershed Sciences, Inc",
+              "schema:url": "http://www.watershedsciences.com/"
+            },
+            "schema:dateCreated": "2013-02-25 16:17:46",
+            "schema:description": "The Diablo Canyon Power Plant (DCPP) Lidar and Imagery datasets are comprised of three separate Lidar surveys: Diablo Canyon (2010), Los Osos (2011), and San Simeon (2013).    The Diablo Canyon project study is located in San Luis Obispo County, California, and encompasses approximately 10,634 acres (43.03 square kilometers). Watershed Sciences, Inc. (WSI) collected Light Detection and Ranging (Lidar) data on both the inland and intertidal land within the Diablo Canyon study area on 28 January 2010. For optimal capture of the intertidal zone, WSI acquired Lidar data of the coastline during seasonal low tides (between 0.0 ft and peak low of ~ -1.5 ft) and in conjunction with a PDOP value of less than 3.0.    This Lidar survey utilized a Leica ALS50 Phase II laser system. The sensor scan angle was ±13° from nadir with a pulse rate designed to yield an average native density of ≥8 pulses per square meter over terrestrial surfaces. The area of interest was surveyed with an opposing flight line side-lap of ≥50% (≥100% overlap) to reduce laser shadowing and increase surface laser painting.   This survey was flown as part of the DCPP Long-Term Seismic Program (LTSP). In addition to aerial Lidar data, DEM and orthophotography raster data are available for this area: Diablo Canyon DEMs and Orthophotos.",
+            "schema:encodingFormat": "application/octet-stream;type=ASPRS-LAS",
+            "schema:fileFormat": "Point Cloud Data",
+            "schema:funder": {
+              "@type": [
+                "schema:Organization"
+              ],
+              "schema:name": "Pacific Gas & Electric Company",
+              "schema:url": "http://www.pge.com/dcpp-ltsp"
+            },
+            "schema:identifier": {
+              "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2",
+              "@type": [
+                "schema:Dataset",
+                "schema:PropertyValue"
+              ],
+              "schema:additionalType": [
+                "geolink:Dataset",
+                "vivo:Dataset"
+              ],
+              "schema:alternateName": "CA10_DIABLO",
+              "schema:citation": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast. Distributed by OpenTopography. https://doi.org/10.5069/G9P26W19 . Accessed: 2022-04-28",
+              "schema:contributor": {
+                "@type": [
+                  "schema:Organization"
+                ],
+                "schema:name": "Watershed Sciences, Inc",
+                "schema:url": "http://www.watershedsciences.com/"
+              },
+              "schema:dateCreated": "2013-02-25 16:17:46",
+              "schema:description": "The Diablo Canyon Power Plant (DCPP) Lidar and Imagery datasets are comprised of three separate Lidar surveys: Diablo Canyon (2010), Los Osos (2011), and San Simeon (2013).    The Diablo Canyon project study is located in San Luis Obispo County, California, and encompasses approximately 10,634 acres (43.03 square kilometers). Watershed Sciences, Inc. (WSI) collected Light Detection and Ranging (Lidar) data on both the inland and intertidal land within the Diablo Canyon study area on 28 January 2010. For optimal capture of the intertidal zone, WSI acquired Lidar data of the coastline during seasonal low tides (between 0.0 ft and peak low of ~ -1.5 ft) and in conjunction with a PDOP value of less than 3.0.    This Lidar survey utilized a Leica ALS50 Phase II laser system. The sensor scan angle was ±13° from nadir with a pulse rate designed to yield an average native density of ≥8 pulses per square meter over terrestrial surfaces. The area of interest was surveyed with an opposing flight line side-lap of ≥50% (≥100% overlap) to reduce laser shadowing and increase surface laser painting.   This survey was flown as part of the DCPP Long-Term Seismic Program (LTSP). In addition to aerial Lidar data, DEM and orthophotography raster data are available for this area: Diablo Canyon DEMs and Orthophotos.",
+              "schema:encodingFormat": "application/octet-stream;type=ASPRS-LAS",
+              "schema:fileFormat": "Point Cloud Data",
+              "schema:funder": {
+                "@type": [
+                  "schema:Organization"
+                ],
+                "schema:name": "Pacific Gas & Electric Company",
+                "schema:url": "http://www.pge.com/dcpp-ltsp"
+              },
+              "schema:identifier": {
+                "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2",
+                "@type": [
+                  "schema:Dataset",
+                  "schema:PropertyValue"
+                ],
+                "schema:additionalType": [
+                  "geolink:Dataset",
+                  "vivo:Dataset"
+                ],
+                "schema:alternateName": "CA10_DIABLO",
+                "schema:citation": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast. Distributed by OpenTopography. https://doi.org/10.5069/G9P26W19 . Accessed: 2022-04-28",
+                "schema:contributor": {
+                  "@type": [
+                    "schema:Organization"
+                  ],
+                  "schema:name": "Watershed Sciences, Inc",
+                  "schema:url": "http://www.watershedsciences.com/"
+                },
+                "schema:dateCreated": "2013-02-25 16:17:46",
+                "schema:description": "The Diablo Canyon Power Plant (DCPP) Lidar and Imagery datasets are comprised of three separate Lidar surveys: Diablo Canyon (2010), Los Osos (2011), and San Simeon (2013).    The Diablo Canyon project study is located in San Luis Obispo County, California, and encompasses approximately 10,634 acres (43.03 square kilometers). Watershed Sciences, Inc. (WSI) collected Light Detection and Ranging (Lidar) data on both the inland and intertidal land within the Diablo Canyon study area on 28 January 2010. For optimal capture of the intertidal zone, WSI acquired Lidar data of the coastline during seasonal low tides (between 0.0 ft and peak low of ~ -1.5 ft) and in conjunction with a PDOP value of less than 3.0.    This Lidar survey utilized a Leica ALS50 Phase II laser system. The sensor scan angle was ±13° from nadir with a pulse rate designed to yield an average native density of ≥8 pulses per square meter over terrestrial surfaces. The area of interest was surveyed with an opposing flight line side-lap of ≥50% (≥100% overlap) to reduce laser shadowing and increase surface laser painting.   This survey was flown as part of the DCPP Long-Term Seismic Program (LTSP). In addition to aerial Lidar data, DEM and orthophotography raster data are available for this area: Diablo Canyon DEMs and Orthophotos.",
+                "schema:encodingFormat": "application/octet-stream;type=ASPRS-LAS",
+                "schema:fileFormat": "Point Cloud Data",
+                "schema:funder": {
+                  "@type": [
+                    "schema:Organization"
+                  ],
+                  "schema:name": "Pacific Gas & Electric Company",
+                  "schema:url": "http://www.pge.com/dcpp-ltsp"
+                },
+                "schema:identifier": {
+                  "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2",
+                  "@type": [
+                    "schema:Dataset",
+                    "schema:PropertyValue"
+                  ],
+                  "schema:additionalType": [
+                    "geolink:Dataset",
+                    "vivo:Dataset"
+                  ],
+                  "schema:alternateName": "CA10_DIABLO",
+                  "schema:citation": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast. Distributed by OpenTopography. https://doi.org/10.5069/G9P26W19 . Accessed: 2022-04-28",
+                  "schema:dateCreated": "2013-02-25 16:17:46",
+                  "schema:description": "The Diablo Canyon Power Plant (DCPP) Lidar and Imagery datasets are comprised of three separate Lidar surveys: Diablo Canyon (2010), Los Osos (2011), and San Simeon (2013).    The Diablo Canyon project study is located in San Luis Obispo County, California, and encompasses approximately 10,634 acres (43.03 square kilometers). Watershed Sciences, Inc. (WSI) collected Light Detection and Ranging (Lidar) data on both the inland and intertidal land within the Diablo Canyon study area on 28 January 2010. For optimal capture of the intertidal zone, WSI acquired Lidar data of the coastline during seasonal low tides (between 0.0 ft and peak low of ~ -1.5 ft) and in conjunction with a PDOP value of less than 3.0.    This Lidar survey utilized a Leica ALS50 Phase II laser system. The sensor scan angle was ±13° from nadir with a pulse rate designed to yield an average native density of ≥8 pulses per square meter over terrestrial surfaces. The area of interest was surveyed with an opposing flight line side-lap of ≥50% (≥100% overlap) to reduce laser shadowing and increase surface laser painting.   This survey was flown as part of the DCPP Long-Term Seismic Program (LTSP). In addition to aerial Lidar data, DEM and orthophotography raster data are available for this area: Diablo Canyon DEMs and Orthophotos.",
+                  "schema:encodingFormat": "application/octet-stream;type=ASPRS-LAS",
+                  "schema:fileFormat": "Point Cloud Data",
+                  "schema:isAccessibleForFree": true,
+                  "schema:keywords": "San Luis Obispo County, Diablo Canyon, California, PG&E, Diablo Canyon Power Plant (DCPP), lidar",
+                  "schema:license": "Not-Provided",
+                  "schema:locationCreated": "",
+                  "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+                  "schema:propertyID": "opentopoID",
+                  "schema:sameAs": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2",
+                  "schema:temporalCoverage": "2010-01-28/2010-01-28",
+                  "schema:url": "https://doi.org/10.5069/G9P26W19",
+                  "schema:usageinfo": "https://opentopography.org/usageterms",
+                  "schema:value": "OTLAS.022013.26910.2",
+                  "schema:version": "1.0"
+                },
+                "schema:includedInDataCatalog": {
+                  "@type": [
+                    "schema:DataCatalog"
+                  ],
+                  "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+                  "schema:url": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2"
+                },
+                "schema:isAccessibleForFree": true,
+                "schema:keywords": "San Luis Obispo County, Diablo Canyon, California, PG&E, Diablo Canyon Power Plant (DCPP), lidar",
+                "schema:license": "Not-Provided",
+                "schema:locationCreated": "",
+                "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+                "schema:propertyID": "opentopoID",
+                "schema:publisher": {
+                  "@type": [
+                    "schema:Organization"
+                  ],
+                  "schema:additionalType": "geolink:Organization",
+                  "award": "National Science Foundation under Award Numbers EAR-1948997, 1948994 & 1948857",
+                  "schema:email": "info@opentopography.org",
+                  "legalName": "OpenTopography",
+                  "logo": "http://www.opentopography.org/sites/opentopography.org/files/ot_transp_logo.png",
+                  "schema:name": "OpenTopography",
+                  "schema:url": "https://opentopography.org"
+                },
+                "schema:sameAs": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2",
+                "schema:spatialCoverage": {
+                  "@type": [
+                    "schema:Place"
+                  ]
+                },
+                "schema:temporalCoverage": "2010-01-28/2010-01-28",
+                "schema:url": "https://doi.org/10.5069/G9P26W19",
+                "schema:usageinfo": "https://opentopography.org/usageterms",
+                "schema:value": "OTLAS.022013.26910.2",
+                "schema:variableMeasured": [
+                  {
+                    "@type": [
+                      "schema:PropertyValue"
+                    ],
+                    "schema:name": "Unit",
+                    "schema:value": "meter"
+                  },
+                  {
+                    "@type": [
+                      "schema:PropertyValue"
+                    ],
+                    "schema:name": "LidarReturns",
+                    "schema:value": "397510966 points"
+                  },
+                  {
+                    "@type": [
+                      "schema:PropertyValue"
+                    ],
+                    "schema:name": "PointDensity",
+                    "schema:value": "9.24 points/m2"
+                  },
+                  {
+                    "@type": [
+                      "schema:PropertyValue"
+                    ],
+                    "schema:name": "Area",
+                    "schema:value": "43 km2"
+                  }
+                ],
+                "schema:version": "1.0"
+              },
+              "schema:includedInDataCatalog": {
+                "@type": [
+                  "schema:DataCatalog"
+                ],
+                "schema:identifier": {
+                  "@id": "https://doi.org/10.5069/G9P26W19",
+                  "@type": [
+                    "schema:PropertyValue"
+                  ],
+                  "schema:additionalType": [
+                    "datacite:Identifier",
+                    "geolink:Identifier"
+                  ],
+                  "schema:propertyID": "datacite:doi",
+                  "schema:url": "https://doi.org/10.5069/G9P26W19",
+                  "schema:value": "10.5069/G9P26W19"
+                },
+                "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+                "schema:url": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2"
+              },
+              "schema:isAccessibleForFree": true,
+              "schema:keywords": "San Luis Obispo County, Diablo Canyon, California, PG&E, Diablo Canyon Power Plant (DCPP), lidar",
+              "schema:license": "Not-Provided",
+              "schema:locationCreated": "",
+              "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+              "schema:propertyID": "opentopoID",
+              "schema:publisher": {
+                "@type": [
+                  "schema:Organization"
+                ],
+                "schema:additionalType": "geolink:Organization",
+                "award": "National Science Foundation under Award Numbers EAR-1948997, 1948994 & 1948857",
+                "schema:email": "info@opentopography.org",
+                "legalName": "OpenTopography",
+                "logo": "http://www.opentopography.org/sites/opentopography.org/files/ot_transp_logo.png",
+                "schema:name": "OpenTopography",
+                "schema:url": "https://opentopography.org"
+              },
+              "schema:sameAs": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2",
+              "schema:spatialCoverage": {
+                "@type": [
+                  "schema:Place"
+                ],
+                "schema:additionalProperty": [
+                  {
+                    "@type": [
+                      "schema:PropertyValue"
+                    ],
+                    "schema:additionalType": "CoordinatesSystem",
+                    "schema:name": "Horizontal Coordinates",
+                    "schema:value": "UTM Zone 10N NAD83 (CORS96) Meters [EPSG: 26910]"
+                  },
+                  {
+                    "@type": [
+                      "schema:PropertyValue"
+                    ],
+                    "schema:additionalType": "CoordinatesSystem",
+                    "schema:name": "Vertical Coordinates",
+                    "schema:value": "NAVD88 (GEOID 03) [EPSG: 5703]"
+                  }
+                ],
+                "schema:geo": {
+                  "@type": [
+                    "schema:GeoShape"
+                  ],
+                  "schema:box": "35.1575875263251,-120.905517661661 35.2773307858163,-120.749276229533"
+                }
+              },
+              "schema:temporalCoverage": "2010-01-28/2010-01-28",
+              "schema:url": "https://doi.org/10.5069/G9P26W19",
+              "schema:usageinfo": "https://opentopography.org/usageterms",
+              "schema:value": "OTLAS.022013.26910.2",
+              "schema:variableMeasured": [
+                {
+                  "@type": [
+                    "schema:PropertyValue"
+                  ],
+                  "schema:name": "Unit",
+                  "schema:value": "meter"
+                },
+                {
+                  "@type": [
+                    "schema:PropertyValue"
+                  ],
+                  "schema:name": "LidarReturns",
+                  "schema:value": "397510966 points"
+                },
+                {
+                  "@type": [
+                    "schema:PropertyValue"
+                  ],
+                  "schema:name": "PointDensity",
+                  "schema:value": "9.24 points/m2"
+                },
+                {
+                  "@type": [
+                    "schema:PropertyValue"
+                  ],
+                  "schema:name": "Area",
+                  "schema:value": "43 km2"
+                }
+              ],
+              "schema:version": "1.0"
+            },
+            "schema:includedInDataCatalog": {
+              "@type": [
+                "schema:DataCatalog"
+              ],
+              "schema:identifier": {
+                "@id": "https://doi.org/10.5069/G9P26W19",
+                "@type": [
+                  "schema:PropertyValue"
+                ],
+                "schema:additionalType": [
+                  "datacite:Identifier",
+                  "geolink:Identifier"
+                ],
+                "schema:propertyID": "datacite:doi",
+                "schema:url": "https://doi.org/10.5069/G9P26W19",
+                "schema:value": "10.5069/G9P26W19"
+              },
+              "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+              "schema:url": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2"
+            },
+            "schema:isAccessibleForFree": true,
+            "schema:keywords": "San Luis Obispo County, Diablo Canyon, California, PG&E, Diablo Canyon Power Plant (DCPP), lidar",
+            "schema:license": "Not-Provided",
+            "schema:locationCreated": "",
+            "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+            "schema:propertyID": "opentopoID",
+            "schema:publisher": {
+              "@type": [
+                "schema:Organization"
+              ],
+              "schema:additionalType": "geolink:Organization",
+              "award": "National Science Foundation under Award Numbers EAR-1948997, 1948994 & 1948857",
+              "schema:email": "info@opentopography.org",
+              "legalName": "OpenTopography",
+              "logo": "http://www.opentopography.org/sites/opentopography.org/files/ot_transp_logo.png",
+              "schema:name": "OpenTopography",
+              "schema:url": "https://opentopography.org"
+            },
+            "schema:sameAs": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2",
+            "schema:spatialCoverage": {
+              "@type": [
+                "schema:Place"
+              ],
+              "schema:additionalProperty": [
+                {
+                  "@type": [
+                    "schema:PropertyValue"
+                  ],
+                  "schema:additionalType": "CoordinatesSystem",
+                  "schema:name": "Horizontal Coordinates",
+                  "schema:value": "UTM Zone 10N NAD83 (CORS96) Meters [EPSG: 26910]"
+                },
+                {
+                  "@type": [
+                    "schema:PropertyValue"
+                  ],
+                  "schema:additionalType": "CoordinatesSystem",
+                  "schema:name": "Vertical Coordinates",
+                  "schema:value": "NAVD88 (GEOID 03) [EPSG: 5703]"
+                }
+              ],
+              "schema:geo": {
+                "@type": [
+                  "schema:GeoShape"
+                ],
+                "schema:box": "35.1575875263251,-120.905517661661 35.2773307858163,-120.749276229533"
+              }
+            },
+            "schema:temporalCoverage": "2010-01-28/2010-01-28",
+            "schema:url": "https://doi.org/10.5069/G9P26W19",
+            "schema:usageinfo": "https://opentopography.org/usageterms",
+            "schema:value": "OTLAS.022013.26910.2",
+            "schema:variableMeasured": [
+              {
+                "@type": [
+                  "schema:PropertyValue"
+                ],
+                "schema:name": "Unit",
+                "schema:value": "meter"
+              },
+              {
+                "@type": [
+                  "schema:PropertyValue"
+                ],
+                "schema:name": "LidarReturns",
+                "schema:value": "397510966 points"
+              },
+              {
+                "@type": [
+                  "schema:PropertyValue"
+                ],
+                "schema:name": "PointDensity",
+                "schema:value": "9.24 points/m2"
+              },
+              {
+                "@type": [
+                  "schema:PropertyValue"
+                ],
+                "schema:name": "Area",
+                "schema:value": "43 km2"
+              }
+            ],
+            "schema:version": "1.0"
+          },
+          "schema:includedInDataCatalog": {
+            "@type": [
+              "schema:DataCatalog"
+            ],
+            "schema:identifier": {
+              "@id": "https://doi.org/10.5069/G9P26W19",
+              "@type": [
+                "schema:PropertyValue"
+              ],
+              "schema:additionalType": [
+                "datacite:Identifier",
+                "geolink:Identifier"
+              ],
+              "schema:propertyID": "datacite:doi",
+              "schema:url": "https://doi.org/10.5069/G9P26W19",
+              "schema:value": "10.5069/G9P26W19"
+            },
+            "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+            "schema:url": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2"
+          },
+          "schema:isAccessibleForFree": true,
+          "schema:keywords": "San Luis Obispo County, Diablo Canyon, California, PG&E, Diablo Canyon Power Plant (DCPP), lidar",
+          "schema:license": "Not-Provided",
+          "schema:locationCreated": "",
+          "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+          "schema:propertyID": "opentopoID",
+          "schema:publisher": {
+            "@type": [
+              "schema:Organization"
+            ],
+            "schema:additionalType": "geolink:Organization",
+            "award": "National Science Foundation under Award Numbers EAR-1948997, 1948994 & 1948857",
+            "schema:email": "info@opentopography.org",
+            "legalName": "OpenTopography",
+            "logo": "http://www.opentopography.org/sites/opentopography.org/files/ot_transp_logo.png",
+            "schema:name": "OpenTopography",
+            "schema:url": "https://opentopography.org"
+          },
+          "schema:sameAs": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2",
+          "schema:spatialCoverage": {
+            "@type": [
+              "schema:Place"
+            ],
+            "schema:additionalProperty": [
+              {
+                "@type": [
+                  "schema:PropertyValue"
+                ],
+                "schema:additionalType": "CoordinatesSystem",
+                "schema:name": "Horizontal Coordinates",
+                "schema:value": "UTM Zone 10N NAD83 (CORS96) Meters [EPSG: 26910]"
+              },
+              {
+                "@type": [
+                  "schema:PropertyValue"
+                ],
+                "schema:additionalType": "CoordinatesSystem",
+                "schema:name": "Vertical Coordinates",
+                "schema:value": "NAVD88 (GEOID 03) [EPSG: 5703]"
+              }
+            ],
+            "schema:geo": {
+              "@type": [
+                "schema:GeoShape"
+              ],
+              "schema:box": "35.1575875263251,-120.905517661661 35.2773307858163,-120.749276229533"
+            }
+          },
+          "schema:temporalCoverage": "2010-01-28/2010-01-28",
+          "schema:url": "https://doi.org/10.5069/G9P26W19",
+          "schema:usageinfo": "https://opentopography.org/usageterms",
+          "schema:value": "OTLAS.022013.26910.2",
+          "schema:variableMeasured": [
+            {
+              "@type": [
+                "schema:PropertyValue"
+              ],
+              "schema:name": "Unit",
+              "schema:value": "meter"
+            },
+            {
+              "@type": [
+                "schema:PropertyValue"
+              ],
+              "schema:name": "LidarReturns",
+              "schema:value": "397510966 points"
+            },
+            {
+              "@type": [
+                "schema:PropertyValue"
+              ],
+              "schema:name": "PointDensity",
+              "schema:value": "9.24 points/m2"
+            },
+            {
+              "@type": [
+                "schema:PropertyValue"
+              ],
+              "schema:name": "Area",
+              "schema:value": "43 km2"
+            }
+          ],
+          "schema:version": "1.0"
+        },
+        "schema:includedInDataCatalog": {
+          "@type": [
+            "schema:DataCatalog"
+          ],
+          "schema:identifier": {
+            "@id": "https://doi.org/10.5069/G9P26W19",
+            "@type": [
+              "schema:PropertyValue"
+            ],
+            "schema:additionalType": [
+              "datacite:Identifier",
+              "geolink:Identifier"
+            ],
+            "schema:propertyID": "datacite:doi",
+            "schema:url": "https://doi.org/10.5069/G9P26W19",
+            "schema:value": "10.5069/G9P26W19"
+          },
+          "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+          "schema:url": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2"
+        },
+        "schema:isAccessibleForFree": true,
+        "schema:keywords": "San Luis Obispo County, Diablo Canyon, California, PG&E, Diablo Canyon Power Plant (DCPP), lidar",
+        "schema:license": "Not-Provided",
+        "schema:locationCreated": "",
+        "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+        "schema:propertyID": "opentopoID",
+        "schema:publisher": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:additionalType": "geolink:Organization",
+          "award": "National Science Foundation under Award Numbers EAR-1948997, 1948994 & 1948857",
+          "schema:email": "info@opentopography.org",
+          "legalName": "OpenTopography",
+          "logo": "http://www.opentopography.org/sites/opentopography.org/files/ot_transp_logo.png",
+          "schema:name": "OpenTopography",
+          "schema:url": "https://opentopography.org"
+        },
+        "schema:sameAs": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2",
+        "schema:spatialCoverage": {
+          "@type": [
+            "schema:Place"
+          ],
+          "schema:additionalProperty": [
+            {
+              "@type": [
+                "schema:PropertyValue"
+              ],
+              "schema:additionalType": "CoordinatesSystem",
+              "schema:name": "Horizontal Coordinates",
+              "schema:value": "UTM Zone 10N NAD83 (CORS96) Meters [EPSG: 26910]"
+            },
+            {
+              "@type": [
+                "schema:PropertyValue"
+              ],
+              "schema:additionalType": "CoordinatesSystem",
+              "schema:name": "Vertical Coordinates",
+              "schema:value": "NAVD88 (GEOID 03) [EPSG: 5703]"
+            }
+          ],
+          "schema:geo": {
+            "@type": [
+              "schema:GeoShape"
+            ],
+            "schema:box": "35.1575875263251,-120.905517661661 35.2773307858163,-120.749276229533"
+          }
+        },
+        "schema:temporalCoverage": "2010-01-28/2010-01-28",
+        "schema:url": "https://doi.org/10.5069/G9P26W19",
+        "schema:usageinfo": "https://opentopography.org/usageterms",
+        "schema:value": "OTLAS.022013.26910.2",
+        "schema:variableMeasured": [
+          {
+            "@type": [
+              "schema:PropertyValue"
+            ],
+            "schema:name": "Unit",
+            "schema:value": "meter"
+          },
+          {
+            "@type": [
+              "schema:PropertyValue"
+            ],
+            "schema:name": "LidarReturns",
+            "schema:value": "397510966 points"
+          },
+          {
+            "@type": [
+              "schema:PropertyValue"
+            ],
+            "schema:name": "PointDensity",
+            "schema:value": "9.24 points/m2"
+          },
+          {
+            "@type": [
+              "schema:PropertyValue"
+            ],
+            "schema:name": "Area",
+            "schema:value": "43 km2"
+          }
+        ],
+        "schema:version": "1.0"
+      },
+      "schema:includedInDataCatalog": {
+        "@type": [
+          "schema:DataCatalog"
+        ],
+        "schema:identifier": {
+          "@id": "https://doi.org/10.5069/G9P26W19",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:additionalType": [
+            "datacite:Identifier",
+            "geolink:Identifier"
+          ],
+          "schema:propertyID": "datacite:doi",
+          "schema:url": "https://doi.org/10.5069/G9P26W19",
+          "schema:value": "10.5069/G9P26W19"
+        },
+        "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+        "schema:url": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2"
+      },
+      "schema:isAccessibleForFree": true,
+      "schema:keywords": "San Luis Obispo County, Diablo Canyon, California, PG&E, Diablo Canyon Power Plant (DCPP), lidar",
+      "schema:license": "Not-Provided",
+      "schema:locationCreated": "",
+      "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+      "schema:propertyID": "opentopoID",
+      "schema:publisher": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:additionalType": "geolink:Organization",
+        "award": "National Science Foundation under Award Numbers EAR-1948997, 1948994 & 1948857",
+        "schema:email": "info@opentopography.org",
+        "legalName": "OpenTopography",
+        "logo": "http://www.opentopography.org/sites/opentopography.org/files/ot_transp_logo.png",
+        "schema:name": "OpenTopography",
+        "schema:url": "https://opentopography.org"
+      },
+      "schema:sameAs": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2",
+      "schema:spatialCoverage": {
+        "@type": [
+          "schema:Place"
+        ],
+        "schema:additionalProperty": [
+          {
+            "@type": [
+              "schema:PropertyValue"
+            ],
+            "schema:additionalType": "CoordinatesSystem",
+            "schema:name": "Horizontal Coordinates",
+            "schema:value": "UTM Zone 10N NAD83 (CORS96) Meters [EPSG: 26910]"
+          },
+          {
+            "@type": [
+              "schema:PropertyValue"
+            ],
+            "schema:additionalType": "CoordinatesSystem",
+            "schema:name": "Vertical Coordinates",
+            "schema:value": "NAVD88 (GEOID 03) [EPSG: 5703]"
+          }
+        ],
+        "schema:geo": {
+          "@type": [
+            "schema:GeoShape"
+          ],
+          "schema:box": "35.1575875263251,-120.905517661661 35.2773307858163,-120.749276229533"
+        }
+      },
+      "schema:temporalCoverage": "2010-01-28/2010-01-28",
+      "schema:url": "https://doi.org/10.5069/G9P26W19",
+      "schema:usageinfo": "https://opentopography.org/usageterms",
+      "schema:value": "OTLAS.022013.26910.2",
+      "schema:variableMeasured": [
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:name": "Unit",
+          "schema:value": "meter"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:name": "LidarReturns",
+          "schema:value": "397510966 points"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:name": "PointDensity",
+          "schema:value": "9.24 points/m2"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:name": "Area",
+          "schema:value": "43 km2"
+        }
+      ],
+      "schema:version": "1.0"
+    },
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:identifier": {
+        "@id": "https://doi.org/10.5069/G9P26W19",
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:additionalType": [
+          "datacite:Identifier",
+          "geolink:Identifier"
+        ],
+        "schema:propertyID": "datacite:doi",
+        "schema:url": "https://doi.org/10.5069/G9P26W19",
+        "schema:value": "10.5069/G9P26W19"
+      },
+      "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+      "schema:url": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2"
+    },
+    "schema:isAccessibleForFree": true,
+    "schema:keywords": "San Luis Obispo County, Diablo Canyon, California, PG&E, Diablo Canyon Power Plant (DCPP), lidar",
+    "schema:license": "Not-Provided",
+    "schema:locationCreated": "",
+    "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+    "schema:propertyID": "opentopoID",
+    "schema:publisher": {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:additionalType": "geolink:Organization",
+      "award": "National Science Foundation under Award Numbers EAR-1948997, 1948994 & 1948857",
+      "schema:email": "info@opentopography.org",
+      "legalName": "OpenTopography",
+      "logo": "http://www.opentopography.org/sites/opentopography.org/files/ot_transp_logo.png",
+      "schema:name": "OpenTopography",
+      "schema:url": "https://opentopography.org"
+    },
+    "schema:sameAs": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2",
+    "schema:spatialCoverage": {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:additionalProperty": [
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:additionalType": "CoordinatesSystem",
+          "schema:name": "Horizontal Coordinates",
+          "schema:value": "UTM Zone 10N NAD83 (CORS96) Meters [EPSG: 26910]"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:additionalType": "CoordinatesSystem",
+          "schema:name": "Vertical Coordinates",
+          "schema:value": "NAVD88 (GEOID 03) [EPSG: 5703]"
+        }
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "35.1575875263251,-120.905517661661 35.2773307858163,-120.749276229533"
+      }
+    },
+    "schema:temporalCoverage": "2010-01-28/2010-01-28",
+    "schema:url": "https://doi.org/10.5069/G9P26W19",
+    "schema:usageinfo": "https://opentopography.org/usageterms",
+    "schema:value": "OTLAS.022013.26910.2",
+    "schema:variableMeasured": [
+      {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:name": "Unit",
+        "schema:value": "meter"
+      },
+      {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:name": "LidarReturns",
+        "schema:value": "397510966 points"
+      },
+      {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:name": "PointDensity",
+        "schema:value": "9.24 points/m2"
+      },
+      {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:name": "Area",
+        "schema:value": "43 km2"
+      }
+    ],
+    "schema:version": "1.0"
+  },
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5069/G9P26W19",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:additionalType": [
+        "datacite:Identifier",
+        "geolink:Identifier"
+      ],
+      "schema:propertyID": "datacite:doi",
+      "schema:url": "https://doi.org/10.5069/G9P26W19",
+      "schema:value": "10.5069/G9P26W19"
+    },
+    "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+    "schema:url": "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2"
+  },
+  "schema:isAccessibleForFree": true,
+  "schema:keywords": [
+    "San Luis Obispo County",
+    "Diablo Canyon",
+    "California",
+    "PG&E",
+    "Diablo Canyon Power Plant (DCPP)",
+    "lidar"
+  ],
+  "schema:license": [
+    "Not-Provided"
+  ],
+  "schema:locationCreated": "",
+  "schema:name": "PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+  "schema:propertyID": "opentopoID",
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:additionalType": [
+      "geolink:Organization"
+    ],
+    "award": "National Science Foundation under Award Numbers EAR-1948997, 1948994 & 1948857",
+    "schema:email": "info@opentopography.org",
+    "legalName": "OpenTopography",
+    "logo": "http://www.opentopography.org/sites/opentopography.org/files/ot_transp_logo.png",
+    "schema:name": "OpenTopography",
+    "schema:url": "https://opentopography.org"
+  },
+  "schema:sameAs": [
+    "https://portal.opentopography.org/datasetMetadata?otCollectionID=OT.022013.26910.2"
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:additionalProperty": [
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:additionalType": "CoordinatesSystem",
+          "schema:name": "Horizontal Coordinates",
+          "schema:value": "UTM Zone 10N NAD83 (CORS96) Meters [EPSG: 26910]"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:additionalType": "CoordinatesSystem",
+          "schema:name": "Vertical Coordinates",
+          "schema:value": "NAVD88 (GEOID 03) [EPSG: 5703]"
+        }
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "35.1575875263251,-120.905517661661 35.2773307858163,-120.749276229533"
+      }
+    }
+  ],
+  "schema:temporalCoverage": [
+    "2010-01-28/2010-01-28"
+  ],
+  "schema:url": "https://doi.org/10.5069/G9P26W19",
+  "schema:usageinfo": "https://opentopography.org/usageterms",
+  "schema:value": "OTLAS.022013.26910.2",
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Unit",
+      "schema:value": "meter"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "LidarReturns",
+      "schema:value": "397510966 points"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "PointDensity",
+      "schema:value": "9.24 points/m2"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Area",
+      "schema:value": "43 km2"
+    }
+  ],
+  "schema:version": "1.0",
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2#metadata",
+    "schema:name": "GeoCodes metadata record for: PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",
+    "schema:about": {
+      "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from OpenTopography by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Core profile: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations (schema, dcterms, dcat, prov); @type values normalized to arrays with schema: prefix; schema:dateModified set from dateCreated; schema:license wrapped in array; schema:sameAs wrapped in array; spatialCoverage normalized to array of Place objects; schema:keywords split from comma-separated string to array. Round 2 fixes: Root @type filtered to valid CDIF resource types (removed stray PropertyValue); schema:contributor wrapped in array. Moved to Discovery: Added conformsTo discovery/1.0; temporalCoverage wrapped in array; variableMeasured alternateName values wrapped in arrays."
+  },
+  "schema:dateModified": "2013-02-25 16:17:46"
+}

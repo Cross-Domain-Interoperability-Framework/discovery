@@ -1,0 +1,130 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://obis.org/dataset/dcbb8f12-c869-4d31-aa8b-23abb27898ce",
+  "schema:name": "MIRC NAVFAC MISTCS Vessel Surveys Jan-Apr 2007",
+  "schema:description": "Original provider:\nHDR Environmental, Operations and Construction, Inc.\n\nDataset credits:\nThe U.S. Navy Marine Species Monitoring Program\n\nAbstract:\nFeatures in this feature class represent sightings from the NAVFAC MISTCS Vessel Surveys Jan-Apr 2007.",
+  "schema:url": "https://obis.org/dataset/dcbb8f12-c869-4d31-aa8b-23abb27898ce",
+  "schema:sameAs": [
+    "http://ipt.env.duke.edu/resource?r=zd_1519"
+  ],
+  "schema:license": [
+    "This work is licensed under a  Creative Commons Attribution (CC-BY) 4.0 License"
+  ],
+  "schema:citation": "Ampela, K. and G. Miller-Francisco. 2017. MIRC NAVFAC MISTCS Vessel Surveys Jan-Apr 2007. Data downloaded from OBIS-SEAMAP (http://seamap.env.duke.edu/dataset/1519) on yyyy-mm-dd.",
+  "schema:version": "2021-04-24T06:34:56.000Z",
+  "schema:keywords": [
+    "Occurrence, Mariana Islands Range Complex,Marine Animal Survey,Marine Biology, Marine mammals, Sea turtles, Visual Sighting,Vessel",
+    "Observation",
+    "Occurrence"
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Abundance",
+      "schema:description": "Abundance"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "NetMeshSize",
+      "schema:url": "http://vocab.nerc.ac.uk/collection/Q01/current/Q0100015/",
+      "schema:description": "NetMeshSize DEVNOTE:  is this technically a measured variable, or an instrument property?"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "SamplingDeviceApertureSurfaceArea",
+      "schema:url": "http://vocab.nerc.ac.uk/collection/Q01/current/Q0100017/",
+      "schema:description": "SamplingDeviceApertureSurfaceArea  DEVNOTE, I can not put PropertyValue on thing well, so going to call this a variable Measured"
+    }
+  ],
+  "schema:includedInDataCatalog": {
+    "@id": "https://obis.org",
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:url": "https://obis.org"
+  },
+  "schema:temporalCoverage": [
+    "2007/2007"
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "http://ipt.env.duke.edu/archive.do?r=zd_1519",
+      "schema:encodingFormat": [
+        "application/zip"
+      ]
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:polygon": "142.014 10.161667,142.014 18.033833,147.997833 18.033833,147.997833 10.161667,142.014 10.161667",
+        "schema:box": "10.161667 142.014 18.033833 147.997833"
+      },
+      "schema:additionalProperty": {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+        "schema:value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+      }
+    }
+  ],
+  "schema:provider": [
+    {
+      "@id": "https://oceanexpert.org/institution/19393",
+      "@type": [
+        "schema:Organization"
+      ],
+      "legalName": "Duke University",
+      "schema:name": "Duke University",
+      "schema:url": "https://oceanexpert.org/institution/19393"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://obis.org/dataset/dcbb8f12-c869-4d31-aa8b-23abb27898ce#metadata",
+    "schema:name": "Metadata record for: MIRC NAVFAC MISTCS Vessel Surveys Jan-Apr 2007",
+    "schema:about": {
+      "@id": "https://obis.org/dataset/dcbb8f12-c869-4d31-aa8b-23abb27898ce"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:description": "Converted to CDIF Discovery profile from pre-existing example: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations; @type values normalized to arrays with schema: prefix; schema:identifier added from @id; schema:license wrapped in array; Distributions normalized. Additional fixes: schema:dateModified set from datePublished or placeholder; GeoShape polygon supplemented with bounding box."
+  },
+  "schema:identifier": "https://obis.org/dataset/dcbb8f12-c869-4d31-aa8b-23abb27898ce",
+  "schema:dateModified": "2020-01-01"
+}

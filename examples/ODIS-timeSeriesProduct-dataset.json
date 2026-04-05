@@ -1,0 +1,274 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Time-Series Data Synthesis Product",
+  "schema:description": "Synthesis of (presently 12) ship-based biogeochemical time-series stations.",
+  "schema:url": "",
+  "schema:sameAs": [
+    "https://www2.whoi.edu/site/mets-rcn/"
+  ],
+  "schema:version": "2021-04-19",
+  "schema:keywords": [
+    "ALOHA",
+    "CARIACO",
+    "KNOT",
+    "K2",
+    "CVOO",
+    "Munida",
+    "RADCO",
+    "GIFT",
+    "DYFAMED",
+    "IrmingerSea",
+    "IcelandSea",
+    "OWSM",
+    "Niskin Bottles",
+    "Biogeochemistry"
+  ],
+  "schema:isBasedOn": {
+    "@type": [
+      "schema:CreativeWork"
+    ],
+    "schema:name": "Derivative Work",
+    "schema:publisher": "wikipedia",
+    "schema:url": "https://en.wikipedia.org/wiki/Derivative_work",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.1575/1912/bco-dmo.3773.1",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "DOI: 10.1575/1912/bco-dmo.3773.1",
+      "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+      "schema:value": "doi:10.1575/1912/bco-dmo.3773.1",
+      "schema:url": "https://doi.org/10.1575/1912/bco-dmo.3773.1"
+    }
+  },
+  "schema:about": [
+    {
+      "@type": [
+        "Event"
+      ],
+      "schema:name": "HOT ALOHA Niskin Bottles",
+      "schema:description": "Monthly measurements of the thermohaline structure, water column chemistry, and primary production were collected at station ALOHA as part of the HOT program.",
+      "startDate": "1988-10-31T00:56:00Z",
+      "endDate": "2019-12-20T08:51:00Z"
+    },
+    {
+      "@type": [
+        "Event"
+      ],
+      "schema:name": "CARIACO Niskin Bottles",
+      "schema:description": "################ measurements of the thermohaline structure, water column chemistry, and primary production were collected at station ALOHA as part of the HOT program.",
+      "startDate": "#####",
+      "endDate": "#####"
+    }
+  ],
+  "schema:isAccessibleForFree": true,
+  "schema:datePublished": "",
+  "schema:identifier": {
+    "@id": "",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:name": "DOI:",
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:value": "",
+    "schema:url": "https://doi.org/"
+  },
+  "schema:citation": "Lange et al. (2023): A ship-based biogeochemical time-series data product",
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "https://example.org/data/placeholder",
+      "schema:encodingFormat": [
+        "application/octet-stream"
+      ]
+    }
+  ],
+  "schema:temporalCoverage": [
+    "1983-01-01/2021-12-31"
+  ],
+  "schema:location": {
+    "schema:name": "Station locations worldwide",
+    "@type": [
+      "schema:Place"
+    ],
+    "schema:description": "Gloabl",
+    "schema:geo": {
+      "@type": [
+        "schema:GeoShape"
+      ],
+      "schema:polygon": "-180 -90, -180 90, 180 90, 180 -90, -180 -90"
+    },
+    "schema:additionalProperty": [
+      {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+        "schema:value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+      },
+      {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:propertyID": "GPS Accuracy / Location error",
+        "schema:value": "18",
+        "schema:unitCode": "http://qudt.org/vocab/unit/M"
+      }
+    ]
+  },
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Nico Lange",
+        "schema:givenName": "Nico",
+        "schema:familyName": "Lange",
+        "schema:url": ""
+      }
+    ]
+  },
+  "schema:provider": [
+    {
+      "@id": "https://www.bco-dmo.org/",
+      "@type": [
+        "schema:Organization"
+      ],
+      "legalName": "Biological & Chemical Oceanography Data Management Office",
+      "schema:name": "BCO-DMO",
+      "schema:url": "https://www.bco-dmo.org/"
+    }
+  ],
+  "schema:publisher": {
+    "@id": "https://www.bco-dmo.org/"
+  },
+  "schema:funding": [
+    {
+      "@id": "http://dx.doi.org/10.3030/862626",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:identifier": {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:value": "862626"
+      },
+      "schema:name": "EuroSea Project",
+      "schema:url": "https://cordis.europa.eu/project/id/862626",
+      "schema:funder": {
+        "@id": "https://cordis.europa.eu/programme/id/H2020-EU.3.2.",
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "H2020-EU.3.2. - SOCIETAL CHALLENGES - Food security, sustainable agriculture and forestry, marine, maritime and inland water research, and the bioeconomy ",
+        "schema:identifier": [
+          "https://cordis.europa.eu/programme/id/H2020-EU.3.2."
+        ]
+      }
+    }
+  ],
+  "schema:license": [
+    "https://spdx.org/licenses/CC-BY-3.0"
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Latitude",
+      "schema:propertyID": [
+        "https://vocab.nerc.ac.uk/collection/P01/current/ALATZZ01/"
+      ],
+      "schema:url": "https://www.bco-dmo.org/dataset-parameter/849759",
+      "schema:description": "Latitude where water samples were collected; north is positive. Latitude is a geographic coordinate which refers to the angle from a point on the Earth's surface to the equatorial plane",
+      "schema:unitText": "decimal degrees"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "NITRAT",
+      "schema:propertyID": [
+        "http://vocab.nerc.ac.uk/collection/P01/current/MDMAP005/"
+      ],
+      "schema:url": "https://www.bco-dmo.org/parameter/1194",
+      "schema:description": "Nitrate concentration per mass seawater",
+      "schema:unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "NITRAT_FLAG_W",
+      "schema:propertyID": [
+        "https://exchange-format.readthedocs.io/en/latest/quality.html#quality-codes"
+      ],
+      "schema:url": "https://www.bco-dmo.org/parameter/1144",
+      "schema:description": "Nitrate quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation",
+      "schema:unitText": "WOCE"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "NITRAT_BPf",
+      "schema:url": "",
+      "schema:description": "Nitrate Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "NITRAT_A",
+      "schema:url": "",
+      "schema:description": "Nitrate accuracy based on comparisons to reference material",
+      "schema:unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "NITRAT_P",
+      "schema:url": "",
+      "schema:description": "Nitrate precision based on comparisons to reference material",
+      "schema:unitText": "micromole per kilogram (umol/kg)"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "#metadata",
+    "schema:name": "Metadata record for: Time-Series Data Synthesis Product",
+    "schema:about": {
+      "@id": ""
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:description": "Converted to CDIF Discovery profile from pre-existing example: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations; @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list. Additional fixes: @id set from url; schema:dateModified set; Funding identifier string → PropertyValue; Empty distribution contentUrl set to placeholder; Empty distribution encodingFormat set to placeholder; variableMeasured strings converted to PropertyValue objects. Fixed empty variableMeasured propertyID strings."
+  },
+  "@id": "https://example.org/timeseries-product",
+  "schema:dateModified": "2020-01-01"
+}

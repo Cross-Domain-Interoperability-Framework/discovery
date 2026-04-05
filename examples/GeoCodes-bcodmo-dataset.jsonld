@@ -1,0 +1,280 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@id": "https://www.bco-dmo.org/dataset/875920",
+  "schema:url": "https://www.bco-dmo.org/dataset/875920",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Organisms collected on oyster reefs in the Mission Aransas National Estuarine Research Reserve, TX, USA from 2016 to 2021",
+  "schema:alternateName": "Mission Aransas Oyster Reef Communities",
+  "schema:abstract": "This dataset reports abundances of organisms collected on oyster reefs in the Mission Aransas in the National Estuarine Research Reserve (NERR), Texas, USA from 2016 to 2021. ",
+  "schema:description": "This dataset reports abundances of organisms collected on oyster reefs in the Mission Aransas in the National Estuarine Research Reserve (NERR), Texas, USA from 2016 to 2021. ",
+  "schema:isAccessibleForFree": true,
+  "schema:sameAs": [
+    "https://doi.org/10.26008/1912/bco-dmo.875920.1"
+  ],
+  "schema:identifier": {
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "@id": "https://doi.org/10.26008/1912/bco-dmo.875920.1",
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:value": "doi:10.26008/1912/bco-dmo.875920.1",
+    "schema:url": "https://doi.org/10.26008/1912/bco-dmo.875920.1"
+  },
+  "schema:datePublished": "2022-06-29",
+  "schema:keywords": [
+    "oyster reefs",
+    "abundance",
+    "Mission Aransas",
+    "oceans"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Delbert Lee Smee",
+        "schema:url": "https://www.bco-dmo.org/person/839810",
+        "schema:identifier": {
+          "@id": "https://orcid.org/0000-0003-1161-6807",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "https://registry.identifiers.org/registry/orcid",
+          "schema:value": "orcid:0000-0003-1161-6807",
+          "schema:url": "https://orcid.org/0000-0003-1161-6807"
+        }
+      }
+    ]
+  },
+  "schema:version": "1",
+  "schema:license": [
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://spdx.org/licenses/CC-BY-4.0"
+  ],
+  "schema:temporalCoverage": [
+    "2016-01-01/2021-12-31"
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "27.89544 -97.04072 27.89544 -96.96442",
+        "schema:polygon": "27.89544,-97.04072 27.89544,-97.04072 27.89544,-96.96442 27.89544,-96.96442 27.89544,-97.04072"
+      },
+      "schema:additionalProperty": [
+        {
+          "@id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+          "schema:name": "Spatial Reference System",
+          "schema:value": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:additionalType": "http://www.wikidata.org/entity/Q4018860",
+          "schema:propertyID": "WKT",
+          "schema:name": "Well-Known Text",
+          "schema:value": "POLYGON ((-97.04072 27.89544, -96.96442 27.89544, -96.96442 27.89544, -97.04072 27.89544, -97.04072 27.89544))"
+        }
+      ]
+    }
+  ],
+  "schema:publisher": {
+    "@id": "https://www.bco-dmo.org",
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Biological and Chemical Data Management Office",
+    "schema:alternateName": "BCO-DMO",
+    "schema:url": "https://www.bco-dmo.org",
+    "schema:sameAs": "http://www.re3data.org/repository/r3d100000012"
+  },
+  "schema:provider": [
+    {
+      "@id": "https://www.bco-dmo.org"
+    }
+  ],
+  "schema:includedInDataCatalog": {
+    "@id": "https://www.bco-dmo.org/search/dataset"
+  },
+  "producer": [
+    {
+      "@type": [
+        "schema:ResearchProject"
+      ],
+      "schema:name": "RAPID: Human-Driven Trophic Cascades: Mesopredator Release and Recreational Fishing in Estuaries",
+      "schema:alternateName": "Trophic cascades",
+      "schema:description": "NSF Award Abstract:\nHuman activity affects natural populations of organisms directly through exploitation and indirectly by changing how species interact with each other. This project is investigating the effect of fishing on an estuarine food web. In the oyster reef food chain, newly settled oysters are eaten by crabs, and the crabs are in turn eaten by fish. More fish predators mean fewer crabs and more oysters. Fish also reduce foraging by crabs, which further benefits oysters. Although small-scale experimental studies have measured the impact of fish exclusion on oyster reefs, the links between fishing, fish populations and oyster reefs require an estuary-scale experiment. Stay-at-home orders associated with the COVID-19 pandemic has curtailed fishing activity throughout estuaries. This project combines empirical experiments and fisheries monitoring data from before, during and after COVID-19-related restrictions to investigate how changes in fishing activity influence oyster reef food webs. Building on 10+ years of preexisting observations the dataset encompasses a 100-year flood, a hurricane, and now a pandemic, a rare opportunity to investigate the effects of low fishing pressure in the absence of other disturbances. The broader impacts of this study contribution of data towards optimizing management and conservation of marine resources. Oyster reefs are essential habitat that perform ecosystem services such as water filtration and shoreline stabilization, but they are also harvested as a commercial fishery. Interest in estuarine systems for recreation and fishing is high along the Gulf of Mexico. Public displays and outreach activities at the Dauphin Island Sea Lab will include results from this project to increase awareness of the effect of human activity on local ecosystems.\nThe loss of top predators can destabilize ecosystems by making them more prone to invasions, altering nutrient fluxes within and between habitats, and impeding recovery after disturbances. Overfishing reduces the abundance of higher order predators, leading to higher abundances of intermediate consumers or mesopredators. Mesopredator release can increase predation pressure on basal trophic levels, including foundation species. In estuaries, fin fish, many of which are targeted by both commercial and recreational anglers, provide an important trophic link and their removal or experimental exclusion can trigger mesopredator release. However, the extent that fishing alters communities remains poorly understood. Estuarine systems along the Gulf of Mexico have experienced nearly continuous and widespread exploitation for over a century, and the few examples of temporary releases from fishing pressure have co-occurred with other natural disasters. The COVID-19 pandemic has curtailed fishing and has provided a unique research opportunity. Using a Before After Control Impact (BACI) design, the effects of fishing pressure on top-down control is being investigated in a model system, oyster reefs. Fishing activity and fish stock assessments are compared with field experiments to determine top predator feeding activity, mesopredator abundances, and recruitment and growth of oysters. To gauge changes in the structure of estuarine food webs, the data are being compared with 10+ years of preexisting results to isolate the effect of fishing activity from confounding factors associated with natural disasters like hurricanes and floods.\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.\n",
+      "schema:url": "https://www.bco-dmo.org/project/856915"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "https://datadocs.bco-dmo.org/file/nGGl0mAFK2DJmQ/oyster_reef.csv",
+      "schema:encodingFormat": [
+        "text/csv"
+      ],
+      "schema:contentSize": "383.28 KB",
+      "schema:creativeWorkStatus": "In Review"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://www.bco-dmo.org/dataset/875920#metadata",
+    "schema:name": "GeoCodes metadata record for: Organisms collected on oyster reefs in the Mission Aransas National Estuarine Research Reserve, TX, USA from 2016 to 202",
+    "schema:about": {
+      "@id": "https://www.bco-dmo.org/dataset/875920"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from BCO-DMO by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Core profile: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations (schema, dcterms, dcat, prov); @type values normalized to arrays with schema: prefix; schema:dateModified set from datePublished; Distributions normalized (encodingFormat arrays, @type, contentUrl); schema:creator wrapped in @list; schema:provider wrapped in array; spatialCoverage normalized to array of Place objects; schema:keywords split from comma-separated string to array. Round 2 fixes: Funding funder @type changed from FundingAgency to Organization (FundingAgency not in CDIF schema). Moved to Discovery: Added conformsTo discovery/1.0; temporalCoverage wrapped in array; variableMeasured alternateName values wrapped in arrays."
+  },
+  "schema:measurementTechnique": [
+    "Salinity Sensor"
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Cage_treatment",
+      "schema:description": "<p>Control or predator exclusion</p>",
+      "schema:unitText": "unitless",
+      "schema:alternateName": [
+        "treatment"
+      ],
+      "disambiguatingDescription": "<p>Experimental conditions applied to experimental units.  In comparative experiments, members of the complementary group, the control group, receive either no treatment or a standard treatment.</p>\n"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Site",
+      "schema:description": "<p>Site code (GI = Goose Island State Park, St. Charles Bay, Northern Mission Aransas NERR ; SJ = San Jose Island, Aransas Bay, Southern Mission Aransas NERR)</p>",
+      "schema:unitText": "unitless",
+      "schema:alternateName": [
+        "site"
+      ],
+      "disambiguatingDescription": "<p>Sampling site identification.</p>\n"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Year",
+      "schema:description": "<p>Year of collection in format YYYY</p>",
+      "schema:unitText": "unitless",
+      "schema:propertyID": [
+        "http://vocab.nerc.ac.uk/collection/P01/current/YEARXXXX/"
+      ],
+      "schema:alternateName": [
+        "year"
+      ],
+      "disambiguatingDescription": "<p>year, reported as YYYY, e.g. 1995</p>\n"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Salinity",
+      "schema:description": "<p>Salinity measurement using handheld YSI</p>",
+      "schema:unitText": "PSU",
+      "schema:alternateName": [
+        "sal_nis"
+      ],
+      "disambiguatingDescription": "<p>Salinity from water samples</p>\n"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Identification",
+      "schema:description": "<p>Organism identification name</p>",
+      "schema:unitText": "unitless",
+      "schema:alternateName": [
+        "individual"
+      ],
+      "disambiguatingDescription": "<p>Individual Number or Individual Id.  Used to identify individual specimens in various experiments</p>\n"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Abundance",
+      "schema:description": "<p>Abundance of organisms</p>",
+      "schema:unitText": "unitless",
+      "schema:propertyID": [
+        "http://vocab.nerc.ac.uk/collection/P03/current/B070/"
+      ],
+      "schema:alternateName": [
+        "abundance"
+      ],
+      "disambiguatingDescription": "<p>Amount (number, mass, diversity/species variation) of the specific taxa/group counted per unit area or volume</p>\n"
+    }
+  ],
+  "schema:funding": [
+    {
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:url": "https://www.bco-dmo.org/award/856914",
+      "schema:name": "OCE-2032200",
+      "schema:funder": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "NSF Division of Ocean Sciences",
+        "schema:identifier": {
+          "@id": "https://doi.org/10.13039/100000141",
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+          "schema:value": "doi:10.13039/100000141",
+          "schema:url": "https://doi.org/10.13039/100000141"
+        },
+        "schema:alternateName": "NSF OCE"
+      },
+      "schema:sameAs": "https://www.nsf.gov/awardsearch/show-award?AWD_ID=2032200"
+    }
+  ],
+  "schema:dateModified": "2022-06-29"
+}

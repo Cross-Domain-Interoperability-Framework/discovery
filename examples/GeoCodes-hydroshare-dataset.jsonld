@@ -1,0 +1,223 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@id": "https://doi.org/10.4211/hs.01135480279340cd8e457a22e7b9208b#schemaorg",
+  "schema:sameAs": [
+    "https://www.hydroshare.org/resource/01135480279340cd8e457a22e7b9208b"
+  ],
+  "schema:url": "https://doi.org/10.4211/hs.01135480279340cd8e457a22e7b9208b",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:additionalType": [
+    "http://www.hydroshare.org/terms/CompositeResource"
+  ],
+  "schema:name": "Chlorophyll-a data from Konza prairie (KS, USA) stream synoptic (AIMS_GP_approach3_CHLA)",
+  "schema:description": "This study quantifies chlorophyll-a (as a proxy for biomass of microbial photoautotrophs) on rock surfaces (µg/cm2) and in surface waters (µg/L) collected from non-perennial stream sites located within the South Fork of King’s Creek at Konza Prairie Biological Station. At the USGS gage located on the mainstem (06879560; est. 1979), Kings Creek is a 5th order intermittent stream draining 1059-ha of tallgrass prairie in the Kansas Flint Hills. \r\nSample collection followed a synoptic survey design to support the sampling goals of the Aquatic Intermittency effects on Microbiomes in Streams (AIMS) Project. During June 2021, a field team co-collected datasets characterizing stream microbiota, biogeochemistry, and hydrology across 50 locations within a sub-drainage of the South Fork of Kings’ Creek. The 50 sites were selected to balance multiple competing priorities: (i) strategically targeting existing monitoring infrastructure with long-term data (n=14); (ii) including sites near several known springs and tributary junctions (n=9); and (iii) including a range of drainage area and topographic wetness index (TWI) values (n=27), both of which have been correlated with flow permanence elsewhere. For a detailed description of the site selection process, please see (Swenson et al., 2024).\r\nSamples were collected during the period of June 4th to June 8th, 2021, following the AIMS Microbial Field Sampling protocol (Zeglin and Busch, 2024). Briefly, representative samples of (i) surface water and (ii) epilithon (rock surface biofilms) were collected from each site (where present) using aseptic technique. All equipment was either pre-sterilized (e.g., Nalgene bottles, syringes, filter holders and plastic containers) or was cleaned with 95% ethanol between sites and subsequently flame sterilized (forceps for handling filters) or rinsed in stream water (wire brushes for scraping rocks). Foil packets containing GFF filters (Whatman 1825025) were pre-ashed and pre-labeled for each sample. At each site, the stream was divided into three areas (compartments) of equal width across the wetted width of the channel, or inferred channel width at dry sites (n=5). For water, a 360 mL composite sample was collected (120 mL from each of the three compartments), and a known volume of the composite sample was filtered (up to 60 mL) by pushing it through a GFF filter via a syringe and filter holder. The volume filtered was recorded and the filter was saved in its pre-labeled foil packet for chlorophyll-a analysis. For epilithon, three rocks (one from each compartment) were randomly collected, and their top surfaces were scraped using wire brushes, with area scrapped quantified by using a 25-cm2 template to limit scrub area on each rock, or for rocks that did not fit the template, by measuring and estimating rocks surface areas manually. Scraped biofilms were rinsed using a maximum of 50 mL of deionized water, and the rinsed materials (slurry) were collected and mixed in pre-sterilized plastic containers. At each site, up to 10-mL of epilithic biofilm slurry was filtered onto a GFF filter, the volume filtered was recorded and the filter was saved in its pre-labeled foil packet for chlorophyll-a analysis. In the field, all filters were temporarily stored in plastic bags on ice or under ice packs, and at the end of each field day were stored in a freezer (-20ºC). \r\nFrozen filters were later shipped on dry ice from the Zeglin lab at Kansas State University (Manhattan, KS) to the Kuehn lab at the University of Southern Mississippi (Hattiesburg, MS). In the lab, chlorophyll-a was extracted from GFF filters in 5-10 ml of 90% ethanol at 80ºC for 5 minutes, steeped overnight at 4ºC (in darkness), and immediately quantified the following day by fluorescence using a Shimadzu 10ADvp series high performance liquid chromatography (HPLC) equipped with a Shimadzu RF10Axl fluorescence detector (excitation 430nm, emission 670 nm) (Meyns et al. 1994). Chlorophyll-a content quantified and calculated in terms of rock surface area sampled (µg/cm2) or concentration in surface waters (µg/L). \r\nReferences:\r\nMeyns, S., Illi, R., & Ribi, B. (1994). Comparison of chlorophyll-a analysis by HPLC and spectrophotometry: where do the differences come from? Archiv für Hydrobiologie, 129-139.\r\nSwenson, L. J., Zipper, S., Peterson, D. M., Jones, C. N., Burgin, A. J., Seybold, E., ... & Hatley, C. (2024). Changes in Water Age During Dry‐Down of a Non‐Perennial Stream. Water Resources Research, 60(1), e2023WR034623. https://doi.org/10.1029/2023WR034623\r\nZeglin, L., M. Busch (2024). AIMS SOP - Microbial Field Sampling, HydroShare, http://www.hydroshare.org/resource/4b071711215341118330c22f18b5d20d",
+  "schema:keywords": [
+    "intermittent",
+    "stream",
+    "chlorophyll"
+  ],
+  "schema:creativeWorkStatus": "Published",
+  "schema:inLanguage": "en-US",
+  "schema:identifier": {
+    "@id": "https://doi.org/10.4211/hs.01135480279340cd8e457a22e7b9208b",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.4211/hs.01135480279340cd8e457a22e7b9208b",
+    "schema:value": "doi:10.4211/hs.01135480279340cd8e457a22e7b9208b"
+  },
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "University of Southern Mississippi"
+        },
+        "schema:email": "carbon14bond@gmail.com",
+        "schema:name": "Charles Thomas Bond",
+        "schema:url": [
+          "https://www.hydroshare.org/user/25370/",
+          "https://orcid.org/0000-0001-8890-4714"
+        ]
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "University of Southern Mississippi"
+        },
+        "schema:name": "Emily Stanley"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:address": {
+          "@type": [
+            "schema:PostalAddress"
+          ],
+          "streetAddress": "School of Biological, Environmental, and Earth Sciences, The University of Southern  Mississippi, Hattiesburg, MS 39406."
+        },
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "University of Southern Mississippi"
+        },
+        "schema:email": "Kevin.Kuehn@usm.edu",
+        "schema:name": "Kevin A. Kuehn",
+        "schema:url": "https://orcid.org/0000-0002-8094-3142"
+      }
+    ]
+  },
+  "schema:temporalCoverage": [
+    "2021-06-04/2021-06-08"
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Konza Prairie Biological Stations",
+      "schema:geo": {
+        "@type": [
+          "schema:GeoCoordinates"
+        ],
+        "schema:latitude": 39.0923,
+        "schema:longitude": -96.5872
+      }
+    }
+  ],
+  "schema:publisher": {
+    "@id": "https://www.hydroshare.org"
+  },
+  "schema:provider": [
+    {
+      "@id": "https://www.hydroshare.org",
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "HydroShare",
+      "schema:url": "https://www.hydroshare.org"
+    }
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "HydroShare",
+    "schema:url": "https://www.hydroshare.org/search/"
+  },
+  "schema:license": [
+    {
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "text": "This resource is shared under the Creative Commons Attribution CC BY.",
+      "schema:url": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "schema:isAccessibleForFree": true,
+  "schema:citation": [
+    "Zeglin, L., M. Busch (2024). AIMS SOP - Microbial Field Sampling, HydroShare, http://www.hydroshare.org/resource/4b071711215341118330c22f18b5d20d"
+  ],
+  "schema:funding": [
+    {
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:identifier": {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:value": "2019603"
+      },
+      "schema:name": "RII Track-2 FEC: Aquatic Intermittency Effects on Microbiomes in Streams (AIMS)",
+      "schema:funder": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "National Science Foundation",
+        "schema:identifier": "https://www.nsf.gov/"
+      }
+    }
+  ],
+  "schema:dateCreated": "2023-10-25T19:06:34.873685+00:00",
+  "schema:dateModified": "2025-04-17T20:44:07.039971+00:00",
+  "schema:datePublished": "2025-04-17T20:44:07.407109+00:00",
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.4211/hs.01135480279340cd8e457a22e7b9208b#schemaorg#metadata",
+    "schema:name": "GeoCodes metadata record for: Chlorophyll-a data from Konza prairie (KS, USA) stream synoptic (AIMS_GP_approach3_CHLA)",
+    "schema:about": {
+      "@id": "https://doi.org/10.4211/hs.01135480279340cd8e457a22e7b9208b#schemaorg"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from HydroShare by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Core profile: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations (schema, dcterms, dcat, prov); @type values normalized to arrays with schema: prefix; schema:identifier unwrapped from array; schema:license wrapped in array; Distributions normalized (encodingFormat arrays, @type, contentUrl); schema:creator wrapped in @list; schema:sameAs wrapped in array; schema:additionalType wrapped in array; schema:provider wrapped in array; spatialCoverage normalized to array of Place objects. Round 2 fixes: Funding @type Grant changed to schema:MonetaryGrant; Funding identifier converted from string to PropertyValue. Moved to Discovery: Added conformsTo discovery/1.0; temporalCoverage wrapped in array."
+  },
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentSize": "43.8 KB",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentUrl": "https://www.hydroshare.org/hsapi/resource/01135480279340cd8e457a22e7b9208b/",
+      "schema:description": "Zipped BagIt Bag containing the HydroShare Resource",
+      "schema:dateModified": "2025-04-17T20:44:07.039971+00:00",
+      "schema:identifier": [
+        "https://www.hydroshare.org/resource/01135480279340cd8e457a22e7b9208b",
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:additionalType": [
+            "http://www.wikidata.org/entity/Q185235",
+            "http://id.loc.gov/vocabulary/preservation/cryptographicHashFunctions/md5"
+          ],
+          "schema:identifier": "md5:a7501e63bab38529665d1f869c95bae2-1",
+          "schema:propertyID": "MD5",
+          "schema:value": "a7501e63bab38529665d1f869c95bae2-1"
+        }
+      ]
+    }
+  ]
+}

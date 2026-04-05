@@ -1,0 +1,2162 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:identifier": "https://doi.org/10.17882/42182",
+  "schema:isAccessibleForFree": "True",
+  "schema:url": "https://www.seanoe.org/data/00311/42182/",
+  "schema:thumbnailUrl": "https://www.seanoe.org/data/00311/42182/thumbnail.gif",
+  "schema:name": "Argo float data and metadata from Global Data Assembly Centre (Argo GDAC)",
+  "schema:description": "argo is a global array of 3,000 free-drifting profiling floats that measures the temperature and salinity of the upper 2000 m of the ocean. this allows, for the first time, continuous monitoring of the temperature, salinity, and velocity of the upper ocean, with all data being relayed and made publicly available within hours after collection. the array provides 100,000 temperature/salinity profiles and velocity measurements per year distributed over the global oceans at an average of 3-degree spacing. some floats provide additional bio-geo parameters such as oxygen or chlorophyll. all data collected by argo floats are publically available in near real-time via the global data assembly centers (gdacs) in brest (france) and monterey (california) after an automated quality control (qc), and in scientifically quality controlled form, delayed mode data, via the gdacs within six months of collection.the bgc-argo sprof snapshot is a subset of the global argo data snapshot.  it is created to ease bgc-argo data usage.  the content is the same if you are to download the global argo data snapshot, and then select all the bgc-argo sprof files.  please use the same doi and citation as the global argo data snapshot.",
+  "schema:datePublished": "2026-03-08",
+  "schema:license": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "schema:keywords": [
+    "float",
+    "Argo",
+    "global ocean observing system",
+    "ocean circulation",
+    "in-situ",
+    "ocean pressure",
+    "sea water salinity",
+    "sea water temperature",
+    "multi-year",
+    "weather climate and seasonal observation",
+    "global-ocean"
+  ],
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "SEANOE",
+    "schema:url": "https://www.seanoe.org/",
+    "disambiguatingDescription": "Sea scientific open data publication",
+    "logo": "https://www.seanoe.org/html/images/seanoe-share.png"
+  },
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "SEANOE",
+    "schema:url": "https://www.seanoe.org/",
+    "disambiguatingDescription": "Sea scientific open data publication",
+    "logo": "https://www.seanoe.org/html/images/seanoe-share.png"
+  },
+  "schema:citation": "Argo (2026). Argo float data and metadata from Global Data Assembly Centre (Argo GDAC). SEANOE. https://doi.org/10.17882/42182",
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "-90 180 90 -180"
+      }
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "Argo"
+      }
+    ]
+  },
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42250.tar.gz",
+      "schema:contentSize": "3601830397"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42251.tar.gz",
+      "schema:contentSize": "3898227494"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42252.tar.gz",
+      "schema:contentSize": "5122127625"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42253.tar.gz",
+      "schema:contentSize": "4388058901"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42254.tar.gz",
+      "schema:contentSize": "4472657016"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42262.tar.gz",
+      "schema:contentSize": "4626358803"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42263.tar.gz",
+      "schema:contentSize": "4700957659"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42264.tar.gz",
+      "schema:contentSize": "4788483159"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42266.tar.gz",
+      "schema:contentSize": "4887755414"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42269.tar.gz",
+      "schema:contentSize": "4919579443"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42272.tar.gz",
+      "schema:contentSize": "5241415473"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42275.tar.gz",
+      "schema:contentSize": "5345327382"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42278.tar.gz",
+      "schema:contentSize": "5509783305"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42280.tar.gz",
+      "schema:contentSize": "5719460873"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42281.tar.gz",
+      "schema:contentSize": "5925865104"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42282.tar.gz",
+      "schema:contentSize": "6080727031"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42321.tar.gz",
+      "schema:contentSize": "6448386372"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42322.tar.gz",
+      "schema:contentSize": "6189201088"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42334.tar.gz",
+      "schema:contentSize": "6189201088"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42335.tar.gz",
+      "schema:contentSize": "6691927328"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42336.tar.gz",
+      "schema:contentSize": "7481492010"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42338.tar.gz",
+      "schema:contentSize": "7733486296"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42340.tar.gz",
+      "schema:contentSize": "8259888131"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42341.tar.gz",
+      "schema:contentSize": "8397278719"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42342.tar.gz",
+      "schema:contentSize": "8438917634"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42343.tar.gz",
+      "schema:contentSize": "8630150870"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42344.tar.gz",
+      "schema:contentSize": "8916554704"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42348.tar.gz",
+      "schema:contentSize": "9111113283"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42349.tar.gz",
+      "schema:contentSize": "9492500571"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42350.tar.gz",
+      "schema:contentSize": "9648009521"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/42382.tar.gz",
+      "schema:contentSize": "9823296535"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/43181.tar.gz",
+      "schema:contentSize": "10087022450"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/44065.tar.gz",
+      "schema:contentSize": "10392681372"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/44651.tar.gz",
+      "schema:contentSize": "10669785015"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/45418.tar.gz",
+      "schema:contentSize": "10865309577"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/45420.tar.gz",
+      "schema:contentSize": "11106257709"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/45724.tar.gz",
+      "schema:contentSize": "11311685195"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/46182.tar.gz",
+      "schema:contentSize": "11735317320"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/46618.tar.gz",
+      "schema:contentSize": "12072681218"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/47075.tar.gz",
+      "schema:contentSize": "12307592082"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/47708.tar.gz",
+      "schema:contentSize": "12544384890"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/48360.tar.gz",
+      "schema:contentSize": "12792689235"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/48844.tar.gz",
+      "schema:contentSize": "13021292009"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/49555.tar.gz",
+      "schema:contentSize": "13477827908"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/50059.tar.gz",
+      "schema:contentSize": "13823903973"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/50864.tar.gz",
+      "schema:contentSize": "14250317389"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/50865.tar.gz",
+      "schema:contentSize": "14920370616"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/51255.tar.gz",
+      "schema:contentSize": "15439076666"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/51756.tar.gz",
+      "schema:contentSize": "15630430650"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/52113.tar.gz",
+      "schema:contentSize": "16142551900"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/53077.tar.gz",
+      "schema:contentSize": "16351024129"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/53262.tar.gz",
+      "schema:contentSize": "16628931505"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/53857.tar.gz",
+      "schema:contentSize": "16909336307"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/54448.tar.gz",
+      "schema:contentSize": "17152826839"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/55429.tar.gz",
+      "schema:contentSize": "17422371588"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/56126.tar.gz",
+      "schema:contentSize": "17780919140"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/57034.tar.gz",
+      "schema:contentSize": "18296288238"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/58010.tar.gz",
+      "schema:contentSize": "18695401780"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/58012.tar.gz",
+      "schema:contentSize": "18906852132"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/58015.tar.gz",
+      "schema:contentSize": "18296288238"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/58265.tar.gz",
+      "schema:contentSize": "19228802457"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/59213.tar.gz",
+      "schema:contentSize": "19654971811"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/59903.tar.gz",
+      "schema:contentSize": "20053047735"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/60707.tar.gz",
+      "schema:contentSize": "20511865043"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/61117.tar.gz",
+      "schema:contentSize": "20764798557"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/61899.tar.gz",
+      "schema:contentSize": "21023888430"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/62579.gz",
+      "schema:contentSize": "21298572954"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/63587.tar.gz",
+      "schema:contentSize": "21692763326"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/64047.tar.gz",
+      "schema:contentSize": "21980566985"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/64916.tar.gz",
+      "schema:contentSize": "22373235047"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/66561.tar.gz",
+      "schema:contentSize": "33753104608"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/66794.tar.gz",
+      "schema:contentSize": "29504593785"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/66797.tar.gz",
+      "schema:contentSize": "34571343544"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/67548.tar.gz",
+      "schema:contentSize": "34814959215"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/68322.tar.gz",
+      "schema:contentSize": "35230110371"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/68867.tar.gz",
+      "schema:contentSize": "35722452181"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/69589.tar.gz",
+      "schema:contentSize": "36337246810"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/70590.tar.gz",
+      "schema:contentSize": "36929664666"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/71394.tar.gz",
+      "schema:contentSize": "37593876970"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/72592.tar.gz",
+      "schema:contentSize": "38263566037"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/73395.tar.gz",
+      "schema:contentSize": "35142058301"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/74143.tar.gz",
+      "schema:contentSize": "35635862301"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/75329.tar.gz",
+      "schema:contentSize": "36141530524"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/76230.tar.gz",
+      "schema:contentSize": "36714251221"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/76900.tar.gz",
+      "schema:contentSize": "37277761418"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/77634.tar.gz",
+      "schema:contentSize": "37764333612"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/78698.tar.gz",
+      "schema:contentSize": "39130023467"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/79118.tar.gz",
+      "schema:contentSize": "39363827431"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/80076.tar.gz",
+      "schema:contentSize": "39815045787"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/81474.tar.gz",
+      "schema:contentSize": "40339528949"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/82194.tar.gz",
+      "schema:contentSize": "40951443880"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/83054.tar.gz",
+      "schema:contentSize": "41567059124"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/83717.tar.gz",
+      "schema:contentSize": "42157066637"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/85023.tar.gz",
+      "schema:contentSize": "42986245797"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/86141.tar.gz",
+      "schema:contentSize": "43603148003"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/87099.tar.gz",
+      "schema:contentSize": "44211859328"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/88323.tar.gz",
+      "schema:contentSize": "44889064255"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/88971.tar.gz",
+      "schema:contentSize": "45560942587"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/89696.tar.gz",
+      "schema:contentSize": "46217846149"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/90179.tar.gz",
+      "schema:contentSize": "46822990809"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/90708.tar.gz",
+      "schema:contentSize": "47449584629"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/91554.tar.gz",
+      "schema:contentSize": "48070185755"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/92121.tar.gz",
+      "schema:contentSize": "48622554523"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/93132.tar.gz",
+      "schema:contentSize": "49178727997"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/93778.tar.gz",
+      "schema:contentSize": "49730574259"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/94439.tar.gz",
+      "schema:contentSize": "50208651923"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/95141.tgz",
+      "schema:contentSize": "3180207352"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/95142.tar.gz",
+      "schema:contentSize": "50990981643"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/95427.tar.gz",
+      "schema:contentSize": "3030840586"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/95428.tar.gz",
+      "schema:contentSize": "51548477553"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/95967.tar.gz",
+      "schema:contentSize": "52258678836"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/95998.tar.gz",
+      "schema:contentSize": "3135541295"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/96550.tar.gz",
+      "schema:contentSize": "52751354706"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/96562.tar.gz",
+      "schema:contentSize": "3183236074"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/97606.tar.gz",
+      "schema:contentSize": "53354775038"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/97618.tar.gz",
+      "schema:contentSize": "3216234850"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/98126.tar.gz",
+      "schema:contentSize": "53898665900"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/98157.tar.gz",
+      "schema:contentSize": "3254619353"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/98916.tar.gz",
+      "schema:contentSize": "54496147276"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/99784.tar.gz",
+      "schema:contentSize": "55283956366"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/100487.tar.gz",
+      "schema:contentSize": "55903719507"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/101760.tar.gz",
+      "schema:contentSize": "56562323879"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/102270.tar.gz",
+      "schema:contentSize": "57140615766"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/102271.tar.gz",
+      "schema:contentSize": "3491234688"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/103075.tar.gz",
+      "schema:contentSize": "57783299818"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/103088.tar.gz",
+      "schema:contentSize": "3528282976"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/103614.tar.gz",
+      "schema:contentSize": "58074319360"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/103643.tar.gz",
+      "schema:contentSize": "885173945"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/104145.tar.gz",
+      "schema:contentSize": "58839510841"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/104148.tar.gz",
+      "schema:contentSize": "3642641121"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/104705.tar.gz",
+      "schema:contentSize": "3883763456"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/104707.tar.gz",
+      "schema:contentSize": "59982883281"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/105302.tar.gz",
+      "schema:contentSize": "60739538840"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/105307.tar.gz",
+      "schema:contentSize": "3945968584"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/105923.tar.gz",
+      "schema:contentSize": "3992144596"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/105924.tar.gz",
+      "schema:contentSize": "61414181189"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/106795.tar.gz",
+      "schema:contentSize": "4041031220"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/106796.tar.gz",
+      "schema:contentSize": "62048789237"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/107469.tar.gz",
+      "schema:contentSize": "4078729992"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/107470.tar.gz",
+      "schema:contentSize": "62665659794"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/108448.tar.gz",
+      "schema:contentSize": "4125506057"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/108452.tar.gz",
+      "schema:contentSize": "63412463837"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/109232.tar.gz",
+      "schema:contentSize": "4161213317"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/109233.tar.gz",
+      "schema:contentSize": "64075149790"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/109847.tar.gz",
+      "schema:contentSize": "4205317672"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/109848.tar.gz",
+      "schema:contentSize": "64761204347"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/110195.tar.gz",
+      "schema:contentSize": "4249204324"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/110199.tar.gz",
+      "schema:contentSize": "65438351687"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/110911.tar.gz",
+      "schema:contentSize": "4291559467"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/110912.tar.gz",
+      "schema:contentSize": "66125586894"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/112389.tar.gz",
+      "schema:contentSize": "66848446448"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/112455.tar.gz",
+      "schema:contentSize": "4409817878"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/112456.tar.gz",
+      "schema:contentSize": "67580778372"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/112844.tar.gz",
+      "schema:contentSize": "68383813300"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/112895.tar.gz",
+      "schema:contentSize": "4487744437"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/113867.tar.gz",
+      "schema:contentSize": "4559395984"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/113868.tar.gz",
+      "schema:contentSize": "69157959324"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/114622.tar.gz",
+      "schema:contentSize": "4609432051"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/114627.tar.gz",
+      "schema:contentSize": "69825192430"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/115667.tar.gz",
+      "schema:contentSize": "4668522935"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/115668.tar.gz",
+      "schema:contentSize": "70581841142"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/116312.tar.gz",
+      "schema:contentSize": "4726673509"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/116315.tar.gz",
+      "schema:contentSize": "71407089662"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/117068.tar.gz",
+      "schema:contentSize": "4773067870"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/117069.tar.gz",
+      "schema:contentSize": "72217446733"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/118036.tar.gz",
+      "schema:contentSize": "4847229204"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/118037.tar.gz",
+      "schema:contentSize": "73405712357"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/118804.tar.gz",
+      "schema:contentSize": "4889291628"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/118805.tar.gz",
+      "schema:contentSize": "74217299059"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/119541.tar.gz",
+      "schema:contentSize": "4947060040"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/119542.tar.gz",
+      "schema:contentSize": "74946592959"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/120243.tar.gz",
+      "schema:contentSize": "5012920415"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/120247.tar.gz",
+      "schema:contentSize": "75886590717"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/121443.tar.gz",
+      "schema:contentSize": "5076780859"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/121444.tar.gz",
+      "schema:contentSize": "76615540901"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/121517.tar.gz",
+      "schema:contentSize": "5128728610"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/121518.tar.gz",
+      "schema:contentSize": "77550682791"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/121877.tar.gz",
+      "schema:contentSize": "78467548343"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/121885.tar.gz",
+      "schema:contentSize": "5203048620"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/122845.tar.gz",
+      "schema:contentSize": "5265801306"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/122846.tar.gz",
+      "schema:contentSize": "79371686792"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/123470.tar.gz",
+      "schema:contentSize": "5424768766"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/123471.tar.gz",
+      "schema:contentSize": "80297104939"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/124450.tar.gz",
+      "schema:contentSize": "81602630785"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/124468.tar.gz",
+      "schema:contentSize": "5513546890"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/125184.tar.gz",
+      "schema:contentSize": "5672266961"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/125185.tar.gz",
+      "schema:contentSize": "83846554648"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/126150.tar.gz",
+      "schema:contentSize": "5768939632"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/126151.tar.gz",
+      "schema:contentSize": "84759839728"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/126921.tar.gz",
+      "schema:contentSize": "5877767442"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/x-netcdf"
+      ],
+      "schema:contentUrl": "https://www.seanoe.org/data/00311/42182/data/126945.tar.gz",
+      "schema:contentSize": "85753829829"
+    }
+  ],
+  "disciplines": [
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "termCode": "DS03",
+      "schema:name": "Physical oceanography",
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P08/current/DS03/",
+      "inDefinedTermSet": "P08 (SEADATANET PARAMETER DISCIPLINES)"
+    }
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Vertical spatial coordinates",
+      "schema:propertyID": [
+        "AHGT"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/AHGT/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Alkalinity, acidity and pH of the water column",
+      "schema:propertyID": [
+        "ALKY"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/ALKY/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Transmittance and attenuance of the water column",
+      "schema:propertyID": [
+        "ATTN"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/ATTN/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Chlorophyll pigment concentrations in water bodies",
+      "schema:propertyID": [
+        "CPWC"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/CPWC/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Dissolved oxygen parameters in the water column",
+      "schema:propertyID": [
+        "DOXY"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/DOXY/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Concentration of organic matter in water bodies",
+      "schema:propertyID": [
+        "HMSB"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/HMSB/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Nitrate concentration parameters in the water column",
+      "schema:propertyID": [
+        "NTRA"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/NTRA/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Optical backscatter",
+      "schema:propertyID": [
+        "OPBS"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/OPBS/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Salinity of the water column",
+      "schema:propertyID": [
+        "PSAL"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/PSAL/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Concentration of inorganic sulphur species in the water column",
+      "schema:propertyID": [
+        "SPWC"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/SPWC/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Temperature of the water column",
+      "schema:propertyID": [
+        "TEMP"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/TEMP/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Concentration of suspended particulate material in the water column",
+      "schema:propertyID": [
+        "TSED"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/TSED/"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:name": "Visible waveband radiance and irradiance measurements in the water column",
+      "schema:propertyID": [
+        "VSRW"
+      ],
+      "schema:url": "http://vocab.nerc.ac.uk/collection/P02/current/VSRW/"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "schema:name": "GeoCodes metadata record for: Argo float data and metadata from Global Data Assembly Centre (Argo GDAC)",
+    "schema:about": {
+      "@id": "https://www.seanoe.org/data/00311/42182/"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from SEANOE by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Discovery profile: Property names prefixed with schema: namespace per CDIF convention; @context converted from @vocab style to explicit CDIF prefix declarations (schema, dcterms, dcat, prov); @type normalized to array format with schema: prefix; schema:dateModified set from schema:datePublished (original record lacked dateModified); schema:license wrapped in array; Distribution @type values normalized to arrays with schema: prefix; All nested @type values converted to arrays with schema: prefix. Round 2 CDIF fixes: subjectOf @type changed to [\"schema:Dataset\"] per CDIF CatalogRecord schema; subjectOf @id added (required by schema); schema:creator wrapped in @list to preserve author order per CDIF convention; Distribution encodingFormat wrapped in arrays; fileSize renamed to schema:contentSize; schema:spatialCoverage wrapped in array; @id set from schema:url; spatialCoverage strings converted to Place objects. Round 3 fixes: schema:keywords split from comma-separated string to array; variableMeasured propertyID values wrapped in arrays. Round 4 fixes: spatialCoverage geo unwrapped from array to single object.",
+    "@id": "https://www.seanoe.org/data/00311/42182/#metadata"
+  },
+  "schema:dateModified": "2026-03-08",
+  "@id": "https://www.seanoe.org/data/00311/42182/"
+}

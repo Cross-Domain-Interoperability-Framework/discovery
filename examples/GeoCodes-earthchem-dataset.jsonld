@@ -1,0 +1,147 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@id": "https://doi.org/10.1594/IEDA/100696",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Precision and accuracy of glass analyses by electron microprobe (EMP) at Uppsala University",
+  "schema:sameAs": [
+    "https://ecl.earthchem.org/view.php?id=1080"
+  ],
+  "schema:isAccessibleForFree": true,
+  "schema:citation": [
+    "https://doi.org/10.1029/2005GC001060"
+  ],
+  "schema:description": "In situ analysis of glass requires matrix-matched standards for timely assessment of the accuracy and precision of the results. We provide data to constrain the precision and accuracy of glass analyses by FEG-EMP at Uppsala University. Seven of the DING glasses that represent a broad spectrum of compositions were used to test for accuracy and precision (Jochum et al., 2006). Multiple analyses were performed on each glass; ML3B (n=30), STHs 6/80 (n=43), ATHO (n=54), KL2 (n=30), GOR-132 (n=30), GOR-128 (n=38) and T1 (n=36).\r\nGlass analysis was performed using a field emission gun JEOL JXA-8530F Hyperprobe electron probe microanalyser at Uppsala University. The analytical conditions were 15 kV accelerating voltage and 4 nA probe current with a defocused beam of 5 to 10 micron diameter. Measurements were conducted with counting times of 10 s on peak and 5 s on lower and upper background and the PRZ correction method was applied to the data. Detection limits are typically ≤150 ppm. \r\nDespite different volatile contents, the DING glasses gave totals of 97.2±2.4 (2s.d.; n=241) and have been normalized to further assess the data quality. The precision of the analyses is reported as uncertainties at the 95% confidence level for major element oxides. When concentrations are >30 wt% the uncertainties are 0.7 to 1.6% (2s.d.), for concentrations of 5 to 30 wt% uncertainties are <7% (2s.d.) and at contents of 1 to 5 wt% uncertainties are <10% (2s.d.). Comparison to the preferred values reported by Jochum et al. (2006) reveals a correlation of 1.0079.",
+  "schema:distribution": [
+    {
+      "schema:datePublished": "2017-07-01 00:00:00",
+      "schema:contentUrl": "https://ecl.earthchem.org/view.php?id=1080",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:encodingFormat": [
+        "application/vnd.ms-excel;application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ]
+    }
+  ],
+  "schema:license": [
+    "https://spdx.org/licenses/CC-BY-SA-4.0"
+  ],
+  "schema:dateCreated": "2017-06-23",
+  "schema:inLanguage": "English",
+  "schema:keywords": [
+    "experimental glass",
+    "glass analyses",
+    "FEG-EMP",
+    "precision",
+    "accuracy"
+  ],
+  "schema:publisher": {
+    "schema:contactPoint": {
+      "@type": [
+        "schema:ContactPoint"
+      ],
+      "schema:name": "Information Desk",
+      "schema:contactType": "Customer Service",
+      "schema:email": "info@earthchem.org",
+      "schema:url": "https://www.earthchem.org/contact/"
+    },
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "EarthChem Library",
+    "@id": "https://www.earthchem.org",
+    "schema:url": "https://www.earthchem.org/library"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "EarthChem Library"
+    }
+  ],
+  "schema:identifier": {
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:value": "doi:10.1594/IEDA/100696",
+    "schema:url": "https://doi.org/10.1594/IEDA/100696"
+  },
+  "schema:isBasedOn": [],
+  "schema:url": "https://doi.org/10.1594/IEDA/100696",
+  "schema:funding": [],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "schema:name": "GeoCodes metadata record for: Precision and accuracy of glass analyses by electron microprobe (EMP) at Uppsala University",
+    "schema:about": {
+      "@id": "https://doi.org/10.1594/IEDA/100696"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from EarthChem by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Discovery profile: Property names prefixed with schema: namespace per CDIF convention; @context converted from @vocab style to explicit CDIF prefix declarations (schema, dcterms, dcat, prov); @type normalized to array format with schema: prefix; schema:dateModified set from schema:dateCreated (original record lacked dateModified); schema:license wrapped in array; Distribution @type values normalized to arrays with schema: prefix; All nested @type values converted to arrays with schema: prefix. Round 2 CDIF fixes: subjectOf @type changed to [\"schema:Dataset\"] per CDIF CatalogRecord schema; subjectOf @id added (required by schema); schema:author converted to schema:creator with @list wrapper; Distribution encodingFormat wrapped in arrays; fileSize renamed to schema:contentSize; schema:sameAs wrapped in array; schema:spatialCoverage wrapped in array; schema:provider wrapped in array; spatialCoverage strings converted to Place objects. Round 3 fixes: Creator Role wrappers unwrapped to direct Person objects; Empty spatialCoverage (Place with no geo) removed. Round 4 fixes: Creator double-@list and Role wrappers fully flattened to direct Person objects.",
+    "@id": "https://doi.org/10.1594/IEDA/100696#metadata"
+  },
+  "schema:dateModified": "2017-06-23",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Abigail K. Barker",
+        "schema:givenName": "Abigail",
+        "schema:familyName": "Barker"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Duncan D. Muir",
+        "schema:givenName": "Duncan",
+        "schema:familyName": "Muir"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Jaroslaw M. Majka",
+        "schema:givenName": "Jaroslaw",
+        "schema:familyName": "Majka"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Valentin R. Troll",
+        "schema:givenName": "Valentin",
+        "schema:familyName": "Troll"
+      }
+    ]
+  }
+}

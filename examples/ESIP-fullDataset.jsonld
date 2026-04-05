@@ -1,0 +1,371 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "spdx": "http://spdx.org/rdf/terms#"
+  },
+  "@id": "http://lod.example-data-repository.org/id/dataset/3300",
+  "schema:identifier": {
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:value": "doi:10.1234/1234567890",
+    "schema:url": "https://doi.org/10.1234/1234567890",
+    "schema:sameAs": "http://doi.org/abcd"
+  },
+  "schema:sameAs": [
+    "https://doi.org/10.1234/1234567890"
+  ],
+  "schema:isAccessibleForFree": true,
+  "schema:url": "https://www.example-data-repository.org/dataset/3300",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Larval krill studies - fluorescence and clearance from ARSV Laurence M. Gould LMG0106, LMG0205 in the Southern Ocean from 2001-2002 (SOGLOBEC project)",
+  "schema:alternateName": "larval krill pigments",
+  "schema:description": "<p>\"Winter ecology of larval krill: quantifying their interaction with the pack ice habitat\"</p>\r\n\r\n<p>The goal of the larval krill studies was to investigate the physiology and ecology of krill larvae associated with the pack ice and the microbial community on which they feed.</p>\r\n\r\n<p>During LMG0106 we occupied two 4-5 day ice stations (Robert and Billy) and sampled several other ice floes opportunistically. We conducted 10 instantaneous growth rate experiments, and 4 whole body clearance time experiments to determine gut passage time (decline in pigment content over time). We also sampled larvae at two additional sites for initial body pigment content (whole body fluorescence), and at 4 sites for condition factor. The under-ice algal community was sampled at one site. Length and stage frequency determinations were also determined.</p>\r\n\r\n<p>We occupied three time-series stations of approximately 1 week each, and in addition opportunistically sampled at times when other activities had priority. Our primary goal during the cruise was to occupy three ice camps or process stations with the intent of thoroughly studying the under-ice environment by SCUBA in conjunction with other projects working topside. <a href=\"http://www.ccpo.odu.edu/Research/globec/main_cruises02/lmg0205/report_lmg0205.pdf\" target=\"_blank\"><em>(from cruise report LMG0205)</em></a></p>",
+  "schema:datePublished": "2010-02-03",
+  "schema:keywords": [
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "OCEANS",
+      "inDefinedTermSet": "https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords",
+      "schema:url": "https://gcmd.earthdata.nasa.gov/kms/concept/91697b7d-8f2b-4954-850e-61d5f61c867d",
+      "termCode": "91697b7d-8f2b-4954-850e-61d5f61c867d"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "ice core studies",
+      "inDefinedTermSet": "https://vocabularyserver.com/cnr/ml/snowterm/en/",
+      "schema:url": "https://vocabularyserver.com/cnr/ml/snowterm/en/index.php?tema=29330",
+      "schema:identifier": {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:propertyID": "https://registry.identifiers.org/registry/ark",
+        "schema:value": "ark:/99152/t3v4yo3eeqepj0",
+        "schema:url": "https://vocabularyserver.com/cnr/ml/snowterm/en/?ark=ark:/99152/t3v4yo3eeqepj0"
+      }
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Baked Clay",
+      "inDefinedTermSet": "https://www2.earthref.org/vocabularies/controlled"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "@id": "http://lod.example-data-repository.org/id/person/51159",
+        "schema:name": "Dr Langdon Quetin",
+        "schema:url": "https://www.example-data-repository.org/person/51159"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "@id": "http://lod.example-data-repository.org/id/person/51160",
+        "schema:name": "Dr Robin Ross",
+        "schema:url": "https://www.example-data-repository.org/person/51160"
+      }
+    ]
+  },
+  "schema:citation": "Quetin, L., Ross, R. (2010) Larval krill studies - fluorescence and clearance from ARSV Laurence M. Gould LMG0106, LMG0205 in the Southern Ocean from 2001-2002 (SOGLOBEC project). Example Data Repository. Version 1. doi:10.1234/1234567890 [access date]",
+  "schema:version": "1",
+  "schema:license": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "schema:temporalCoverage": [
+    "2001-08-06/2002-09-09"
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "-68.4817 -75.8183 -65.08 -68.5033"
+      },
+      "schema:additionalProperty": [
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "http://www.wikidata.org/entity/Q4018860",
+          "schema:name": "well-known text (WKT) representation of geometry",
+          "schema:value": "POLYGON ((-75.8183 -68.4817, -68.5033 -68.4817, -68.5033 -65.08, -75.8183 -65.08, -75.8183 -68.4817))"
+        },
+        {
+          "@type": [
+            "schema:PropertyValue"
+          ],
+          "schema:propertyID": "http://www.wikidata.org/entity/Q161779",
+          "schema:name": "Spatial Reference System",
+          "schema:value": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+        }
+      ]
+    }
+  ],
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Example Data Repository",
+    "schema:url": "https://www.example-data-repository.org"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Example Data Repository",
+      "schema:url": "https://www.example-data-repository.org"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "https://www.example-data-repository.org/dataset/3300/data/larval-krill.tsv",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:datePublished": "2010-02-03",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "spdx:checksumAlgorithm_sha256",
+        "spdx:checksumValue": "39ae639d33cea4a287198bbcdca5e6856e6607a7c91dc4c54348031be2ad4c51"
+      }
+    }
+  ],
+  "schema:measurementTechnique": [
+    "Hand-held plankton net",
+    "Manual Biota Sampler"
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20860"
+      ],
+      "schema:name": "cruiseid",
+      "schema:description": "cruise identification",
+      "schema:unitText": "text"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20861"
+      ],
+      "schema:name": "year",
+      "schema:description": "year of experiment",
+      "schema:unitText": "calendar year"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20862"
+      ],
+      "schema:name": "sample_id",
+      "schema:description": "sample identification: WBC=whole body clearance expt.; WBF=whole body fluorescence on collection"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20863"
+      ],
+      "schema:name": "time_sample",
+      "schema:description": "Number of minutes between collection and sampling for pigment content; decline of pigment content with time was used to calculate time to clear the gut of pigment.",
+      "schema:unitText": "minutes"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20864"
+      ],
+      "schema:name": "pigment_content",
+      "schema:description": "pigment content",
+      "schema:unitText": "micrograms total chl/grams wet weight"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20865"
+      ],
+      "schema:name": "stage_id",
+      "schema:description": "stage development index of larvae in sample (furcilia = F1-6 = 1-6,  juvenile = J=7)"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20866"
+      ],
+      "schema:name": "wet_weight",
+      "schema:description": "average wet weight/larvae in sample",
+      "schema:unitText": "mg"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20874"
+      ],
+      "schema:name": "lat",
+      "schema:description": "latitude, in decimal degrees, North is positive, negative denotes South",
+      "schema:unitText": "decimal degrees"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20875"
+      ],
+      "schema:name": "lon",
+      "schema:description": "longitude, in decimal degrees, East is positive, negative denotes West",
+      "schema:unitText": "decimal degrees"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20876"
+      ],
+      "schema:name": "day_local",
+      "schema:description": "day of month, local time"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20877"
+      ],
+      "schema:name": "month_local",
+      "schema:description": "month, local time"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20878"
+      ],
+      "schema:name": "time_local",
+      "schema:description": "time of day, local time, using 2400 clock format"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:propertyID": [
+        "http://lod.example-data-repository.org/id/dataset-parameter/20879"
+      ],
+      "schema:name": "yrday_local",
+      "schema:description": "local day and decimal time, as 326.5 for the 326th day of the year, or November 22 at 1200 hours (noon)"
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=9909933",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:identifier": {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:value": "9909933"
+      },
+      "schema:name": "GLOBEC: Winter Ecology of Larval Krill: Quantifying their Interaction with the Pack Ice Habitat",
+      "schema:url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=9909933",
+      "schema:funder": {
+        "@id": "http://dx.doi.org/10.13039/100000001",
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "National Science Foundation",
+        "schema:identifier": [
+          "http://dx.doi.org/10.13039/100000001",
+          "https://ror.org/021nxhr62"
+        ]
+      }
+    }
+  ],
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://doi.org/10.xxxx/Dataset-1"
+    }
+  ],
+  "schema:isBasedOn": {
+    "@id": "https://doi.org/10.xxxx/Dataset-1"
+  },
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "https://example.org/executions/execution-42",
+      "@type": [
+        "prov:Activity"
+      ],
+      "prov:used": [
+        "https://somerepository.org/datasets/10.xxxx/Dataset-2.v2/process-script.R"
+      ]
+    }
+  ],
+  "schema:dateModified": "2010-02-03",
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "http://lod.example-data-repository.org/id/dataset/3300#metadata",
+    "schema:name": "Metadata record for: Larval krill studies - fluorescence and clearance from ARSV Laurence M. Gould LMG0106, LMG0205 in the Southern Ocean fro",
+    "schema:about": {
+      "@id": "http://lod.example-data-repository.org/id/dataset/3300"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:description": "Converted to CDIF Discovery profile from pre-existing ESIP SOSO example: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations; @type values normalized to arrays with schema: prefix; schema:dateModified set from datePublished; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Description HTML typed literal converted to plain text; Funding identifier string converted to PropertyValue; schema:funding wrapped in array; Distribution encodingFormat wrapped in arrays; prov:wasDerivedFrom and prov:wasGeneratedBy wrapped in arrays; spdx:checksum converted from array to single object per CDIF schema; provone:Execution changed to prov:Activity; prov:hadPlan changed to prov:used; redundant prov:used (duplicate of prov:wasDerivedFrom) removed; provone prefix removed from context."
+  }
+}

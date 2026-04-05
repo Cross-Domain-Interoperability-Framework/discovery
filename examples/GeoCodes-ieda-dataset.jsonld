@@ -1,0 +1,211 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@id": "DOI:10.26022/IEDA/316815",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:additionalType": [
+    "http://schema.geolink.org/1.0/base/main#Dataset",
+    "http://vivoweb.org/ontology/core#Dataset"
+  ],
+  "schema:name": "Processed ship-based Multibeam Sonar Data (version 2) acquired in the Pacific Ocean during the Thomas Washington expedition PASC03WT (1983)",
+  "schema:citation": "GMRT, (2012), Processed ship-based Multibeam Sonar Data (version 2) acquired in the Pacific Ocean during the Thomas Washington expedition PASC03WT (1983). Interdisciplinary Earth Data Alliance (IEDA). doi:10.26022/IEDA/316815",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:additionalType": "http://schema.geolink.org/1.0/base/main#Person",
+        "schema:name": "GMRT,",
+        "schema:givenName": " ",
+        "schema:familyName": "GMRT"
+      }
+    ]
+  },
+  "schema:datePublished": "2012",
+  "schema:dateCreated": "2010-11-19",
+  "schema:version": "1",
+  "schema:inLanguage": "en",
+  "schema:description": "Abstract: This data set was acquired with a ship-based SeaBeam Classic Multibeam Sonar system during Thomas Washington expedition PASC03WT conducted in 1983 (Chief Scientist: Dr. Harmon Craig). These data files are of MBSystem format and include Swath Bathymetry data and were processed by the GMRT Team using the open source MB-System multibeam sonar processing software as part of the GMRT Synthesis effort. These data are included in the GMRT Synthesis, version 2.0.",
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:additionalType": "http://www.w3.org/ns/dcat#distribution",
+      "schema:name": "DOI landing page",
+      "schema:url": "http://dx.doi.org/10.26022/IEDA/316815",
+      "schema:encodingFormat": [
+        "application/octet-stream"
+      ],
+      "schema:contentUrl": "http://dx.doi.org/10.26022/IEDA/316815"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:additionalType": "http://www.w3.org/ns/dcat#distribution",
+      "schema:name": "URL",
+      "schema:url": "http://www.marine-geo.org/tools/search/Files.php?data_set_uid=16815",
+      "schema:encodingFormat": [
+        "application/octet-stream"
+      ],
+      "schema:contentUrl": "http://www.marine-geo.org/tools/search/Files.php?data_set_uid=16815"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "doi:10.26022/IEDA/316815",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:additionalType": [
+      "http://schema.geolink.org/1.0/base/main#Identifier",
+      "http://purl.org/spar/datacite/Identifier"
+    ],
+    "schema:propertyID": "http://purl.org/spar/datacite/doi",
+    "schema:url": "http://dx.doi.org/10.26022/IEDA/316815",
+    "schema:value": "10.26022/IEDA/316815"
+  },
+  "schema:keywords": [
+    "Bathymetry:Swath"
+  ],
+  "schema:license": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]"
+  ],
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "@id": "https://www.marine-geo.org/",
+      "schema:name": "Marine Geoscience Data System (MGDS)"
+    }
+  ],
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "@id": "https://www.marine-geo.org/",
+    "schema:name": "Marine Geoscience Data System (MGDS)",
+    "schema:url": "https://www.marine-geo.org/",
+    "schema:description": "The Marine Geoscience Data System (MGDS) is a trusted data repository that provides free public access to a curated collection of marine geophysical data products and complementary data related to understanding the formation and evolution of the seafloor and sub-seafloor. Developed and operated by domain scientists and technical specialists with deep knowledge about the creation, analysis and scientific interpretation of marine geoscience data, the system makes available a digital library of data files described by a rich curated metadata catalog. MGDS provides tools and services for the discovery and download of data collected throughout the global oceans produced primarily by National Science Foundation (NSF) supported researchers, and is the recommended data repository for NSF-funded Marine Geology and Geophysics projects.",
+    "logo": {
+      "@type": [
+        "schema:ImageObject"
+      ],
+      "schema:url": "https://www.marine-geo.org/images/mgdslogofull.png"
+    },
+    "schema:contactPoint": {
+      "@type": [
+        "schema:ContactPoint"
+      ],
+      "schema:name": "Information Desk",
+      "schema:email": "info@marine-geo.org",
+      "schema:url": "https://www.marine-geo.org/about/contact.php",
+      "schema:contactType": "Information"
+    },
+    "parentOrganization": {
+      "@type": [
+        "schema:Organization"
+      ],
+      "@id": "https://viaf.org/viaf/142992181/",
+      "schema:name": "Lamont-Doherty Earth Observatory",
+      "schema:url": "http://www.ldeo.columbia.edu/",
+      "schema:address": {
+        "@type": [
+          "schema:PostalAddress"
+        ],
+        "streetAddress": "61 Route 9W",
+        "addressLocality": "Palisades",
+        "addressRegion": "NY",
+        "postalCode": "10964-1000",
+        "addressCountry": "USA"
+      },
+      "parentOrganization": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "@id": "https://viaf.org/viaf/156836332/",
+        "legalName": "Columbia University",
+        "schema:url": "http://www.columbia.edu/"
+      }
+    },
+    "schema:funder": {
+      "@type": [
+        "schema:Organization"
+      ],
+      "@id": "http://dx.doi.org/10.13039/100000085",
+      "legalName": "Directorate for Geosciences",
+      "schema:alternateName": "NSF-GEO",
+      "schema:url": "http://www.nsf.gov",
+      "parentOrganization": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "@id": "http://dx.doi.org/10.13039/100000001",
+        "legalName": "National Science Foundation",
+        "schema:alternateName": "NSF",
+        "schema:url": "http://www.nsf.gov"
+      }
+    },
+    "publishingPrinciples": {
+      "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+      "@type": [
+        "schema:DigitalDocument"
+      ],
+      "schema:additionalType": "gdx:Protocol-License",
+      "schema:name": "Dataset Usage License",
+      "schema:description": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+      "schema:url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+  },
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "-114.362368, -35.010597 -108.44428, -25.727763"
+      }
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "schema:name": "GeoCodes metadata record for: Processed ship-based Multibeam Sonar Data (version 2) acquired in the Pacific Ocean during the Thomas Washington expedit",
+    "schema:about": {
+      "@id": "DOI:10.26022/IEDA/316815"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from IEDA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Discovery profile: Property names prefixed with schema: namespace per CDIF convention; @context converted from @vocab style to explicit CDIF prefix declarations (schema, dcterms, dcat, prov); @type normalized to array format with schema: prefix; schema:dateModified set from schema:datePublished (original record lacked dateModified); schema:license wrapped in array; Distribution @type values normalized to arrays with schema: prefix; All nested @type values converted to arrays with schema: prefix. Round 2 CDIF fixes: subjectOf @type changed to [\"schema:Dataset\"] per CDIF CatalogRecord schema; subjectOf @id added (required by schema); schema:creator wrapped in @list to preserve author order per CDIF convention; Distribution encodingFormat wrapped in arrays; fileSize renamed to schema:contentSize; schema:provider wrapped in array; schema:identifier unwrapped from array (schema expects single value); spatialCoverage strings converted to Place objects. Round 3 fixes: Distribution dcat:accessURL mapped to schema:contentUrl (required by CDIF DataDownload).",
+    "@id": "DOI:10.26022/IEDA/316815#metadata"
+  },
+  "schema:dateModified": "2012"
+}
