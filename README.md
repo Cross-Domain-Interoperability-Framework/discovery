@@ -24,10 +24,9 @@ The profile builds on Dublin Core, schema.org, ISO 19115-1, DCAT, DDI-CDI, and F
 ├── examples/               CDIF Discovery profile examples (16 validated JSON-LD files)
 │                           Includes GeoCodes-harvested records and converted SOSO/ODIS examples
 ├── API-discovery/          API representation guidance (potentialAction, SearchAction, EntryPoint)
-├── Serialization/          JSON-LD, RDF Turtle, DCAT, FDO, and ResourceSync examples
 ├── shapegraphs/            SHACL validation shapes for CDIF, SOSO, and Google Dataset Search
 │   └── data-graphs/        Test data for validation
-├── archive/                Archived schemas (cdifOptional, ddeOptional) and historical crosswalks
+├── archive/                Archived schemas, historical crosswalks, and legacy serialization examples
 ├── images/                 Diagrams (harvesting workflows, metadata embedding, digital object overview)
 ├── CDIF-Discovery-vs-SOSO-comparison.md   Comparison with ESIP Science-on-Schema.org
 ├── CDIF-metadata-crosswalks-merged.xlsx   Crosswalk mappings to DCAT, ISO 19115, DataCite, EML, etc.
