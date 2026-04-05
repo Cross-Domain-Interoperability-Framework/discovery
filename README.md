@@ -24,9 +24,9 @@ The profile builds on Dublin Core, schema.org, ISO 19115-1, DCAT, DDI-CDI, and F
 ├── examples/               CDIF Discovery profile examples (16 validated JSON-LD files)
 │                           Includes GeoCodes-harvested records and converted SOSO/ODIS examples
 ├── API-discovery/          API representation guidance (potentialAction, SearchAction, EntryPoint)
-├── shapegraphs/            SHACL validation shapes for CDIF, SOSO, and Google Dataset Search
-│   └── data-graphs/        Test data for validation
-├── archive/                Archived schemas, historical crosswalks, and legacy serialization examples
+├── archive/                Archived schemas, historical crosswalks, legacy serialization examples,
+│                           and superseded SHACL shapes (now generated in the validation repo)
+├── archive/                (see below)
 ├── images/                 Diagrams (harvesting workflows, metadata embedding, digital object overview)
 ├── CDIF-Discovery-vs-SOSO-comparison.md   Comparison with ESIP Science-on-Schema.org
 ├── CDIF-metadata-crosswalks-merged.xlsx   Crosswalk mappings to DCAT, ISO 19115, DataCite, EML, etc.
@@ -40,13 +40,7 @@ The profile builds on Dublin Core, schema.org, ISO 19115-1, DCAT, DDI-CDI, and F
 
 ## Validation
 
-The `shapegraphs/` directory contains [SHACL](https://www.w3.org/TR/shacl/) constraint shapes for validating metadata conformance against multiple profiles:
-
-- **CDIF** — `cdif_common_v0.0.1.ttl`
-- **Science-on-Schema.org (SOSO)** — `soso_common_v1.3.0.ttl`
-- **Google Dataset Search** — `googleRequired.ttl`, `googleRecommended.ttl`
-
-See [shapegraphs/README.md](shapegraphs/README.md) for usage details.
+CDIF metadata validation tools (JSON Schema and SHACL) are in the [validation repository](https://github.com/Cross-Domain-Interoperability-Framework/validation). SHACL shapes are auto-generated from building block `rules.shacl` files; JSON Schema validation uses resolved schemas from the [metadataBuildingBlocks](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks) repository. Legacy hand-written SHACL shapes (CDIF v0.0.1, SOSO, Google Dataset Search) are preserved in `archive/shapegraphs/`.
 
 ## License
 
