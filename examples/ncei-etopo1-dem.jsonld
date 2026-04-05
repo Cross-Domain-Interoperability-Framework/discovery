@@ -251,10 +251,10 @@
       "@type": [
         "schema:DataCatalog"
       ],
-      "schema:name": "GeoCodes - EarthCube Discovery",
-      "schema:url": "https://geocodes.earthcube.org/"
+      "schema:name": "NCEI NOAA",
+      "schema:url": "https://www.ncei.noaa.gov/"
     },
-    "schema:description": "Metadata harvested from NCEI NOAA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; Unprefixed properties assigned to unk: namespace (contentURL); @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:dateModified set from schema:datePublished; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+    "schema:description": "Metadata harvested directly from NCEI NOAA landing page JSON-LD by Claude Code. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; Unprefixed properties assigned to unk: namespace (contentURL); @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:dateModified set from schema:datePublished; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
   },
   "schema:temporalCoverage": [
     "1940-01-01/2008-01-01"
