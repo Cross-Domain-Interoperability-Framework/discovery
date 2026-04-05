@@ -1,0 +1,981 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://doi.org/10.5683/SP2/QXWUAZ",
+  "schema:identifier": "https://doi.org/10.5683/SP2/QXWUAZ",
+  "schema:name": "T3010 Canadian Charity Returns Master Dataset [2003-2022]",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:parentOrganization": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "McMaster University"
+        },
+        "schema:name": "Lars Nielsen"
+      },
+      {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:parentOrganization": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "McMaster University"
+        },
+        "schema:name": "Secure Empirical Analysis Lab (SEAL)"
+      }
+    ]
+  },
+  "schema:author": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:parentOrganization": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "McMaster University"
+      },
+      "schema:name": "Lars Nielsen"
+    },
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:parentOrganization": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "McMaster University"
+      },
+      "schema:name": "Secure Empirical Analysis Lab (SEAL)"
+    }
+  ],
+  "schema:datePublished": "2020-10-02",
+  "schema:dateModified": "2026-04-02",
+  "schema:version": "4",
+  "schema:description": "This dataset is a master overview of T3010 Canadian Registered Charity Information Returns from 2003-2022 in CSV and Stata format. It also includes a documentation folder with category code and variable changes over time, as well as a detailed Data Dictionary and PDF of original tax forms. Finally, a complete syntax set of DO files for use in the Stata statistical analysis software is included. Data cleaning for this dataset was conducted in two sets, one for the 2021 release (T3010 2021 Release) and a second completed in May 2024 (2024_T3010_Release). For year-by-year extracts of directors and trustees, donees, financials, programs, schedules from 2003-2017 as csv and stata files, go to Lars Nielsen; Secure Empirical Analysis Lab (SEAL), 2019, \"T3010 Canadian Charity Returns Legacy Extract Dataset [2003-2017]\", https://doi.org/10.5683/SP2/NSHJFT, Borealis, V3. -------------------------------- T3010 Canadian Registered Charity Information Returns data includes information about charities and public/private foundations, financial information, trustees and financial transactions between non-profits. The T3010 is the tax return that must be filed by all registered Canadian charities under the Income Tax Act. Canadian charities are actually tax-exempt, but the CRA collects T3010 data and renders it publicly available so that governments, private donors, and the general public know what charities are doing and how charities are using their resources. Original and more recent data can be requested from the Canada Revenue Agency (CRA) website. SEAL's former Lab Manager Lars Nielsen processed and cleaned the datasets included in this Dataverse. On 2025-06-23 at the transition of SEAL into its next phase, SEAL Lab Manager Lily Wang transferred responsibility for this dataset to RDM Services. This included a formal email, the current Terms of Use Agreement users have signed to now, as well as the contract between Cardus Institute and McMaster. Cardus is a nonpartisan thinktank that contracted SEAL to clean the T3010 data. The information in this package contains public data submitted to the Canada Revenue Agency (CRA) by the respective registered charity in its Form T3010, Registered Charity Information Return. Please note that this data may have been manually entered by the CRA, and it has not necessarily been verified for accuracy or completeness by the CRA’s Charities Directorate. Statistics and data are produced or compiled by the CRA’s Charities Directorate for the sole purpose of providing the public with direct access to public information about registered charities in Canada. The CRA is not responsible for the use and manipulation by any persons of this information.",
+  "schema:keywords": [
+    "Social Sciences",
+    "Tax returns",
+    "Charities",
+    "Supporting organizations (Charities)"
+  ],
+  "schema:temporalCoverage": [
+    "2003/2022"
+  ],
+  "schema:license": [
+    "https://borealisdata.ca/api/datasets/:persistentId/versions/4.0/customlicense?persistentId=doi:10.5683/SP2/QXWUAZ"
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "Borealis",
+    "schema:url": "https://borealisdata.ca"
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Borealis"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Borealis"
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Canada"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "0_README_T3010_Master03-22.txt",
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "schema:contentSize": 19683,
+      "schema:description": "README containing an overview of the dataset, documentation, syntax, reuse, and file structure",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1128429"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "sectionA_C_TF725_CSV.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 84716641,
+      "schema:description": "Contains a single file, sectionA_C_TF725.csv (7.49 GB). Form TF725 is the Registered Charity Basic Information Sheet (BIS).",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831185"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "CSV_Complete.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 516995755,
+      "schema:description": "Contains a set of all CSV files - directors_trustees.csv, donees.csv, financial.csv, programs.csv, schedules.csv, sectionA_C_TF725.csv, and summary.csv.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831188"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "donees.csv",
+      "schema:encodingFormat": [
+        "text/csv"
+      ],
+      "schema:contentSize": 507667384,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831167"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "financial.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 517871381,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831178"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "programs.csv",
+      "schema:encodingFormat": [
+        "text/csv"
+      ],
+      "schema:contentSize": 526531049,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831206"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "schedules.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 640196988,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831232"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "summary.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 306376513,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831223"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "sectionA_C_TF725_STATA.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 2076509736,
+      "schema:description": "Contains a single file, sectionA_C_TF725.dta (35.66 GB). Form TF725 is the Registered Charity Basic Information Sheet (BIS).",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831261"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "STATA_Complete.zip",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:contentSize": 2845864328,
+      "schema:description": "Contains a set of all .dta files - directors_trustees.dta, donees.dta, financial.dta, programs.dta, schedules.dta, sectionA_C_TF725.dta, and summary.dta.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831262"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "directors_trustees.dta",
+      "schema:encodingFormat": [
+        "application/x-stata-14"
+      ],
+      "schema:contentSize": 2006446538,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831202"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "donees.dta",
+      "schema:encodingFormat": [
+        "application/x-stata-14"
+      ],
+      "schema:contentSize": 999761514,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831183"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "financial.dta",
+      "schema:encodingFormat": [
+        "application/x-stata-14"
+      ],
+      "schema:contentSize": 856501340,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831221"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "programs.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 513973241,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831176"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "schedules.dta",
+      "schema:encodingFormat": [
+        "application/x-stata-14"
+      ],
+      "schema:contentSize": 911000143,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831209"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "summary.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 273583358,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831187"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus1 flow_V2.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 617237,
+      "schema:description": "This file is an overview of the workflow used by SEAL to clean the data. While the file names would be entirely changed, it could be helpful for you in organizing your own workflow.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831182"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Category Codes - 2003-2017.docx",
+      "schema:encodingFormat": [
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ],
+      "schema:contentSize": 14520,
+      "schema:description": "This file is an overview of T3010 Category Codes from 2003-2017. These include the different categories of charities--welfare, health, education, religion, benefits to community, and other--and their sub categories.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831194"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Changes to Form.docx",
+      "schema:encodingFormat": [
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ],
+      "schema:contentSize": 19043,
+      "schema:description": "This file has an overview of the year-by-year changes to T3010 (Registered Charity Information Return) from 2008-2020 and T1236 (the Qualified Donees Worksheet) from 2009-2019.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831191"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Codebook_v7.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 827,
+      "schema:description": "This file has details of form versioning, category and program codes, and variable names, as well as their occurrence on tax records across 2003-2022. Tab T3010 Core in particular has comments from Public Economics Data Analysis Laboratory (PEDAL) Data Admin and others on names, labels, and variables.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831224"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Data Dictionary V5.docx",
+      "schema:encodingFormat": [
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ],
+      "schema:contentSize": 781969,
+      "schema:description": "This file is essential reading and contains detailed information to understand and unpack this dataset. This contains a background, cleaning process, missing values, formatting, and more.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831234"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t1235_2003-2008.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 61417,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831168"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t1235_2009-2012.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 50689,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831225"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t1235_2013-2019.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 48731,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831197"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t1236-05e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 54967,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831177"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t1236-09e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 43711,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831205"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t1236-10e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 40981,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831190"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t1236-13e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 40760,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831186"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t1236-18e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 30676,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831204"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t1236-19e.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 29614,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831198"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t3010-2019.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 61456,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831203"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t3010_2003-2004.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 34669,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831228"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t3010_2005-2008.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 42024,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831214"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t3010_2009.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 88703,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831219"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t3010_2010-2012.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 135672,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831173"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t3010_2013.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 78586,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831229"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t3010_2014-2015.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 78313,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831218"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "t3010_2016-2018.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 64197,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831230"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "guide 1997-2002.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 321967,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831220"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "guide 2003-2004.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 303793,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831208"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "guide 2005-2008.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 332632,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831192"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "guide 2009.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 417679,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831227"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "guide 2010-2012.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 292562,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831195"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "guide 2013.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 238082,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831235"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "guide 2014-2015.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 222889,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831212"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "guide 2016-2018.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 231305,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831170"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "guide 2019.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 248852,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831213"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "version break down page v2010.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 19860,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831180"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "version break down page v2014.pdf",
+      "schema:encodingFormat": [
+        "application/pdf"
+      ],
+      "schema:contentSize": 33624,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831175"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "1_Syntax-Overview.docx",
+      "schema:encodingFormat": [
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ],
+      "schema:contentSize": 13558,
+      "schema:description": "This has an overview of what each DO file does for researchers who might want to apply the data cleaning process to new files.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831236"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus1_1.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 12270,
+      "schema:description": "This file converts original csv files to .dta while also renaming key variables",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831215"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus1_2.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 15038,
+      "schema:description": "This file further cleans the file and appends all years",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831200"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus1_3.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 5944,
+      "schema:description": "This is a continuation of cardus1_2. It also merges coverts 2019 – 2023 files to wide format to append to the earlier years",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831210"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus1_4.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 2894,
+      "schema:description": "Cleans the gift/donees file",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831237"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus1_5.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 13806,
+      "schema:description": "Cleans the public file",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831216"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus1_6.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 3474,
+      "schema:description": "Cleans the ident file",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831184"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus1_7.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 7903,
+      "schema:description": "Cleans the political activities schedule 7 file",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831174"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus2-ChnmPostalDupV9updated.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 26338,
+      "schema:description": "This do file cleans and: - fixes missing charity names - fixes postal codes, fsa, merges with census - flags organizations with duplicate",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831172"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus3-DoneesProgramsTrusteesV3updated.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 18002,
+      "schema:description": "This do file cleans the file of gift/donees, programs, directors and drop duplicates",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831179"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus4-FinancialV3updated.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 39050,
+      "schema:description": "This do file cleans the financial section D/ Schedule 6 of the T3010 data.",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831201"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus5-SchedulesV3updated.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 27487,
+      "schema:description": "This do file cleans the Schedules of the T3010 CSV data set. Index: 1. Schedule 7: Political Activities 2. Schedule 2: Activities Outside Canada 3. Schedule 3: Compensation",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831196"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus6-SectionA_C_infoV3updated.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 19977,
+      "schema:description": "This do file cleans parts of the T3010 CSV data set 2003-2023. Index: 1. Clean TF725 basic info a. Clean field codes b. Clean phone number 2. Check over section A 3. Clean section C",
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831193"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "cardus_masterdo.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 777,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831226"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "a1200_helper.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 70434,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831217"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "categorycode_0317.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 13558,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831233"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "compensation_helper.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 1296,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831181"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "countrycodeshelper.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 2803,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831199"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "expenditures.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 48167,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831211"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "fieldcode_helper.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 3408,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831222"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "intlcode_helper.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 14623,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831231"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "label_variables_v2.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 24068,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831207"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "poldescription_helper.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 4669,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831169"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "postalcodehelperall.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 71390,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831189"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "programcode_helper.do",
+      "schema:encodingFormat": [
+        "application/x-stata-syntax"
+      ],
+      "schema:contentSize": 6421,
+      "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/831171"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.5683/SP2/QXWUAZ#metadata",
+    "schema:name": "GeoCodes metadata record for: T3010 Canadian Charity Returns Master Dataset [2003-2022]",
+    "schema:about": {
+      "@id": "https://doi.org/10.5683/SP2/QXWUAZ"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Borealis Dataverse by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+  }
+}

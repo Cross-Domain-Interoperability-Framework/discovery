@@ -1,0 +1,275 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "schema:Dataset"
+  ],
+  "@id": "https://doi.org/10.7910/DVN/26721",
+  "schema:identifier": "https://doi.org/10.7910/DVN/26721",
+  "schema:name": "Replication data for: Priming Predispositions and Changing Policy Positions",
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:givenName": "Michael",
+        "schema:familyName": "Tesler",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "UC Irvine"
+        },
+        "schema:name": "Tesler, Michael"
+      }
+    ]
+  },
+  "schema:author": [
+    {
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:givenName": "Michael",
+      "schema:familyName": "Tesler",
+      "schema:affiliation": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "UC Irvine"
+      },
+      "schema:name": "Tesler, Michael"
+    }
+  ],
+  "schema:datePublished": "2014-07-16",
+  "schema:dateModified": "2015-11-18",
+  "schema:version": "2",
+  "schema:description": "Prior research provides limited insights into when political communications prime or change citizens’ underlying opinions. This paper helps fill that void by putting forth an account of priming and opinion change. I argue that crystallized attitudes should often be primed by new information. An influx of attention to less crystalized preferences, however, should lead individuals to alter their underlying opinions in accordance with prior beliefs. Since predispositions acquired early in the lifecycle like partisanship, religiosity, basic values, and group-based affect/antagonisms are more crystallized than mass opinion about public policy, media and campaign content will tend to prime citizens’ predispositions and change their policy positions. Both my review of previous priming research and original analyses presented in this study from five new cases strongly support that crystallization-based account of when mass opinion is primed or changed. I conclude with a discussion of the paper’s potential political, methodological, and normative implications.",
+  "schema:keywords": [
+    "Social Sciences",
+    "Public Opinion",
+    "Priming",
+    "Opinion change"
+  ],
+  "schema:citation": [
+    {
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "schema:name": "Tesler, Michael. 2015. “Priming Predispositions and Changing Policy Positions: An Account of When Mass Opinion Is Primed or Changed.” American Journal of Political Science 59 (4): 806-824.",
+      "@id": "http://dx.doi.org/10.1111/ajps.12157",
+      "schema:identifier": "http://dx.doi.org/10.1111/ajps.12157",
+      "schema:url": "http://dx.doi.org/10.1111/ajps.12157"
+    }
+  ],
+  "schema:temporalCoverage": [
+    "1956/2012"
+  ],
+  "schema:license": [
+    "http://creativecommons.org/publicdomain/zero/1.0"
+  ],
+  "schema:includedInDataCatalog": {
+    "@type": [
+      "schema:DataCatalog"
+    ],
+    "schema:name": "Harvard Dataverse",
+    "schema:url": "https://dataverse.harvard.edu"
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Harvard Dataverse"
+  },
+  "schema:provider": [
+    {
+      "@type": [
+        "schema:Organization"
+      ],
+      "schema:name": "Harvard Dataverse"
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "United States"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "1960p.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 5248612,
+      "schema:description": "1956-1960 ANES Panel Data used in Study 1",
+      "@id": "https://doi.org/10.7910/DVN/26721/IB7QUC",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/IB7QUC",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481751"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "1960p_do.do",
+      "schema:encodingFormat": [
+        "text/x-stata-syntax; charset=US-ASCII"
+      ],
+      "schema:contentSize": 2550,
+      "schema:description": "Stata Do file to reproduce results in Study 1",
+      "@id": "https://doi.org/10.7910/DVN/26721/3CLDVV",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/3CLDVV",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481755"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004p.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 12052661,
+      "schema:description": "2000-2004 ANES Panel Data used in Study 2",
+      "@id": "https://doi.org/10.7910/DVN/26721/KE28HI",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/KE28HI",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481750"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "2004p_do.do",
+      "schema:encodingFormat": [
+        "text/x-stata-syntax; charset=US-ASCII"
+      ],
+      "schema:contentSize": 3755,
+      "schema:description": "Stata Do file to reproduce results in Study 2",
+      "@id": "https://doi.org/10.7910/DVN/26721/NGUMQV",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/NGUMQV",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481756"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "ccap12short.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 14474719,
+      "schema:description": "2011-2012 Panel Data used in Study 3",
+      "@id": "https://doi.org/10.7910/DVN/26721/NFTVYU",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/NFTVYU",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481749"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "ccap12_do.do",
+      "schema:encodingFormat": [
+        "text/x-stata-syntax; charset=US-ASCII"
+      ],
+      "schema:contentSize": 3647,
+      "schema:description": "Stata Do file to reproduce results in Study 3",
+      "@id": "https://doi.org/10.7910/DVN/26721/HTBHXZ",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/HTBHXZ",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481757"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "reint12short.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 7974993,
+      "schema:description": "2008-2012 CCAP Panel Data used in Study 5",
+      "@id": "https://doi.org/10.7910/DVN/26721/KL8XK6",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/KL8XK6",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481748"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "reinterviews12_do.do",
+      "schema:encodingFormat": [
+        "text/x-stata-syntax; charset=US-ASCII"
+      ],
+      "schema:contentSize": 3610,
+      "schema:description": "Stata Do file to reproduce results in Study 4",
+      "@id": "https://doi.org/10.7910/DVN/26721/ARQFVQ",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/ARQFVQ",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481754"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "socialization.tab",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "schema:contentSize": 4614445,
+      "schema:description": "1982-1997 Youth Socialization Data used in Study 4 ",
+      "@id": "https://doi.org/10.7910/DVN/26721/I1YGS0",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/I1YGS0",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481752"
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "socialization_do.do",
+      "schema:encodingFormat": [
+        "text/x-stata-syntax; charset=US-ASCII"
+      ],
+      "schema:contentSize": 3528,
+      "schema:description": "Stata Do file to reproduce results in Study 5",
+      "@id": "https://doi.org/10.7910/DVN/26721/ZYDUF5",
+      "schema:identifier": "https://doi.org/10.7910/DVN/26721/ZYDUF5",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/2481753"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.7910/DVN/26721#metadata",
+    "schema:name": "GeoCodes metadata record for: Replication data for: Priming Predispositions and Changing Policy Positions",
+    "schema:about": {
+      "@id": "https://doi.org/10.7910/DVN/26721"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "GeoCodes - EarthCube Discovery",
+      "schema:url": "https://geocodes.earthcube.org/"
+    },
+    "schema:description": "Metadata harvested from Harvard Dataverse by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+  }
+}
