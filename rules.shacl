@@ -118,7 +118,7 @@ cdifd:dateModifiedProperty
     
 cdifd:CDIFCatalogRecordShape
     a sh:NodeShape ;
-    # only apply to dataset nodes that are 'about' a dataset node 
+    # only apply to CatalogRecord nodes (subjectOf metadata records), not root datasets
 	sh:target [
 	  a sh:SPARQLTarget ;
 	  sh:prefixes (
@@ -130,7 +130,8 @@ cdifd:CDIFCatalogRecordShape
             SELECT ?this
             WHERE {
             ?this a schema:Dataset ;
-             schema:about ?parent.
+             schema:about ?parent ;
+             schema:additionalType "dcat:CatalogRecord" .
             }
         """;
 	] ;
