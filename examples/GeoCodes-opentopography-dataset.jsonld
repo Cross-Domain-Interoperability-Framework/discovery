@@ -1114,5 +1114,5 @@
     },
     "schema:description": "Metadata harvested from OpenTopography by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Core profile: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations (schema, dcterms, dcat, prov); @type values normalized to arrays with schema: prefix; schema:dateModified set from dateCreated; schema:license wrapped in array; schema:sameAs wrapped in array; spatialCoverage normalized to array of Place objects; schema:keywords split from comma-separated string to array. Round 2 fixes: Root @type filtered to valid CDIF resource types (removed stray PropertyValue); schema:contributor wrapped in array. Moved to Discovery: Added conformsTo discovery/1.0; temporalCoverage wrapped in array; variableMeasured alternateName values wrapped in arrays."
   },
-  "schema:dateModified": "2013-02-25 16:17:46"
+  "schema:dateModified": "2013-02-25"
 }

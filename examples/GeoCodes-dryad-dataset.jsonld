@@ -170,5 +170,8 @@
     },
     "schema:description": "Metadata harvested from Dryad by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Core profile: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations (schema, dcterms, dcat, prov); @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized (encodingFormat arrays, @type, contentUrl); schema:creator wrapped in @list; schema:provider wrapped in array; spatialCoverage normalized to array of Place objects. Round 2 fixes: schema:description unwrapped from array to string; Creator sameAs values wrapped in arrays. Round 3 fixes: Creator Person objects cleaned to valid CDIF Person properties (removed givenName, familyName); Organization sameAs values wrapped in arrays; schema:dateModified set to estimated date (2017, from DOI year; original record had no date fields). Moved to Discovery: Added conformsTo discovery/1.0."
   },
-  "schema:dateModified": "2017-01-01"
+  "schema:dateModified": "2017-01-01",
+  "schema:conditionsOfAccess": [
+    "Unrestricted access"
+  ]
 }

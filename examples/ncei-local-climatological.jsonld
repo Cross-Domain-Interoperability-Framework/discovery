@@ -46,7 +46,7 @@
     ]
   },
   "schema:dateCreated": "2016",
-  "schema:datePublished": "2016",
+  "schema:datePublished": "2016-01",
   "schema:description": "This Global Summaries dataset, known as GSOY for Yearly, contains a yearly resolution of meteorological elements from 1763 to present with updates applied weekly. The major parameters are: – average annual temperature, average annual minimum and maximum temperatures; total annual precipitation and snowfall; departure from normal of the mean temperature and total precipitation; heating and cooling degree days; number of days that temperatures and precipitation are above or below certain thresholds; extreme annual minimum and maximum temperatures; number of days with fog; and number of days with thunderstorms. The primary input data source is the Global Historical Climatology Network - Daily (GHCN-Daily) dataset. The Global Summaries datasets also include a monthly resolution of meteorological elements in the GSOM (for Monthly) dataset. See associated resources for more information. These datasets are not to be confused with \"GHCN-Monthly\", \"Annual Summaries\" or \"NCDC Summary of the Month\". There are unique elements that are produced globally within the GSOM and GSOY data files. There are also bias corrected temperature data in GHCN-Monthly, which are not available in GSOM and GSOY. The GSOM and GSOY datasets replace the legacy U.S. COOP Summaries (DSI-3220), and have been expanded to include non-U.S. (global) stations. U.S. COOP Summaries (DSI-3220) only includes National Weather Service (NWS) COOP Published, or \"Published in CD\", sites.",
   "schema:distribution": [
     {
@@ -358,7 +358,7 @@
   ],
   "schema:url": "https://doi.org/10.7289/jwpf-y430",
   "@id": "https://doi.org/10.7289/jwpf-y430",
-  "schema:dateModified": "2016",
+  "schema:dateModified": "2016-01",
   "schema:conditionsOfAccess": [
     "Data produced by the U.S. Government are not subject to copyright. Access is not restricted."
   ]

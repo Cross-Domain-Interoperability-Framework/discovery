@@ -70,7 +70,7 @@
     "disambiguatingDescription": "Data Publisher for Earth & Environmental Science",
     "schema:url": "https://www.pangaea.de/"
   },
-  "schema:datePublished": "2017",
+  "schema:datePublished": "2017-01",
   "schema:additionalType": [
     "dataset"
   ],
@@ -195,5 +195,5 @@
     "schema:description": "Metadata harvested from PANGAEA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Discovery profile: Property names prefixed with schema: namespace per CDIF convention; @context converted from @vocab style to explicit CDIF prefix declarations (schema, dcterms, dcat, prov); @type normalized to array format with schema: prefix; schema:dateModified set from schema:datePublished (original record lacked dateModified); schema:license wrapped in array; Distribution @type values normalized to arrays with schema: prefix; All nested @type values converted to arrays with schema: prefix. Round 2 CDIF fixes: subjectOf @type changed to [\"schema:Dataset\"] per CDIF CatalogRecord schema; subjectOf @id added (required by schema); schema:creator wrapped in @list to preserve author order per CDIF convention; Distribution encodingFormat wrapped in arrays; fileSize renamed to schema:contentSize; schema:additionalType wrapped in array; schema:conditionsOfAccess wrapped in array.",
     "@id": "https://doi.org/10.1594/PANGAEA.861203#metadata"
   },
-  "schema:dateModified": "2017"
+  "schema:dateModified": "2017-01"
 }

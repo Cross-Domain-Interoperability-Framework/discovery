@@ -28,7 +28,7 @@
       }
     ]
   },
-  "schema:datePublished": "2012",
+  "schema:datePublished": "2012-01",
   "schema:dateCreated": "2010-11-19",
   "schema:version": "1",
   "schema:inLanguage": "en",
@@ -207,5 +207,5 @@
     "schema:description": "Metadata harvested from IEDA by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Discovery profile: Property names prefixed with schema: namespace per CDIF convention; @context converted from @vocab style to explicit CDIF prefix declarations (schema, dcterms, dcat, prov); @type normalized to array format with schema: prefix; schema:dateModified set from schema:datePublished (original record lacked dateModified); schema:license wrapped in array; Distribution @type values normalized to arrays with schema: prefix; All nested @type values converted to arrays with schema: prefix. Round 2 CDIF fixes: subjectOf @type changed to [\"schema:Dataset\"] per CDIF CatalogRecord schema; subjectOf @id added (required by schema); schema:creator wrapped in @list to preserve author order per CDIF convention; Distribution encodingFormat wrapped in arrays; fileSize renamed to schema:contentSize; schema:provider wrapped in array; schema:identifier unwrapped from array (schema expects single value); spatialCoverage strings converted to Place objects. Round 3 fixes: Distribution dcat:accessURL mapped to schema:contentUrl (required by CDIF DataDownload).",
     "@id": "DOI:10.26022/IEDA/316815#metadata"
   },
-  "schema:dateModified": "2012"
+  "schema:dateModified": "2012-01"
 }

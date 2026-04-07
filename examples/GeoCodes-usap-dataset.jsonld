@@ -187,5 +187,8 @@
     },
     "schema:description": "Metadata harvested from USAP by the EarthCube GeoCodes catalog using Gleaner. Converted to CDIF Core profile: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations (schema, dcterms, dcat, prov); @type values normalized to arrays with schema: prefix; schema:dateModified set from datePublished; Distributions normalized (encodingFormat arrays, @type, contentUrl); schema:creator wrapped in @list; spatialCoverage normalized to array of Place objects. Round 2 fixes: Contributor Role objects converted to Organization with role info preserved in description. Moved to Discovery: Added conformsTo discovery/1.0."
   },
-  "schema:dateModified": "2007-11-05"
+  "schema:dateModified": "2007-11-05",
+  "schema:conditionsOfAccess": [
+    "Unrestricted access"
+  ]
 }

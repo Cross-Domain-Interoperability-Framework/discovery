@@ -73,7 +73,7 @@
     "schema:disambiguatingDescription": "Data Publisher for Earth & Environmental Science",
     "schema:url": "https://www.pangaea.de/"
   },
-  "schema:datePublished": "2012",
+  "schema:datePublished": "2012-01",
   "schema:additionalType": [
     "dataset"
   ],
@@ -441,7 +441,7 @@
       ]
     }
   ],
-  "schema:dateModified": "2012",
+  "schema:dateModified": "2012-01",
   "schema:subjectOf": {
     "@type": [
       "schema:Dataset"
