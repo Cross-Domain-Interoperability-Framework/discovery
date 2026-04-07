@@ -120,7 +120,7 @@
       "@type": [
         "schema:CreativeWork"
       ],
-      "URL": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "schema:url": "https://creativecommons.org/licenses/by-nc/4.0/",
       "schema:name": "MD_Constraints",
       "schema:description": "useLimitation: Creative Commons Attribution-NonCommercial v4.0 Generic [CC BY-NC 4.0]."
     },
@@ -128,6 +128,7 @@
       "@type": [
         "schema:CreativeWork"
       ],
+      "schema:url": "https://creativecommons.org/licenses/by-nc/4.0/",
       "schema:name": "MD_LegalConstraints",
       "schema:description": "accessConstraints: license.    otherConstraints: Creative Commons Attribution-NonCommercial v4.0 Generic [CC BY-NC 4.0]."
     },
@@ -135,6 +136,7 @@
       "@type": [
         "schema:CreativeWork"
       ],
+      "schema:url": "https://creativecommons.org/licenses/by-nc/4.0/",
       "schema:name": "MD_SecurityConstraints",
       "schema:description": "classification: "
     }

@@ -160,8 +160,8 @@
     }
   ],
   "schema:dateCreated": "2023-10-25T19:06:34.873685+00:00",
-  "schema:dateModified": "2025-04-17T20:44:07.039971+00:00",
-  "schema:datePublished": "2025-04-17T20:44:07.407109+00:00",
+  "schema:dateModified": "2025-04-17T20:44:07+00:00",
+  "schema:datePublished": "2025-04-17T20:44:07+00:00",
   "schema:subjectOf": {
     "@type": [
       "schema:Dataset"
@@ -202,7 +202,7 @@
       ],
       "schema:contentUrl": "https://www.hydroshare.org/hsapi/resource/01135480279340cd8e457a22e7b9208b/",
       "schema:description": "Zipped BagIt Bag containing the HydroShare Resource",
-      "schema:dateModified": "2025-04-17T20:44:07.039971+00:00",
+      "schema:dateModified": "2025-04-17T20:44:07+00:00",
       "schema:identifier": [
         "https://www.hydroshare.org/resource/01135480279340cd8e457a22e7b9208b",
         {

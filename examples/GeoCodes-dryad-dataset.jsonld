@@ -124,7 +124,7 @@
         "schema:CreativeWork"
       ],
       "schema:name": "Creative Commons Zero v1.0 Universal",
-      "schema:license": "https://spdx.org/licenses/CC0-1.0.html"
+      "schema:url": "https://spdx.org/licenses/CC0-1.0.html"
     }
   ],
   "schema:publisher": {
