@@ -267,7 +267,7 @@
         "@id": "https://w3id.org/cdif/discovery/1.0"
       }
     ],
-    "schema:description": "Converted to CDIF Discovery profile from pre-existing example: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations; @type values normalized to arrays with schema: prefix; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list. Additional fixes: @id set from url; schema:dateModified set; Funding identifier string → PropertyValue; Empty distribution contentUrl set to placeholder; Empty distribution encodingFormat set to placeholder; variableMeasured strings converted to PropertyValue objects. Fixed empty variableMeasured propertyID strings."
+    "schema:description": "Adapted from WHOI METS-RCN schema.org JSON-LD metadata for a ship-based biogeochemical time series synthesis product covering 12 stations (ALOHA, CARIACO, KNOT, K2, CVOO, Munida, RADCO, GIFT, DYFAMED, Irminger Sea, Iceland Sea, OWSM). Converted to CDIF discovery profile: property names prefixed with schema: namespace, @context converted to CDIF prefix declarations."
   },
   "@id": "https://example.org/timeseries-product",
   "schema:dateModified": "2020-01-01"

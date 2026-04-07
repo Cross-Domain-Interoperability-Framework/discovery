@@ -278,7 +278,7 @@
         "@id": "https://w3id.org/cdif/discovery/1.0"
       }
     ],
-    "schema:description": "Converted to CDIF Discovery profile from pre-existing example: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations; @type values normalized to arrays with schema: prefix; schema:identifier added from @id; schema:license wrapped in array; Distributions normalized. Additional fixes: schema:dateModified set from datePublished or placeholder; schema:measurementTechnique wrapped in array; spatialCoverage identifier unwrapped from array; GeoShape polygon supplemented with bounding box."
+    "schema:description": "Adapted from Protected Seas schema.org JSON-LD record for Florida Keys National Marine Sanctuary MPA inventory. Converted to CDIF discovery profile: property names prefixed with schema: namespace, @context converted from @vocab to explicit CDIF prefix declarations, @type values normalized to arrays."
   },
   "schema:dateModified": "2020-01-01"
 }

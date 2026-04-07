@@ -195,6 +195,6 @@
         "@id": "https://w3id.org/cdif/discovery/1.0"
       }
     ],
-    "schema:description": "Converted to CDIF Discovery profile from pre-existing example: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations; @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:dateModified set from datePublished; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list. Additional fixes: Contributor Role unwrapped to Organization; Funding identifier string → PropertyValue; GeoShape polygon supplemented with bounding box."
+    "schema:description": "Adapted from BCO-DMO schema.org JSON-LD catalog record for Hawaii Ocean Time-series (HOT) Niskin bottle biogeochemistry data at Station ALOHA (DOI: 10.1575/1912/bco-dmo.3773.1). Converted to CDIF discovery profile: property names prefixed with schema: namespace, @context set to CDIF prefix declarations, schema:creator wrapped in @list."
   }
 }

@@ -218,6 +218,6 @@
         "@id": "https://w3id.org/cdif/discovery/1.0"
       }
     ],
-    "schema:description": "Converted to CDIF Discovery profile from pre-existing example: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations; @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:dateModified set from datePublished; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list. Additional fixes: Funding identifier string → PropertyValue."
+    "schema:description": "Adapted from ODIS (Ocean Data and Information System) schema.org JSON-LD record for Hawaii Ocean Time-series (HOT) Niskin bottle data at Station ALOHA (DOI: 10.1575/1912/bco-dmo.3773.1). Converted to CDIF discovery profile: property names prefixed with schema: namespace, @context converted from @vocab to explicit CDIF prefix declarations, @type values normalized to arrays."
   }
 }
