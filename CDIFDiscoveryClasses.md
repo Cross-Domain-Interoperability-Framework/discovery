@@ -857,53 +857,18 @@ Is the correct syntax to implemenat an object reference. Throughout this documen
 
 [The following table compared the properties and requirements for this schema.org type in these different contexts.]{.mark}
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Property**                      **Description**                                        **identifier**                **variableMeasured**                       **additionalProperty**
-  --------------------------------- ------------------------------------------------------ ----------------------------- ------------------------------------------ --------------------------------------------
-  **\@type**                        Type declaration (must contain schema:PropertyValue)   **1..\*\                      **1..\*\                                   **1..\*\
-                                                                                           required**\                   required**\                                required**\
-                                                                                           contains: PropertyValue       contains: PropertyValue                    contains: PropertyValue
-
-  **\@id**                          URI identifier for this node                           \-                            0..1\                                      \-
-                                                                                                                         string                                     
-
-  **schema:name**                   Human-readable label                                   \-                            **1\                                       **1\
-                                                                                                                         required**\                                required**\
-                                                                                                                         string                                     string
-
-  **schema:description**            Textual description                                    \-                            0..1\                                      \-
-                                                                                                                         string, default: \"missing\"               
-
-  **schema:alternateName**          Alternative names                                      \-                            0..\*\                                     \-
-                                                                                                                         array of strings                           
-
-  **schema:propertyID**             Identifier for the property concept                    0..1\                         0..\*\                                     **1..\*\
-                                                                                           string\                       array of: string \| {@id} \| DefinedTerm   required**\
-                                                                                           (identifier scheme name)                                                 array of: string \| {@id} \| DefinedTerm;\
-                                                                                                                                                                    minItems: 1
-
-  **schema:value**                  The property value                                     0..1\                         \-                                         **1\
-                                                                                           (conditional)\                                                           required**\
-                                                                                           string;\                                                                 string \| number \| boolean \| object
-                                                                                           required if no schema:url                                                
-
-  **schema:url**                    Web-resolvable URL                                     0..1\                         0..1\                                      \-
-                                                                                           (conditional)\                string (uri) \| LabeledLink                
-                                                                                           string (uri format);\                                                    
-                                                                                           required if no schema:value                                              
-
-  **schema:unitText**               Unit of measurement as text                            \-                            0..1\                                      0..1\
-                                                                                                                         string                                     string
-
-  **schema:unitCode**               URI or code for unit of measure                        \-                            0..1\                                      0..1\
-                                                                                                                         string \| {@id} \| DefinedTerm             string \| DefinedTerm
-
-  **schema:measurementTechnique**   How values were obtained                               \-                            0..1\                                      \-
-                                                                                                                         string \| {@id} \| DefinedTerm             
-
-  **schema:minValue**               Minimum numeric value                                  \-                            0..1\                                      \-
-                                                                                                                         number                                     
-
-  **schema:maxValue**               Maximum numeric value                                  \-                            0..1\                                      \-
-                                                                                                                         number                                     
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Property | Description | identifier | variableMeasured | additionalProperty |
+|---|---|---|---|---|
+| @type | Type declaration (must contain schema:PropertyValue) | 1..* required, contains: PropertyValue | 1..* required, contains: PropertyValue | 1..* required, contains: PropertyValue |
+| @id | URI identifier for this node | - | 0..1 string | - |
+| schema:name | Human-readable label | - | 1 required string | 1 required string |
+| schema:description | Textual description | - | 0..1 string, default: "missing" | - |
+| schema:alternateName | Alternative names | - | 0..* array of strings | - |
+| schema:propertyID | Identifier for the property concept | 0..1 string (identifier scheme name) | 0..* array of: string \| {@id} \| DefinedTerm | 1..* required array of: string \| {@id} \| DefinedTerm; minItems: 1 |
+| schema:value | The property value | 0..1 (conditional) string; required if no schema:url | - | 1 required string \| number \| boolean \| object |
+| schema:url | Web-resolvable URL | 0..1 (conditional) string (uri format); required if no schema:value | 0..1 string (uri) \| LabeledLink | - |
+| schema:unitText | Unit of measurement as text | - | 0..1 string | 0..1 string |
+| schema:unitCode | URI or code for unit of measure | - | 0..1 string \| {@id} \| DefinedTerm | 0..1 string \| DefinedTerm |
+| schema:measurementTechnique | How values were obtained | - | 0..1 string \| {@id} \| DefinedTerm | - |
+| schema:minValue | Minimum numeric value | - | 0..1 number | - |
+| schema:maxValue | Maximum numeric value | - | 0..1 number | - |
