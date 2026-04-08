@@ -52,7 +52,7 @@ CHOICE at least one of two options:
 
 ##### url
 
-> \[Required if no distribution\] (string.uri) []{.mark}Web Location of a page describing the dataset (landing page), typically providing links or instructions to get the actual resource content; analogous to dcat:accessURL. If a direct link is available to get the data, put in distribution/DataDownload/contentUrl
+> \[Required if no distribution\] (string.uri) Web Location of a page describing the dataset (landing page), typically providing links or instructions to get the actual resource content; analogous to dcat:accessURL. If a direct link is available to get the data, put in distribution/DataDownload/contentUrl
 
 ##### distribution
 
@@ -60,7 +60,7 @@ CHOICE at least one of two options:
 
 ##### subjectOf
 
-> \[Required\] (Dataset/dcat:CatalogRecord) This property contains information about the metadata record itself, as opposed to the resource the record describes. See [Uses of dcat:CatalogRecord]{.mark} and https://github.com/Cross-Domain-Interoperability-Framework/Discovery/issues/13 for discussion on how to make assertion about the metadata record distinct from statements about the described resource. Use the dcat:CatalogRecord as additionalType to distinguish this schema:Dataset from the schema:Dataset about a described external resource. see <https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/contentmodel.html#properties-for-metadata-management>. Introduction of this is novel for schema.org implementations.
+> \[Required\] (Dataset/dcat:CatalogRecord) This property contains information about the metadata record itself, as opposed to the resource the record describes. See Uses of dcat:CatalogRecord and https://github.com/Cross-Domain-Interoperability-Framework/Discovery/issues/13 for discussion on how to make assertion about the metadata record distinct from statements about the described resource. Use the dcat:CatalogRecord as additionalType to distinguish this schema:Dataset from the schema:Dataset about a described external resource. see <https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/contentmodel.html#properties-for-metadata-management>. Introduction of this is novel for schema.org implementations.
 
 #### Optional properties from CDIF Core
 
@@ -202,7 +202,7 @@ Provides information to request data through a web accessible service endpoint. 
 
 ##### termsOfService
 
-\[**Required**, Repeatable\](string or [LabeledLink](#labeled-link)). []{.mark}Description of access privileges required to use the API, e.g. registration, licensing, payments. Note that access constraints applying to all distributions of the resource should be specified in the access constraints for the resource description as a whole.
+\[**Required**, Repeatable\](string or [LabeledLink](#labeled-link)). Description of access privileges required to use the API, e.g. registration, licensing, payments. Note that access constraints applying to all distributions of the resource should be specified in the access constraints for the resource description as a whole.
 
 ##### documentation 
 
@@ -228,7 +228,7 @@ Provides information to request data through a web accessible service endpoint. 
 
 ##### result
 
-\[Optional\]([DataDownload](#data-download)) []{.mark}specifies the serialization scheme (encoding format, information model) for expected representation of the data
+\[Optional\]([DataDownload](#data-download)) specifies the serialization scheme (encoding format, information model) for expected representation of the data
 
 ##### object
 
@@ -236,7 +236,7 @@ Provides information to request data through a web accessible service endpoint. 
 
 ##### query-input
 
-\[Optional, Repeatable\] (PropertyValueSpecification) []{.mark}set of explanations of the parameters in the URL template for the target EntryPoint.
+\[Optional, Repeatable\] (PropertyValueSpecification) set of explanations of the parameters in the URL template for the target EntryPoint.
 
 ### Person
 
@@ -252,7 +252,7 @@ Object representing a person.
 
 ##### name
 
-\[Required if no identifier\](string) []{.mark}Label for person that is meaningful for human users, should format consistently. Recommend \'Family Name, Given Name\' format.
+\[Required if no identifier\](string) Label for person that is meaningful for human users, should format consistently. Recommend \'Family Name, Given Name\' format.
 
 ##### identifier
 
@@ -402,7 +402,7 @@ This is the class used to provide information about the metadata record itself.
 
 ##### includedInDataCatalog
 
-\[Optional\] (DataCatalog) []{.mark}identify the source for the origin the metadata record
+\[Optional\] (DataCatalog) identify the source for the origin the metadata record
 
 ### DataCatalog
 
@@ -578,7 +578,7 @@ CHOICE. At least one of the following four is required
 
 \[Required\] (string) Name or identifier for the algorithm used to calculate the checksum.
 
-##### spdx: []{.mark}checksumValue
+##### spdx: checksumValue
 
 \[Required\] (string) the checksum string.
 
@@ -624,35 +624,35 @@ Use to document the URL that is the target for invoking an action, or that is th
 
 A point location specified with latitude and longitude in decimal degrees, using the WGS84 spatial reference system.
 
-##### [type]{.mark}
+##### type
 
-\[Required -- \' []{.mark}GeoCoordinates'\] (string:uri)
+\Required -- \' [GeoCoordinates'\] (string:uri)
 
 ##### latitude
 
 \[Required\](number) Decimal degrees, value \>=-90 and \<= 90.
 
-##### [longitude]{.mark}
+##### longitude
 
-[\[Required\](number)]{.mark} east-longitude coordinate in decimal degrees. Value must be \>= -180 and \<= 180.
+\[Required\](number) east-longitude coordinate in decimal degrees. Value must be \>= -180 and \<= 180.
 
 ### GeoShape
 
 CDIF limits schema:GeoShape to a box or line (schema.org includes other options). Point locations are tuples of {latitude east-longitude} (y x). (documentation from [Science on Schema.org](https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/Dataset.md#spatial-coverage) see details there)
 
-##### [type]{.mark}
+##### type
 
 \[Required -- \'GeoShape\'\](string:uri)
 
-##### [box]{.mark}
+##### box
 
-[\[Required if no line\] (string) A rectangular (in lat-long space) extent specified by two points, the first in the lower left (southwest) corner and the second in the upper right (northeast) corner. The schema.org]{.mark} [[GeoShape](https://schema.org/GeoShape) documentation states *Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points*.\" Since the box is a list of points, a space should be used to separate the latitude and longitude values. The two corner coordinate points are separated by a space. \'East longitude\' means positive longitude values are east of the prime (Greenwich) meridian. ]{.mark}
+\[Required if no line\] (string) A rectangular (in lat-long space) extent specified by two points, the first in the lower left (southwest) corner and the second in the upper right (northeast) corner. The schema.org [GeoShape](https://schema.org/GeoShape) documentation states *Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points*.\" Since the box is a list of points, a space should be used to separate the latitude and longitude values. The two corner coordinate points are separated by a space. \'East longitude\' means positive longitude values are east of the prime (Greenwich) meridian. 
 
-##### [line]{.mark}
+##### line
 
-[\[Required if no box\] (string) a series of two or more points. Use for extents like a ship track, flight path, or foot traverse.]{.mark}
+\[Required if no box\] (string) a series of two or more points. Use for extents like a ship track, flight path, or foot traverse.
 
-### [sf:SimpleFeature]{.mark}
+### sf:SimpleFeature
 
 ##### type
 
@@ -706,7 +706,7 @@ OR:
 
 ##### time:hasTRS
 
-\[Required\] ([object reference](#object-reference)) identifier for a temporal reference system; default is million years before prsent as a decimal number. []{.mark}Default is http://www.opengis.net/def/crs/OGC/0/ChronometricGeologicTime
+\[Required\] ([object reference](#object-reference)) identifier for a temporal reference system; default is million years before prsent as a decimal number. Default is http://www.opengis.net/def/crs/OGC/0/ChronometricGeologicTime
 
 ##### time:numericPosition 
 
@@ -750,11 +750,11 @@ Description of the kind of value expected for a parameter value.
 
 \[optional\] (string)  regular expression to validate values for template parameters. 
 
-# [Namespaces]{.mark}
+# Namespaces
 
-[Namespace prefixes use in CDIF Discovery schema.org JSON-LD objects are specified by this JSON-LD context, which must be declared in every instance document. Note that the correct namespace URI for schema.org is '**http'**, not '**https'**. The [**https**://schema.org/](https://schema.org/) uri identifies the schema.org context document, not the namespace. This example context includes all the namespaces used in any cdif profile:]{.mark}
+Namespace prefixes use in CDIF Discovery schema.org JSON-LD objects are specified by this JSON-LD context, which must be declared in every instance document. Note that the correct namespace URI for schema.org is '**http'**, not '**https'**. The [**https**://schema.org/](https://schema.org/) uri identifies the schema.org context document, not the namespace. This example context includes all the namespaces used in any cdif profile:
 
-[\"@context\": {\
+\"@context\": {\
 \"schema\": \"http://schema.org/\",\
 \"dcterms\": \"http://purl.org/dc/terms/\",\
 \"geosparql\": \"http://www.opengis.net/ont/geosparql#\",\
@@ -767,15 +767,15 @@ Description of the kind of value expected for a parameter value.
 \"sf\": \"http://www.opengis.net/ont/sf#\",\
 \"ex\": \"https://example.org/\",\
 \"xsd\": \"http://www.w3.org/2001/XMLSchema#\",\
-\"dcat\": \"http://www.w3.org/ns/dcat#\" }]{.mark}
+\"dcat\": \"http://www.w3.org/ns/dcat#\" }
 
-# [Notes on schema.org implementation]{.mark}
+# Notes on schema.org implementation
 
-## [JSON-LD \@type]{.mark}
+## JSON-LD \@type
 
-[JSON-LD every graph node has a \@type property that specifies the rdf:type for the node. This type has implications for the properties expected to be found in the content of the node, and should convey the intention of the kind of thing the node is intended to represent. In the CDIF JSON-LD implementation, most of the \@types are taken from the schema.org vocabulary, but there are a few exceptions for content items that do not map to the schema.org vocabulary. The \@type is always serialized as an array \[JSON list\] to allow for extensions that add additional typing.]{.mark}
+JSON-LD every graph node has a \@type property that specifies the rdf:type for the node. This type has implications for the properties expected to be found in the content of the node, and should convey the intention of the kind of thing the node is intended to represent. In the CDIF JSON-LD implementation, most of the \@types are taken from the schema.org vocabulary, but there are a few exceptions for content items that do not map to the schema.org vocabulary. The \@type is always serialized as an array \[JSON list\] to allow for extensions that add additional typing.
 
-## [Object reference]{.mark}
+## Object reference
 
 Linked data is implemented in rdf using URIs to reference objects that might be located in other parts of a graph, or remotely and accessed online. In the JSON-LD implementation, simply using a URI string as the value of a property does not create such a link---the value is simply a string, not the object reference by the URI. An \"object ref\" is always a string containing the id of the referenced object. Thus
 
@@ -787,75 +787,75 @@ Does not create a link. Object references are implemented in JSON-LD as object t
 
 Is the correct syntax to implemenat an object reference. Throughout this document, if \'object reference\' is included as a value type for a property, be aware that instance documents might simply have this kind of object as the property value.
 
-## [Repeating values]{.mark}
+## Repeating values
 
-[Any property with a 1..\* or 0..\* cardinality has values that are always implemented as arrays. This makes client processing easier because tests for single or array values are not necessary. If a property is 'repeatable', then assume the implementation is an array (JSON list).]{.mark}
+Any property with a 1..\* or 0..\* cardinality has values that are always implemented as arrays. This makes client processing easier because tests for single or array values are not necessary. If a property is 'repeatable', then assume the implementation is an array (JSON list).
 
-## [Namespace prefixes and JSON validation.]{.mark} 
+## Namespace prefixes and JSON validation. 
 
-[Namespace prefixes are explicitly used in the example documents so that the JSON schema can validate instance documents. JSON Schema validates the literal JSON structure \-- property names, nesting, value types. Several features of JSON-LD can cause a semantically correct document to fail JSON Schema checks. The same property can appear as \"schema:name\", \"name\", or \"http://schema.org/name\" depending on the @context. A JSON Schema that checks for \"schema:name\" will reject a document that uses \"name\", even though both mean the same thing. See]{.mark} [Validating CDIF Profile Metadata](https://github.com/Cross-Domain-Interoperability-Framework/validation/blob/main/docs/CDIF-profiles-metadata-validation.md) for a detailed discussion of validation processes for CDIF metadata, and the use of framing to validate JSON-LD instances using different [JSON-LD forms](https://www.w3.org/TR/json-ld11/#forms-of-json-ld) or custom context documents..
+Namespace prefixes are explicitly used in the example documents so that the JSON schema can validate instance documents. JSON Schema validates the literal JSON structure \-- property names, nesting, value types. Several features of JSON-LD can cause a semantically correct document to fail JSON Schema checks. The same property can appear as \"schema:name\", \"name\", or \"http://schema.org/name\" depending on the @context. A JSON Schema that checks for \"schema:name\" will reject a document that uses \"name\", even though both mean the same thing. See [Validating CDIF Profile Metadata](https://github.com/Cross-Domain-Interoperability-Framework/validation/blob/main/docs/CDIF-profiles-metadata-validation.md) for a detailed discussion of validation processes for CDIF metadata, and the use of framing to validate JSON-LD instances using different [JSON-LD forms](https://www.w3.org/TR/json-ld11/#forms-of-json-ld) or custom context documents..
 
-## [Use of dcat:CatalogRecord]{.mark}
+## Use of dcat:CatalogRecord
 
-[In a harvesting/federated catalog system some metadata about the metadata is useful to keep track of where metadata came from, what format/profile it uses (harvesters need this to process), and update dates. Unambiguous expression of this information requires making statements about a metadata record distinct from the thing in the world that the metadata describes. In an RDF framework, this requires a distinct identifier for the metadata record object that will serve as the subject for these triples.]{.mark}
+In a harvesting/federated catalog system some metadata about the metadata is useful to keep track of where metadata came from, what format/profile it uses (harvesters need this to process), and update dates. Unambiguous expression of this information requires making statements about a metadata record distinct from the thing in the world that the metadata describes. In an RDF framework, this requires a distinct identifier for the metadata record object that will serve as the subject for these triples.
 
-[In the RDF serialization, [Schema.org](http://schema.org/) metadata records are [JSON-LD node objects](https://www.w3.org/TR/json-ld/#node-objects), and include an \"@id\" keyword with a value that identifies the node, analogous to a primary key in a relational database. This identifier can be interpreted to represent a thing in the world that the metadata record (the \'node\') is about, or to represent the metadata record (a JSON object) itself.]{.mark}
+In the RDF serialization, [Schema.org](http://schema.org/) metadata records are [JSON-LD node objects](https://www.w3.org/TR/json-ld/#node-objects), and include an \"@id\" keyword with a value that identifies the node, analogous to a primary key in a relational database. This identifier can be interpreted to represent a thing in the world that the metadata record (the \'node\') is about, or to represent the metadata record (a JSON object) itself.
 
-[To avoid this ambiguity, CDIF adopts the convention that the [schema.org](http://schema.org/) identifier property is used to identify a thing in the world that is the subject of the JSON-LD node. The identified thing might be physical, imaginary, abstract, or a digital object. The JSON-LD \@id property identifies a node in a graph, which is an abstract object. As a URI the \@id URI is expected to dereference to produce a JSON-LD object containing the properties that are attached to the graph node.]{.mark}
+To avoid this ambiguity, CDIF adopts the convention that the [schema.org](http://schema.org/) identifier property is used to identify a thing in the world that is the subject of the JSON-LD node. The identified thing might be physical, imaginary, abstract, or a digital object. The JSON-LD \@id property identifies a node in a graph, which is an abstract object. As a URI the \@id URI is expected to dereference to produce a JSON-LD object containing the properties that are attached to the graph node.
 
-[Given this convention, when the metadata record is processed, the processor should use the schema:identifier as subject of triples about the subject of the metadata record to avoid ambiguity. In addition, this convention would suggest that if a schema:identifier property is present, the \@id property should be interpreted to identify the JSON object that is the representation of the node in the knowledge graph. In practice JSON-LD processors use the \@id as the subject of triples generated from a JSON-LD object. A \'purist\' approach would require a level of indirection to assert that the \@id is about the thing identified by the schema:identifier. JSON-LD processors don\'t do this, so standard practice is to make the \@id the identifier for the described resource, requiring understanding that it identifies two things---the rdf object at that graph node, and the thing in the world described by the content of that node. This has worked for the most part because metadata providers have been quite lax in providing information about the provenance of the metadata node, and in particular the conformance criteria that were followed in generating the content of that node.]{.mark}
+Given this convention, when the metadata record is processed, the processor should use the schema:identifier as subject of triples about the subject of the metadata record to avoid ambiguity. In addition, this convention would suggest that if a schema:identifier property is present, the \@id property should be interpreted to identify the JSON object that is the representation of the node in the knowledge graph. In practice JSON-LD processors use the \@id as the subject of triples generated from a JSON-LD object. A \'purist\' approach would require a level of indirection to assert that the \@id is about the thing identified by the schema:identifier. JSON-LD processors don\'t do this, so standard practice is to make the \@id the identifier for the described resource, requiring understanding that it identifies two things---the rdf object at that graph node, and the thing in the world described by the content of that node. This has worked for the most part because metadata providers have been quite lax in providing information about the provenance of the metadata node, and in particular the conformance criteria that were followed in generating the content of that node.
 
-[To address this issue, CDIF recommends that statements about the metadata record (the JSON object) as a distinct entity should be made using a separate identified node object. This node object is typed as a schema:Dataset, with additionalType [dcat:CatalogRecord](https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record) recognizing that the DCAT v3 specification uses that element to address this precise issue. This node can be embedded in the Dataset metadata using the subjectOf property, and approach used in the accompanying JSON schema and examples, or implemented as a separate free standing graph node linked to the dataset object via the \'about\']{.mark} [object reference](#object-reference)[.]{.mark}
+To address this issue, CDIF recommends that statements about the metadata record (the JSON object) as a distinct entity should be made using a separate identified node object. This node object is typed as a schema:Dataset, with additionalType [dcat:CatalogRecord](https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record) recognizing that the DCAT v3 specification uses that element to address this precise issue. This node can be embedded in the Dataset metadata using the subjectOf property, and approach used in the accompanying JSON schema and examples, or implemented as a separate free standing graph node linked to the dataset object via the \'about\' [object reference](#object-reference).
 
-> [{ \"@context\": \[]{.mark}
+> { \"@context\": \
 >
-> [\"https://schema.org\",]{.mark}
+> \"https://schema.org\",
 >
-> [{\"dcterms\": \"http://purl.org/dc/terms/\",]{.mark}
+> {\"dcterms\": \"http://purl.org/dc/terms/\",
 >
-> [\"ex\":\"https://example.com/99152/\"]{.mark}
+> \"ex\":\"https://example.com/99152/\"
 >
-> [}]{.mark}
+> }
 >
-> [\],]{.mark}
+> [\],
 >
-> [\"@id\": \"ex:URIforNode1\",]{.mark}
+> \"@id\": \"ex:URIforNode1\",
 >
-> [\"@type\": \"appropriate schema.org type\",]{.mark}
+> \"@type\": \"appropriate schema.org type\",
 >
-> [\"identifier\":\"ex:URIforDescribedResource\",]{.mark}
+> \"identifier\":\"ex:URIforDescribedResource\",
 >
-> [\"name\": \"unique title for the resource\",]{.mark}
+> \"name\": \"unique title for the resource\",
 >
-> [\"description\": \"Description of the resource\",]{.mark}
+> \"description\": \"Description of the resource\",
 >
-> [\"subjectOf\": {]{.mark}
+> \"subjectOf\": {
 >
-> [\"@id\": \"ex:URIforNode2\",]{.mark}
+> \"@id\": \"ex:URIforNode2\",
 >
-> [\"@type\": \"Dataset\",]{.mark}
+> \"@type\": \"Dataset\",
 >
-> [\"additionalType\": \"dcat:CatalogRecord\",]{.mark}
+> \"additionalType\": \"dcat:CatalogRecord\",
 >
-> [\"]{.mark}sdDatePublished[\": \"2017-05-23\",]{.mark}
+> \"sdDatePublished\": \"2017-05-23\",
 >
-> [\"about\":{\"@id\":\"ex:URIforNode1\"},]{.mark}
+> \"about\":{\"@id\":\"ex:URIforNode1\"},
 >
-> [ \"description\":\"metadata about documentation for ex:URIforDescribedResource\",]{.mark}
+>  \"description\":\"metadata about documentation for ex:URIforDescribedResource\",
 >
-> [\"dcterms:conformsTo\":{\"@id\":\"]{.mark}https://w3id.org/cdif/discovery/1.0[\"}]{.mark}
+> \"dcterms:conformsTo\":{\"@id\":\"https://w3id.org/cdif/discovery/1.0\"}
 >
-> [}]{.mark}
+> }
 >
-> [}]{.mark}
+> }
 
-[Example Instance with dcat catalog record content (mapped to schema.org properties)]{.mark}
+Example Instance with dcat catalog record content (mapped to schema.org properties)
 
-## [Polymorphism of PropertyValue]{.mark}
+## Polymorphism of PropertyValue
 
-[The schema.org PropertyValue type is used in several different contexts in the implementation of CDIF metadata. This is a result of how the expected values for some important properties are defined in schema.org. In the Discovery profile, PropertyValue is an allowed value type for variableMeasured and for identifier. In some more advanced profiles, PropertyValue is also an allowed value for additionalProperty.]{.mark}
+The schema.org PropertyValue type is used in several different contexts in the implementation of CDIF metadata. This is a result of how the expected values for some important properties are defined in schema.org. In the Discovery profile, PropertyValue is an allowed value type for variableMeasured and for identifier. In some more advanced profiles, PropertyValue is also an allowed value for additionalProperty.
 
-[The following table compared the properties and requirements for this schema.org type in these different contexts.]{.mark}
+The following table compared the properties and requirements for this schema.org type in these different contexts.
 
 | Property | Description | identifier | variableMeasured | additionalProperty |
 |---|---|---|---|---|
