@@ -807,49 +807,36 @@ Given this convention, when the metadata record is processed, the processor shou
 
 To address this issue, CDIF recommends that statements about the metadata record (the JSON object) as a distinct entity should be made using a separate identified node object. This node object is typed as a schema:Dataset, with additionalType [dcat:CatalogRecord](https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record) recognizing that the DCAT v3 specification uses that element to address this precise issue. This node can be embedded in the Dataset metadata using the subjectOf property, and approach used in the accompanying JSON schema and examples, or implemented as a separate free standing graph node linked to the dataset object via the \'about\' [object reference](#object-reference).
 
-> { \"@context\": \
->
-> \"https://schema.org\",
->
-> {\"dcterms\": \"http://purl.org/dc/terms/\",
->
-> \"ex\":\"https://example.com/99152/\"
->
-> }
->
-> [\],
->
-> \"@id\": \"ex:URIforNode1\",
->
-> \"@type\": \"appropriate schema.org type\",
->
-> \"identifier\":\"ex:URIforDescribedResource\",
->
-> \"name\": \"unique title for the resource\",
->
-> \"description\": \"Description of the resource\",
->
-> \"subjectOf\": {
->
-> \"@id\": \"ex:URIforNode2\",
->
-> \"@type\": \"Dataset\",
->
-> \"additionalType\": \"dcat:CatalogRecord\",
->
-> \"sdDatePublished\": \"2017-05-23\",
->
-> \"about\":{\"@id\":\"ex:URIforNode1\"},
->
->  \"description\":\"metadata about documentation for ex:URIforDescribedResource\",
->
-> \"dcterms:conformsTo\":{\"@id\":\"https://w3id.org/cdif/discovery/1.0\"}
->
-> }
->
-> }
+Example instance with dcat catalog record content (mapped to schema.org properties):
 
-Example Instance with dcat catalog record content (mapped to schema.org properties)
+```json
+{
+  "@context": [
+    "https://schema.org",
+    {
+      "dcterms": "http://purl.org/dc/terms/",
+      "ex": "https://example.com/99152/"
+    }
+  ],
+  "@id": "ex:URIforNode1",
+  "@type": "appropriate schema.org type",
+  "identifier": "ex:URIforDescribedResource",
+  "name": "unique title for the resource",
+  "description": "Description of the resource",
+  "subjectOf": {
+    "@id": "ex:URIforNode2",
+    "@type": "Dataset",
+    "additionalType": "dcat:CatalogRecord",
+    "sdDatePublished": "2017-05-23",
+    "about": {"@id": "ex:URIforNode1"},
+    "description": "metadata about documentation for ex:URIforDescribedResource",
+    "dcterms:conformsTo": [
+      {"@id": "https://w3id.org/cdif/core/1.0"},
+      {"@id": "https://w3id.org/cdif/discovery/1.0"}
+    ]
+  }
+}
+```
 
 ## Polymorphism of PropertyValue
 
