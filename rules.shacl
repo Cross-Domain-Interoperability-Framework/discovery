@@ -1,11 +1,16 @@
+@prefix cdifd: <https://cdif.org/validation/0.1/shacl#> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dqv:         <http://www.w3.org/ns/dqv#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sh:          <http://www.w3.org/ns/shacl#> .
-@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema:      <http://schema.org/>.
-@prefix cdifd: <https://cdif.org/validation/0.1/shacl#> .
-@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix sh:          <http://www.w3.org/ns/shacl#> .
+@prefix soso: <http://science-on-schema.org/1.2.3/validation/shacl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#>.
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
 @base <https://www.ogc.org/rules/template/> .
 
 # rules are inherited from schemas cited in 'allOf'
@@ -118,7 +123,7 @@ cdifd:dateModifiedProperty
     
 cdifd:CDIFCatalogRecordShape
     a sh:NodeShape ;
-    # only apply to CatalogRecord nodes (subjectOf metadata records), not root datasets
+    # only apply to dataset nodes that are 'about' a dataset node 
 	sh:target [
 	  a sh:SPARQLTarget ;
 	  sh:prefixes (
@@ -130,8 +135,7 @@ cdifd:CDIFCatalogRecordShape
             SELECT ?this
             WHERE {
             ?this a schema:Dataset ;
-             schema:about ?parent ;
-             schema:additionalType "dcat:CatalogRecord" .
+             schema:about ?parent.
             }
         """;
 	] ;
@@ -419,3 +423,478 @@ cdifd:CDIFDataDownloadDetailShape
 		]
 .
 
+# =====================================================================
+#  Shapes from component building blocks
+# =====================================================================
+
+cdifd:accessProperty
+# At least one of schema:url or schema:distribution must be present
+    a sh:PropertyShape ;
+    sh:path [sh:alternativePath ( schema:url schema:distribution ) ] ;
+    sh:minCount 1 ;
+    sh:message "At least one of schema:url (landing page) or schema:distribution (download/API) must be provided for resource access"
+    .
+
+cdifd:descriptionProperty
+    a sh:PropertyShape ;
+    sh:path schema:description ;
+    sh:minCount 1 ;
+    sh:datatype xsd:string ;
+    sh:severity sh:Warning ;
+    sh:message "A description of the resource is recommended for discovery"
+    .
+
+cdifd:creatorProperty
+    a sh:PropertyShape ;
+    sh:path schema:creator ;
+    sh:minCount 1 ;
+    sh:severity sh:Warning ;
+    sh:message "At least one creator (author/originator) is recommended"
+    .
+
+cdifd:keywordsProperty
+    a sh:PropertyShape ;
+    sh:path schema:keywords ;
+    sh:minCount 1 ;
+    sh:severity sh:Warning ;
+    sh:message "Keywords are recommended for discovery"
+    .
+
+cdifd:catalogRecordTypeProperty
+    a sh:PropertyShape ;
+    sh:path schema:additionalType ;
+    sh:minCount 1 ;
+    sh:hasValue "dcat:CatalogRecord" ;
+    sh:message "The CatalogRecord node must have schema:additionalType including dcat:CatalogRecord"
+    .
+
+# ---------------------------------------------------------------------------
+# SOSO namespace-check shapes (from Science on Schema.org v1.3.0)
+# Catch common schema.org namespace errors in Dataset @type declarations.
+# These shapes trigger only when an incorrect namespace variant is used;
+# correctly-namespaced documents produce no violations.
+# ---------------------------------------------------------------------------
+
+soso:DatasetNS1Shape
+    a sh:NodeShape ;
+    sh:targetClass <http://schema.orgDataset/> ;
+    sh:message "Expecting SO namespace of <http://schema.org/> not <http://schema.org>" ;
+    sh:not [
+        sh:path rdf:type ;
+        sh:minCount 1 ;
+    ] .
+
+soso:DatasetNS2Shape
+    a sh:NodeShape ;
+    sh:targetClass <https://schema.org/Dataset> ;
+    sh:message "Expecting SO namespace of <http://schema.org/> not <https://schema.org/>" ;
+    sh:not [
+        sh:path rdf:type ;
+        sh:minCount 1 ;
+    ] .
+
+soso:DatasetNS3Shape
+    a sh:NodeShape ;
+    sh:targetClass <https://schema.orgDataset/> ;
+    sh:message "Expecting SO namespace of <http://schema.org/> not <https://schema.org>" ;
+    sh:not [
+        sh:path rdf:type ;
+        sh:minCount 1 ;
+    ] .
+
+cdifd:CDIFDefinedTermShape
+    a sh:NodeShape ;
+    sh:target [
+	  a sh:SPARQLTarget ;
+#do not appy when defined term is example, apply when is object of other predicates
+#  that don't already handle a defined term (variableMeasured, propertyID, additionalProperty)
+#  add to the Value list if other uses are found
+      sh:select  """
+      PREFIX schema: <http://schema.org/>
+      SELECT DISTINCT ?this
+        WHERE {
+        ?this a schema:DefinedTerm .
+        {
+          ?this schema:name "example defined term" .
+          FILTER NOT EXISTS { ?s ?p ?this . }
+        }
+        Union
+        {
+         VALUES ?p {
+            schema:linkRelationship
+            schema:measurementTechnique
+            schema:keywords
+            schema:name
+          }
+         ?s ?p ?this .
+        }
+      }""";
+	] ;
+	sh:or (
+		[sh:property [
+			sh:path schema:identifier;
+			sh:minCount 1 ;
+			sh:or (
+			 [sh:datatype xsd:string ]
+			 [
+			     sh:and (
+			      [sh:class schema:PropertyValue ]
+	    		  [sh:or (
+	                    [sh:property [
+	                        sh:path schema:value ;
+	                        sh:minCount 1 ;
+	                        sh:datatype xsd:string ;
+	                        sh:message "a value for the identifier should be provided; can provide either full URI or identifier token part of URI if a url is provided."
+	                    ] ]
+	                    [sh:property [
+	                        sh:path schema:url ;
+	                        sh:minCount 1 ;
+	                        sh:datatype xsd:string ;
+	                        sh:pattern "^https?:\\/\\/[^\\s]+$" ;
+	                        sh:message "value expected to be a resolvable http URI, but we aren't testing to see if the URL resolves..."]
+	                        ]
+	                    );
+	            ]
+			     )
+			  ]
+			);
+			sh:message "a defined term should have an identifier that is a resolvable URI" ;
+			];
+		]
+		[sh:property cdifd:termLabelProperty ;]
+		[sh:property [
+			sh:path schema:termCode;
+			sh:minCount 1 ;
+			sh:datatype xsd:string;
+			sh:message "a termCode (short code or notation) for the term within its vocabulary" ;
+			];
+		]
+	);
+	sh:property [
+		sh:path schema:inDefinedTermSet;
+		sh:minCount 0 ;
+		sh:or (
+			[sh:nodeKind sh:IRI]
+			[sh:datatype xsd:string]
+		);
+		sh:severity sh:Info;
+		sh:message "inDefinedTermSet identifies the controlled vocabulary from which this term comes; should be a URI or string identifier"
+	];
+	sh:property [
+		sh:path schema:termCode;
+		sh:minCount 0 ;
+		sh:datatype xsd:string;
+		sh:severity sh:Info;
+		sh:message "termCode is a short code or notation for the term within its vocabulary (analogous to skos:notation)"
+	];
+	sh:message "A DefinedTerm must have a name (label), an identifier, OR a termCode. All three are recommended."
+	.
+
+cdifd:termLabelProperty
+# names must be a literal, .
+    a sh:PropertyShape ;
+    sh:path schema:name;
+	sh:minCount 1 ;
+    sh:datatype xsd:string ;
+	sh:minLength 5 ;
+	# sh:severity sh:Warning ;
+    sh:message "a label (schema:name) for the term must be provided, and must have at least 5 characters" 
+    .
+
+cdifd:CDIFVariableMeasuredShape
+    a sh:NodeShape;
+    sh:target [
+	  a sh:SPARQLTarget ;
+      # query to get PropertyValues that are for variableMeasured, not others
+      sh:select  """
+      PREFIX schema: <http://schema.org/>
+      SELECT DISTINCT ?this
+        WHERE {
+        ?this a schema:PropertyValue .
+        {
+          ?this schema:name "example variable measured" .
+          FILTER NOT EXISTS { ?s ?p ?this . }
+        }
+        Union
+        {
+          ?s schema:variableMeasured ?this .
+        }
+      }""";
+	] ;
+	sh:property [
+        sh:path schema:propertyID;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:or (
+            [sh:nodeKind sh:IRI]
+            [sh:datatype xsd:string ;
+               sh:minLength 5 ]
+            [sh:class schema:DefinedTerm ;
+              sh:property [
+             	sh:path schema:identifier;
+             	sh:minCount 1 ;
+             	sh:or (
+             	    [sh:nodeKind sh:IRI]
+                     [sh:datatype xsd:string ;
+                             sh:minLength 5 ]
+             	    [sh:and (
+             	      [sh:class schema:PropertyValue ]
+                 	  [sh:or (
+                             [sh:property [
+                                 sh:path schema:value ;
+                                 sh:minCount 1 ;
+                                 sh:datatype xsd:string ;
+                                 sh:message "a value for the definedTerm identifier should be provided; can provide either full URI or identifier token part of URI if a url is provided."
+                             ] ]
+                             [sh:property [
+                                 sh:path schema:url ;
+                                 sh:minCount 1 ;
+                                 sh:datatype xsd:string ;
+                                 # sh:pattern "^[a-zA-Z][a-zA-Z0-9+.-]*:[^\\s]*$";
+                                 sh:pattern "^https?:\\/\\/[^\\s]+$" ;
+                                 sh:message "value must be a resolvable URL, but we aren't testing to see if the URL resolves..... Can't get xsd:anyURI to work with JSON Schema validation..."]
+                                 ]
+                             );
+                            ]  # or
+             	        )  # and
+             	        ]);
+             	    sh:message "a defined term should have an identifier that is a resolvable URI" ;
+             	    ];
+                  ] # end defined term rule
+        );
+        sh:message "a propertID must be a uri reference, a name string, or a schema:DefinedTerm";
+     ]; # end propertyID rule
+        	
+    sh:property cdifd:name3Property;
+    sh:property [
+       sh:path schema:description;
+       sh:datatype xsd:string ;
+       sh:minLength 10;
+       sh:severity sh:Info;
+       sh:minCount 1;
+       sh:message "a variableMeasured should have a text description explaining the variable"
+    ];
+    sh:property [
+       sh:path schema:measurementTechnique;
+       sh:minCount 0;
+       sh:or (
+           [sh:datatype xsd:string]
+           [sh:nodeKind sh:IRI]
+           [sh:class schema:DefinedTerm]
+       );
+       sh:severity sh:Info;
+       sh:message "measurementTechnique describes how the variable values were determined"
+    ];
+    sh:property [
+       sh:path schema:unitText;
+       sh:minCount 0;
+       sh:datatype xsd:string;
+       sh:severity sh:Info;
+       sh:message "unitText identifies the unit of measurement as a string"
+    ];
+    sh:property [
+       sh:path schema:unitCode;
+       sh:minCount 0;
+       sh:or (
+           [sh:datatype xsd:string]
+           [sh:nodeKind sh:IRI]
+           [sh:class schema:DefinedTerm]
+       );
+       sh:severity sh:Info;
+       sh:message "unitCode identifies the unit of measurement, preferably as a URI from QUDT or similar vocabulary"
+    ];
+    sh:property [
+       sh:path schema:minValue;
+       sh:minCount 0;
+       sh:or ( [sh:datatype xsd:decimal] [sh:datatype xsd:integer] [sh:datatype xsd:double] );
+       sh:severity sh:Info;
+       sh:message "minValue is the minimum numeric value in the dataset for this variable"
+    ];
+    sh:property [
+       sh:path schema:maxValue;
+       sh:minCount 0;
+       sh:or ( [sh:datatype xsd:decimal] [sh:datatype xsd:integer] [sh:datatype xsd:double] );
+       sh:severity sh:Info;
+       sh:message "maxValue is the maximum numeric value in the dataset for this variable"
+    ]
+  .
+
+cdifd:name3Property
+# names must be a literal, .
+    a sh:PropertyShape ;
+    sh:path schema:name;
+	sh:minCount 1 ;
+    sh:datatype xsd:string ;
+	sh:minLength 2 ;
+	# sh:severity sh:Warning ;
+    sh:message "a name for the variable must be provided, and have a length of at least 2 characters." 
+    .
+
+cdifd:spatialExtentProperty
+    a sh:NodeShape ;
+    sh:targetClass schema:Place ;
+    sh:or (
+        [
+            sh:property [
+                sh:path schema:geo ;
+                sh:or (
+                    [ sh:node cdifd:geoCoordinatesNode ]
+                    [ sh:node cdifd:geoShapeNode ]
+                ) ;
+                sh:minCount 1 ;
+                sh:message "Spatial location MUST be specified either with GeoCoordinates lat/long pairs or with GeoShape Line or Box." ;
+            ]
+        ]
+        [
+            sh:property [
+                sh:path schema:name ;
+                sh:or (
+                    [ sh:datatype xsd:string ]
+                    [ sh:node cdifd:CDIFDefinedTermShape ]
+                ) ;
+                sh:minCount 1 ;
+            ]
+        ]
+    );
+    sh:message "Recommended: provide a spatial coverage description if applicable using schema:Place, either a place name,  point location(s) (GeoCoordinates), or GeoShape (bounding box, line profile location, or polygon)." ;
+    .
+
+cdifd:geoCoordinatesNode
+	a sh:NodeShape ;
+    sh:targetClass schema:GeoCoordinates ;
+	sh:property [ sh:path schema:latitude ;
+                   	sh:or ( [sh:datatype xsd:double ]
+                   			[sh:datatype xsd:integer ] );
+                   	sh:minValue -90.0;
+                   	sh:maxValue 90.0;
+                   	sh:minCount 1 ] ;
+	sh:property [sh:path schema:longitude ;
+         			sh:or ( [sh:datatype xsd:double ]
+         					[sh:datatype xsd:integer ] );
+         			sh:minValue -180.0;
+         			sh:maxValue 180.0;
+         			sh:minCount 1 ] ;
+	sh:message "GeoCoodinates must include latitude between -90 and 90, and longitude between -180 and 180." ;
+.
+
+cdifd:geoShapeNode
+	a sh:NodeShape ;
+    sh:targetClass schema:GeoShape ;
+	sh:property
+		[sh:path [sh:alternativePath ( schema:line schema:box) ];
+			sh:datatype xsd:string;
+			sh:minCount 1 ;
+            sh:message "geoshape must include a line or box geometry as a string of latitude longitude pairs"
+		]
+.
+
+cdifd:temporalExtentProperty
+	a sh:PropertyShape ;
+	sh:path schema:temporalCoverage ;
+	sh:or (
+		# use proper interval to specify extent using named time ordinal eras or temporal positions specified with numeric coordinates.
+		[sh:class time:ProperInterval ; ] 
+		# time position specified with a numeric coordinate in some temporal reference system
+		[sh:class time:Instant ; ]
+		# for calendar dates and intervals,
+		[sh:datatype xsd:string ;
+		# allow ISO8601 date or dateTime string, or an ISO date interval string
+			sh:or (
+				[sh:pattern "^[1-2][0-9]{3}-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1])(T([0-1][0-9]|[2][0-3]):[0-5][0-9](:[0-5][0-9](Z|[+-][0-2][0-9]:[0-5][0-9])?)?)?)?$" ]
+				[sh:pattern "^(([1-2][0-9]{3}(-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1]))?)?)|(\\.\\.))\\/([1-2][0-9]{3}(-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1]))?)?)|(\\.\\.)$"
+				]
+			)
+		]
+      );
+	sh:minCount 0 ;
+	sh:message "temporalCoverage problem; need an ISO 8601 dateTime, ISO 8601 time interval (two xsd:date separated by a '/' character),  or a time:ProperInterval. ISO time interval allows YYYY, YYYY-MM, or YYYY-DD-MM" ;
+	.
+
+cdifd:timeIntervalNode
+	a sh:NodeShape ;
+    sh:targetClass time:ProperInterval ;
+	sh:property
+		[ sh:path time:hasBeginning ;
+		sh:class time:Instant ;
+		sh:minCount 1;
+		sh:message "A time interval must have a beginning "
+		] ;
+	sh:property
+		[ sh:path time:hasEnd ;
+		sh:class time:Instant ;
+		sh:minCount 1;
+		sh:message "A time interval must have an end "
+		]
+	.
+
+cdifd:timeInstantNode
+	a sh:NodeShape; 
+	sh:targetClass time:Instant ;
+	sh:property
+		[sh:path time:inTimePosition ;
+         sh:class time:TimePosition ;
+         sh:message "a time instant must have a TimePosition object as a value"] 
+	.
+
+cdifd:timePositionNode
+	a sh:NodeShape; 
+	sh:targetClass time:TimePosition ;
+	sh:property 	
+		[
+		sh:path time:hasTRS ;
+		sh:nodeKind sh:IRIOrLiteral;
+		sh:message "include identifier for the temporal reference system as a string or @id with a URI value"
+		];	
+	sh:property
+		[
+		sh:path time:numericPosition;
+		sh:or ( [sh:datatype xsd:integer]
+               [sh:datatype xsd:double] ) ;
+		sh:message "time position MUST have a numeric value"
+		]
+	.
+
+cdifd:qualityMeasurementNode
+	a sh:NodeShape; 
+	sh:targetClass dqv:QualityMeasurement ;
+	
+	sh:target [
+	  a sh:SPARQLTarget ;
+ # query to get PropertyValues that are for additionalProperty, not others
+      sh:select  """
+      PREFIX schema: <http://schema.org/>
+      PREFIX dqv: <http://www.w3.org/ns/dqv#>
+      SELECT DISTINCT ?this
+        WHERE {
+        ?this a dqv:QualityMeasurement .
+        {
+          ?this schema:name "example additional property" .
+          FILTER NOT EXISTS { ?s ?p ?this . }
+        }
+        Union
+        {
+          ?s schema:additionalProperty ?this .
+        }
+      }"""
+	] ;  
+	
+	
+	sh:property 	
+		[sh:path dqv:isMeasurementOf ;
+			sh:or ( [sh:nodeKind sh:IRI] 
+				    [sh:datatype xsd:string;
+				        sh:minLength 3 ;]
+				    [sh:class schema:DefinedTerm]
+				   ) ;
+			sh:minCount 1 ;
+			sh:message "a quality measurement must specify the Measurement test with a name, IRI ref, or Defined Term";
+		];
+	sh:property 
+		[sh:path dqv:value;
+			sh:or ( 
+         	[sh:datatype xsd:string]
+         	[sh:class schema:DefinedTerm] ) ;
+			sh:message "a dataquality measurement must report a result value";
+			sh:minCount 1;
+		]  
+			.
