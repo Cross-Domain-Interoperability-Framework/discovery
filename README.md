@@ -30,30 +30,49 @@ The `examples/` directory contains 26+ validated JSON-LD dataset examples that c
 
 All examples declare `conformsTo` for both `core/1.0` and `discovery/1.0` and pass CDIFDiscoveryProfile JSON Schema validation. See [examples/README.md](examples/README.md) for details.
 
-## Repository structure
+## JSON-LD Framing and Validation
 
+**`FrameAndValidate.py`** frames a JSON-LD document against the Discovery profile schema and optionally validates it:
+
+```bash
+# Frame and validate
+python FrameAndValidate.py examples/CDIF-aloha-dataset.json --validate
+
+# Frame and save output
+python FrameAndValidate.py examples/CDIF-aloha-dataset.json -o framed.json
+
+# Use a different schema
+python FrameAndValidate.py input.jsonld --validate --schema my-schema.json
 ```
-├── examples/               CDIF Discovery profile examples (26+ validated JSON-LD files)
-├── CDIFDiscoveryProfile-rules.shacl   Current SHACL shapes (synced from metadataBuildingBlocks)
-├── API-discovery/          API representation guidance (potentialAction, SearchAction, EntryPoint)
-├── archive/                Archived schemas, crosswalks, legacy serialization and SHACL shapes
-├── images/                 Diagrams (harvesting workflows, metadata embedding, digital object overview)
-├── CDIF-Discovery-vs-SOSO-comparison.md   Comparison with ESIP Science-on-Schema.org
-├── CDIF-metadata-crosswalks-merged.xlsx   Crosswalk mappings to DCAT, ISO 19115, DataCite, EML, etc.
-└── CDIF-metadata-crosswalks-merged.xlsx   Crosswalk mappings to DCAT, ISO 19115, DataCite, EML, etc.
-```
 
-## Validation
+The script uses **`CDIFDiscovery-frame.jsonld`** to frame JSON-LD documents into the expected property structure. Context prefixes from the input document are automatically merged into the frame, so domain-specific prefixes work without being pre-declared in the frame.
 
-**`CDIFDiscoveryProfile-rules.shacl`** contains the current SHACL shapes for the CDIF Discovery profile. This file is copied from [`metadataBuildingBlocks/_sources/profiles/cdifProfiles/CDIFDiscoveryProfile/rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/profiles/cdifProfiles/CDIFDiscoveryProfile/rules.shacl) and should be updated whenever the source changes.
+**Requirements:** `pyld`, `jsonschema` (`pip install pyld jsonschema`)
 
-Full validation tools (JSON Schema framing, batch validation, composite SHACL shapes) are in the [validation repository](https://github.com/Cross-Domain-Interoperability-Framework/validation):
+## SHACL Validation
+
+**`rules.shacl`** contains self-contained SHACL shapes for validating CDIF Discovery profile instances. This file merges shapes from all composing building blocks (cdifCore, cdifCatalogRecord, definedTerm, variableMeasured, spatialExtent, temporalExtent, qualityMeasure) with the profile-level shapes, so it can be used standalone without referencing other repositories. Source shapes come from [`metadataBuildingBlocks/_sources/`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources) and should be regenerated when source shapes change.
+
+Additional validation tools are in the [validation repository](https://github.com/Cross-Domain-Interoperability-Framework/validation):
 - `validate_conformance.py` — validates JSON-LD against claimed CDIF profiles
-- `geocodes_harvester.py` — harvests and converts metadata from GeoCodes and other repositories
-- `FrameAndValidate.py` — JSON-LD framing and JSON Schema validation
 - `batch_validate.py` — batch validation across file groups
 
 Legacy hand-written SHACL shapes (CDIF v0.0.1, SOSO, Google Dataset Search) are preserved in `archive/shapegraphs/`.
+
+## Repository structure
+
+```
+├── examples/                       CDIF Discovery profile examples (44 validated JSON-LD files)
+├── CDIFDiscoveryProfileStructuredSchema.json   JSON Schema for validation
+├── CDIFDiscovery-frame.jsonld      JSON-LD frame for document framing
+├── FrameAndValidate.py             JSON-LD framing and JSON Schema validation
+├── rules.shacl                     Merged SHACL shapes (all composing BBs + profile)
+├── API-discovery/                  API representation guidance
+├── archive/                        Archived schemas, crosswalks, legacy SHACL shapes
+├── images/                         Diagrams
+├── CDIF-Discovery-vs-SOSO-comparison.md   Comparison with ESIP Science-on-Schema.org
+└── CDIF-metadata-crosswalks-merged.xlsx   Crosswalk mappings
+```
 
 ## License
 

@@ -46,7 +46,6 @@
     }
   ],
   "schema:identifier": {
-    "@id": "https://doi.org/10.25921/stkw-7w73",
     "@type": [
       "schema:PropertyValue"
     ],
@@ -560,7 +559,7 @@
       "schema:name": "NCEI NOAA",
       "schema:url": "https://www.ncei.noaa.gov/"
     },
-    "schema:description": "Metadata harvested directly from NCEI NOAA landing page JSON-LD by Claude Code. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; Unprefixed properties assigned to unk: namespace (contentURL); @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays)."
+    "schema:description": "Metadata harvested directly from NCEI NOAA landing page JSON-LD by Claude Code. Converted to CDIF discovery profile: Property names prefixed with schema: namespace; Unprefixed properties assigned to unk: namespace (contentURL); @context set to CDIF prefix declarations (extra prefixes preserved); @type values normalized to arrays with schema: prefix; @id set from schema:url; schema:identifier unwrapped from array; Distributions normalized; schema:creator wrapped in @list; Agent objects fixed (Person name synthesis, sameAs arrays). 2026-04-08: Removed @id from schema:identifier PropertyValue (was identical to root Dataset @id, causing JSON-LD framing to merge PropertyValue @type into Dataset)."
   },
   "schema:temporalCoverage": [
     "1980-01-01/2024-09-30"

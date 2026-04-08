@@ -72,7 +72,6 @@
   "schema:isAccessibleForFree": true,
   "schema:datePublished": "",
   "schema:identifier": {
-    "@id": "",
     "@type": [
       "schema:PropertyValue"
     ],
@@ -129,7 +128,6 @@
   "schema:creator": {
     "@list": [
       {
-        "@id": "",
         "@type": [
           "schema:Person"
         ],
@@ -267,7 +265,7 @@
         "@id": "https://w3id.org/cdif/discovery/1.0"
       }
     ],
-    "schema:description": "Adapted from WHOI METS-RCN schema.org JSON-LD metadata for a ship-based biogeochemical time series synthesis product covering 12 stations (ALOHA, CARIACO, KNOT, K2, CVOO, Munida, RADCO, GIFT, DYFAMED, Irminger Sea, Iceland Sea, OWSM). Converted to CDIF discovery profile: property names prefixed with schema: namespace, @context converted to CDIF prefix declarations."
+    "schema:description": "Adapted from WHOI METS-RCN schema.org JSON-LD metadata for a ship-based biogeochemical time series synthesis product covering 12 stations (ALOHA, CARIACO, KNOT, K2, CVOO, Munida, RADCO, GIFT, DYFAMED, Irminger Sea, Iceland Sea, OWSM). Converted to CDIF discovery profile: property names prefixed with schema: namespace, @context converted to CDIF prefix declarations. 2026-04-08: Removed empty @id values from schema:identifier PropertyValue and schema:creator Person (empty @id resolves to document base URI during JSON-LD expansion, causing node merge during framing)."
   },
   "@id": "https://example.org/timeseries-product",
   "schema:dateModified": "2020-01-01"
