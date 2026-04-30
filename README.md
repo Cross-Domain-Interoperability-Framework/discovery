@@ -51,7 +51,7 @@ The script uses **`CDIFDiscovery-frame.jsonld`** to frame JSON-LD documents into
 
 ## SHACL Validation
 
-**`rules.shacl`** contains self-contained SHACL shapes for validating CDIF Discovery profile instances. This file merges shapes from all composing building blocks (cdifCore, cdifCatalogRecord, definedTerm, variableMeasured, spatialExtent, temporalExtent, qualityMeasure) with the profile-level shapes, so it can be used standalone without referencing other repositories. Source shapes come from [`metadataBuildingBlocks/_sources/`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources) and should be regenerated when source shapes change.
+**`discoveryRules.shacl`** contains self-contained SHACL shapes for validating CDIF Discovery profile instances. This file merges shapes from all composing building blocks (cdifCore, cdifCatalogRecord, definedTerm, variableMeasured, spatialExtent, temporalExtent, qualityMeasure) with the profile-level shapes, so it can be used standalone without referencing other repositories. Source shapes come from [`metadataBuildingBlocks/_sources/`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources) and should be regenerated when source shapes change.
 
 Additional validation tools are in the [validation repository](https://github.com/Cross-Domain-Interoperability-Framework/validation):
 - `validate_conformance.py` — validates JSON-LD against claimed CDIF profiles
@@ -66,7 +66,7 @@ Legacy hand-written SHACL shapes (CDIF v0.0.1, SOSO, Google Dataset Search) are 
 ├── CDIFDiscoveryProfileStructuredSchema.json   JSON Schema for validation
 ├── CDIFDiscovery-frame.jsonld      JSON-LD frame for document framing
 ├── FrameAndValidate.py             JSON-LD framing and JSON Schema validation
-├── rules.shacl                     Merged SHACL shapes (all composing BBs + profile)
+├── discoveryRules.shacl            Merged SHACL shapes (all composing BBs + profile)
 ├── API-discovery/                  API representation guidance
 ├── archive/                        Archived schemas, crosswalks, legacy SHACL shapes
 ├── images/                         Diagrams
