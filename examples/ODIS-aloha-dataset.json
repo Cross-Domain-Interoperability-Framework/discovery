@@ -57,7 +57,7 @@
   "schema:temporalCoverage": [
     "1988-10-30/2019-12-20"
   ],
-  "schema:location": {
+  "schema:spatialCoverage": [{
     "schema:name": "HOT: Stations offshore of Hawaii",
     "@type": [
       "schema:Place"
@@ -67,7 +67,7 @@
       "@type": [
         "schema:GeoShape"
       ],
-      "schema:polygon": "-158.8575 23.4375, -158.8575 21.2283, -157.4567 21.2283, -157.4567 23.4375, -158.8575 23.4375"
+      "schema:box": "21.2283 -158.8575 23.4375 -157.4567"
     },
     "schema:additionalProperty": [
       {
@@ -86,7 +86,7 @@
         "schema:unitCode": "http://qudt.org/vocab/unit/M"
       }
     ]
-  },
+  }],
   "schema:creator": {
     "@list": [
       {

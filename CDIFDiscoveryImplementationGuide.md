@@ -114,6 +114,8 @@ This profile applies to description of resources that can be described using the
 
 **Description:** This property contains information about the metadata record itself, as opposed to the resource the record describes. See Uses of dcat:CatalogRecord and https://github.com/Cross-Domain-Interoperability-Framework/Discovery/issues/13 for discussion on how to make assertion about the metadata record distinct from statements about the described resource. Use the dcat:CatalogRecord as additionalType to distinguish this schema:Dataset from the schema:Dataset about a described external resource. see <https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/contentmodel.html#properties-for-metadata-management>. Introduction of this is novel for schema.org implementations.
 
+The embedded catalog record's `dcterms:conformsTo` MUST list **both** `https://w3id.org/cdif/core/1.0` and `https://w3id.org/cdif/discovery/1.0`. The Discovery profile composes the CDIF Core profile, so the JSON Schema carries the Core conformance constraint in addition to the Discovery one; an instance declaring only the Discovery URI will fail validation. See [conformsTo](#conformsto) under Dataset/dcat:CatalogRecord.
+
 
 #### Optional properties from CDIF Core
 
@@ -289,6 +291,31 @@ This profile applies to description of resources that can be described using the
 
 **Description:** Document spatial extent to which the resource content is relevant. Can be expressed with a simple text place name, a place name from an identified gazeteer (using schema: [DefinedTerm](#sec-definedterm)), a point location, a bounding box (.e.g. for a map extent), a line (e.g. a ship track or foot traverse), or a general geometry. Registered place names from a gazeteer or a simple bounding box are widely recognized and indexed approaches used by spatially aware metadata aggregators.
 
+**Example -- multi-country coverage.** When a resource covers several countries, repeat `schema:spatialCoverage` with one [Place](#sec-place) per country. Each `Place` carries the ISO 3166-1 alpha-2 code as `schema:name` and `schema:identifier`, and a `schema:sameAs` link to the EU Publications Office country authority (which keys on the alpha-3 code). A `Place` is valid with any one of `schema:geo`, `schema:name`, or `schema:identifier`; this form uses `name` and `identifier`.
+
+```json
+"schema:spatialCoverage": [
+  {
+    "@type": "schema:Place",
+    "schema:name": "BE",
+    "schema:identifier": "BE",
+    "schema:sameAs": "http://publications.europa.eu/resource/authority/country/BEL"
+  },
+  {
+    "@type": "schema:Place",
+    "schema:name": "NL",
+    "schema:identifier": "NL",
+    "schema:sameAs": "http://publications.europa.eu/resource/authority/country/NLD"
+  },
+  {
+    "@type": "schema:Place",
+    "schema:name": "LU",
+    "schema:identifier": "LU",
+    "schema:sameAs": "http://publications.europa.eu/resource/authority/country/LUX"
+  }
+]
+```
+
 
 #### temporalCoverage
 
@@ -297,6 +324,8 @@ This profile applies to description of resources that can be described using the
 **Content:** string or [ProperInterval](#sec-properinterval)
 
 **Description:** The time interval during which data was collected or observations were made; or a time period that an activity or collection is linked to intellectually or thematically (for example, 1997 to 1998; the 18th century) (see https://documentation.ardc.edu.au/display/DOC/Temporal+coverage). For documentation of Earth Science, Paleobiology or Paleontology datasets, we are interested in the second case\-- the time period that data are linked to thematically. NOTE---the implementation of temporal intervals uses OWL Time, so the context must include \"time\": [http://www.w3.org/2006/time#](http://www.w3.org/2006/time). Simple ISO8601 time intervals can be represented using the description property with a text string value.
+
+**Recommended:** for coverage statements that can be expressed in calendar time, use ISO 8601 interval notation as a plain string value \-- two ISO 8601 dates separated by a `/` (for example, `1997/1998` or `1997-06-01/1998-05-31`); `..` may be used as an open start or end bound. The `time:ProperInterval` form is intended for intervals that cannot be expressed in calendar time, such as those bounded by named ordinal eras or by numeric positions in a non-calendar temporal reference system (e.g. geologic time).
 
 
 #### dqv:hasQualityMeasurement
@@ -1525,6 +1554,8 @@ Any property with a 1..\* or 0..\* cardinality has values that are always implem
 ## Namespace prefixes and JSON validation. 
 
 Namespace prefixes are explicitly used in the example documents so that the JSON schema can validate instance documents. JSON Schema validates the literal JSON structure \-- property names, nesting, value types. Several features of JSON-LD can cause a semantically correct document to fail JSON Schema checks. The same property can appear as \"schema:name\", \"name\", or \"http://schema.org/name\" depending on the @context. A JSON Schema that checks for \"schema:name\" will reject a document that uses \"name\", even though both mean the same thing. See [Validating CDIF Profile Metadata](https://github.com/Cross-Domain-Interoperability-Framework/validation/blob/main/docs/CDIF-profiles-metadata-validation.md) for a detailed discussion of validation processes for CDIF metadata, and the use of framing to validate JSON-LD instances using different [JSON-LD forms](https://www.w3.org/TR/json-ld11/#forms-of-json-ld) or custom context documents..
+
+The JSON Schema validates **one metadata record at a time**: the document root must be a single `schema:Dataset` node with the mandatory properties at the top level. A multi-record bundle packaged as `{ \"@graph\": [ ... ] }` \-- the natural output of many harvesters and federated catalogs \-- will fail JSON Schema validation immediately, because `@graph` is not in the schema property list. This is purely a packaging mismatch: the bundled records may be perfectly valid individually, and SHACL (which operates on the RDF graph rather than the JSON tree) will still pass them. Before JSON-Schema validation, extract each `schema:Dataset` record from the graph using JSON-LD framing. The `FrameAndValidate.py` script and `CDIFDiscovery-frame.jsonld` frame in this repository do exactly this \-- framing a document against the CDIF frame and extracting the dataset node out of `@graph` \-- and can be run with `--validate` to frame and JSON-Schema-validate in one step.
 
 ## Use of dcat:CatalogRecord
 

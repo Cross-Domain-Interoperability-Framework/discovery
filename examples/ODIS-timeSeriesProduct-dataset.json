@@ -95,7 +95,7 @@
   "schema:temporalCoverage": [
     "1983-01-01/2021-12-31"
   ],
-  "schema:location": {
+  "schema:spatialCoverage": [{
     "schema:name": "Station locations worldwide",
     "@type": [
       "schema:Place"
@@ -105,7 +105,7 @@
       "@type": [
         "schema:GeoShape"
       ],
-      "schema:polygon": "-180 -90, -180 90, 180 90, 180 -90, -180 -90"
+      "schema:box": "-90 -180 90 180"
     },
     "schema:additionalProperty": [
       {
@@ -124,7 +124,7 @@
         "schema:unitCode": "http://qudt.org/vocab/unit/M"
       }
     ]
-  },
+  }],
   "schema:creator": {
     "@list": [
       {

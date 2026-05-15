@@ -16,7 +16,7 @@
 # rules are inherited from schemas cited in 'allOf'
 
 cdifd:CDIFDatasetMandatoryShape a sh:NodeShape ;
-# only apply to elements that are child of root dataset 
+# applies to every dataset description; catalog-record nodes (schema:about + additionalType "dcat:CatalogRecord") are excluded by the SPARQL target
 	sh:target [
 	  a sh:SPARQLTarget ;
 	  sh:prefixes (
@@ -30,20 +30,19 @@ cdifd:CDIFDatasetMandatoryShape a sh:NodeShape ;
             WHERE {
               ?this a schema:Dataset .
               MINUS {
-                ?parent a schema:Dataset .
-                ?parent ?p ?this .
-                FILTER (?parent != ?this)
-                FILTER (?p != schema:about)
+                ?this schema:about ?x .
+                ?this schema:additionalType "dcat:CatalogRecord" .
               }
             }
           """ ;
 	] ;
 		
-    sh:property	
+    sh:property
 		cdifd:resourceIdentifierProperty,
 		cdifd:nameProperty,
 		cdifd:rightsProperty,
-		cdifd:dateModifiedProperty
+		cdifd:dateModifiedProperty,
+		cdifd:accessProperty
 .
 
 cdifd:resourceIdentifierProperty
@@ -83,8 +82,8 @@ cdifd:nameProperty
     sh:path schema:name;
 	sh:minCount 1 ;
     sh:datatype xsd:string ;
-	sh:minLength 5 ;
-    sh:message "a name for the person must be provided, and have a lenght of at least 5 characters." 
+	sh:minLength 3 ;
+    sh:message "a name for the person must be provided, and have a length of at least 3 characters." 
     .
     
 cdifd:rightsProperty	
@@ -117,7 +116,7 @@ cdifd:dateModifiedProperty
 	sh:minCount 1 ;
 	sh:datatype xsd:string ;
 	# messy regex to screen for ISO8601 formats, from the web...
-	sh:pattern "^[1-2][0-9]{3}-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1])(T([0-1][0-9]|[2][0-3]):[0-5][0-9](:[0-5][0-9](Z|[+-][0-2][0-9]:[0-5][0-9])?)?)?)?$" ;
+	sh:pattern "^[1-2][0-9]{3}-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1])(T([0-1][0-9]|[2][0-3])(:[0-5][0-9])?(:[0-5][0-9](Z|[+-][0-2][0-9]:[0-5][0-9])?)?)?)?$" ;
     sh:message "Date of most recent update to resource content is required, using ISO8601 format with at least a year and a month." 
     .
     
@@ -135,14 +134,16 @@ cdifd:CDIFCatalogRecordShape
             SELECT ?this
             WHERE {
             ?this a schema:Dataset ;
-             schema:about ?parent.
+             schema:about ?parent ;
+             schema:additionalType "dcat:CatalogRecord" .
             }
         """;
 	] ;
 	sh:nodeKind sh:IRI ;
 	sh:property cdifd:metadataProfileProperty ;
 	sh:property cdifd:metadataSubjectProperty ;
-	sh:message "The target of the metadata record (about)." 
+	sh:property cdifd:catalogRecordTypeProperty ;
+	sh:message "The target of the metadata record (about)."
 	.
 
 cdifd:metadataProfileProperty
@@ -151,7 +152,9 @@ cdifd:metadataProfileProperty
     sh:path  dcterms:conformsTo  ;
 	sh:minCount 1 ;
     sh:nodeKind sh:IRI ;
-    sh:message "provide identifiers for specifications used in this record to provide guidance for machine agents processing the metadata record" 
+    sh:hasValue <https://w3id.org/cdif/core/1.0> ;
+    sh:hasValue <https://w3id.org/cdif/discovery/1.0> ;
+    sh:message "a CDIF Discovery metadata record must declare conformance to both https://w3id.org/cdif/core/1.0 and https://w3id.org/cdif/discovery/1.0"
     .
     
 cdifd:metadataSubjectProperty
@@ -160,7 +163,7 @@ cdifd:metadataSubjectProperty
     sh:path  schema:about  ;
     sh:nodeKind sh:IRI ;
     sh:minCount 1 ;
-    sh:message "link to the target of the metadata metadata node using the about property"
+    sh:message "link to the target of the metadata node using the about property"
     .
 
 # =====================================================================
@@ -169,7 +172,7 @@ cdifd:metadataSubjectProperty
 # =====================================================================
 
 cdifd:CDIFDatasetRecommendedShape a sh:NodeShape ;
-# only apply to root Dataset nodes (same target as CDIFDatasetMandatoryShape)
+# applies to every dataset description (same target as CDIFDatasetMandatoryShape)
 	sh:target [
 	  a sh:SPARQLTarget ;
 	  sh:prefixes (
@@ -183,10 +186,8 @@ cdifd:CDIFDatasetRecommendedShape a sh:NodeShape ;
             WHERE {
               ?this a schema:Dataset .
               MINUS {
-                ?parent a schema:Dataset .
-                ?parent ?p ?this .
-                FILTER (?parent != ?this)
-                FILTER (?p != schema:about)
+                ?this schema:about ?x .
+                ?this schema:additionalType "dcat:CatalogRecord" .
               }
             }
           """ ;
@@ -199,8 +200,10 @@ cdifd:CDIFDatasetRecommendedShape a sh:NodeShape ;
 		cdifd:responsiblePartyProperty,
 		cdifd:contributorProperty,
 		cdifd:datePublishedProperty,
+		cdifd:descriptionProperty,
+		cdifd:creatorProperty,
+		cdifd:keywordsProperty,
 		cdifd:keywordsNoCommaTest,
-		cdifd:getResourceProperty,
 		cdifd:distributionProperty,
 		cdifd:providerProperty,
 		cdifd:policiesProperty,
@@ -265,7 +268,7 @@ cdifd:datePublishedProperty
 	sh:minCount 1 ;
 	sh:datatype xsd:string ;
 	# messy regex to screen for ISO8601 formats
-	sh:pattern "^[1-2][0-9]{3}-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1])(T([0-1][0-9]|[2][0-3]):[0-5][0-9](:[0-5][0-9](Z|[+-][0-2][0-9]:[0-5][0-9])?)?)?)?$" ;
+	sh:pattern "^[1-2][0-9]{3}-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1])(T([0-1][0-9]|[2][0-3])(:[0-5][0-9])?(:[0-5][0-9](Z|[+-][0-2][0-9]:[0-5][0-9])?)?)?)?$" ;
 	sh:severity sh:Info ;
     sh:message "Please provide a publication or release date, using ISO8601 format with at least a year and a month."
     .
@@ -281,17 +284,9 @@ cdifd:keywordsNoCommaTest
 		[ sh:nodeKind sh:BlankNodeOrIRI ; ]
 	) ;
     sh:severity sh:Warning ;
-    sh:message "If there are multiple keywords, they should be in an array; an individual keyword MUST not contain a comma character" ;
+    sh:message "Keywords should be provided as an array of separate values, not a single comma-delimited string; an individual keyword literal MUST NOT contain a comma. If a keyword legitimately contains a comma, express it as a schema:DefinedTerm (with schema:name, and ideally schema:identifier / schema:termCode / schema:inDefinedTermSet) instead of a plain string." ;
     sh:description "https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/schemaorgimplementation.html" ;
     .
-
-cdifd:getResourceProperty
-	a sh:PropertyShape ;
-	sh:path [ sh:alternativePath ( schema:url schema:distribution ) ] ;
-    sh:minCount 1 ;
-	sh:severity sh:Warning;
-	sh:message "Provide either a schema:url for a landing page or a schema:distribution (DataDownload or WebAPI) for direct access to the dataset"
-.
 
 cdifd:distributionProperty
 	a sh:PropertyShape;
@@ -596,9 +591,9 @@ cdifd:termLabelProperty
     sh:path schema:name;
 	sh:minCount 1 ;
     sh:datatype xsd:string ;
-	sh:minLength 5 ;
+	sh:minLength 3 ;
 	# sh:severity sh:Warning ;
-    sh:message "a label (schema:name) for the term must be provided, and must have at least 5 characters" 
+    sh:message "a label (schema:name) for the term must be provided, and must have at least 3 characters" 
     .
 
 cdifd:CDIFVariableMeasuredShape
@@ -725,9 +720,9 @@ cdifd:name3Property
     sh:path schema:name;
 	sh:minCount 1 ;
     sh:datatype xsd:string ;
-	sh:minLength 2 ;
+	sh:minLength 3 ;
 	# sh:severity sh:Warning ;
-    sh:message "a name for the variable must be provided, and have a length of at least 2 characters." 
+    sh:message "a name for the variable must be provided, and have a length of at least 3 characters." 
     .
 
 cdifd:spatialExtentProperty
@@ -755,8 +750,18 @@ cdifd:spatialExtentProperty
                 sh:minCount 1 ;
             ]
         ]
+        [
+            sh:property [
+                sh:path schema:identifier ;
+                sh:or (
+                    [ sh:nodeKind sh:IRIOrLiteral ]
+                    [ sh:class schema:PropertyValue ]
+                ) ;
+                sh:minCount 1 ;
+            ]
+        ]
     );
-    sh:message "Recommended: provide a spatial coverage description if applicable using schema:Place, either a place name,  point location(s) (GeoCoordinates), or GeoShape (bounding box, line profile location, or polygon)." ;
+    sh:message "Recommended: provide a spatial coverage description if applicable using schema:Place, identified by a place name, an identifier, point location(s) (GeoCoordinates), or GeoShape (bounding box, line profile location, or polygon)." ;
     .
 
 cdifd:geoCoordinatesNode
@@ -800,7 +805,7 @@ cdifd:temporalExtentProperty
 		[sh:datatype xsd:string ;
 		# allow ISO8601 date or dateTime string, or an ISO date interval string
 			sh:or (
-				[sh:pattern "^[1-2][0-9]{3}-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1])(T([0-1][0-9]|[2][0-3]):[0-5][0-9](:[0-5][0-9](Z|[+-][0-2][0-9]:[0-5][0-9])?)?)?)?$" ]
+				[sh:pattern "^[1-2][0-9]{3}-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1])(T([0-1][0-9]|[2][0-3])(:[0-5][0-9])?(:[0-5][0-9](Z|[+-][0-2][0-9]:[0-5][0-9])?)?)?)?$" ]
 				[sh:pattern "^(([1-2][0-9]{3}(-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1]))?)?)|(\\.\\.))\\/([1-2][0-9]{3}(-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1]))?)?)|(\\.\\.)$"
 				]
 			)
